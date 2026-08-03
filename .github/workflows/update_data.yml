@@ -1,0 +1,56 @@
+name: Update Community Data
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs at 00:00 every Sunday
+  workflow_dispatch: # Allows manual trigger from the GitHub UI
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Dashboard Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python Dependencies
+        run: pip install discord.py requests
+
+      - name: Run Discord Scraper
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        run: python scripts/extract_discord_data.py
+
+      - name: Run GitHub Scraper
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/extract_github_data.py
+
+      - name: Checkout Main Archicad Repository for Commits
+        uses: actions/checkout@v4
+        with:
+          repository: ENZYME-APD/tapir-archicad-automation
+          path: temp_tapir_repo
+          fetch-depth: 0 # Fetch all history for accurate commit logs
+
+      - name: Generate Commits Data
+        run: |
+          cd temp_tapir_repo
+          git log --date=iso-strict --pretty=format:'{"created_at": "%ad", "author": "%an"}' | awk 'BEGIN {print "["} {if (NR!=1) print ","; print $0} END {print "]"}' > ../src/data/commits_data.json
+          cd ..
+          rm -rf temp_tapir_repo
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/data/*.json
+          # Only commit if there are changes
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update community analytics data" && git push)

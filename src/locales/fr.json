@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "about": "À propos",
+    "architecture": "Architecture",
+    "usecases": "Cas d'usage",
+    "learning": "Apprendre",
+    "marketplace": "Marketplace",
+    "roadmap": "Feuille de route",
+    "stats": "Communauté"
+  },
+  "hero": {
+    "badge": "🌍 100% gratuit et open source",
+    "title": "Automatisez Archicad en toute simplicité.",
+    "description": "<0>Des utilisateurs, pour la communauté.</0> Tapir est un pont open source qui connecte Archicad à l'écosystème de développement moderne (Python, Grasshopper et IA) sans nécessiter de connaissances approfondies en C++. Déployez des workflows qui font gagner un temps précieux, générez des géométries complexes et intégrez vos modèles BIM directement à l'IA.",
+    "docsButton": "Lire la documentation",
+    "mcpButton": "Tapir MCP pour l'IA"
+  },
+  "architecture": {
+    "title": "Architecture & Histoire",
+    "subtitle": "Comment Tapir fonctionne sous le capot et comment il a évolué.",
+    "systemTitle": "Architecture du système",
+    "systemDesc": "Tapir repose sur une base C++ robuste qui expose les fonctionnalités internes d'Archicad sous forme d'API JSON accessible. Cela permet à plusieurs écosystèmes différents de s'interfacer avec Archicad de façon transparente.",
+    "archicad": "Archicad",
+    "archicadSub": "Application principale",
+    "addon": "Add-on Tapir",
+    "addonSub": "Couche API JSON en C++",
+    "grasshopper": "Grasshopper",
+    "grasshopperSub": "Programmation visuelle",
+    "python": "Python",
+    "pythonSub": "Scripts automatisés",
+    "mcp": "Tapir MCP",
+    "mcpSub": "Agents IA (Claude)",
+    "historyTitle": "Histoire du projet",
+    "phases": [
+      {
+        "date": "Phase 1",
+        "title": "Les fondations de l'API JSON",
+        "desc": "Tapir est né du besoin de contourner la complexité du C++. La première grande étape a été la création de l'add-on C++ pour exposer les fonctions clés d'Archicad sous forme d'une API JSON simple et sans état."
+      },
+      {
+        "date": "Phase 2",
+        "title": "Intégration Grasshopper",
+        "desc": "Pour apporter la puissance de Tapir aux concepteurs, l'équipe a développé le plugin Grasshopper, permettant aux programmeurs visuels de manipuler les éléments Archicad de façon paramétrique."
+      },
+      {
+        "date": "Phase 3",
+        "title": "Communauté & Python",
+        "desc": "Le projet est passé entièrement open source. Une communauté Discord dynamique a émergé, avec des dizaines de contributeurs créant et partageant leurs propres scripts d'automatisation Python à travers le monde."
+      },
+      {
+        "date": "Phase 4",
+        "title": "L'ère de l'IA (actuelle)",
+        "desc": "L'introduction du serveur Tapir MCP a permis à des modèles d'IA comme Claude d'interagir de façon autonome avec Archicad, ouvrant une nouvelle frontière de l'automatisation en langage naturel."
+      }
+    ]
+  },
+  "about": {
+    "title": "Pourquoi Tapir ?",
+    "subtitle": "Tout ce qu'il faut savoir sur le projet.",
+    "cards": [
+      { "icon": "🚀", "title": "Incroyablement simple", "desc": "La prise en main est facile. Tapir enveloppe des API C++ complexes dans une interface JSON et Python accessible, pensée pour les développeurs." },
+      { "icon": "🤖", "title": "Prêt pour l'IA", "desc": "Conçu pour l'avenir. Avec le nouveau Tapir MCP, vos assistants IA peuvent interagir directement avec vos modèles Archicad." },
+      { "icon": "⚡️", "title": "Développement ultra-rapide", "desc": "Le projet open source s'accélère rapidement, avec des contributions continues qui repoussent les limites de l'automatisation AEC." }
+    ]
+  },
+  "usecases": {
+    "title": "Qu'est-ce qui est possible aujourd'hui ?",
+    "subtitle": "12 façons dont la communauté utilise Tapir pour gagner du temps et réinventer ses workflows.",
+    "items": [
+      { "icon": "📊", "title": "Gestion automatisée des propriétés", "desc": "Extrayez et mettez à jour en lot les propriétés de centaines d'éléments Archicad en quelques secondes." },
+      { "icon": "🏗️", "title": "Génération de géométrie", "desc": "Créez des murs, dalles et poutres complexes de façon algorithmique avec Python." },
+      { "icon": "📋", "title": "Métrés quantitatifs", "desc": "Générez instantanément des rapports précis de quantités de matériaux et d'éléments." },
+      { "icon": "🧠", "title": "Intégration IA / LLM", "desc": "Utilisez Tapir MCP pour permettre à des assistants IA d'interagir directement avec vos modèles BIM." },
+      { "icon": "🐞", "title": "Suivi des problèmes BCF", "desc": "Automatisez le suivi des problèmes et la génération de fichiers BCF directement depuis des scripts Python." },
+      { "icon": "🏷️", "title": "Mapping de classification", "desc": "Classez automatiquement les éléments selon des conventions de nommage ou des règles géométriques." },
+      { "icon": "📐", "title": "Automatisation des vues & mises en page", "desc": "Scriptez sans effort la création de vues, coupes et cahiers de mise en page." },
+      { "icon": "✅", "title": "Validation des données", "desc": "Vérifiez les modèles pour détecter des paramètres manquants ou des non-conformités aux règles de conception." },
+      { "icon": "🐍", "title": "Workflows Python sur mesure", "desc": "Créez des scripts Python autonomes taillés précisément pour les standards de votre agence." },
+      { "icon": "🦏", "title": "Intégration Grasshopper", "desc": "Reliez vos workflows Rhino/Grasshopper directement à Archicad via les points d'accès de Tapir." },
+      { "icon": "🔍", "title": "Filtrage avancé des éléments", "desc": "Interrogez et filtrez rapidement les éléments du modèle selon des propriétés imbriquées ou des données spatiales." },
+      { "icon": "✏️", "title": "Renommage en masse", "desc": "Automatisez le processus fastidieux de renommage des vues, mises en page et jeux de publication selon les standards du projet." }
+    ]
+  },
+  "learning": {
+    "title": "Apprendre & créer",
+    "subtitle": "Tout ce qu'il faut pour maîtriser l'automatisation Archicad, des tutoriels vidéo au scripting avec l'IA.",
+    "videoTitle": "Tutoriels vidéo",
+    "videoDesc": "Vous préférez l'apprentissage visuel ? Découvrez notre playlist YouTube complète, de l'installation à la création de vos premiers scripts d'automatisation.",
+    "videoButton": "▶ Regarder sur YouTube",
+    "claudeTitle": "Créer des scripts avec Claude",
+    "claudeDesc1": "La communauté Tapir utilise massivement des modèles d'IA comme Claude pour générer des scripts complexes à la volée. De nombreux utilisateurs sans aucune expérience préalable en programmation créent chaque jour des outils sur mesure pour leur agence.",
+    "claudeDesc2": "Expliquez simplement ce que vous voulez accomplir dans Archicad, partagez la liste des commandes Tapir, et laissez Claude écrire le code Python pour vous. En cas d'erreur, collez simplement le traceback dans Claude, qui le corrigera immédiatement.",
+    "commandListButton": "Liste des commandes ↗",
+    "mcpButton": "Tapir MCP ↗"
+  },
+  "marketplace": {
+    "title": "Tapir Marketplace",
+    "subtitle": "Un endroit pour trouver et partager des scripts Tapir et des add-ons Archicad, conçu pour la communauté et gratuit.",
+    "discoverTitle": "Découvrir & télécharger",
+    "bullet1": "<0>Aucun compte requis :</0> recherchez, filtrez par catégorie ou version d'Archicad, et téléchargez instantanément.",
+    "bullet2": "<0>Vote communautaire :</0> votez pour ce que vous trouvez utile afin de mettre en avant les meilleurs scripts.",
+    "bullet3": "<0>Téléchargements sécurisés :</0> chaque téléchargement est empreinté numériquement et revérifié chaque heure en cas de modification.",
+    "exploreButton": "Explorer la Marketplace ↗",
+    "publishTitle": "Publiez vos propres scripts",
+    "publishDesc1": "La publication nécessite un compte GitHub gratuit. Remplissez un seul formulaire : nom, description, catégorie et lien de téléchargement. Des vérifications automatisées s'exécutent et votre annonce est mise en ligne, généralement en quelques minutes.",
+    "publishDesc2": "<0>Votre annonce vous appartient.</0> Elle est enregistrée sous votre propre nom GitHub. Vous pouvez la modifier ou la supprimer à tout moment.",
+    "publishDesc3": "<0>Soutenez les créateurs.</0> Les scripts peuvent être gratuits, gratuits avec un lien de contribution, ou payants. Dans tous les cas, vous payez l'auteur directement via son propre lien. Le site ne gère jamais de paiement et ne prend aucune commission."
+  },
+  "roadmap": {
+    "title": "Qu'est-ce qui mijote ?",
+    "subtitle": "Les 12 fonctionnalités et idées les plus attendues qui façonnent les prochaines versions de Tapir.",
+    "items": [
+      { "title": "Éléments hiérarchiques complexes", "desc": "Support complet en lecture et écriture des escaliers, toitures et murs-rideaux." },
+      { "title": "Exécution cloud & sans interface", "desc": "Support de l'automatisation côté serveur avec Archicad en mode headless." },
+      { "title": "Dessin autonome par IA", "desc": "Intégration plus poussée avec des agents IA pour des tâches de dessin et de modélisation autonomes." },
+      { "title": "Écouteurs d'événements en temps réel", "desc": "Points d'ancrage API améliorés pour déclencher des scripts instantanément lors de la modification d'éléments." },
+      { "title": "Synchronisation bidirectionnelle avec bases de données", "desc": "Synchronisation transparente des propriétés du modèle avec des bases de données externes comme SQL ou Airtable." },
+      { "title": "Édition des matériaux & composites", "desc": "Capacités étendues pour modifier les matériaux de construction et composites directement via l'API." },
+      { "title": "Génération d'interfaces d'add-on personnalisées", "desc": "Outils intégrés pour créer des boîtes de dialogue Archicad personnalisées avec de simples scripts Python." },
+      { "title": "Automatisation du détail 2D", "desc": "Meilleure gestion des lignes 2D, remplissages et textes pour le détail automatisé." },
+      { "title": "Propriétés utilisateur dynamiques", "desc": "Support pour l'injection de propriétés personnalisées définies par l'utilisateur à l'exécution." },
+      { "title": "Recettes Python prêtes à l'emploi", "desc": "Un écosystème communautaire élargi de scripts d'automatisation Python prêts à brancher." },
+      { "title": "Gestion avancée des erreurs", "desc": "Tracebacks Python et messages d'erreur API améliorés pour un dépannage de script plus facile." },
+      { "title": "Intégration CI/CD directe", "desc": "Workflows transparents pour exécuter des scripts Tapir automatisés dans des pipelines GitHub Actions." }
+    ]
+  },
+  "stats": {
+    "title": "Communauté & dynamique",
+    "subtitle": "Tapir est porté par une communauté open source en pleine accélération sur GitHub et Discord.",
+    "githubCommits": "Commits GitHub",
+    "discordMessages": "Messages Discord",
+    "activeParticipants": "Participants actifs",
+    "growthTitle": "Croissance dans le temps",
+    "chart": {
+      "commits": "Commits",
+      "github": "GitHub",
+      "discord": "Discord"
+    },
+    "momentumTitle": "Dynamique du projet",
+    "momentumDesc1": "La vitesse de développement s'est massivement accélérée au cours de la dernière année. Avec <0>314 issues, pull requests et discussions actives</0> actuellement suivies, et <1>29 contributeurs de code uniques</1> soumettant des correctifs, l'écosystème grandit plus vite que jamais. Le Discord communautaire est devenu un espace dynamique pour tester de nouveaux workflows, signaler des bugs et proposer des idées incroyables pour l'automatisation d'Archicad.",
+    "momentumDesc2": "Qu'il s'agisse de faire le pont avec Grasshopper ou de créer des agents LLM avec le nouveau <0>Tapir MCP</0>, la communauté repousse sans cesse les limites de ce qui est possible dans l'AEC.",
+    "contributorsTitle": "Meilleurs contributeurs de code",
+    "commitsUnit": "commits"
+  },
+  "footer": {
+    "docs": "📖 Documentation & liste des commandes",
+    "github": "💻 Projet GitHub",
+    "discord": "💬 Communauté Discord",
+    "license": "<0>Tapir est un logiciel 100% gratuit et open source</0> (licence MIT).",
+    "maintained": "Maintenu par Enzyme APD et la communauté.",
+    "contact": "Nous contacter",
+    "disclaimer": "Non affilié à Graphisoft. Archicad est une marque déposée de Graphisoft SE."
+  },
+  "langSwitcher": {
+    "label": "Langue"
+  }
+}

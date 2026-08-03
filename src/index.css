@@ -98,6 +98,36 @@ a:hover {
   color: var(--text-primary);
 }
 
+.lang-switcher {
+  display: flex;
+  gap: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.lang-switcher-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.lang-switcher-btn:hover {
+  color: var(--text-primary);
+}
+
+.lang-switcher-btn.active {
+  background-color: var(--accent-muted);
+  color: var(--text-primary);
+}
+
 .hero {
   text-align: center;
   padding: 4rem 0 6rem;

@@ -93,6 +93,7 @@ function App() {
           <a href="#usecases">Use Cases</a>
           <a href="#usecases">Use Cases</a>
           <a href="#learning">Learn & Build</a>
+          <a href="#marketplace">Marketplace</a>
           <a href="#roadmap">What's Cooking</a>
           <a href="#stats">Community</a>
         </div>
@@ -265,6 +266,42 @@ function App() {
       </section>
 
       
+
+      <section id="marketplace" className="section">
+        <div className="section-header">
+          <h2>Tapir Marketplace</h2>
+          <p>A place to find and share Tapir scripts and Archicad add-ons, built for the community and free to use.</p>
+        </div>
+        
+        <div className="grid-2">
+          <div className="feature-card" style={{ padding: "2rem", display: "flex", flexDirection: "column", justifyContent: "space-between", background: "linear-gradient(145deg, rgba(30,30,40,1) 0%, rgba(20,20,30,1) 100%)", borderColor: "var(--accent)" }}>
+            <div>
+              <h3 style={{ fontSize: "1.8rem", marginBottom: "1rem", color: "var(--text-primary)" }}>Discover & Download</h3>
+              <ul style={{ color: "var(--text-primary)", marginBottom: "1.5rem", paddingLeft: "1.5rem", lineHeight: "1.8" }}>
+                <li><strong>No account needed:</strong> Search, filter by category or Archicad version, and download instantly.</li>
+                <li><strong>Community Voting:</strong> Vote for what you find useful to help the best scripts surface.</li>
+                <li><strong>Safe Downloads:</strong> Every download is fingerprinted and re-checked every hour for changes.</li>
+              </ul>
+            </div>
+            <a href="https://tapir-marketplace.vercel.app/" target="_blank" rel="noreferrer" style={{ display: "inline-block", padding: "1rem", backgroundColor: "var(--accent)", color: "#000", textAlign: "center", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "bold", fontSize: "1.1rem" }}>
+              Explore the Marketplace ↗
+            </a>
+          </div>
+
+          <div className="feature-card" style={{ padding: "2rem" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>Publish Your Own Scripts</h3>
+            <p style={{ color: "var(--text-primary)", marginBottom: "1rem" }}>
+              Publishing needs a free GitHub account. Fill in one form: name, description, category, and a download link. Automated checks run and your listing goes live, usually within a couple of minutes.
+            </p>
+            <p style={{ color: "var(--text-primary)", marginBottom: "1rem" }}>
+              <strong>Your listing stays yours.</strong> It is filed under your own GitHub name. You can edit or remove it whenever you like.
+            </p>
+            <p style={{ color: "var(--text-primary)", marginBottom: "1rem" }}>
+              <strong>Support the Creators.</strong> Scripts can be free, free with a contribution link, or paid. In every case, you pay the author directly through their own link. The site never handles a payment or takes a cut.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section id="roadmap" className="section">
         <div className="section-header">

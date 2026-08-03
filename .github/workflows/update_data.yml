@@ -2,7 +2,7 @@ name: Update Community Data
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # Runs at 00:00 every Sunday
+    - cron: '0 0 * * *' # Runs at 00:00 every day
   workflow_dispatch: # Allows manual trigger from the GitHub UI
 
 jobs:

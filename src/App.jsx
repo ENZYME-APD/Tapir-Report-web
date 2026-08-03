@@ -99,7 +99,7 @@ function App() {
       </nav>
 
       <section className="hero">
-        <h1 className="text-gradient">Automate Archicad with Elegance.</h1>
+        <h1 className="text-gradient">Automate Archicad with Ease.</h1>
         <p>
           Tapir is the easiest way to interact with the Archicad JSON/Python API without deep C++ knowledge. 
           Unleash incredible time-saving workflows, generate complex geometries, and integrate your BIM models directly with AI.

@@ -91,6 +91,7 @@ function App() {
           <a href="#about">What is Tapir?</a>
           <a href="#usecases">Use Cases</a>
           <a href="#learning">Learn & Build</a>
+          <a href="#architecture">Architecture & History</a>
           <a href="#roadmap">What's Cooking</a>
           <a href="#stats">Community</a>
         </div>
@@ -179,6 +180,83 @@ function App() {
               <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
                 <a href="https://enzyme-apd.github.io/tapir-archicad-automation/archicad-addon/" target="_blank" rel="noreferrer" style={{ padding: "0.75rem 1.5rem", border: "1px solid var(--accent)", color: "var(--accent)", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "500" }}>Command List ↗</a>
                 <a href="https://pypi.org/project/tapir-archicad-mcp/" target="_blank" rel="noreferrer" style={{ padding: "0.75rem 1.5rem", border: "1px solid var(--border)", color: "var(--text-primary)", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "500" }}>Tapir MCP ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" className="section">
+        <div className="section-header">
+          <h2>Architecture & History</h2>
+          <p>How Tapir works under the hood and how it evolved.</p>
+        </div>
+        
+        <div className="grid-2">
+          <div className="feature-card" style={{ padding: "2rem" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "1.5rem" }}>System Architecture</h3>
+            <p style={{ color: "var(--text-primary)", marginBottom: "2rem" }}>
+              Tapir is built on a robust C++ foundation that exposes Archicad's internal capabilities as an accessible JSON API. This allows multiple different ecosystems to interface with Archicad seamlessly.
+            </p>
+            
+            <div className="architecture-diagram">
+              <div className="arch-layer core">
+                <h4>Archicad</h4>
+                <small>Core Application</small>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div className="arch-layer addon">
+                <h4>Tapir Add-On</h4>
+                <small>C++ JSON API Layer</small>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div className="arch-consumers">
+                <div className="arch-node">
+                  <h4>Grasshopper</h4>
+                  <small>Visual Scripting</small>
+                </div>
+                <div className="arch-node">
+                  <h4>Python</h4>
+                  <small>Automated Scripts</small>
+                </div>
+                <div className="arch-node">
+                  <h4>Tapir MCP</h4>
+                  <small>AI Agents (Claude)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="feature-card" style={{ padding: "2rem" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "1.5rem" }}>Project History</h3>
+            <div className="timeline">
+              <div className="timeline-item">
+                <div className="timeline-date">Phase 1</div>
+                <div className="timeline-content">
+                  <h4>The JSON API Foundation</h4>
+                  <p>Tapir was born out of a need to bypass C++ complexity. The first major milestone was building the C++ Add-On to expose Archicad's core functions as a simple, stateless JSON API.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-date">Phase 2</div>
+                <div className="timeline-content">
+                  <h4>Grasshopper Integration</h4>
+                  <p>To bring the power of Tapir to designers, the team developed the Grasshopper plugin, allowing visual programmers to manipulate Archicad elements parametrically.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-date">Phase 3</div>
+                <div className="timeline-content">
+                  <h4>Community & Python</h4>
+                  <p>The project went fully open-source. A vibrant Discord community emerged, with dozens of contributors building and sharing their own Python automation scripts globally.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-date">Phase 4</div>
+                <div className="timeline-content">
+                  <h4>The AI Era (Current)</h4>
+                  <p>The introduction of the Tapir MCP server enabled AI models like Claude to autonomously interact with Archicad, opening a new frontier of natural-language automation.</p>
+                </div>
               </div>
             </div>
           </div>

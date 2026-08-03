@@ -88,13 +88,12 @@ function App() {
           Tapir
         </a>
         <div className="nav-links">
-          <a href="#about">What is Tapir?</a>
-          <a href="#architecture">Architecture & History</a>
+          <a href="#about">About</a>
+          <a href="#architecture">Architecture</a>
           <a href="#usecases">Use Cases</a>
-          <a href="#usecases">Use Cases</a>
-          <a href="#learning">Learn & Build</a>
+          <a href="#learning">Learn</a>
           <a href="#marketplace">Marketplace</a>
-          <a href="#roadmap">What's Cooking</a>
+          <a href="#roadmap">Roadmap</a>
           <a href="#stats">Community</a>
         </div>
       </nav>

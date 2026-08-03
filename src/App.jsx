@@ -90,7 +90,7 @@ function App() {
         <div className="nav-links">
           <a href="#about">What is Tapir?</a>
           <a href="#usecases">Use Cases</a>
-          <a href="#ai-scripting">Build with AI</a>
+          <a href="#learning">Learn & Build</a>
           <a href="#roadmap">What's Cooking</a>
           <a href="#stats">Community</a>
         </div>
@@ -148,30 +148,39 @@ function App() {
         </div>
       </section>
 
-      <section id="ai-scripting" className="section">
+      <section id="learning" className="section">
         <div className="section-header">
-          <h2>Create Scripts with Claude</h2>
-          <p>You don't need to be a Python expert to build incredible automations.</p>
+          <h2>Learn & Build</h2>
+          <p>Everything you need to master Archicad automation, from video guides to AI scripting.</p>
         </div>
         
         <div className="grid-3">
+          <div className="feature-card" style={{ padding: "2rem", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div>
+              <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>Video Tutorials</h3>
+              <p style={{ color: "var(--text-primary)", marginBottom: "1.5rem" }}>
+                Prefer visual learning? Check out our comprehensive YouTube playlist covering everything from installation to building your first automation scripts.
+              </p>
+            </div>
+            <a href="https://youtube.com/playlist?list=PLGc943dgyfjjqzeFglpYLIPrcn_HFicDn&si=60f57YfregEnND9A" target="_blank" rel="noreferrer" style={{ display: "inline-block", padding: "1rem", backgroundColor: "#ff0000", color: "#fff", textAlign: "center", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "bold" }}>
+              ▶ Watch on YouTube
+            </a>
+          </div>
+
           <div style={{ gridColumn: "span 2" }}>
-            <div className="feature-card" style={{ height: "100%", justifyContent: "center" }}>
+            <div className="feature-card" style={{ height: "100%", padding: "2rem" }}>
+              <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>Create Scripts with Claude</h3>
               <p style={{ marginBottom: "1.5rem", fontSize: "1.1rem", color: "var(--text-primary)" }}>
                 The Tapir community is heavily utilizing AI models like Claude to generate complex scripts on the fly. Many users with zero prior coding experience are building tailored tools for their offices every single day.
               </p>
-              <p>
+              <p style={{ marginBottom: "1.5rem" }}>
                 Simply explain what you want to achieve in Archicad, share the Tapir command list, and let Claude write the Python code for you. If an error occurs, just paste the traceback back into Claude, and it will fix it immediately.
               </p>
+              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+                <a href="https://enzyme-apd.github.io/tapir-archicad-automation/archicad-addon/" target="_blank" rel="noreferrer" style={{ padding: "0.75rem 1.5rem", border: "1px solid var(--accent)", color: "var(--accent)", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "500" }}>Command List ↗</a>
+                <a href="https://pypi.org/project/tapir-archicad-mcp/" target="_blank" rel="noreferrer" style={{ padding: "0.75rem 1.5rem", border: "1px solid var(--border)", color: "var(--text-primary)", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "500" }}>Tapir MCP ↗</a>
+              </div>
             </div>
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-            <a href="https://enzyme-apd.github.io/tapir-archicad-automation/archicad-addon/" target="_blank" rel="noreferrer" className="feature-card" style={{ padding: "1.5rem", flexGrow: "0", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid var(--accent)", color: "var(--accent)", textDecoration: "none" }}>
-              <h3 style={{ margin: 0 }}>Command List (Feed to AI) ↗</h3>
-            </a>
-            <a href="https://pypi.org/project/tapir-archicad-mcp/" target="_blank" rel="noreferrer" className="feature-card" style={{ padding: "1.5rem", flexGrow: "0", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid var(--border)", color: "var(--text-primary)", textDecoration: "none" }}>
-              <h3 style={{ margin: 0 }}>Tapir MCP (For Agents) ↗</h3>
-            </a>
           </div>
         </div>
       </section>
@@ -284,7 +293,7 @@ function App() {
         <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
           <a href="https://enzyme-apd.github.io/tapir-archicad-automation/archicad-addon/" target="_blank" rel="noreferrer">📖 Documentation & Command List</a>
           <a href="https://github.com/enzyme-apd/tapir-archicad-automation" target="_blank" rel="noreferrer">💻 GitHub Project</a>
-          <a href="https://discord.gg/archicad-api-grasshopper" target="_blank" rel="noreferrer">💬 Discord Community</a>
+          <a href="https://discord.gg/FZAM7Fbg7C" target="_blank" rel="noreferrer">💬 Discord Community</a>
         </div>
         <p>Built for the Tapir Community.</p>
       </footer>

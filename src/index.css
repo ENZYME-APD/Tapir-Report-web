@@ -176,7 +176,7 @@ a:hover {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
 }
 
@@ -378,4 +378,26 @@ a:hover {
   color: var(--text-secondary);
   border-top: 1px solid var(--border);
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .stat-card {
+    min-width: 100%;
+  }
 }

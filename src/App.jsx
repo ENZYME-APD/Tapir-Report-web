@@ -70,7 +70,7 @@ function App() {
     const formattedData = sortedData.map(item => {
       const [year, month] = item.name.split('-');
       const date = new Date(year, month - 1);
-      const monthName = date.toLocaleString('default', { month: 'short' });
+      const monthName = date.toLocaleString('en-US', { month: 'short' });
       return {
         ...item,
         name: `${monthName} '${year.slice(2)}`
@@ -104,7 +104,7 @@ function App() {
         </div>
         <h1 className="text-gradient">Automate Archicad with Ease.</h1>
         <p>
-          <strong>From the users, to the community.</strong> Tapir is the easiest way to interact with the Archicad JSON/Python API without deep C++ knowledge. 
+          <strong>From the users, to the community.</strong> Tapir is an open-source bridge connecting Archicad to the modern development ecosystem (Python, Grasshopper, and AI) without requiring deep C++ knowledge. 
           Unleash incredible time-saving workflows, generate complex geometries, and integrate your BIM models directly with AI.
         </p>
         <div className="hero-buttons">
@@ -415,7 +415,11 @@ function App() {
           <a href="https://github.com/enzyme-apd/tapir-archicad-automation" target="_blank" rel="noreferrer">💻 GitHub Project</a>
           <a href="https://discord.gg/FZAM7Fbg7C" target="_blank" rel="noreferrer">💬 Discord Community</a>
         </div>
-        <p>Built for the Tapir Community.</p>
+        <div style={{ color: "var(--text-secondary)", fontSize: "0.85rem", lineHeight: "1.6" }}>
+          <p><strong>Tapir is 100% Free and Open Source software</strong> (MIT License).</p>
+          <p>Maintained by Enzyme APD and the community. <a href="mailto:contact@enzyme-apd.com" style={{color: "var(--accent)"}}>Contact Us</a></p>
+          <p style={{ marginTop: "1rem", opacity: 0.7 }}>Not affiliated with Graphisoft. Archicad is a trademark of Graphisoft SE.</p>
+        </div>
       </footer>
     </div>
   );

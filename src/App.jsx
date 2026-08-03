@@ -83,10 +83,10 @@ function App() {
   return (
     <div className="container">
       <nav className="navbar">
-        <div className="logo">
+        <a href="#" className="logo" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }}>
           <img src="/tapir-logo.svg" alt="Tapir Logo" className="logo-icon-img" />
           Tapir
-        </div>
+        </a>
         <div className="nav-links">
           <a href="#about">What is Tapir?</a>
           <a href="#architecture">Architecture & History</a>

@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python Dependencies
-        run: pip install discord.py requests
+        run: pip install discord.py requests PyGithub
 
       - name: Run Discord Scraper
         env:

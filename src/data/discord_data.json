@@ -8,14 +8,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/994705523486248980"
   },
   {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2022-07-07T20:44:37.534000+00:00",
-    "content": "Welcome everyone to the tAPIr community!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/994705523486248980"
-  },
-  {
     "channel": "events",
     "server": "archicad-api-grasshopper",
     "author": "nathanhildebrandt",
@@ -94,22 +86,6 @@
     "created_at": "2022-07-13T09:57:13.457000+00:00",
     "content": "Hi, just starting to have a look at the Archicad API.  Thanks so much for doing this important work.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/996716926812307527"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "sebastian_monroe",
-    "created_at": "2022-07-13T09:57:13.457000+00:00",
-    "content": "Hi, just starting to have a look at the Archicad API.  Thanks so much for doing this important work.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/996716926812307527"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "sebastian_monroe",
-    "created_at": "2022-07-13T10:30:54.655000+00:00",
-    "content": "Found it. Done.  See you there.  This will project will help so much.  I guess I better get my skates on and continue learning python.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/996725404331163688"
   },
   {
     "channel": "welcome-and-rules",
@@ -198,22 +174,6 @@
     "created_at": "2022-07-14T23:53:43.010000+00:00",
     "content": "I didn't. thought it might not be a good idea before trying to sleep. but would be great to watch the recording - if there will be one",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/997289824920801323"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "tonykrepler",
-    "created_at": "2022-07-14T23:53:43.010000+00:00",
-    "content": "I didn't. thought it might not be a good idea before trying to sleep. but would be great to watch the recording - if there will be one",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/997289824920801323"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": ".francoiss",
-    "created_at": "2022-07-15T05:44:35.024000+00:00",
-    "content": "Hi #tAPIr I actually thought I had joined already. Anyway I'm glad to be here now and catch up on all that I missed. \nLooks like I missed the important #kickof from 2 days ago, is there a recording perhaps <@423113258229039105>?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/997378123467325480"
   },
   {
     "channel": "welcome-and-rules",
@@ -386,34 +346,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2022-08-18T11:49:10.773000+00:00",
-    "content": "@everyone For all the new joiners, would you mind to do a brief introduction of yourselves, what kind of work you do, if you use archicad and/or Grasshoper, what brought you to this took, what would you use it for, and last but not least, if you have any coding skills and time to give us a hand \ud83e\udd1a\u263a\ufe0f",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1009791064439271465"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "observisualize",
     "created_at": "2022-08-18T18:01:17.714000+00:00",
     "content": "I will intro because I hope to gain a lot of insight in this forum and participate somehow! My name is Meghan Beckmann - I\u2019m an architect and Director of Design Technology at KAA Design in Los Angeles (high end custom residential). We\u2019re Mac + Archicad based. A little Grasshopper, only a couple experts. \nI\u2019m super interested in automation right now \u2014 longer term goal to automate as much workflow as possible so exploring what options are available inside archicad plus with Grasshopper, Python, tAPIr, and any other avenues. Right now we\u2019re doing a 4-week python R&D project to research and develop scripts for use with the AC python palette. It\u2019s been both rewarding and challenging, not finding much up-to-date documentation or support online.\nHoping to learn from this tool, from this forum, and meet others excited about similar possibilities!",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1009884710417203230"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2022-08-18T18:01:17.714000+00:00",
-    "content": "I will intro because I hope to gain a lot of insight in this forum and participate somehow! My name is Meghan Beckmann - I\u2019m an architect and Director of Design Technology at KAA Design in Los Angeles (high end custom residential). We\u2019re Mac + Archicad based. A little Grasshopper, only a couple experts. \nI\u2019m super interested in automation right now \u2014 longer term goal to automate as much workflow as possible so exploring what options are available inside archicad plus with Grasshopper, Python, tAPIr, and any other avenues. Right now we\u2019re doing a 4-week python R&D project to research and develop scripts for use with the AC python palette. It\u2019s been both rewarding and challenging, not finding much up-to-date documentation or support online.\nHoping to learn from this tool, from this forum, and meet others excited about similar possibilities!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1009884710417203230"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2022-08-18T18:04:19.885000+00:00",
-    "content": "Hopefully we can share some knowledge here in this forum regarding other automation methods!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1009885474497757294"
   },
   {
     "channel": "welcome-and-rules",
@@ -474,22 +410,6 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "eddy_cheaks",
-    "created_at": "2022-08-19T09:38:17.324000+00:00",
-    "content": "Hello everyone,\nI am Eddy, I am  a passionate Archicad and Rhino/Grasshopper user. Just got addicted by the level of control you can reach with algorithms. Learned a lot from the Enzyme blog, thank you again for your work! \ud83d\ude04\nCurrently studying in ICD/ITKE Stuttgart. So working on my computational skills to be able to contribute! \ud83d\ude04",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1010120512552316998"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2022-08-19T09:40:21.349000+00:00",
-    "content": "Thank you <@788149951757942795> for introducing yourself! Nice meeting you and hope this forum can be of use to connect archicad users interested in computational design and automations!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1010121032750870548"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2022-08-19T09:40:21.349000+00:00",
     "content": "Thank you <@788149951757942795> for introducing yourself! Nice meeting you and hope this forum can be of use to connect archicad users interested in computational design and automations!",
@@ -530,34 +450,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "hsassi.",
-    "created_at": "2022-08-22T18:47:32.381000+00:00",
-    "content": "Hi everyone! I am Hetman Sassi from Belfort, France. A few years ago, I studied physics and learned the `basics` of Python programming. Today I'm an Archicad designer and project manager for residential houses. My goal is to improve my computational design and automation skills so that I can be more efficient, save time and create more. \n\nParallel to my day job, I enrolled in a master's program in BIM in May. I am confident that the tAPIr project will be of high quality since several members of this community are my lecturers <@423113258229039105> <@995006350365036655> <@456226577798135808>.\n\nI am ready to contribute as much as I can. A list of specific tasks with descriptions of the required skills and levels of difficulty would be interesting <@423113258229039105> <@900814845191000115>",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1011345899676504245"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "fernando_lazaro",
     "created_at": "2022-08-23T17:39:30.851000+00:00",
     "content": "Hi everyone! I\u2019m Fernando L\u00e1zaro from Seville, Spain. An architect with concerns in everything related to connectivity between Archicad and other software, although my beginnings in programming were decades ago, I have resumed the concern for languages such as Phyton. Wanting to learn and contribute my little knowledge in the tAPIr project.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1011691168364494948"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "fernando_lazaro",
-    "created_at": "2022-08-23T17:39:30.851000+00:00",
-    "content": "Hi everyone! I\u2019m Fernando L\u00e1zaro from Seville, Spain. An architect with concerns in everything related to connectivity between Archicad and other software, although my beginnings in programming were decades ago, I have resumed the concern for languages such as Phyton. Wanting to learn and contribute my little knowledge in the tAPIr project.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1011691168364494948"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "carlosg2vaz",
-    "created_at": "2022-08-23T18:17:45.128000+00:00",
-    "content": "Hello, Hola, Ola. My name is Carlos Garc\u00eda from Galicia, Spain. I started to use Archicad in order to finish my thesis master project in School architecture from La Coru\u00f1a 6 years ago... And after 6 years walking across AutoCAD desert use I began to work with Archicad other time. My interests are Bim applied to Heritage, Bim to building energy modeling, and Managment Data. I work briefly with GDL and, rhino and grashopper but certainly I trust potential work with this workflow, in orden to get better muy diary job. I Hope that I could ti learn and help in this project.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1011700791259713567"
   },
   {
     "channel": "welcome-and-rules",
@@ -578,34 +474,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2022-08-24T07:02:53.085000+00:00",
-    "content": "Hello everyone! I am M\u00e1t\u00e9 Szamosi from Budapest, Hungary. I have been using ArchiCAD for over a decade now. My role has slowly shifted from architect to BIM manager these years, and around 2 years ago when COVID hit I leant a bit of programming. I really love the logic and algorithmic thinking involved, so I wanted to implement it to daily work. I have picked up Python to use the ArchiCAD API (I am not actually using it, I think it is too limited on it\u2019s own), Grasshopper for the AC connection, and for my current project I learnt a bit of GDL (I resisted for a long time. GDL is anything but sexy as a language...) to use in conjunction with Grasshopper. \nI have made a few Grasshopper components during project work that use the JSON API. They worked for the specific projects, but I never had time to make a full library of them that anyone can use besides me. Therefore I am really happy that you made this project to do the much-needed work. \nI would love to contribute to scripting, but I don\u2019t know yet how much time I will have, so I will stick to lurking and familiarizing myself with the code. However, I will definitely try to find opportunities to use Tapir in my daily work and provide feedback.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1011893343187386378"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "thekaushikls",
     "created_at": "2022-08-25T05:29:45.522000+00:00",
     "content": "Welcome to the group <@558945647085223946> \n\nWould be interesting to know which tasks you felt were tedious, and automated in the past. Maybe it can be added to/already a part of Tapir's roadmap.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1012232295115132970"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2022-08-25T05:29:45.522000+00:00",
-    "content": "Welcome to the group <@558945647085223946> \n\nWould be interesting to know which tasks you felt were tedious, and automated in the past. Maybe it can be added to/already a part of Tapir's roadmap.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1012232295115132970"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "goncalovalente.",
-    "created_at": "2022-08-25T11:12:49.787000+00:00",
-    "content": "Hello everyone.\nToday I saw <@423113258229039105> Graphisoft Talk presentation. I tested tAPIr and what pleased me the most was being able manage Archicad data in Grasshopper, with more than one AC,  without live connection turned on  (which doesn't work very well for me, slow and unstable). Amazing tAPIr and the idea of making it public, for Archicad Lover. Congratulations!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1012318631780167700"
   },
   {
     "channel": "welcome-and-rules",
@@ -630,22 +502,6 @@
     "created_at": "2022-08-31T11:26:48.687000+00:00",
     "content": "Thanks <@840956366989951037>\nSadly I don\u2019t have too many finished GH projects that uses the JSON API, but here are some:\n\u2022    script that numbers elements along a polyline + additional logic (mostly used for zones)\n\u2022    script that reads ceiling height and writes it into the zones\nPlanned next:\n\u2022    a more generalized \u201ebridge\u201d between zones and elements in them. For example setting the floor cover type parameter of the zone according tot he surface of the floor element, or related zone number parameter of things when ArchiCAD fails",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1014496477575389248"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2022-08-31T11:26:48.687000+00:00",
-    "content": "Thanks <@840956366989951037>\nSadly I don\u2019t have too many finished GH projects that uses the JSON API, but here are some:\n\u2022    script that numbers elements along a polyline + additional logic (mostly used for zones)\n\u2022    script that reads ceiling height and writes it into the zones\nPlanned next:\n\u2022    a more generalized \u201ebridge\u201d between zones and elements in them. For example setting the floor cover type parameter of the zone according tot he surface of the floor element, or related zone number parameter of things when ArchiCAD fails",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1014496477575389248"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2022-08-31T11:29:56.850000+00:00",
-    "content": "If things go well (not many SOS bim TODOs) I will use tAPIr for that",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1014497266788204554"
   },
   {
     "channel": "welcome-and-rules",
@@ -768,22 +624,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1035106907012214814"
   },
   {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "sihans",
-    "created_at": "2022-10-27T08:25:17.988000+00:00",
-    "content": "Hello !! I am Dani from Granada, Spain. I am an expert BIM modeled with Archicad and Grasshopper learned. I saw tAPIr and I am so exited to know about it and share all I can ^^",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1035106907012214814"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-10-27T14:29:45.864000+00:00",
-    "content": "The wrong project is public now, please make the one named \"tAPIr Roadmap\" public",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1035198627531997194"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "kovacsv",
@@ -802,34 +642,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "night.disc",
-    "created_at": "2022-10-28T07:10:19.399000+00:00",
-    "content": "Hi guys,\nI'm an architect based in Romania. Been using Archicad for about 10 years now. I've found you guys through my boss and the bim talks & building together presentation. I've recently started learning how to code some javascript to get a hang of the basics of coding then i'll probably move on to gdl&python. I've used rhino&grasshopper before (mostly in school) and am really excited to see how tapir develops. As i learn more i'll do my best to contribuite in time.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1035450426427977759"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "bawartanay",
     "created_at": "2022-10-28T17:45:35.150000+00:00",
     "content": "Hi there everyone,\n\nMy name is Bawar Tanay living in the Netherlands, owner at studio Infinite a firm which helps architects in their struggles of archicad and bim. \n\nI am always in search of knowledge and innovation, I am teaching archicad right now to 3 small firms and being a partime bim manager at a firm of around 20 - 25 people. \n\nUnfortunately no real coding skills but trying to learn phyton. \n\nI hope I can be of any help to you guys, and would love to learn from you.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1035610295474860102"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "bawartanay",
-    "created_at": "2022-10-28T17:45:35.150000+00:00",
-    "content": "Hi there everyone,\n\nMy name is Bawar Tanay living in the Netherlands, owner at studio Infinite a firm which helps architects in their struggles of archicad and bim. \n\nI am always in search of knowledge and innovation, I am teaching archicad right now to 3 small firms and being a partime bim manager at a firm of around 20 - 25 people. \n\nUnfortunately no real coding skills but trying to learn phyton. \n\nI hope I can be of any help to you guys, and would love to learn from you.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1035610295474860102"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2022-10-31T08:01:20.843000+00:00",
-    "content": "If you are an ArchiCAD user, then you can try testing what we have, and give feedbacks.\n\nIf you are interested in grasshopper, you can test the plugins as well.\n\nIf you're interested in python, we can talk about what is going on, and which part is interesting for you to work on.\n(Core / creating new methods / creating grasshopper plugin / etc.)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1036550430651596850"
   },
   {
     "channel": "welcome-and-rules",
@@ -1048,14 +864,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1040452972271898644"
   },
   {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "hteguh",
-    "created_at": "2022-11-11T02:28:39.271000+00:00",
-    "content": "Hi there!\n\nMy name is Hendriko currently living in Singapore, currently, I am exploring the possibilities of computational BIM with the ArchiCAD platform as a base. I am looking forward to learning from you all, and contributing whenever I can. Cheers! \n\nI have been using the ArchiCAD - Grasshopper live connection quite extensively, and about to be trying out Tapir to enhance the experience.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1040452972271898644"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "aitorleceta",
@@ -1110,14 +918,6 @@
     "created_at": "2022-11-15T09:49:20.545000+00:00",
     "content": "It was a good chance to understand the background process that goes into expanding tAPIr functions.",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1042013426475618365"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "iagopenamar",
-    "created_at": "2022-11-16T17:04:43.139000+00:00",
-    "content": "Hi!\nI'm Iago Pena from Galicia (Spain).\nI'm Archicad user since 2009. \nNow I'm trying to improve skills to automate tasks in the development of projects. Cheers!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1042485380441714719"
   },
   {
     "channel": "welcome-and-rules",
@@ -1246,14 +1046,6 @@
     "created_at": "2022-11-20T19:55:25.366000+00:00",
     "content": "I have been working also in this branch,  so also contains two new methods from json api",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043977890917781544"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jhallgarth",
-    "created_at": "2022-11-21T15:28:02.563000+00:00",
-    "content": "I definitely think it will! I always have ideas for automating different tasks in Archicad, but lacking those technical skills to make it happen. I'll be diving in over the winter and hope to come out the other side a bit smarter:) Thanks for your efforts here",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1044272990390595604"
   },
   {
     "channel": "welcome-and-rules",
@@ -1576,30 +1368,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1069310990224723999"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2023-02-12T20:57:27.920000+00:00",
-    "content": "This can be achieved with label. We already developed one that does it but \u201eschedul-able\u201d",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1074434085151322284"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2023-02-13T00:26:31.994000+00:00",
-    "content": "I am going to make a template to sibmit issues / feature requests. It will be nice to get more details on features, and steps-to-replicate the issue user faces.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1074486698811076738"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2023-02-13T18:38:05.337000+00:00",
-    "content": "I've added a command to the Archicad Add-On to get physical properties of building materials: `GetBuildingMaterialPhysicalProperties`. Works the same as the official `GetBuildingMaterialAttributes` command. See the documentation for more details: https://enzyme-apd.github.io/tapir-archicad-automation/archicad-addon",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1074761397801582642"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "kovacsv",
@@ -1632,14 +1400,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1075452825229856838"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2023-02-16T07:27:28.143000+00:00",
-    "content": "No, it doesn't. I think for transferring attributes the Attribute Manager works pretty well. Do you have any specific request that can't be achieved by Attribute Manager?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1075679794374656040"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "grzegorzwilk",
@@ -1670,118 +1430,6 @@
     "created_at": "2023-02-16T11:39:24.201000+00:00",
     "content": "here you can find a function for calling tapir command: https://github.com/ENZYME-APD/tapir-archicad-automation/blob/main/archicad-addon/Examples/aclib/__init__.py\nand an example using it: https://github.com/ENZYME-APD/tapir-archicad-automation/blob/main/archicad-addon/Examples/building_material_props.py",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1075743195717173318"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": ".francoiss",
-    "created_at": "2023-02-17T12:53:04.682000+00:00",
-    "content": "Yes Victor, in Attribute Manager we can only add new attributes / update existing attributes by name or index no. \nWhat we can not do is switch / replace one attribute with another in an elements of the model that is open \nie. we have a source file with a model (done in another template / a concept model with just a Basic walls)\n>> In the Source file: the wall geometry type is set to \"Basic\", the width is set to 230mm, the Structural Function is set to \"Load-Bearing\" and the Position is set to \"Exterior\".\n>> In the Destination file: I want to change this wall type to \"Composite\" and assign a suited Wall Composite from the new file's Attributes that is a closest match to the 230mm width for the structural skins of the Wall Composite (excluding the widths of the Composite skins set to \"finish\" & \"other\")\nI want to automate this with GH / Python scripts if possible?\nThis would be helpful in cases to quickly & consistently upgrade old files to new template setup or upgrade client files to to our template standards.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076124124423929878"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2023-02-17T15:54:24.163000+00:00",
-    "content": "Are there any components/scripts that can calculate Bounding Box *relative* to an angle? Here's the issue ... our Zone Dimension python script calculates xMax - xMin and yMax - yMin to get the height and width of the Zone. But when the plan view is rotated, the Bounding Box is calculated orthogonally to the absolute coordinates, not the plan rotation (producing the wrong lengths).",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076169756274606131"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2023-02-17T16:22:56.257000+00:00",
-    "content": "No, we dont have such a component. If we import the geometry from Archicad to Rhino, then it is possible.\n\n<@844197976430608424> is it possible to send geometry to rhino?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076176937317306410"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2023-02-17T16:31:07.735000+00:00",
-    "content": "That makes sense because it seems like the Bounding Box is not the same as the geometry. If the Zone Stamp is outside of the Zone, that also makes the Bounding Box larger. \nWe could figure out the math if we could get the Zone's corner coordinates - but it doesn't seem possible to get such geometry information from current API.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076178998725460109"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2023-02-17T16:32:45.861000+00:00",
-    "content": "Our current workaround is to literally rotate the zones, run the script, rotate the zones back. But this step works against our goal of automation! \ud83d\ude42",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076179410295734354"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2023-02-17T16:46:38.020000+00:00",
-    "content": "is there any 'Plane' object in ArchiCAD?\n\nHow this usually works is, the boundingbox is always aligned to worldXY. So, if there is some Plane which can be extracted, then the box can be aligned to that plane.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076182900623556730"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2023-02-17T16:56:04.347000+00:00",
-    "content": "Hmm, so maybe a plane that could represent the plan's custom angle? If it can't come from the Zone geometry itself, the only planar element (zero thickness) i can think of is a Morph Plane. There's an Editing Plane function but it's temporary so I'm not sure if it's helpful or possible to \"get\".",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076185275971149896"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2023-02-17T17:02:43.197000+00:00",
-    "content": "Do you think this is worth adding to the Tapir wishlist for investigation? \nAs a side note, I self-installed the original Tapir files (last August) but may need an updated version - I'll review documentation.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076186948869312553"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2023-02-17T17:18:48.914000+00:00",
-    "content": "I think it would be nice to get the entire geometry from archicad.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076190999379968141"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "nathanhildebrandt",
-    "created_at": "2023-02-17T21:01:50.673000+00:00",
-    "content": "Maybe part of the solution would be to do something similar that I have done in the past is to have a simple composite for the generic walls (so you can just switch them out easily. It means if you have your simple generic composite as core and then when you switch in your new composite the reference line sticks to the core. That was how we needed it to work anyway. \n\nNow that doesn\u2019t solve the issues with BMAT index numbers and BMAT being different in the files. But it is something to consider. \n\nThe problem with Attribute index\u2019s are so big I build my templates with everything in place except for composites which are custom to each project.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076247126545268818"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2023-02-17T22:22:41.949000+00:00",
-    "content": "My guess is that it's possible with the current python API, but needs some checking if the required built-in properties are available and work. No out-of-the-box solution though.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076267474271600750"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2023-02-17T22:29:17.340000+00:00",
-    "content": "It's a tricky question. There is no such thing as \"geometry of an element\" in Archicad. The final geometry depends on a lot of factors (like renovation status, layer intersection classes, partial structure display, etc.). The only possible thing is to get the geometry that is currently visible in 2D/3D, but it's doable.\n\nI think it would be a nice addition to get the geometry for simulations and stuff like that. The hardest part is to agree on the format (maybe dotbim? https://dotbim.net/).",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1076269132661669898"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2023-02-21T19:15:22.200000+00:00",
-    "content": "hey guys - i worked with a mathematician friend on the equation for calculating sides of rotated rectangles, and i translated it into python. i'm sharing the code here in case it becomes helpful for your efforts. \nright now angle requires hard coding or user input, but i intend to make it into a custom property instead until i find an even more automated solution",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1077669882809819246"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "carlosm8351",
-    "created_at": "2023-02-22T16:27:26.847000+00:00",
-    "content": "Seems to be a problem with the \"Zone_ZoneCategoryCode\" property. It can't be set with \"SetPropertyValue\" node, the value doesn't change, I don't know why. Anyone has tried it?\nAlso, the \"Read csv File\" node returns \"1\" instead \"01\".",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1077990011582025939"
   },
   {
     "channel": "dev-python-package",
@@ -2104,22 +1752,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1086191645277569106"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2023-03-20T15:17:44.183000+00:00",
-    "content": "@everyone \nDo You know nodezator? General purpose python node editor\nhttps://nodezator.com/",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1087394552723292294"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "michau.be",
-    "created_at": "2023-03-24T08:02:25.454000+00:00",
-    "content": "Hi everyone,\n\nMy name is Micha\u0142, and I'm an architect based in Warsaw, Poland. Currently, I'm attending post-graduate studies in BIM at the Warsaw University of Technology to expand my knowledge about BIM.\n\nI'm using Archicad profiessionalny for about 3 years, and Grasshopper for only few months but i'love it!\n\nI learned about tAPIr last week when I attended the Grasshopper meeting in Warsaw and saw Grzegorz's presentation. I think it's a great idea, I just installed it and I'm starting testing. Unfortunately, I don't have any programming experience, but I would still like to contribute to its development in some way.\n\nCheers,\nMicha\u0142",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1088734554296160276"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "michau.be",
@@ -2240,14 +1872,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1089280167270166618"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": ".francoiss",
-    "created_at": "2023-03-26T09:03:40.877000+00:00",
-    "content": "Hi all, this is not for a particular idea, but wOW! how mind blowing is this (just watch the video)\nAnd seeing things like this just broadens my thinking and approach.\nGitHub - gd3kr/BlenderGPT: Use commands in English to control Blender with OpenAI's GPT-4\nhttps://github.com/gd3kr/BlenderGPT",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1089474745868759091"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": ".fabioan",
@@ -2286,14 +1910,6 @@
     "created_at": "2023-03-27T07:22:44.312000+00:00",
     "content": "<@!844197976430608424>  do You know who in GS was a chef of python api. Developemnet team?",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1089811730659541133"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": ".francoiss",
-    "created_at": "2023-03-27T18:22:15.172000+00:00",
-    "content": "Hello <@900814845191000115>  & <@844197976430608424> can tAPIr help with defining custom file names when we publish ie. PDFs, and perhaps using Project Info / Property fields as parameters to align with the #ISO19650 container identification: \ud835\udde3\ud835\uddff\ud835\uddfc\ud835\uddf7\ud835\uddf2\ud835\uddf0\ud835\ude01 - \ud835\udde2\ud835\uddff\ud835\uddf6\ud835\uddf4\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\ude01\ud835\uddfc\ud835\uddff - \ud835\udde9\ud835\uddfc\ud835\uddf9\ud835\ude02\ud835\uddfa\ud835\uddf2 - \ud835\udddf\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddf9 - \ud835\udde7\ud835\ude06\ud835\uddfd\ud835\uddf2 - \ud835\udde5\ud835\uddfc\ud835\uddf9\ud835\uddf2 - \ud835\udde1\ud835\ude02\ud835\uddfa\ud835\uddef\ud835\uddf2\ud835\uddff _ \ud835\udde5\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\ude00\ud835\uddf6\ud835\uddfc\ud835\uddfb?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1089977702875930654"
   },
   {
     "channel": "dev-python-package",
@@ -2560,14 +2176,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1104516468420395039"
   },
   {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": ".jvdh",
-    "created_at": "2023-05-06T21:14:06.995000+00:00",
-    "content": "Hi all,\n\nMy name is Joeri and I'm an architect based in the Netherlands. Worked with Archicad for about 8 years and exploring the connection with GH for 2 years now in my spare time. I would consider myself an intermediate python coder. Not too much experience but I'm using it a lot in Grasshopper. \n\nUnfortunately, the more I work with the basic ArchiCad - GH connection, the more limitations I encouter. Thus my search for a more deep-dive approach of this software connection began and I stumbled upon tAPIr and this discord. Still discovering this community at the moment, so I'm excited to see how it works out!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1104516468420395039"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "pablo_ferrer",
@@ -2598,14 +2206,6 @@
     "created_at": "2023-05-24T10:46:20.101000+00:00",
     "content": "Anyone knows the workflow to achieve that?\nhttps://www.linkedin.com/posts/iyur_archicad-notion-archicad-activity-7013559152090189824-x7v6?utm_source=share&utm_medium=member_desktop",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1110881463597023302"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "1yur",
-    "created_at": "2023-05-25T10:12:29.865000+00:00",
-    "content": "Hi guys\nI'm Ihor, BIM specialist from Kyiv, Ukraine. I was aware about the development, but finally decided to join this channel",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1111235336035631164"
   },
   {
     "channel": "welcome-and-rules",
@@ -2650,34 +2250,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "_hque",
-    "created_at": "2023-06-23T08:41:57.496000+00:00",
-    "content": "Hi everybody, \nMy name is Niklas and I am educated as a Structural Engineer in Germany. Now I am doing software development, mostly web-development (TypeScript, Three.js, Node.js, ...).\nI don't have so much experience in ArchiCAD but since my company is looking for ways to export its custom logic to other software I came across tAPIr for ArchiCAD and I am very impressed!\n\nFrom my very naive point of view I'd have a first question: Is it possible to create an ArchiCAD file, create elements (Walls, Slabs, ..) or map my custom elements to them and export the file by using tAPIr or the ArchiCAD JSON API directly in a web app?\n\nI am looking forward to connect!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1121721799131025520"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "kovacsv",
     "created_at": "2023-06-23T18:15:29.785000+00:00",
     "content": "No, for that purpose you probably need to write a custom Archicad Add-On. There is a possibility to open an embedded browser and communicate with your site in Archicad via JavaScript, but you need to write some C++ code to do that.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1121866134732415078"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2023-06-23T18:15:29.785000+00:00",
-    "content": "No, for that purpose you probably need to write a custom Archicad Add-On. There is a possibility to open an embedded browser and communicate with your site in Archicad via JavaScript, but you need to write some C++ code to do that.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1121866134732415078"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2023-06-23T18:18:05.009000+00:00",
-    "content": "If you want to export something from your web app and import it in Archicad your best bet is IFC, since it creates native Archicad elements during import most of the times.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1121866785789054997"
   },
   {
     "channel": "welcome-and-rules",
@@ -3290,34 +2866,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
-    "created_at": "2024-03-16T22:35:38.804000+00:00",
-    "content": "Hello all, I am interested in what is possible in Archicad in terms of connecting it to Grasshopper and  am looking forward to hearing your experiences about it. I have a Grasshopper script that I want to run in Archicad without opening the script in Grasshopper separately. I am not sure about the process, what I want to do is that I add some input from Archicad for example select the floor and window, run the script, and see the result in Archicad. So we can say the script itself becomes a plug-in. Do you have any experience with it?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218689163818434672"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "blue.tomato.cultivator",
     "created_at": "2024-03-17T00:44:03.711000+00:00",
     "content": "<@858022371273211905> If you want to run a GH script without GH then all you need is  some magic powder.\n\nIf you want to run something natively inside AC like a plugin you would most likely have to create one. Of course, there is also the Python Interface but just for .py scripts.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218721480540684409"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "blue.tomato.cultivator",
-    "created_at": "2024-03-17T00:44:03.711000+00:00",
-    "content": "<@858022371273211905> If you want to run a GH script without GH then all you need is  some magic powder.\n\nIf you want to run something natively inside AC like a plugin you would most likely have to create one. Of course, there is also the Python Interface but just for .py scripts.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218721480540684409"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
-    "created_at": "2024-03-17T08:39:46.717000+00:00",
-    "content": "Yes,so does it mean that if we write this script that we have into a python code, then we can connect it to AC? In the way that AC can interact with it?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218841198584926329"
   },
   {
     "channel": "welcome-and-rules",
@@ -3338,22 +2890,6 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "blue.tomato.cultivator",
-    "created_at": "2024-03-17T09:15:27.102000+00:00",
-    "content": "You can use it 'stand alone' if the user is able to run Python scripts. But be aware that the API is somehow limited. \n\nYou can however get elements of a specific classification.\nhttps://archicadapi.graphisoft.com/JSONInterfaceDocumentation/#Introduction",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218850176010289243"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
-    "created_at": "2024-03-17T12:37:56.416000+00:00",
-    "content": "Thank you. I will check it out. I hope we can find a way that we can select an element in archicad, run the grasshopper code via python and then see the result in arhciad for example.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218901133926338610"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "golden_lilyz",
     "created_at": "2024-03-17T12:37:56.416000+00:00",
     "content": "Thank you. I will check it out. I hope we can find a way that we can select an element in archicad, run the grasshopper code via python and then see the result in arhciad for example.",
@@ -3370,34 +2906,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "blue.tomato.cultivator",
-    "created_at": "2024-03-17T13:09:43.482000+00:00",
-    "content": "I doubt it. At least not with less effort than to properly write a specific plugin anyhow. Though you have not specified the real use case yet. Select elements to run a headless GH script is imho not a use case description but a wish.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218909132741148713"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2024-03-17T13:48:36.569000+00:00",
     "content": "With the Tapir project, we are somehow extending the capability of the Archicad Python API too",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218918918417023118"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-03-17T13:48:36.569000+00:00",
-    "content": "With the Tapir project, we are somehow extending the capability of the Archicad Python API too",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218918918417023118"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
-    "created_at": "2024-03-17T17:33:37.027000+00:00",
-    "content": "That is what i am thinking, i just started reading about Tapir project today. Is it possible to use Tapir to write our own plug-in in Archicad that can run the script? What we want is to connect the 3d model to Radiance engine and do some daylight analysis and evaluate the answer in Arhciad. if we have the grasshopper script, can we run it via python in Archicad? Or i might have understood the function of Tapit wrong.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1218975543442280498"
   },
   {
     "channel": "welcome-and-rules",
@@ -3419,33 +2931,9 @@
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
-    "created_at": "2024-03-18T19:05:25.272000+00:00",
-    "content": "When you say evaluate the answer in Archicad, you mean to show the colours of the diagram? Or to have the data somehow?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219361034561785956"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
     "created_at": "2024-03-18T19:06:24.859000+00:00",
     "content": "Is the 3D modelled in Archicad? And you and running the analysis in Rhino?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219361284487905280"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-03-18T19:06:24.859000+00:00",
-    "content": "Is the 3D modelled in Archicad? And you and running the analysis in Rhino?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219361284487905280"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-03-18T19:12:54.006000+00:00",
-    "content": "Tapir\u2019s scope of research is, at this current moment at least, focused on data. Extracting and manipulating data from an Archicad model through grasshopper script or alternatively via the Python package provided.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219362916688728155"
   },
   {
     "channel": "welcome-and-rules",
@@ -3467,33 +2955,9 @@
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "golden_lilyz",
-    "created_at": "2024-03-18T19:49:12.845000+00:00",
-    "content": "I want to find a way to run the analysis from LadybugTools in Archicad and if not possible from grasshopper.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219372055401730149"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
     "created_at": "2024-03-18T19:50:39.390000+00:00",
     "content": "Is it possible with use of Tapir, to extract the geometry data from Archicad model?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219372418397900992"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
-    "created_at": "2024-03-18T19:50:39.390000+00:00",
-    "content": "Is it possible with use of Tapir, to extract the geometry data from Archicad model?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219372418397900992"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
-    "created_at": "2024-03-18T19:52:58.568000+00:00",
-    "content": "Can you explain the process a bit more please. If we run the analysis in gh live, we can connect the mesh results to Archicad?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219373002152607775"
   },
   {
     "channel": "welcome-and-rules",
@@ -3510,22 +2974,6 @@
     "created_at": "2024-03-20T11:48:01.207000+00:00",
     "content": "As far as I know, ladybug runs in grasshopper. You\u2019ll need to either have rhino/grasshopper opened or use a headless rhino compute instance. (I\u2019m not expert on this last one)",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219975734706045008"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-03-20T11:48:01.207000+00:00",
-    "content": "As far as I know, ladybug runs in grasshopper. You\u2019ll need to either have rhino/grasshopper opened or use a headless rhino compute instance. (I\u2019m not expert on this last one)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219975734706045008"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-03-20T11:51:40.796000+00:00",
-    "content": "This could be a way to display the analysis within Archicad",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1219976655729066098"
   },
   {
     "channel": "welcome-and-rules",
@@ -3554,22 +3002,6 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-03-21T15:05:25.184000+00:00",
-    "content": "HI <@231120259682271232> ! I love speckle too, but not too sure what is the workflow you propose for the current discussion, can you elaborate a bit more?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1220387799812018298"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "1yur",
-    "created_at": "2024-03-21T15:15:15.666000+00:00",
-    "content": "well, I've re-read the request carefully and Grasshopper suits more \ud83d\ude42",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1220390276472766605"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "1yur",
     "created_at": "2024-03-21T15:15:15.666000+00:00",
     "content": "well, I've re-read the request carefully and Grasshopper suits more \ud83d\ude42",
@@ -3582,22 +3014,6 @@
     "created_at": "2024-03-23T22:48:16.725000+00:00",
     "content": "Hopefully with the enable of speckle automations, we might be able to run these kind of analysis too",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1221229057828720750"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-03-23T22:48:16.725000+00:00",
-    "content": "Hopefully with the enable of speckle automations, we might be able to run these kind of analysis too",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1221229057828720750"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
-    "created_at": "2024-04-29T10:13:26.445000+00:00",
-    "content": "Also, a quick question about Archicad Live. It does not have python package, am i correct? Sorry for many questions, thanks for your help in advance. \ud83d\ude42",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1234447447653220382"
   },
   {
     "channel": "welcome-and-rules",
@@ -3619,22 +3035,6 @@
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
-    "created_at": "2024-04-29T10:42:25.849000+00:00",
-    "content": "No problem <@858022371273211905> . Archicad Live connection is a grasshopper plugin developed and maintain by GRAPHISOFT. It does not have any python package",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1234454743242375250"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-04-29T10:42:52.646000+00:00",
-    "content": "There is an oficial Python/JSON package for archicad that you can check here",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1234454855637270618"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
     "created_at": "2024-04-29T10:42:52.646000+00:00",
     "content": "There is an oficial Python/JSON package for archicad that you can check here",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1234454855637270618"
@@ -3646,22 +3046,6 @@
     "created_at": "2024-04-29T10:43:09.986000+00:00",
     "content": "https://archicadapi.graphisoft.com/JSONInterfaceDocumentation/#Introduction",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1234454928366501979"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-04-29T10:43:09.986000+00:00",
-    "content": "https://archicadapi.graphisoft.com/JSONInterfaceDocumentation/#Introduction",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1234454928366501979"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "golden_lilyz",
-    "created_at": "2024-04-29T11:40:25.152000+00:00",
-    "content": "thank you, i was translating a gh script into ghpython and i was wondering the part that has used archicad live components can be written in python or not , obviously we do not have the library as you mentioned but i try to go through the JSON documenttion that you sent me.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1234469336496734271"
   },
   {
     "channel": "welcome-and-rules",
@@ -3678,14 +3062,6 @@
     "created_at": "2024-05-22T14:37:43.555000+00:00",
     "content": "Hi <@773768934960660490>  and  <@479438600161853440> welcome to tapir community",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1242848878101790820"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "daywalker._.",
-    "created_at": "2024-05-22T23:15:33.857000+00:00",
-    "content": "Hello, I come from a 20 year ArchiCAD background in mass production residential. Mostly custom Architectural plans. I'm here because I have a background in process automation and I'd like to extend that automation into ArchiCAD as best I can. My python skills are basic to intermediate my gh skills are intermediate. Now I just need to put it all together.  Ideally I want to prepare automate 90% of the job in gh then migrate to AC. If I can also get some data from that then I'm happy. Looks like a good community here!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1242979196393750598"
   },
   {
     "channel": "welcome-and-rules",
@@ -3754,34 +3130,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "gonzalo_snh",
-    "created_at": "2024-07-08T15:21:43.203000+00:00",
-    "content": "Hello everyone!\n\nI've been an Archicad user for about 15 years, though I've lost track of the exact time. Currently, I'm trying to create some Python scripts to use with the Archicad palette\u2014simple things that I believe will help improve our daily workflow. I've managed to create folders for views and layouts, but I haven't yet figured out how to create the actual views of the drawings and then place those drawings or views onto the layouts. So, if anyone could give me some directions, I'd be grateful.\n\nGreetings to all!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1259892179271155763"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2024-07-09T03:10:50.754000+00:00",
     "content": "Hi <@1012447533433368606> thanks for introducing yourself and welcome to the Tapir community. I am not sure about this but I don't think the current official JSON api allows for that. As you know in Tapir we are working on extending the capabilities of the official API thanks to our Archicad API experts <@844197976430608424> <@1254417128979959909> <@1033068115380154458>, <@286229058692448256> and <@865566269789175818>. This is definitely on the roadmap, but not so sure how far away we are.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1260070636634771506"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-09T03:10:50.754000+00:00",
-    "content": "Hi <@1012447533433368606> thanks for introducing yourself and welcome to the Tapir community. I am not sure about this but I don't think the current official JSON api allows for that. As you know in Tapir we are working on extending the capabilities of the official API thanks to our Archicad API experts <@844197976430608424> <@1254417128979959909> <@1033068115380154458>, <@286229058692448256> and <@865566269789175818>. This is definitely on the roadmap, but not so sure how far away we are.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1260070636634771506"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-09T03:12:33.354000+00:00",
-    "content": "Also @everyone we are looking for python capable volunteers to help <@840956366989951037> putting together the release of the Grasshopper plugin. He has a nice template and workflow to do it, but time as always is limited, so any help is appreciated!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1260071066970095626"
   },
   {
     "channel": "welcome-and-rules",
@@ -4186,34 +3538,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "wassim5678",
-    "created_at": "2024-07-19T05:12:34.343000+00:00",
-    "content": "Hi everyone, I\u2019ve been developing #topologicpy since 2016 so quite familiar with python. I\u2019m happy to contribute to this project. I have a question about its open-source direction. Archicad rhino and grasshopper are not os. Is the ideas that this project will be a standalone OS software  and connect to these and perhaps other platforms? I suggest as much as possible to make it an independent python library (as we did with topologicpy)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263725148763324416"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2024-07-19T05:15:17.625000+00:00",
     "content": "Hi <@830104603554086965> thank you so much for the offering. Let me give you a bit of background. We started this project as an iternal experiment in my company Enzyme, with the help of <@900814845191000115> and the scope was to create a grasshopper plugin to connect to archicad using the JSON/PYTHON API provided by Graphisoft. We hit a wall very quickly as the official API was very limited",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263725833617539115"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-19T05:15:17.625000+00:00",
-    "content": "Hi <@830104603554086965> thank you so much for the offering. Let me give you a bit of background. We started this project as an iternal experiment in my company Enzyme, with the help of <@900814845191000115> and the scope was to create a grasshopper plugin to connect to archicad using the JSON/PYTHON API provided by Graphisoft. We hit a wall very quickly as the official API was very limited",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263725833617539115"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-19T05:17:00.569000+00:00",
-    "content": "Then we discovered that <@1254417128979959909> had a GitHub repository with a template that allowed to port C++ API commands into JSON calls accesible via Python. And we realised that the scope was actually a lot bigger and we decided to open the project and invite the community to participate",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263726265396101201"
   },
   {
     "channel": "welcome-and-rules",
@@ -4235,22 +3563,6 @@
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
-    "created_at": "2024-07-19T05:17:49.582000+00:00",
-    "content": "Then generously <@844197976430608424> (C++ dev) started helping us to port a number of C++ functions that the community found useful",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263726470971527179"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-19T05:19:15.943000+00:00",
-    "content": "And also <@840956366989951037> who is a very experienced python developer, with experience in Rhino and Grasshopper, also offered his help. (Together with others <@693250122431201320> <@900814845191000115> ...)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263726833195814942"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
     "created_at": "2024-07-19T05:19:15.943000+00:00",
     "content": "And also <@840956366989951037> who is a very experienced python developer, with experience in Rhino and Grasshopper, also offered his help. (Together with others <@693250122431201320> <@900814845191000115> ...)",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263726833195814942"
@@ -4267,33 +3579,9 @@
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
-    "created_at": "2024-07-19T05:22:21.102000+00:00",
-    "content": "And our idea is to start with the Python library AND grasshopper plugin (just because the large number of users that use grasshopper at the moment in the community) and once having most of the functions, bring the access to other visual programming softwares (Blender, BeeGraphy,...) and perhaps develop an online node-base portal that uses the python API",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263727609808814082"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
     "created_at": "2024-07-19T05:22:52.420000+00:00",
     "content": "In any case <@830104603554086965> , all the content from the repository is and will be opensource and free",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263727741166161931"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-19T05:22:52.420000+00:00",
-    "content": "In any case <@830104603554086965> , all the content from the repository is and will be opensource and free",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263727741166161931"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2024-07-19T05:24:39.004000+00:00",
-    "content": "Just to add. The standalone (python) library comes first.\n\nGH just happens to use the same library internally.\n\nAnd, we chose to start with python because it is easier for everyone to get started (although C++ / C# might benefit us in terms of speed)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263728188211593250"
   },
   {
     "channel": "welcome-and-rules",
@@ -4322,34 +3610,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "wassim5678",
-    "created_at": "2024-07-19T05:48:26.448000+00:00",
-    "content": "Great. Can you point me to the GitHub repository? Thanks",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263734175345807401"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2024-07-19T05:50:28.195000+00:00",
     "content": "https://github.com/ENZYME-APD/tapir-archicad-automation",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263734685989736528"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-19T05:50:28.195000+00:00",
-    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263734685989736528"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-19T06:04:31.234000+00:00",
-    "content": "Yes, thanks to <@840956366989951037> and <@844197976430608424> that they have done a great job organising the GitHub part. We are lucky to have some excellent developers in the team.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263738221951455282"
   },
   {
     "channel": "welcome-and-rules",
@@ -4394,22 +3658,6 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "legendaszomorito",
-    "created_at": "2024-07-19T09:00:25.286000+00:00",
-    "content": "Hi everyone,\nThanks for letting me be part of this great initiative.\nI have been a Computational Designer and Architectural Programmer for the last 6 years, I have experience with Grasshopper, C#, C++, Python (including Archicad Python plugin), GDL and Javascript. I have also been an Archicad poweruser for the last 10 years. \nWhile participating on AEC Hackathons  I noticed how Archicad was almost never mentioned. That\u2019s why I was pleasantly surprised to see this project. Let me know how I can contribute!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263782488854106196"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-19T09:42:00.303000+00:00",
-    "content": "Hi <@544583306801315860> this is fantastic news! We have been working on this project quietly for the last 2 years. I have done a terrible job communicating it with the Archicad power-user community! Is a bless that you find us",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263792953714020362"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2024-07-19T09:42:00.303000+00:00",
     "content": "Hi <@544583306801315860> this is fantastic news! We have been working on this project quietly for the last 2 years. I have done a terrible job communicating it with the Archicad power-user community! Is a bless that you find us",
@@ -4430,14 +3678,6 @@
     "created_at": "2024-07-19T20:55:11.298000+00:00",
     "content": "The new release of the Archicad Add-On is out with Archicad 28 compatibility and a bunch of new commands: https://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.0.2",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1263962365825777744"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-07-22T09:00:51.265000+00:00",
-    "content": "Hello everyone!\n\nMy name is Daniel.\nI have been working in BIM and Architecture for about 9 years now. I used to work for Graphisoft in Budapest, and I am currently working as a BIM manager at an architectural office in London.\nI am an expert on Archicad, GDL and the Grasshopper connection, and I am fairly familiar with Grasshopper and Rhino.\nI am a novice at scripting in Python, and I am at the beginning of learning C/C++ (both for my own amusement, and in the hopes of developing add-ons for Archicad).\n\nI would be happy to contribute however I can. I think with some guidance, I can help with the Python development, and I am hoping that with the help of this community I could learn Archicad C++ API development, and contribute to the project on that as well!\n\nNice to meet you all!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1264869761414725646"
   },
   {
     "channel": "welcome-and-rules",
@@ -4578,22 +3818,6 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "mikebihan",
-    "created_at": "2024-07-23T12:35:25.082000+00:00",
-    "content": "Hi everyone!\nI\u2019m Mike Bihan from Ukraine.\nI have been using Archicad for 15 years. Recently, I became interested in Python and Grasshopper to further automate processes in Archicad. So I decided to join a professional community\u263a\ufe0f",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1265286145982464073"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-23T12:36:36.618000+00:00",
-    "content": "I think the automate process is long-wanted wish for the archicad power users",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1265286446026199110"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2024-07-23T12:36:36.618000+00:00",
     "content": "I think the automate process is long-wanted wish for the archicad power users",
@@ -4610,34 +3834,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "mikebihan",
-    "created_at": "2024-07-23T12:38:19.303000+00:00",
-    "content": "I mean using Python. I still have limited experience with it.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1265286876718174359"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2024-07-23T12:40:49.479000+00:00",
     "content": "Yes, I was also talking about python (excuse my English, I'm french^^) I began with a sum area script in python, and the lack of development of the python plugin from graphisoft made me come here",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1265287506602098688"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-23T12:40:49.479000+00:00",
-    "content": "Yes, I was also talking about python (excuse my English, I'm french^^) I began with a sum area script in python, and the lack of development of the python plugin from graphisoft made me come here",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1265287506602098688"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "1yur",
-    "created_at": "2024-07-23T13:33:58.614000+00:00",
-    "content": "yeah, that's why we're here\nthe pace of python development from GS isn't enough for the power users, epsecially now, when the design process tends to be more data and info-centric",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1265300882803916811"
   },
   {
     "channel": "welcome-and-rules",
@@ -8090,22 +7290,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-12-12T13:51:38.336000+00:00",
-    "content": "\ud83c\udf89 @everyone another great Tapir release has just been created! Thanks a lot for <@1254417128979959909> for the nodes and <@974938201108140083> for the icons! Here you can find the details: https://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.1.3",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1316764404515082383"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "markb021701",
-    "created_at": "2024-12-13T10:29:13.672000+00:00",
-    "content": "Great session today on Archicad/Grasshopper/Rhino workflows, thanks",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1317075853968015400"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "markb021701",
     "created_at": "2024-12-13T10:29:13.672000+00:00",
     "content": "Great session today on Archicad/Grasshopper/Rhino workflows, thanks",
@@ -8122,34 +7306,10 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "paulaecheverrimontes_41922",
-    "created_at": "2024-12-13T21:31:58.865000+00:00",
-    "content": "Will have to start learning C++ though",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1317242641276076102"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2024-12-13T21:35:18.840000+00:00",
     "content": "Haha! great to hear you enjoyed! The current development happens in C++ and also in C# for the Grasshopper plugin",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1317243480032018543"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-12-13T21:35:18.840000+00:00",
-    "content": "Haha! great to hear you enjoyed! The current development happens in C++ and also in C# for the Grasshopper plugin",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1317243480032018543"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "paulaecheverrimontes_41922",
-    "created_at": "2024-12-13T21:36:20.240000+00:00",
-    "content": "But I\u2019m new to Archicad and this started to learn",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1317243737562153070"
   },
   {
     "channel": "general",
@@ -9008,14 +8168,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1352173600857264188"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2025-03-20T06:55:08.615000+00:00",
-    "content": "welcome to Tapir community <@1351623422903582732>",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1352173600857264188"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "grzegorzwilk",
@@ -9126,14 +8278,6 @@
     "created_at": "2025-03-27T09:14:21.105000+00:00",
     "content": "You can find the other builds in the Pull Request builds, search for the Upload artifact step",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1354745348798681118"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-03-31T06:50:29.491000+00:00",
-    "content": "Hi <@1355600094455533750>  and <@1005221598137155665> ! Welcome to Tapir community",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1356158696647823501"
   },
   {
     "channel": "general",
@@ -9378,22 +8522,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "ucmar.",
-    "created_at": "2025-04-09T11:49:00.847000+00:00",
-    "content": "I will surely give my feedback as an architect user, but I might also help with the development, if needed. I am also a C++/C# developer",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1359495313110601869"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-04-09T13:58:26.663000+00:00",
-    "content": "Fantastic to hear! We could use some help on the development side.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1359527885303583085"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2025-04-09T13:58:26.663000+00:00",
     "content": "Fantastic to hear! We could use some help on the development side.",
@@ -9488,14 +8616,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1359638778624606331"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "ucmar.",
-    "created_at": "2025-04-09T21:19:05.691000+00:00",
-    "content": "I\u2019ll be glad to! Let me just get a bit more familiar with the API and I\u2019ll ping you",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1359638778624606331"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "runxel",
@@ -9518,14 +8638,6 @@
     "created_at": "2025-04-10T00:28:43.771000+00:00",
     "content": "Yes, the input for the zones is a planar closed curve",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1359686501750800527"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2025-04-11T13:25:34.852000+00:00",
-    "content": "C++ contribution always Welcome <@1053055748852166726>",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1360244390660014153"
   },
   {
     "channel": "general",
@@ -9688,14 +8800,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1361520604217606266"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-04-15T01:56:47.875000+00:00",
-    "content": "Hi @everyone, happy Tuesday! We are preparing the next oficial release of the Grasshopper plugin, packed with new features, this time mostly thanks to <@1254417128979959909>. \ud83d\ude4c \n\nPlease consider supporting this development by sponsoring the main developers. Even a small amount will make a big difference if we all contribute a bit. Open source tools happen thanks to the drive and generosity of people like them. Also thank you to <@974938201108140083> <@558945647085223946> <@840956366989951037> <@286229058692448256> <@955802720953045062> <@900814845191000115> for your contributions to the project!\n\nhttps://github.com/sponsors/tlorantfy\n\nhttps://github.com/sponsors/kovacsv",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1361520604217606266"
-  },
-  {
     "channel": "dev-grasshopper-plugin",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
@@ -9758,14 +8862,6 @@
     "created_at": "2025-04-24T00:29:53.775000+00:00",
     "content": "I\u2019ll try to replicate this workflow with Archicad",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1364760225487519856"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "abdelaziz_05267",
-    "created_at": "2025-04-30T17:00:01.972000+00:00",
-    "content": "would it be possible to reproduce the mograph workflow in grasshopper?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1367183728719167508"
   },
   {
     "channel": "general",
@@ -11019,22 +10115,6 @@
     "channel": "announcements",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
-    "created_at": "2025-05-28T06:25:01.011000+00:00",
-    "content": "Hi @everyone we are glad to announce that the new release of tapir 1.1.6 is available to download. Both the Archicad addon and the Grasshopper plugin",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1377170781943103519"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-05-28T06:26:56.147000+00:00",
-    "content": "Check the release notes here:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.1.6\n\nThis new release is packed with new features and an amazing Tapir palette to run the Python scripts inside Archicad, without the need for being on any subscription tier. Thanks to the contributions from <@1254417128979959909>  on the Archicad Addon and the grasshopper components, and <@404731364236197899>  <@539102006283862017>  for their contributions to the python script public folder!\n\nWe are looking for contributors to this community-shared Python script folder who can easily bring flexible automation capabilities to Archicad.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1377171264858357832"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
     "created_at": "2025-05-28T06:26:56.147000+00:00",
     "content": "Check the release notes here:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.1.6\n\nThis new release is packed with new features and an amazing Tapir palette to run the Python scripts inside Archicad, without the need for being on any subscription tier. Thanks to the contributions from <@1254417128979959909>  on the Archicad Addon and the grasshopper components, and <@404731364236197899>  <@539102006283862017>  for their contributions to the python script public folder!\n\nWe are looking for contributors to this community-shared Python script folder who can easily bring flexible automation capabilities to Archicad.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/1377171264858357832"
@@ -11046,22 +10126,6 @@
     "created_at": "2025-05-28T06:28:21.358000+00:00",
     "content": "Please consider helping the development of this amazing addon by donating to our generous developers. Even the smaller amount can help.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/1377171622259331123"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-05-28T06:28:21.358000+00:00",
-    "content": "Please consider helping the development of this amazing addon by donating to our generous developers. Even the smaller amount can help.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1377171622259331123"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-05-28T06:29:55.587000+00:00",
-    "content": "https://github.com/sponsors/tlorantfy",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1377172017484402719"
   },
   {
     "channel": "announcements",
@@ -11374,14 +10438,6 @@
     "created_at": "2025-06-04T06:01:10.844000+00:00",
     "content": "Amazing! Thanks for sharing this <@539102006283862017> I totally agree with <@1254417128979959909> this opens the door to companies to automate stuff in Archicad. Finally!",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1379701498447138868"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-06-04T06:03:04.125000+00:00",
-    "content": "@everyone check this cool workflow from <@539102006283862017>",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1379701973581955102"
   },
   {
     "channel": "general",
@@ -11792,14 +10848,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1383939977230028831"
   },
   {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "drakhan3558",
-    "created_at": "2025-06-15T22:43:22.933000+00:00",
-    "content": "Hello all., I am AJ from New Zealand. A grad &  computational designer usign Mac - I want to say I code (because I can use a bit of GDL, python & grasshopper)  I am still learning... Hopefully no one is annoyed by my questions. Some day I want to build something cool i.A... lol.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1383939977230028831"
-  },
-  {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
     "author": "drakhan3558",
@@ -11848,14 +10896,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1386712680957481032"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-06-23T14:21:07.016000+00:00",
-    "content": "https://community.graphisoft.com/t5/Graphisoft-Insights/Tip-of-the-Month-Auto-number-elements-using-a-polyline-in/ba-p/665634. tapir in the tip of the month category !",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1386712680957481032"
-  },
-  {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
     "author": "eldelion",
@@ -11870,22 +10910,6 @@
     "created_at": "2025-06-23T14:34:49.584000+00:00",
     "content": "Nice!\nThe new version does not require to dowload the object, nor the script, because the script is already included in Tapir \ud83d\ude0e",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1386716131057991780"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-06-23T14:34:49.584000+00:00",
-    "content": "Nice!\nThe new version does not require to dowload the object, nor the script, because the script is already included in Tapir \ud83d\ude0e",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1386716131057991780"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-06-23T14:53:28.659000+00:00",
-    "content": "\" special thanks to @Tibor Lorantfy\u2014 these scripts wouldn\u2019t exist without his work\"",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1386720824798740640"
   },
   {
     "channel": "general",
@@ -12376,28 +11400,12 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1392768840961884183"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "kastravette",
-    "created_at": "2025-07-10T07:26:08.079000+00:00",
-    "content": "Hey party people! New to archicad, but experienced in coding (revit dynamo +py).\nI am currently struggling to find a way to mass change layout info on parameters defined via the layout book. These (obv) do not show in the prop manager\u2026 any ideas? Many thanks",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1392768840961884183"
-  },
-  {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
     "author": "fbumaye",
     "created_at": "2025-07-10T09:35:34.873000+00:00",
     "content": "Thank you for the quick responses! \nLove to hear, that its easy to implement it.\nYes the repos would be primarly private.\nHow would you save the login data ? Would it be possible to have config file, which can be easily edited and distributed (like a config.json) ?  How will you save the user password ? Github offers the possibility to generate a deploy key for a repo (read and/or write access), maybe this would be a better way? Of course I could create an extra github acc with read access to my repos just for tapir. \nAnd another question would be the venv of the scripts. If I understand it correctly, the palette looks for the interpreter which is defined in PATH env variable. But in most cases, I need some extra packages, which I do not want to install globally. Does tapir create a venv , and can I edit the requirements for extra packages? \nThank you very much for your support!",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392801417256763435"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "fbumaye",
-    "created_at": "2025-07-10T09:39:41.293000+00:00",
-    "content": "hello <@565170852870750241>  \ud83d\udc4b  you can do it with a schedule item for layouts. In Archicad you can mass edit many things via a schedule item. I am not sure how it is called in englisch (using german version), but the icon looks like this:\nhope it helps",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1392802450817286236"
   },
   {
     "channel": "general",
@@ -13080,14 +12088,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1400888728678957177"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2025-08-01T17:11:40.171000+00:00",
-    "content": "<@589996766108057629>  welcome in Tapir community",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1400888728678957177"
-  },
-  {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
     "author": "runxel",
@@ -13248,14 +12248,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1410471967706054778"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-08-28T03:52:02.403000+00:00",
-    "content": "Welcome <@737778742247817269>, <@1407900741959421994> , <@1408018057288351744>  and <@1016373453814767667>  to the tapir community!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1410471967706054778"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "1yur",
@@ -13338,22 +12330,6 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "___armadillo___",
-    "created_at": "2025-09-15T06:18:49.741000+00:00",
-    "content": "Hi all, Architect from South africa experimenting  with python integration and automation with archcad. Very much still beginner but keen to make my life (and potentially others) simpler with automations!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1417031889939861526"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "timon09126",
-    "created_at": "2025-09-17T11:19:43.655000+00:00",
-    "content": "Hey guys thank you for let me join!\n\nIm a wood engineer currently doing an internship in parametric BIM methodologies exploring ArchiCAD Grasshopper Ladybug connection for simulation!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1417832389274767431"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "timon09126",
     "created_at": "2025-09-17T11:19:43.655000+00:00",
     "content": "Hey guys thank you for let me join!\n\nIm a wood engineer currently doing an internship in parametric BIM methodologies exploring ArchiCAD Grasshopper Ladybug connection for simulation!",
@@ -13374,14 +12350,6 @@
     "created_at": "2025-09-17T14:22:53.759000+00:00",
     "content": "Welcome Timon!\n\nAutomatically creating a simulation model from an architectural model is quite the challenge! Good luck with that \ud83d\ude42\nI'm not  sure what is the exact problem where you are stuck, so I'll just list a few can/can't dos that seam relevant.\n\nWhat is possible with Tapir/python api:\n- get polygon outline of rooms with holes. I think Honybee needs touching room faces, a grometry based on polylines is probably easier to offset than a triangulated one\n- get property values of pretty much everithing\n- get the details of attributes, so you can calculate thermal resistance from materials / composites. (probably not practical to do so except for projects with like hundreds or thousands of composites)\n- get elements related to zones (if their related zone property is correct)\n\nwhat you cant do (but the C++ API can, so might be implemented in the future)\n- get actual zone geometry (but the official connection covers you for that)\n- get the surfaces of each element touching a zone, matched to the element",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1417878485111930931"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2025-09-18T07:56:50.130000+00:00",
-    "content": "Hi <@767027193560825878>  Welcome in Tapir Community",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1418143717675499640"
   },
   {
     "channel": "general",
@@ -13414,14 +12382,6 @@
     "created_at": "2025-10-02T12:25:53.102000+00:00",
     "content": "Archicad returns 4 boundaries for the zone on the right (the smaller one),\nand returns 6 boundaries for the zone on the left (the rigth side of that zone is split into 3 part).",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1423284856326066279"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "fuzesbalint",
-    "created_at": "2025-10-03T06:19:37.780000+00:00",
-    "content": "Heyhey! B\u00e1lint here, from Budapest, Hungary - thank you for the invitation! I am a C# Rhino developer (https://fuzesarch.com/) , but will look into your source code in the next few days - got curious about the ecosystem \ud83d\ude42 Also we might be just a corner away here, in the city \ud83d\ude42",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1423555073010700390"
   },
   {
     "channel": "welcome-and-rules",
@@ -13576,14 +12536,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1426469739906994237"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-10-11T07:21:28.520000+00:00",
-    "content": "Welcome to the tapir community <@1412000867464384552> <@1426264749355696128> <@1426288019694030969> <@999453216922161264>",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1426469739906994237"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "fbumaye",
@@ -13630,14 +12582,6 @@
     "created_at": "2025-10-15T12:33:26.944000+00:00",
     "content": "I'm currently reviewing all the new commands we have so we can show what we can do today with JSON/Python. It's pretty impressive how much work has been done with Tapir, thanks Tibor! Seeing the progress week after week doesn't give you the same picture as seeing it with fresh eyes!\n\nIn my opinion, the best way to get people interested (and advertise) is to give them the ability to easily script prototypes. I'm currently compiling a complete library of examples (with the help of AI): one command = one example script, Tkinter interface with lists of layers, properties, or classifications, etc. to enable users to see the commands in action, assist those familiar with Python in coding, or empower users to code with the assistance of AI by providing the AI with scripts associated with the desired commands.",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1427997802130182187"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-10-15T12:35:13.796000+00:00",
-    "content": "<@1427993628881715260> welcome to the Tapir community!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1427998250300084334"
   },
   {
     "channel": "general",
@@ -14880,14 +13824,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1446434654440919053"
   },
   {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "pedro_71175",
-    "created_at": "2025-12-05T09:34:55.075000+00:00",
-    "content": "Hi there! Thanks for the welcome!\nI'm Pedro, from Lisbon Portugal! I'm starting out as a BIM Developer with a split focus on Revit, Archicad and BlenderBonsai! All aided by the mighty Rhino Grasshopper!\nHope to learn with you guys and also share with the community!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1446434654440919053"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
@@ -15680,14 +14616,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1456090782212686078"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2026-01-01T01:04:55.338000+00:00",
-    "content": "Wish you a year full of joy and automations! \ud83d\ude06",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1456090782212686078"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "eldelion",
@@ -15702,14 +14630,6 @@
     "created_at": "2026-01-01T11:07:06.280000+00:00",
     "content": "Perhaps a special return  if they are more than xxx modification? (Specification of the optional XXX with the command)So we can give a message to the end user  like : huge modification, do you want to continue and wait, launch a special script or Skip those modifications?",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1456242326367371317"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "c3b3k",
-    "created_at": "2026-01-01T11:19:21.297000+00:00",
-    "content": "Happy new year! May Tapir reach 1 mil downloads this year!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1456245409251852422"
   },
   {
     "channel": "general",
@@ -15806,22 +14726,6 @@
     "created_at": "2026-01-04T16:14:09.984000+00:00",
     "content": "I work as an independent full-stack AI/ML developer, helping teams design and ship AI features without unnecessary complexity.\nMy stack spans Python, JavaScript, Apex, Scala, SQL, and cloud-native tooling. \nI\u2019ve delivered chatbots, speech systems, inspection bots, and custom AI services used in real workflows. \nI\u2019m comfortable integrating with existing platforms or building everything from scratch. \nWhether it\u2019s a startup MVP or an enterprise-scale system, I focus on practical results and clean architecture. \nIf you need someone who can own both the model and the system around it, that\u2019s my lane.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1457406764579557487"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "endmyion2626",
-    "created_at": "2026-01-04T16:14:09.984000+00:00",
-    "content": "I work as an independent full-stack AI/ML developer, helping teams design and ship AI features without unnecessary complexity.\nMy stack spans Python, JavaScript, Apex, Scala, SQL, and cloud-native tooling. \nI\u2019ve delivered chatbots, speech systems, inspection bots, and custom AI services used in real workflows. \nI\u2019m comfortable integrating with existing platforms or building everything from scratch. \nWhether it\u2019s a startup MVP or an enterprise-scale system, I focus on practical results and clean architecture. \nIf you need someone who can own both the model and the system around it, that\u2019s my lane.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1457406764579557487"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2026-01-04T17:13:47.747000+00:00",
-    "content": "Hi <@690321326581481675> thanks for introducing yourself. You bring a very interesting background. Are you familiar with the nature and scope of the tapir project? Are you thinking of integrating our API with ML/AI? \nI\u2019ve been wondering for a while if it would be feasible to train a specific model or LORA with the API and being able to generate working Python scripts based on text prompts\u2026 \nAnyway, welcome to the community and happy new year!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1457421770805219568"
   },
   {
     "channel": "general",
@@ -16078,22 +14982,6 @@
     "created_at": "2026-02-07T04:57:27.811000+00:00",
     "content": "Hi and hello!\n\u200bMy name is Donghoon Kim, an Architect based in South Korea. I have been using Archicad for five years, and prior to that, I have utilized Rhino and Grasshopper for over nine years.\n\u200bI am writing to share my excitement regarding a recent workflow I implemented. By utilizing the composite commands provided by Tapir, along with official commands and scripts, I connected an LLM model to a Grasshopper MCP (Model Context Protocol) server. I tested giving natural language instructions to modify composites based on specific material requirements while attaching material specification PDF files.\n\u200bI was amazed to see the system execute the instructions precisely as a human would. It truly feels like we are entering a new era of architectural design and BIM automation.\n\u200bI would like to express my sincere gratitude for providing such powerful features. Furthermore, I am very interested in cooperating and contributing to the expansion of these functionalities in the future.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1469557654153068604"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "juicy6532",
-    "created_at": "2026-02-07T04:57:27.811000+00:00",
-    "content": "Hi and hello!\n\u200bMy name is Donghoon Kim, an Architect based in South Korea. I have been using Archicad for five years, and prior to that, I have utilized Rhino and Grasshopper for over nine years.\n\u200bI am writing to share my excitement regarding a recent workflow I implemented. By utilizing the composite commands provided by Tapir, along with official commands and scripts, I connected an LLM model to a Grasshopper MCP (Model Context Protocol) server. I tested giving natural language instructions to modify composites based on specific material requirements while attaching material specification PDF files.\n\u200bI was amazed to see the system execute the instructions precisely as a human would. It truly feels like we are entering a new era of architectural design and BIM automation.\n\u200bI would like to express my sincere gratitude for providing such powerful features. Furthermore, I am very interested in cooperating and contributing to the expansion of these functionalities in the future.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1469557654153068604"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-02-07T09:55:35.002000+00:00",
-    "content": "Welcome <@466179683139190786> !\nCool workflow!\nNice to see an experienced Rhino and Grasshopper user!\nCurrently only few commands are available, but many more are coming \ud83d\ude09 if you have an idea which missing commands would be really useful for your workflows, please share it!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1469632678469959691"
   },
   {
     "channel": "welcome-and-rules",
@@ -16488,14 +15376,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1475957657138495696"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2026-02-24T20:48:47.429000+00:00",
-    "content": "<@1424728859173060608>  and what about tapir? are You experienced/interested in that?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1475957657138495696"
-  },
-  {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
     "author": "moony_shadow",
@@ -16642,22 +15522,6 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "archiai_26263",
-    "created_at": "2026-03-06T15:57:10.727000+00:00",
-    "content": "Hello all... Just joined. I've been using the Tapir MCP to connect an OpenClaw to Archicad, but finding it frustrating that Archicad doesnt have all tools open in their API.  Ive been trying vision system work arounds, but it's pretty clunky and often in accurate. It's been like trying to teach a dog to run archicad so far.  So I thought I might try using Claude to 'vibe code' additional tool access for the API, but I'm really no coder, so I figured I'd start here.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1479508149307314207"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2026-03-06T15:59:44.629000+00:00",
-    "content": "There has been some discussion about vibe-coding new tapir commands.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1479508794819219689"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2026-03-06T15:59:44.629000+00:00",
     "content": "There has been some discussion about vibe-coding new tapir commands.",
@@ -16675,33 +15539,9 @@
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
-    "created_at": "2026-03-06T16:00:07.692000+00:00",
-    "content": "You have access to all the code base on GitHub",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1479508891552448565"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
     "created_at": "2026-03-06T16:01:47.132000+00:00",
     "content": "I\u2019m also not a programmer but I think it should be possible to teach some skills to claude on how to create new JSON commands and perhaps grasshoper nodes too",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1479509308633776128"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2026-03-06T16:01:47.132000+00:00",
-    "content": "I\u2019m also not a programmer but I think it should be possible to teach some skills to claude on how to create new JSON commands and perhaps grasshoper nodes too",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1479509308633776128"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "archiai_26263",
-    "created_at": "2026-03-06T16:04:12.263000+00:00",
-    "content": "Yes, I've been doing work arounds using hot keys to activate tools, and having the bot enter coordinates in the pop up coordinates pallete, but its rough, and it doesnt seem to be able to reloate the edit/user origin, which is provding to be a big block.  Might be possible to work around by setting a hotspot on the project origin so it can work from there, but still API access is clearly the right way to get to a smooth working drafting assistant.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1479509917357445141"
   },
   {
     "channel": "welcome-and-rules",
@@ -17032,14 +15872,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1493260354397147317"
   },
   {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "spritc",
-    "created_at": "2026-04-13T14:43:31.924000+00:00",
-    "content": "Hi All - this is Link from BIM6x in the USA. I have been playing around with Archicad/Tapir/Claude a lot recently and thought I'd join the brains trust here. I am very grateful to all the amazing people who have helped get us to this point in the journey! Thank you and I look forward to participating here. Cheers!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1493260354397147317"
-  },
-  {
     "channel": "cool-examples",
     "server": "archicad-api-grasshopper",
     "author": "fbumaye",
@@ -17094,14 +15926,6 @@
     "created_at": "2026-04-13T20:43:02.590000+00:00",
     "content": "Yeah, very interesting.\nBut that just describes the idea, right?",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1493350828327698603"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "spritc",
-    "created_at": "2026-04-18T21:58:04.963000+00:00",
-    "content": "Hey <@423113258229039105> I sent you a friend request? Mind if I ask you a couple of questions directly?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1495181651976785991"
   },
   {
     "channel": "welcome-and-rules",
@@ -17275,33 +16099,9 @@
     "channel": "announcements",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
-    "created_at": "2026-05-12T07:14:45.213000+00:00",
-    "content": "Tapir 1.4.0 is out!\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.4.0\n\nWith bunch of new commands like CreateWindows/Doors/Beams/Morphs, CreateGroups, CreateLayouts/Drawings, GetCalculationUnits.\nNote, these new commands are not available via Grasshopper yet.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1503656663687630939"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
     "created_at": "2026-05-15T13:25:24.332000+00:00",
     "content": "Using the builtin copilot/claude in vscode it's really easy to generate Grasshopper nodes for the commands. I have already done that for some \ud83d\udcaa\nTesting them is the hard work...\nPlus I don't have unlimited credit for copilot, I'm using it for free only \ud83d\ude01",
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/1504837104910205129"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-05-15T13:25:24.332000+00:00",
-    "content": "Using the builtin copilot/claude in vscode it's really easy to generate Grasshopper nodes for the commands. I have already done that for some \ud83d\udcaa\nTesting them is the hard work...\nPlus I don't have unlimited credit for copilot, I'm using it for free only \ud83d\ude01",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1504837104910205129"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-05-15T15:47:25.236000+00:00",
-    "content": "Yes, that's what I'm planning to do.\nSaving claude.md to the github repo and define a template prompt to generate GH node for a new command",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1504872844171939840"
   },
   {
     "channel": "announcements",
@@ -17322,34 +16122,10 @@
   {
     "channel": "announcements",
     "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2026-05-15T15:50:16.824000+00:00",
-    "content": "and script template itself. could itcsave tokens?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1504873563864170496"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
     "author": "eldelion",
     "created_at": "2026-05-15T17:39:25.441000+00:00",
     "content": "Have you tried Gemini? It has a pretty generous free quota. They have reduced it recently, but if you combine flash (for shorter, well defined code generation / refactoring, or explaining lexical knowledge) and the pro model (for planning / rubber ducking or more complex code) I find the free limits last the whole day. The only caveat is for some reason you cannot set thinking to high from most places. I could only set thinking to high on aistudio.google.com, so I use it from there.  (The vs code agent version was pretty dumb the last time I used it)",
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/1504901030754914357"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2026-05-15T17:39:25.441000+00:00",
-    "content": "Have you tried Gemini? It has a pretty generous free quota. They have reduced it recently, but if you combine flash (for shorter, well defined code generation / refactoring, or explaining lexical knowledge) and the pro model (for planning / rubber ducking or more complex code) I find the free limits last the whole day. The only caveat is for some reason you cannot set thinking to high from most places. I could only set thinking to high on aistudio.google.com, so I use it from there.  (The vs code agent version was pretty dumb the last time I used it)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1504901030754914357"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2026-05-15T19:03:00.974000+00:00",
-    "content": "This is all great. What would be your ideal solution and how much it would cost?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1504922067424903279"
   },
   {
     "channel": "announcements",
@@ -17784,14 +16560,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1506646835404476571"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "paulaecheverrimontes_41922",
-    "created_at": "2026-05-20T13:16:37.705000+00:00",
-    "content": "<@423113258229039105> good morning, have you, or anyone else, had experience with IFC exchange with Revit? I want to import IFCCovering type and convert it to IFCSlab into ARCHICAD",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1506646835404476571"
-  },
-  {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
     "author": "archibram",
@@ -17878,22 +16646,6 @@
     "created_at": "2026-05-21T10:01:07.044000+00:00",
     "content": "Hi <@1210951710814642268> I take it you have already checked the approriate translator and had no luck.\nYou can definitly do it with python.\nYou will need IfcOpenshell to extract the ifcShapeRepresentatios of the coverings. \nIf they are meshes (brep or tessaleted) you will have a harder time, but they will probably be linear extrusions with a vertical axis. If you extract the outline of the profile, you can use it to create native slabs with the CreateSlabs tapir command.\nYou will have to manally create favorites for every type, and map it to a property of the ifc.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1506960021311983667"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2026-05-21T10:01:07.044000+00:00",
-    "content": "Hi <@1210951710814642268> I take it you have already checked the approriate translator and had no luck.\nYou can definitly do it with python.\nYou will need IfcOpenshell to extract the ifcShapeRepresentatios of the coverings. \nIf they are meshes (brep or tessaleted) you will have a harder time, but they will probably be linear extrusions with a vertical axis. If you extract the outline of the profile, you can use it to create native slabs with the CreateSlabs tapir command.\nYou will have to manally create favorites for every type, and map it to a property of the ifc.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1506960021311983667"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2026-05-21T10:25:45.101000+00:00",
-    "content": "Hi <@1210951710814642268> sorry for the late reply. I checked with AI, seems that archicad is able to translate into slabs IFC elements that are classified as IfcSlabs.\n\nAI \n\n\"If you or your consultants have access to the Revit model, you can force Revit to export those specific coverings as IfcSlab entities.Select the element or edit the family in Revit.Look for the parameter IfcExportAs (if it isn't there, you can add it as a shared parameter from the standard Autodesk IFC parameter set).Type IfcSlab into the value field.\n\n(Optional) If you want to be extra precise, you can also add the IfcExportType parameter and set it to FLOOR or ROOF.  Export the IFC normally. When imported into Archicad, it will natively recognize it as an IfcSlab and automatically generate it using the native Archicad Slab tool.\"",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1506966220732235796"
   },
   {
     "channel": "general",
@@ -18368,14 +17120,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1511321144559669308"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2026-06-02T10:50:39.852000+00:00",
-    "content": "o come on. I know where first Tapir conference will take place",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1511321144559669308"
-  },
-  {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
     "author": "__iota__",
@@ -18706,22 +17450,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "daviiiiidave",
-    "created_at": "2026-06-23T12:06:42.973000+00:00",
-    "content": "I excited what they made this year. hopefully they did a lot to improve archicad and keep it in the competition",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1518950428853666002"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "gr_cad_85891",
-    "created_at": "2026-06-23T13:01:25.562000+00:00",
-    "content": "Coincidence probably https://www.architools.net/addons/architweaks I made an addon that has some features to modify cloned folders \ud83d\ude36\u200d\ud83c\udf2b\ufe0f, maybe in this beta update there is a feature to choose what is visible from cloned view and probably more",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1518964197029969930"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "gr_cad_85891",
     "created_at": "2026-06-23T13:01:25.562000+00:00",
     "content": "Coincidence probably https://www.architools.net/addons/architweaks I made an addon that has some features to modify cloned folders \ud83d\ude36\u200d\ud83c\udf2b\ufe0f, maybe in this beta update there is a feature to choose what is visible from cloned view and probably more",
@@ -18778,34 +17506,10 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "trthvlu",
-    "created_at": "2026-06-29T05:38:26.698000+00:00",
-    "content": "hello my python file says aclib is missing",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521027044387852389"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2026-06-29T05:38:49.457000+00:00",
     "content": "It's a file that need to be in the same folder as your scripts",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521027139846279219"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2026-06-29T05:38:49.457000+00:00",
-    "content": "It's a file that need to be in the same folder as your scripts",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521027139846279219"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-06-29T05:58:09.476000+00:00",
-    "content": "We should upload that to PyPI, but aclib name is already reserved, so should rename it to tapir-aclib or something like that",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521032005318344796"
   },
   {
     "channel": "general",
@@ -18858,22 +17562,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "semajnitram8179",
-    "created_at": "2026-06-30T15:17:25.499000+00:00",
-    "content": "Hi - sorry to trouble everyone, but getting started with tapir to help try to automate some health checks on our company teamwork files. One of the tools we regularly manually use is polycount. I wondered if there were any known equivalents in python, or ways to automate triggering a polycount and save its output known by anyone?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521535137345568900"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "runxel",
-    "created_at": "2026-06-30T15:55:49.651000+00:00",
-    "content": "Nothing like this is implemented in Tapir right now",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521544801659654214"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "runxel",
     "created_at": "2026-06-30T15:55:49.651000+00:00",
     "content": "Nothing like this is implemented in Tapir right now",
@@ -18886,22 +17574,6 @@
     "created_at": "2026-06-30T15:58:27.736000+00:00",
     "content": "ive been trying to decompile it and see how it works. Seems that i cant directly recreate it in python as its calling some APIs python doesnt have",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521545464716202074"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "semajnitram8179",
-    "created_at": "2026-06-30T15:58:27.736000+00:00",
-    "content": "ive been trying to decompile it and see how it works. Seems that i cant directly recreate it in python as its calling some APIs python doesnt have",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521545464716202074"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "runxel",
-    "created_at": "2026-06-30T15:59:07.972000+00:00",
-    "content": "But if it\u2019s in the api we can implement it",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521545633478217901"
   },
   {
     "channel": "general",
@@ -18923,33 +17595,9 @@
     "channel": "general",
     "server": "archicad-api-grasshopper",
     "author": "semajnitram8179",
-    "created_at": "2026-06-30T15:59:28.877000+00:00",
-    "content": "yes - its calling items in the api. let me dig out what i have found",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521545721160007741"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "semajnitram8179",
     "created_at": "2026-06-30T16:00:04.342000+00:00",
     "content": "ModelerAPI \u2192 MeshBody \u2192 GetPolygonCount()",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521545869910999112"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "semajnitram8179",
-    "created_at": "2026-06-30T16:00:04.342000+00:00",
-    "content": "ModelerAPI \u2192 MeshBody \u2192 GetPolygonCount()",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521545869910999112"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "semajnitram8179",
-    "created_at": "2026-06-30T16:00:44.283000+00:00",
-    "content": "thats the general flow of the c++ from a vague hackjob with ghedra",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521546037435699200"
   },
   {
     "channel": "general",
@@ -18970,34 +17618,10 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "runxel",
-    "created_at": "2026-06-30T16:04:03.090000+00:00",
-    "content": "See if you can see something like what you\u2019d find here \n\nhttps://graphisoft.github.io/archicad-api-devkit",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521546871292690514"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "semajnitram8179",
     "created_at": "2026-06-30T16:11:13.715000+00:00",
     "content": "seems the tool potentially uses undocumented classes to query the meshbody. im still trying to get my head around this software and its api (im the IT manager at our firm, not CAD/ BIM) so its a learning curve to get up to speed on this one, apologies https://community.graphisoft.com/t5/Archicad-C-API/How-to-get-the-mesh-information-from-Archicad/td-p/259479",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521548677464723569"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "semajnitram8179",
-    "created_at": "2026-06-30T16:11:13.715000+00:00",
-    "content": "seems the tool potentially uses undocumented classes to query the meshbody. im still trying to get my head around this software and its api (im the IT manager at our firm, not CAD/ BIM) so its a learning curve to get up to speed on this one, apologies https://community.graphisoft.com/t5/Archicad-C-API/How-to-get-the-mesh-information-from-Archicad/td-p/259479",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521548677464723569"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "semajnitram8179",
-    "created_at": "2026-07-01T16:57:39.445000+00:00",
-    "content": "ive decided to  re-write the polycount.apx in a way that allows a python input and saves to csv for me. Ive got it mostly working; comparing it against polycount its around 3.5% difference but detecting the same key items (IE can pick up on large polygon based items and list them in a top 10 list) , and takes around 2 seconds to run now - which seems quicker than the original polycount.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1521922749529067601"
   },
   {
     "channel": "general",
@@ -19027,22 +17651,6 @@
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "heartbreaker2323",
-    "created_at": "2026-07-05T14:57:40.302000+00:00",
-    "content": "Hi, Im joining this discord group as a 25 year Archicad user, and a big fan of using AI as part of my general work flow for architecture and project management etc. My appreciation for AI is its ability to take on the mundane tasks that I would prefer tospend less time on. My hope with Archicad and AI, is that the AI would be able take on those mundane AC tasks that can make using AC a bit of a chore sometimes.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523342105597054986"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "heartbreaker2323",
-    "created_at": "2026-07-05T15:00:50.411000+00:00",
-    "content": "Im interested in this initiative of creating an open source AI integration and look forward to seeing how it develops and if I can be of any help.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523342902972125227"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "heartbreaker2323",
     "created_at": "2026-07-05T15:00:50.411000+00:00",
     "content": "Im interested in this initiative of creating an open source AI integration and look forward to seeing how it develops and if I can be of any help.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523342902972125227"
@@ -19066,34 +17674,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2026-07-05T15:18:30.171000+00:00",
-    "content": "Hi! You can help with: testings commands, creating scripts and sharing them with the community especially on forums and social media to attract more people. You can also help with implementing new command for Tapir using Archicad c++ API",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523347347927732234"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "heartbreaker2323",
     "created_at": "2026-07-05T15:21:15.764000+00:00",
     "content": "Wheres the best place to start with Tapir, is there a beginners guide?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523348042475114537"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "heartbreaker2323",
-    "created_at": "2026-07-05T15:21:15.764000+00:00",
-    "content": "Wheres the best place to start with Tapir, is there a beginners guide?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523348042475114537"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2026-07-05T15:22:43.294000+00:00",
-    "content": "Do you use Claude code ?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523348409602412727"
   },
   {
     "channel": "welcome-and-rules",
@@ -19114,34 +17698,10 @@
   {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
-    "author": "heartbreaker2323",
-    "created_at": "2026-07-05T15:23:33.127000+00:00",
-    "content": "Ive been using Claude with the Archicad API, and python",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523348618617159820"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2026-07-05T15:24:28.190000+00:00",
     "content": "You should begin with the official GitHub",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523348849568252004"
-  },
-  {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2026-07-05T15:24:28.190000+00:00",
-    "content": "You should begin with the official GitHub",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1523348849568252004"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "heartbreaker2323",
-    "created_at": "2026-07-05T17:09:00.497000+00:00",
-    "content": "Hi, I have been rebuilding my AC attributes using Claude. Composites, favourites, lines, pensets, layers etc.  Claude has worked out I am planning to try to use AI with archicad and has suggested building my attributes around future AI interaction. It has suggested creating a World Map of meta data describing how my attributes are setup and linked, in JSON format so that AI can access it and knows how to work in my Archicad enviroment. Has this approach been discussed already? The setting up of meta data in the AC eco system specifically for AI interaction?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1523375157530591404"
   },
   {
     "channel": "general",
@@ -19176,22 +17736,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1524491882653024387"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-07-08T19:06:28.514000+00:00",
-    "content": "I'm not sure I understand correctly your questions.\nBut using Tapir and official JSON API you can retrieve all the details of your attributes from Archicad. The response is a JSON and the commands define JSON schema, so the JSON format of how the data of attributes are described is straightforward.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1524491882653024387"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-07-08T19:12:57.221000+00:00",
-    "content": "@everyone\n\nIf you would love to get new Tapir commands and more Grashopper nodes, then please help with a like on this LinkedIn comment to get free Claude Max for Tapir contributors!\n\nThat would give a huge boost!\nI would generate all missing Grasshopper nodes and the requested Tapir commands.\n\nhttps://www.linkedin.com/feed/update/urn:li:ugcPost:7480338485426671616?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7480338485426671616%2C7480697555232759808%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287480697555232759808%2Curn%3Ali%3AugcPost%3A7480338485426671616%29",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1524493513008349254"
-  },
-  {
     "channel": "announcements",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
@@ -19206,22 +17750,6 @@
     "created_at": "2026-07-08T20:22:10.922000+00:00",
     "content": "Ok, I didn't know that. I was womdering how.does Claude know how to use  all the various parameters of Archicad. Does it have an encyclopedic knowledge of how Archicd works  and the hundreds of various parameters?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1524510934893199510"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "heartbreaker2323",
-    "created_at": "2026-07-08T20:22:10.922000+00:00",
-    "content": "Ok, I didn't know that. I was womdering how.does Claude know how to use  all the various parameters of Archicad. Does it have an encyclopedic knowledge of how Archicd works  and the hundreds of various parameters?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1524510934893199510"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-07-09T04:26:41.856000+00:00",
-    "content": "Documentation for the official JSON interface:\nhttps://archicadapi.graphisoft.com/JSONInterfaceDocumentation/#Introduction\nSee GetAttributesByType, GetCompositeAttributes and others in Attribute Commands.\nThe documentation of Tapir JSON interface:\nhttps://enzyme-apd.github.io/tapir-archicad-automation/archicad-addon/\n\nGive this to Claude \ud83d\ude09",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1524632867228094484"
   },
   {
     "channel": "general",
@@ -19270,22 +17798,6 @@
     "created_at": "2026-07-10T11:47:48.865000+00:00",
     "content": "Not if you're not an Archicad user",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1525106265775411382"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2026-07-10T11:47:48.865000+00:00",
-    "content": "Not if you're not an Archicad user",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1525106265775411382"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "heartbreaker2323",
-    "created_at": "2026-07-10T16:13:44.610000+00:00",
-    "content": "So if I understand correctly, in order for Claude to have the knowledge to interface correctly with archicad and its various parameters, through the Tapir addon,  it needs to read this JSONinterfaceDocumentation and have it in memery each time?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1525173189020221511"
   },
   {
     "channel": "general",
@@ -19464,14 +17976,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/1527198097619288165"
   },
   {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2026-07-16T06:20:00.441000+00:00",
-    "content": "He made some commit on the GitHub yesterday, so he's ok^^",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1527198097619288165"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "vjdonoso",
@@ -19502,22 +18006,6 @@
     "created_at": "2026-07-18T16:18:56.026000+00:00",
     "content": "Good news!\nAnthropic rewarded Tapir with Claude Max 20x free for 6 months \ud83d\ude0d\nI will be able to start using that on next week.\nMy plan:\n- At first generate Grasshopper components for all Tapir commands. That should be an easy task for Claude.\n- Generate the missing icons for all the Grasshopper components. I'm really courios how the new icons will look like, hopefully they will have some connection to the functionality of the GH node \ud83d\ude01\n- Ask it to implement new Tapir commands. Migrate all Get and Modify commands into GetDetailsOfElements and SetDetailsOfElements commands (the original Get and Modify commands will remain), to make it available to modify any kind of elements within the same undo step.\n- Extend the functionality, make everything available in Tapir what Graphisoft allow to access via the Cpp API.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/1528073598118527148"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-07-18T16:18:56.026000+00:00",
-    "content": "Good news!\nAnthropic rewarded Tapir with Claude Max 20x free for 6 months \ud83d\ude0d\nI will be able to start using that on next week.\nMy plan:\n- At first generate Grasshopper components for all Tapir commands. That should be an easy task for Claude.\n- Generate the missing icons for all the Grasshopper components. I'm really courios how the new icons will look like, hopefully they will have some connection to the functionality of the GH node \ud83d\ude01\n- Ask it to implement new Tapir commands. Migrate all Get and Modify commands into GetDetailsOfElements and SetDetailsOfElements commands (the original Get and Modify commands will remain), to make it available to modify any kind of elements within the same undo step.\n- Extend the functionality, make everything available in Tapir what Graphisoft allow to access via the Cpp API.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1528073598118527148"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2026-07-18T20:31:23.563000+00:00",
-    "content": "I\u2019ll be going to Tokyo on the 20th and 21st of August to present tapir to a few companies there. There\u2019s quite a lot of interest and from what I heard from Graphisoft JP a few companies using it already",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1528137131493691503"
   },
   {
     "channel": "announcements",
@@ -19582,22 +18070,6 @@
     "created_at": "2026-07-21T05:15:58.041000+00:00",
     "content": "New version is available!\nTapir 1.5.4 is out with bunch of new commands and Grasshopper components!\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.5.4\nThis version has more than 100 new Grasshopper components. <@423113258229039105> , <@689040789866807369> I hope you will be able to test them. Most of them are generated by AI, so I would be grateful to have reviews from you and I will fine tuning them!",
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/1528993920753864867"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-07-21T05:15:58.041000+00:00",
-    "content": "New version is available!\nTapir 1.5.4 is out with bunch of new commands and Grasshopper components!\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.5.4\nThis version has more than 100 new Grasshopper components. <@423113258229039105> , <@689040789866807369> I hope you will be able to test them. Most of them are generated by AI, so I would be grateful to have reviews from you and I will fine tuning them!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1528993920753864867"
-  },
-  {
-    "channel": "announcements",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2026-07-21T05:18:52.784000+00:00",
-    "content": "This new version has 5 contributors, the first time in Tapir's history!\nThank you for your hard work <@539102006283862017> , <@1235284431296532534> , <@363374197461876747> , <@1141578036127469629> , <@1254417128979959909> !",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1528994653679128700"
   },
   {
     "channel": "announcements",
@@ -19782,14 +18254,6 @@
     "created_at": "2026-07-22T15:44:29.681000+00:00",
     "content": "The first test was successful. I found this to be the most suitable method for the time being.\n\n1. export xml and re-indexing (starting from 1000).\n2. importing re-indexed layers based on index; the suffix \"(1)\" is added to the names.\n3. Running the tapir program.\n 3a. Checking if every layer has a corresponding pair.\n 3b. Moving elements.\n 3c. Deleting old layers.\n 3d. Removing \"(1)\" from the names.\n4. Importing template layers into the plan (indexes 2\u2013100).\n5. Running the tapir program.\n 5a. Migration tab: select the new layer range and the current range (2\u2013100 and 1000+).\n 5b. Mapping table: if a layer is not found, a suitable choice can be made manually; the mapping can also be exported to Excel and re-imported.\n 5c. Execution.\n 5d. Deleting layers with indexes 1000+.",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1529514482701963394"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "heartbreaker2323",
-    "created_at": "2026-07-22T22:07:26.738000+00:00",
-    "content": "I dont tjink this is GS, it is their parent company. Unfortunately, it seems to be the desire of every major company now to move towards a pay  per use/ subscription service. \"You will own nothing, and you will be happy \"",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1529610855463911474"
   },
   {
     "channel": "general",
@@ -20104,14 +18568,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1532587960950587563"
   },
   {
-    "channel": "welcome-and-rules",
-    "server": "archicad-api-grasshopper",
-    "author": "ooki_85834_38875",
-    "created_at": "2026-07-31T03:17:23.998000+00:00",
-    "content": "Hi everyone! I'm Ooki, joining from Japan. I have no programming background, but I use Claude Code together with Tapir to automate Archicad. Excited to be part of this community!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1532587960950587563"
-  },
-  {
     "channel": "dev-grasshopper-plugin",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
@@ -20416,11 +18872,171 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1533233902338965646"
   },
   {
-    "channel": "general",
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-08-03T09:06:05.408000+00:00",
+    "content": "ok this weekend i have done something check it what do you think https://tapir-marketplace.vercel.app/ , I didnt make a fancy page design but styling can change to anything you like, since this is a community project kind of and to not burden anyone with hosting and paying for services although many offer free for low bandwidth but after couple of days service stops you have to reset etc, Considering many already own github for hosting their scripts or apps in repo and the way the Tapir is working that all are joined in github,  i made this website  so it doesnt require backend its integrated in github and also has a forum integrated into github so coments can be added to each shared script page and there is a forum of course all this is free and opensource and not the best method. If there is a backend that we can use we can convert it to real database and offer auth with google or other services etc but all those require to have one owner and probably do some payments etc.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533762875301298377"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-08-03T09:06:36.273000+00:00",
+    "content": "the link to the github of the page is here https://github.com/giza611/Tapir_Marketplace",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533763004758364181"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-08-03T09:07:28.803000+00:00",
+    "content": "here is explanation from our friend Claude \ud83d\ude09  \n\nA place to find and share Tapir scripts and Archicad add-ons, built for the\ncommunity and free to use.\n\n**Browsing needs no account.** Search, filter by category or Archicad version,\nand download. Nothing to sign up for.\n\n**Publishing needs a free GitHub account.** Fill in one form: name, description,\ncategory, which Archicad versions it works with, and a download link. Add\nscreenshots and a video if you have them. Automated checks run and your listing\ngoes live, usually within a couple of minutes. No waiting for approval.\n\n**Your listing stays yours.** It is filed under your own GitHub name, so you can\nedit or remove it whenever you like, and nobody else can change it. Your contact\ndetails carry over, so the second script you publish is quicker than the first.\n\n**Questions live with the script.** Every listing has a comment section, and\nthose comments also appear in the forum, so all discussion is searchable in one\nplace. You can start a topic there too.\n\n**Vote for what you find useful.** One vote per account, and you can take it\nback. It helps good scripts surface.\n\n**Downloads are checked.** You can host your file anywhere. Every download is\nfingerprinted when first seen and re-checked every hour. If the file behind a\npublished version changes, the listing is flagged and the download is pulled\nuntil a proper new version is released. Still, these are scripts that run inside\nyour Archicad, so read what you download and try it on a copy first.\n\n**Money goes to the author.** Scripts can be free, free with a contribution\nlink, or paid. In every case you pay the author directly through their own link.\nThe site never handles a payment or takes a cut.\n\nNot affiliated with Graphisoft. Archicad is a trademark of Graphisoft SE.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533763225085022268"
+  },
+  {
+    "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
-    "created_at": "2026-08-01T22:04:08.426000+00:00",
-    "content": "I have created a bot <@1533231169733263401> to extract relevant information from the discord server to publish a dynamic webpage explaining the project status and development",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1533233902338965646"
+    "created_at": "2026-08-03T09:26:50.182000+00:00",
+    "content": "https://tapir-report-web.vercel.app/",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533768096261607485"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-03T09:47:39.334000+00:00",
+    "content": "This scraps from GitHub and Discord and reports what is been develop, discussed or in the pipeline",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533773335584968835"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-08-03T12:29:06.686000+00:00",
+    "content": "this looks more like a informative-marketing website to show what Tapir does, i think we can integrate the 'marketplace' i did inside",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533813967284342804"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-03T13:26:31.788000+00:00",
+    "content": "Automatic Terrain generation anywhere in france with a Tapir script",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1533828417089175553"
+  },
+  {
+    "channel": "github-notifications",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-08-03T15:18:58.433000+00:00",
+    "content": "Hi Mathias, verified \u2014 you're right about the overlap. Your #507 (full Wall/Slab/Column/Beam field support) is a superset of my #511 (beam slantAngle/profileAngle) and was opened first, so I've closed #511 in favour of #507.\n\nOne heads-up: issue #508 (filed a few hours after you opened #507) reports exactly the slantAngle/profileAngle gap \u2014 adding Fixes",
+    "url": "https://discord.com/channels/994704152116596846/1034268130802929785/1533856714569547926"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-03T16:15:06.109000+00:00",
+    "content": "The site is live on:\nwww.archicad-api.com",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533870839626207232"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-03T16:17:17.396000+00:00",
+    "content": "2 days from idea to live \ud83d\ude04",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533871390284054568"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-03T16:58:31.794000+00:00",
+    "content": "At the moment I have no claude subscription. I am running with gemini-antigravity",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533881768661225492"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-03T16:58:38.895000+00:00",
+    "content": "but planning to try Claude soon",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533881798445240410"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-03T17:02:14.656000+00:00",
+    "content": "but i dont pay it by myself. my bosses are paying it cause im doing a lot of things to optimize our workflows",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533882703412203782"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-03T17:45:41.341000+00:00",
+    "content": "maybe you can open a new channel \"tAPIr infrastructure\" where we can work on the surroundings of the plugin infrastructure",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533893636641783908"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-03T18:23:50.929000+00:00",
+    "content": "No problem! Claude works well, but we like to go to the limit of Archicad, so we have to test everything xD",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1533903239869759511"
+  },
+  {
+    "channel": "tapir-infrastructure",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-03T18:40:43.510000+00:00",
+    "content": "one of my first projects with claude was an website for a customer. and to check my work for issues, flaw, missing thoughts, bugs etc. i create a simulation",
+    "url": "https://discord.com/channels/994704152116596846/1533901707468083302/1533907486942433330"
+  },
+  {
+    "channel": "tapir-infrastructure",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-03T18:42:25.722000+00:00",
+    "content": "it scans your code, design, etc for everything regarding the profession of the persona",
+    "url": "https://discord.com/channels/994704152116596846/1533901707468083302/1533907915650371684"
+  },
+  {
+    "channel": "tapir-infrastructure",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-03T18:43:42.925000+00:00",
+    "content": "i usally use it in vscode with no html representation. it takes the results, sorts it and then i work on every issue created",
+    "url": "https://discord.com/channels/994704152116596846/1533901707468083302/1533908239463223458"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-08-03T18:45:22.231000+00:00",
+    "content": "I think overall since most users of Tapir are architects some visuals would make the website better the current design you made is to generic and too much text it gets boring to read all that data on one page in my opinion, i understand its not for masses but still a less cluttered and more structured design language that we dont have to invent claude can suggest many options and decide on some path site goes. If someone can make a sort of 'plan' in what way the features would be good to be explained or described i can help with screenshots or visuals from the software just someone would need to be the orchestrator of the direction the web should have what do you think?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1533908655983034510"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-04T08:46:02.880000+00:00",
+    "content": "I created a new github for my scripts, beginning with this one: https://github.com/MathiasJon/Scripts-TAPIR-ARCHICAD",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1534120219398766632"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-04T11:44:23.050000+00:00",
+    "content": "We'll have to clean the github, there are a lot of outdated command that are existing in the projet now,  and a clean roadmap would help to see were we could go next",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1534165099164729405"
   }
 ]

@@ -19038,5 +19038,45 @@
     "created_at": "2026-08-04T11:44:23.050000+00:00",
     "content": "We'll have to clean the github, there are a lot of outdated command that are existing in the projet now,  and a clean roadmap would help to see were we could go next",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1534165099164729405"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "archibram",
+    "created_at": "2026-08-05T03:44:45.088000+00:00",
+    "content": "I think the ideal approach for anyone wanting to get started with Tapir would be to see a step-by-step guide on installing everything required (Python versions, troubleshooting common issues, etc.) to run the scripts.\n\nIt would also be great to showcase the functionality of each script. It might be worth creating explanatory videos\u2014in any language\u2014and enabling YouTube's translation features.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1534406783509069844"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-05T08:22:25.677000+00:00",
+    "content": "It would be good to see real world use examples of what it can be used for. And how it can be useful for working in Archicad.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1534476663084028056"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-05T08:30:54.393000+00:00",
+    "content": "I think that we can already do that, some people have  already share some Tapir workflow on Linkedin, but : 1/ They often forgot to name tapir 2/We don't have a centralize website/linkedin account to interact with people there",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1534478796793581598"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-05T11:48:53.711000+00:00",
+    "content": "I'm working on improving Terrain generator: automatic address importation in archicad, selection of the archicad 0 relative level on the plan.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1534528622264586473"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-05T19:55:20.378000+00:00",
+    "content": "i'm trying to update the text and label command, but I'm blocked with Claude.  Modifying an existing API_TextID/API_LabelID element via ACAPI_Element_Change don't work. Two changes never persist even though the call returns NoError:\n\nChanging the text content (rebuilding textContent + paragraphs in the memo, same approach as the Element_Test example) \u2014 works fine on a brand-new element via ACAPI_Element_CreateExt, but silently has no effect when modifying an existing one.\nOther problem:\nChanging API_LabelType::arrowData.arrowVisibility \u2014 even when masking that nested field specifically (not just the whole arrowData struct). A sibling field like framed updates fine with the same pattern.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1534651040018731249"
   }
 ]

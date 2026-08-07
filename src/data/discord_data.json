@@ -19078,5 +19078,29 @@
     "created_at": "2026-08-05T19:55:20.378000+00:00",
     "content": "i'm trying to update the text and label command, but I'm blocked with Claude.  Modifying an existing API_TextID/API_LabelID element via ACAPI_Element_Change don't work. Two changes never persist even though the call returns NoError:\n\nChanging the text content (rebuilding textContent + paragraphs in the memo, same approach as the Element_Test example) \u2014 works fine on a brand-new element via ACAPI_Element_CreateExt, but silently has no effect when modifying an existing one.\nOther problem:\nChanging API_LabelType::arrowData.arrowVisibility \u2014 even when masking that nested field specifically (not just the whole arrowData struct). A sibling field like framed updates fine with the same pattern.",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1534651040018731249"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "turit_",
+    "created_at": "2026-08-06T12:07:29.212000+00:00",
+    "content": "https://youtu.be/FhH-NKJYPg0\nI further developed my grid modification tool. Unfortunately, due to limitations in Tapir, I couldn't implement it fully within that environment, so I created it as a native add-on.\n\nKey features:\n- Expanding and contracting the grid system.\n- The dimensions of the division intervals can be modified.\n- Cutting out, adding, and restoring areas.\n- Renaming\n- Managing primary and secondary grids, which can be selected from favorites.\n- The grid elements remain independent and can be freely edited in Archicad.\n- The program recognizes and can modify the grid elements even at a later stage.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1534895688880750703"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-06T17:50:47.398000+00:00",
+    "content": "Hi @everyone  I am starting to test the grasshopper plugin, preparing my workshop in Japan in 2 weeks, and I am seeing some bugs. Is anyone using currently the grasshopper plugin?",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1534982083934552254"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-06T18:00:49.549000+00:00",
+    "content": "We need grasshopper testers. I always test my new Archicad command but I don't have rhino",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1534984609538773145"
   }
 ]

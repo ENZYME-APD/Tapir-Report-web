@@ -624,14 +624,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1035106907012214814"
   },
   {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-10-27T14:31:45.362000+00:00",
-    "content": "it is, thanks! i'll put a link to the roadmap on the main GitHub page",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1035199128742940722"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "night.disc",
@@ -654,206 +646,6 @@
     "created_at": "2022-10-31T08:01:20.843000+00:00",
     "content": "If you are an ArchiCAD user, then you can try testing what we have, and give feedbacks.\n\nIf you are interested in grasshopper, you can test the plugins as well.\n\nIf you're interested in python, we can talk about what is going on, and which part is interesting for you to work on.\n(Core / creating new methods / creating grasshopper plugin / etc.)",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1036550430651596850"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "poco2013",
-    "created_at": "2022-10-31T21:48:01.562000+00:00",
-    "content": "If Tapir is going to expand, I think it can only do so through AddOns, as the Python API is too limited.  Most of the present wish list would require a AddOn. However, to do so would require some guidelines to minimize confusion and facilitate review . I submitted a suggestion as a starting point through a revised pull request, but i doubt if it went through? Wondering how to get a discussion going on this topic?",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1036758471145685052"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2022-10-31T22:53:54.967000+00:00",
-    "content": "Hi <@1033068115380154458> you\u2019re right. We are working on that expansion through the  C++ addon. At this moment (to my knowledge) only <@844197976430608424> has been working on the C++ part, it would be indeed beneficial if we could get together and agree on those guidelines and methods so you and perhaps others can join the expansion of the python API",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1036775052928102511"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-10-31T23:32:21.438000+00:00",
-    "content": "I agree that we need some guidelines, I'll try to put together something. <@1033068115380154458> I've just realized that there is a proposal txt in the pull request, but I think it's better to discuss these here or I'm happy to have a call about the ideas.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1036784726968631316"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-10-31T23:41:31.473000+00:00",
-    "content": "Let me answer some of your points here.\n\n1. A developer ID should be established for the AddOn(s). If that would be kept confidential, then the responsibility for compilation would fall on the team and contributors would submit only raw code.\n\u2b06\ufe0f We already have an Add-On and a developer ID for it: https://github.com/ENZYME-APD/tapir-archicad-automation/tree/main/archicad-addon\n2. I agree that Addons should be minimized but recognize that the number of proposed functions may make that a confusing mess? Also most users may not be interested in all functions \u2013 code bloat.\n\u2b06\ufe0f Agreed, we should be careful about what we implement, and how.\n3. Proposed components should be submitted in both binary \u2013 ghuser \u2013 and the Python code (py).\n\u2b06\ufe0f On the long run we would like to eliminate all the binaries from GitHub, but at the moment it is work in progress. <@840956366989951037> knows the details.\n4. C++ AddOn(s) should be submitted with the raw code \u2013 source, RFIX & CMakeLists.txt. For convivence the apx file could be submitted for quick testing . if so, only the release version should be submitted as most users may not have the necessary debug dll\u2019s needed to run the code. Submission need specify if the file is compiled for windows or the mac.\n\u2b06\ufe0f Our current Add-On compiles for both Windows and Mac, for both AC25 and AC26. Binaries are available after every change by GitHub actions, no need to commit these. https://github.com/ENZYME-APD/tapir-archicad-automation/actions/workflows/archicad_addon.yml\n5. Some type of review status together with required issues to be resolved, should be published for each submission.\n\u2b06\ufe0f Agreed, will put together some guideline.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1036787033982640169"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-10-31T23:41:35.177000+00:00",
-    "content": "6. NameSpace \u2013 \u201cAdditionalJOSONCommands\u201d,     NameSpaceName = \u201cTapir\u201d \n\u2b06\ufe0f At the moment the command namespace is \"TapirCommand\".\n7. I suggest a command system to identify functions within each NameSpace class as in parameters[\u2018Command\u2019] = \u2018MyFunction\u2019\n\u2b06\ufe0f I'm not sure if I fully understand this point.\n8. Input types need be standardized as to list of strings or other types. A List should be required to allow multiple inputs  \n\u2b06\ufe0f What is important here that the inputs should be compatible with the outputs of other commands from the official GS API (and vice versa).\n9. The JSON verification scheme should establish by the team and the scheme file should be external RFIX\\images.Set a common resource number for the file. \n\u2b06\ufe0f Agreed, it should be consulted before commit.\n10. I am sure that there will be a number of other issues as we move along we need to expedite the process of review/testing and final release. \n\u2b06\ufe0f Agreed.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1036787049518354432"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "poco2013",
-    "created_at": "2022-11-01T01:02:42.150000+00:00",
-    "content": "Viktor  -- My proposal was only a starting  point for discussions. BTW - my point on the input was that it is critical to be compatible with both the component inputs and the C++ AddOn . Since C++ is strongly typed, we just can't allow just any types of inputs. Biggest problem is using one list (for convenience) to hold all inputs, i.e. strings only. That probably is not possible for all users, so we need to specify how inputs should be handled. The input format determines the format of the namespace class execute function and the JSON scheme. Should be uniform. So a reviewer  does not have to waste time learning a new scheme or a verification scheme for every submittal. Would be open to any discussions. perhaps a open goto meeting or just the voice channel but would need help with that??",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1036807463082664076"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-01T08:48:23.287000+00:00",
-    "content": "Here is the first version of the Add-On development guidelines doc: https://github.com/ENZYME-APD/tapir-archicad-automation/wiki/Archicad-Add-On-Development",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1036924656705343508"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "poco2013",
-    "created_at": "2022-11-03T01:01:56.894000+00:00",
-    "content": "i question has been asked on the Archicad forum concerning the input of Project data. https://community.graphisoft.com/t5/Design-forum/Project-info-input-from-document/td-p/360949  I have summitted both components and the Addon to do so but unfortunately they are not in the Tipar format and I have no idea how to do so. Perhaps someone can help ?? Seems like we are missing a opportunity. The video describing my components is at:       https://www.youtube.com/watch?v=Vypeq9OpOxQ",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1037532048996438097"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2022-11-03T21:33:58.629000+00:00",
-    "content": "<@1033068115380154458>  that is great. Will try to make a tapir component. Aout of it",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1037842099225247764"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-06T08:41:55.671000+00:00",
-    "content": "I'm planning to implement project info field access in the official Tapir Add-On. I'm thinking about doing it in a live coding session starting from scratch (GitHub fork, Developer Environment setup, Impementation, Documentation, Pull Request). It would take approximately an hour. Raise your hand (\u270b) if you would be interested participating in the live session. If there is enough people, I'll organize something.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1038734970254020708"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2022-11-06T10:57:55.315000+00:00",
-    "content": "Great idea. Provide list of tools needed. You will work on win? Right?",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1038769194281467965"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2022-11-06T10:58:42.647000+00:00",
-    "content": "Is it possible to work on addon in visual studio instead of xcode",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1038769392806281266"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2022-11-06T11:03:43.467000+00:00",
-    "content": "Nice idea! \ud83d\udcaa\ud83d\udcaa\n\nMaybe, I can do something similar for python / grasshopper plugin development once I'm back.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1038770654536806482"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2022-11-06T11:05:48.540000+00:00",
-    "content": "And I could explain api.py",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1038771179130982461"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2022-11-06T11:41:08.575000+00:00",
-    "content": "Great idea! I\u2019d love to participate, and understand the process",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1038780071202271292"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-06T11:54:16.249000+00:00",
-    "content": "Probably the best if we do it here in the Development hangout voice channel. Let me know if you know a platform that fits this kind of event better. I'll come back to you with the date and time, my first idea is 11th November, Friday.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1038783374946488331"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-08T17:22:45.594000+00:00",
-    "content": "**Archicad Add-On live coding session details**\n\n- **When?** 11th November, Friday, 17:00PM (CEST)\n- **Where?** Here in the Development hangout voice channel.\n\n**Agenda**\n1. GitHub introduction (forks, branches, clones).\n2. Setting up the developer environment for Add-On development (CMake, Visual Studio).\n3. Adding the compiled Add-On to Archicad and trying it out.\n4. Understanding how Project Info and autotexts work in Archicad.\n5. Implementing the command.\n6. Updating the documentation.\n7. Opening a pull request on GitHub.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1039590817662255295"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": ".francoiss",
-    "created_at": "2022-11-10T04:58:21.032000+00:00",
-    "content": "Great video, thanks so much <@1033068115380154458> it really shows the practical use of tAPIr \ud83e\uddbe",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1040128256642392134"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "poco2013",
-    "created_at": "2022-11-10T08:57:40.468000+00:00",
-    "content": "Someone can correct me I am wrong but i don't think there is a rule or any indication. Parameter access is coded in the GDL script. So, basically trial and error.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1040188484482252843"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "Deleted User",
-    "created_at": "2022-11-10T11:52:48.561000+00:00",
-    "content": "I'll try to make some test. Generally an objects with the gs component doesnt have permission of acces in Grasshopper if a specific parameter is not set to 1. Other permissions are blocked if the parameter is locked in the gdl script or in the general setting.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1040232558618751012"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-10T11:59:16.493000+00:00",
-    "content": "Modifying GDL object parameters from the outside is like russian roulette. There are several checks and fixes Archicad runs when you are editing objects inside Archicad, and by not running these the object can arrive to an invalid state. I won't go in a detailed explanation here, but the main reason behind the Grasshopper limitation is this.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1040234185723490315"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2022-11-10T13:44:13.717000+00:00",
-    "content": "Is there a way to force archicad to check the object?",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1040260598195298355"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-10T15:44:00.350000+00:00",
-    "content": "If you modify only one parameter at a time and make sure that Archicad runs the parameter script afterwards, you are relatively safe. It can still happen that you modify a parameter that is otherwise not visible on the UI, so there is a possibility that the object is not prepared well for this change.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1040290741118845058"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2022-11-10T16:11:05.511000+00:00",
-    "content": "Thanks! Is there a python function to run the parameter script?\nOther question: when I use directly python, it can be quite slow for trivial work. Is this a python problem or the python API ?",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1040297557538115706"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-10T16:46:21.544000+00:00",
-    "content": "I don't think there is a python function to run parameter script, but we can implement it in Tapir. \ud83d\ude42\n\nThe speed depends on three things:\n1. Python script running. If your script is not extremely complex, usually it's not the case.\n2. Http communication between AC and the script. If you send a lot of data, it can be slow.\n3. Archicad itself. It depends heavily on the task you do.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1040306432823791647"
   },
   {
     "channel": "welcome-and-rules",
@@ -19094,5 +18886,213 @@
     "created_at": "2026-08-06T18:00:49.549000+00:00",
     "content": "We need grasshopper testers. I always test my new Archicad command but I don't have rhino",
     "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1534984609538773145"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-08T08:17:29.815000+00:00",
+    "content": "<@423113258229039105> , thanks for testing!\nCould you please open GitHub issues for these?\n1)\nThe Stories Grasshopper component returns bad Story Height for the top story (all other outputs are ok, right?)\n2) \nThe SetStories Grasshopper component does not have heights input, it has elevations input only. The elevations are the levels of the bottom of the stories, the heights are the differences of the bottom and the top levels of the stories.\nRight?\n3)\nEliminate all additional settings input. Please create separate input parameters for all options instead.\n\nThis way we can make sure we (and Claude)  understand the issues correctly.\nBasically this way you can use my Claude license what I got from Anthropic to maintaine Tapir  \ud83d\ude42 everything you ask in the Github issue, Claude will read it and do it!\nAs soon as I will be at home, I will regularly ask Claude to \"read all issues from GitHub, close it if it's already fixed or try to fix it! If something is not clear, write a comment into the Issue to ask your question!\"",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1535562585745924207"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-08T08:20:59.633000+00:00",
+    "content": "We will fix the bugs in the upcoming days. Let's try to make a stable next version till next Wednesday so <@423113258229039105> can use it to prepare for the Japan demo.",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1535563465786392607"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-08T08:27:30.124000+00:00",
+    "content": "Nice work guys!\nI have to catch up whats going on here!\n<@1338845363024560198> , did you make a marketplace for Tapir scripts?\nMaybe we could integrate the marketplace into Tapir palette... A button could open the marketplace and with a single click you could download scripts. It would add the script to the popup, remember it next time when you restart AC.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1535565103624093786"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-08T08:29:57.537000+00:00",
+    "content": "That\u2019s such a great idea",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1535565721919299624"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-08T08:29:59.436000+00:00",
+    "content": "Probably these are AC API limitations/bugs...\nWe can report them to Graphisoft or somehow create a workaround.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535565729884274708"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-08T08:31:56.358000+00:00",
+    "content": "Ok! Got it. Nice workflow",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1535566220290555935"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-08T09:15:37.325000+00:00",
+    "content": "I find Chatgtp far more competent when it comes to coding ACs API. It just seems to understand the environment so much better. With claude I am constantly having to rework code i order to get it to work.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535577213422805032"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-08T09:17:05.623000+00:00",
+    "content": "And it is able to create/verify directly in Archicad with auto tests",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535577583771586600"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "turit_",
+    "created_at": "2026-08-08T13:34:44.408000+00:00",
+    "content": "How can claude test in Archicad?  \ud83d\ude2f \nI have to close the program, replace the .apx file, and then reopen it.\nIs there a simpler method?",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535642422615474199"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-08T13:38:32.956000+00:00",
+    "content": "Yes, ask Claude to create scripts to automate that. If I had to do it manually I would have stopped tapir development the first day xD",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535643381215010846"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-08T13:39:21.241000+00:00",
+    "content": "I still have to give the script permission to compile, but apart from that most is automatic",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535643583736975480"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-08-08T13:43:23.527000+00:00",
+    "content": "Yes I did make the website and <@423113258229039105> integrated the link in the web he is working on, here is the code - repo of the marketplace  in case its needed to tweak or use it https://github.com/giza611/Tapir_Marketplace , I tried to make it as open source and free since its by our community",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1535644599958241280"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-08-08T13:48:08.174000+00:00",
+    "content": "It can test what is tapir related but if you are working on a custom addon and rebuild the apx you have to manually test it , maybe if you give full privileges to claude to copy/replace the apx and use tapir mcp it can test some features but for complex custom addons I think the only way is to manually check changes or if it works that's what claude says at least  \ud83d\ude03",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535645793854431232"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-08T14:17:41.250000+00:00",
+    "content": "To try to give an example.\n With gpt it warned in advance that I need the developer ID key to use the addon, Claude built the addon and then when I tried to use it,it failed. I had to tell claude that  it needed the developers ID key.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535653230674055188"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-08T14:22:49.227000+00:00",
+    "content": "Also, Im developing an addon that calls on AI agents using the paid API of either  gtp or claude. Chatgtp  warned  me not to paste my API key onto the chat for security reasons. However , Claude  asked for the api key, so I gave  it, it implemented the key into the addon  and then told me afterwards that it was a security risk and that I should change the key.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535654522423222385"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-08T14:28:42.864000+00:00",
+    "content": "Very cool. It looks like you are developing the same types of addons as myself for my workflow. Not so much an ai agent that can auto build plans and models, but that checks for errors? I created an add9n thay checks for any walls or elements at that out of alignment, for example.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1535656005684301901"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-08T14:31:48.427000+00:00",
+    "content": "Im currently in the process of developing an addon that works with AI to check and validate all my plans, based on office standards, project standard and the project design. to ensure all he plans are error free and aligned to the project design.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1535656783991934976"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-08T18:07:29.476000+00:00",
+    "content": "<@146577413076156416> dig into memory/rag/brain. I have a backend for Claude with all the information it needs regarding my projects and software I'm developing for. Without checking and relating to real knowledge it does nothing. If it has all the information it will give you the right answers.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535711062685651086"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-08T18:09:47.138000+00:00",
+    "content": "Did you try the Tapir mcp?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1535711640081928382"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-08T18:15:34.904000+00:00",
+    "content": "That's not my experience. I made the api key mistake because I didn't read Claude's instructions and it made me change it",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535713098718253107"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-08T18:18:20.849000+00:00",
+    "content": "I code with Claude for Tapir (c++) , python scripts, JavaScript websites and gdl and since I gave Claude the adequate data I didn't experience any big problem or complications",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535713794741899347"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-08T18:21:52+00:00",
+    "content": "Thats interesting. Glad.its workig for you \ud83d\udc4d\ud83d\ude42. I find Claude implements UI far beeter than chatgtp  and its coding capabilities  is much stronger. I use chatgtp to understand the project  and Claude to code it.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535714680373383168"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-08T18:42:34.336000+00:00",
+    "content": "My objective would be to create an open GitHub, I'll probably do that in September",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535719891108372530"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-08T18:44:16.198000+00:00",
+    "content": "I havr no idea why. One day it stopped showing in 3D",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1535720318348558367"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-08T20:30:24.740000+00:00",
+    "content": "I have revised the script and now seems to be working correctly. Maybe it was an error on my side matching the data lists",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1535747029949751418"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-08T20:31:18.581000+00:00",
+    "content": "I will add the issues as proposed. Thanks <@1254417128979959909>",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1535747255775264819"
   }
 ]

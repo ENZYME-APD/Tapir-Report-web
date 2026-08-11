@@ -1874,14 +1874,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2023-04-07T13:18:30.827000+00:00",
-    "content": "Hi <@1093631659104014446> , <@1022143811142565940> welcome to the Tapir community!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1093887530954395788"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "grzegorzwilk",
     "created_at": "2023-04-12T04:23:27.922000+00:00",
     "content": "<@734933683991085097>  welcome in tapir community",
@@ -19030,5 +19022,37 @@
     "created_at": "2026-08-09T14:57:41.299000+00:00",
     "content": "I sometimes ask Claude if something is possible and giving me all I need to give to Claude code",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1536025685074645012"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-10T23:26:06.061000+00:00",
+    "content": "This is an Archicad addon that I have created with Claude:",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1536516019185778728"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-10T23:27:01.597000+00:00",
+    "content": "The Add-On is an integrated AI assistant for Archicad 29, designed to work directly with the live project.\n\nIt gives the user a conversational AI inside Archicad that can understand project data, answer questions about the project, navigate to relevant information, select and highlight elements, compare the project against Office Standards and the Project Standards / Design Brief, identify inconsistencies, and carry out approved edits.\n\nThe Add-On combines:\n\nAI conversation\nlive Archicad project understanding\nproject navigation\nelement selection and highlighting\ncontrolled editing\nOffice Standards\nProject Standards / Design Brief\nproject and document consistency checking\nformal project auditing\n\nThe aim is to make the AI an active project assistant within Archicad rather than a separate external chatbot or passive checking tool.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1536516252120383558"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-10T23:36:30.046000+00:00",
+    "content": "I created this  addon in order to have  a AI asistant directly inside AC as a general assistant that can be spoken to with a microphone, to examine and give feedback on the project, plans, elevations , layouts and project Views, and automatically make edits and corrections based on my office standards and the design specifications of the project I am working on.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1536518636368433273"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-11T00:34:28.159000+00:00",
+    "content": "You are showing us Archicad 35",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1536533224631836702"
   }
 ]

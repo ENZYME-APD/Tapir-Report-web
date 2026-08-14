@@ -659,14 +659,6 @@
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "aitorleceta",
-    "created_at": "2022-11-12T15:58:46.630000+00:00",
-    "content": "~~before starting again from scratch, ~~I would appreciate some explanation because I'm a little confused.  To which branch should I pull request my code, \"main\" or \"first_nodes\"? Why do we have two branches? and what is supposed to be developed on each one? At first I thought that \"first_nodes\" branch was created for the new tapir code ONLY (the code based on <@840956366989951037> base-work, but I can see also the old tapir code, including ghuser binary objects, api2, etc...  in the same branch. \nCertainly i'm not used to git collaboration... \ud83d\ude4f",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1041019234177798235"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "aitorleceta",
     "created_at": "2022-11-12T17:10:37.469000+00:00",
     "content": "<@844197976430608424> I pull requested again starting from forking again from your update. I would like to make a code review with <@840956366989951037> before merging",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1041037315147051029"
@@ -1870,14 +1862,6 @@
     "created_at": "2023-04-07T05:20:32.871000+00:00",
     "content": "The Q&A session is on demand at \nhttps://events.graphisoft.com/event/building-together-or-collaborate/planning/UGxhbm5pbmdfMTE5OTcwOQ==",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1093767246888841296"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2023-04-12T04:23:27.922000+00:00",
-    "content": "<@734933683991085097>  welcome in tapir community",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1095564820939554877"
   },
   {
     "channel": "dev-python-package",
@@ -19054,5 +19038,37 @@
     "created_at": "2026-08-11T00:34:28.159000+00:00",
     "content": "You are showing us Archicad 35",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1536533224631836702"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-13T08:30:30.366000+00:00",
+    "content": "<@900814845191000115> , I have done your request #471\nTapir 1.5.8 is able to create interior elevations \ud83d\ude42\nWith only few lines of python code, we can generate interior elevations for all zones",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1537377798941843466"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "pablo_ferrer",
+    "created_at": "2026-08-13T11:53:40.603000+00:00",
+    "content": "https://www.linkedin.com/posts/hpenbeoglu_gdl-archicad-graphisoft-activity-7492959111903522816-iZfp?utm_source=share&utm_medium=member_android&rcm=ACoAADj81XABmFiH4CZ-gyln8fOPaqcdOHf-xNA",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1537428928501915752"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-13T12:38:13.957000+00:00",
+    "content": "Hi @everyone, does anyone have any working python script that succesfully create some walls and inserts doors or windows? I can't manage to make it work",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1537440141361029281"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-13T12:41:50.537000+00:00",
+    "content": "<@423113258229039105> , I have, it works for me with the latest Tapir version.\nI will send it to you when I got home after work.\n\nI'm using AC29 INT Windows",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1537441049763385475"
   }
 ]

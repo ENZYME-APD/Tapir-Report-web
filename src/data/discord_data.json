@@ -656,22 +656,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1040452972271898644"
   },
   {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "aitorleceta",
-    "created_at": "2022-11-12T17:13:19.276000+00:00",
-    "content": "I guess it is not a good practice, but I packed two functionalities on the same commit. They are related and amount of code is small",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1041037993814794301"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2022-11-15T09:49:20.545000+00:00",
-    "content": "It was a good chance to understand the background process that goes into expanding tAPIr functions.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1042013426475618365"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "iagopenamar",
@@ -19070,5 +19054,125 @@
     "created_at": "2026-08-14T14:58:32.410000+00:00",
     "content": "Hi <@1254417128979959909> could you send me those python samples when you have a moment?",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1537837838777851914"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-15T09:44:44.807000+00:00",
+    "content": "I committed the create_element.py into GitHub, that shows a simple example for all available element creation commands:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/blob/main/archicad-addon/Examples/create_elements.py\nIt creates belows:\nWall, Window, Door, Opening, Column, Beam, Slab, Roof, Mesh, Stair, Morph, Zone, Object, Lamp, Line, PolyLine, Arc, Spline, Hatch, Hotspot, Text, Label, Dimension",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1538121257953009724"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-15T09:45:11.307000+00:00",
+    "content": "It works for me using Archicad 29 INT + Tapir 1.5.8 + default template empty project",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1538121369101934592"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-15T09:52:06.221000+00:00",
+    "content": "Recently the contributors (not only me!) fixed many bugs related to element creation.\nYou should use Tapir 1.5.8, I think it's pretty stable now.\nYou can test creating complex elements using Tapir (for example complex roof/slab/mesh with multiple holes).\nPlease create GitHub issues if you find any bugs, if something does not work as you expected, if you have any request! I'm about to install automatic Claude Agent...",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1538123109377253477"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-08-15T11:26:59.011000+00:00",
+    "content": "Another creative use of Tapir \ud83d\ude09\nhttps://www.linkedin.com/pulse/i-let-claude-drive-archicad-drafts-better-than-ning-arbv-pmp--voamc?utm_source=share&utm_medium=member_android&utm_campaign=share_via",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538146986669252730"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-15T13:27:54.101000+00:00",
+    "content": "I would.love to see a video presentation of how these tools are being used in people's workflow. Im still not understanding how these creation tools can be used effectively in a project.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1538177416722128966"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-15T13:51:37.955000+00:00",
+    "content": "You need to create the floor plan and 3d image from a 3d model in order for it to recreate the 3d model and floor plan? What am I missing  here??",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538183388798914640"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-15T13:57:53.005000+00:00",
+    "content": "I am testing now some workflows of zones driving the construction elements surrounding them (partition,walls, slabs, finishes)",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1538184961872625674"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-15T14:05:03.647000+00:00",
+    "content": "should work with an annotated plan? perhaps a hand drawing too?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538186768115965962"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-15T14:25:54.112000+00:00",
+    "content": "more info from the author  here:\nhttps://www.chiangning.net/resources/claude-archicad-tapir",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538192012946186320"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-15T14:50:54.792000+00:00",
+    "content": "I did read it. And Im not saying its not a great tool. My question at the moment is how to tell AI exactly  what you need in terms of dimensions and layout, roof design etc, without first  giving it the plans and 3d image.the writer says it took 2 and a half hours to produce  but tht is much slower than if you do it yourself for such a building. And that is not including the time to prepare the initial plans and 3d image.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538198307254304778"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-15T14:57:52.246000+00:00",
+    "content": "I don't think that element creation is the best usecase of Tapir. But that is indeed a spectacular way to demo Tapir and get some likes on LinkedIn \ud83d\ude42 we should be happy that mentioned Tapir.\nTapir is for automation, doing simple straightforward repetitive tasks for you.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538200058183548958"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-15T15:00:33.289000+00:00",
+    "content": "I think creating elements is a really use case! Maybe not to ask claude to build the whole thing, but to create systems that are responsive. For example, create a massing based on zones (rooms) and automate the construction/BIM elements based on the different rooms. Python can use topologic engines to understand the interfaces between elements and place them acording to rule-based design. That is my aim",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538200733646848011"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-15T15:22:48.747000+00:00",
+    "content": "Mesh creation, for example. Or I saw somebody that created a plugin that can save elements and create them as a pattern when selected in a menu. We can do that with tapir. Or create each element in the favorite menu and save those elements back with modification. I see a lot of possibilities",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538206334963679313"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-15T16:31:12.850000+00:00",
+    "content": "Agree completely, Tapir is a fantastic tool and I m not trying to criticise anyone using it how they want. Its all good \ud83d\ude42. Im just curious at this  stage how AI can be used effectively to create 3D models. I will keep experimenting myself.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538223548819181648"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-15T16:34:28.004000+00:00",
+    "content": "The AI interface has  complelty changed user experience with AC, its a real gift and also fun to explore  the possibilities. Its amazing to think that I just need to have an interesting idea for an addon or object now, and claude makes it.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538224367354249227"
   }
 ]

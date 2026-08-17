@@ -1896,22 +1896,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1104516468420395039"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "pablo_ferrer",
-    "created_at": "2023-05-12T06:18:13.473000+00:00",
-    "content": "https://www.linkedin.com/posts/iyur_bimcloud-bim-bimcloudapi-activity-7062445861783359488-VVV5?utm_source=share&utm_medium=member_android",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1106465337001652244"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2023-05-14T00:17:44.622000+00:00",
-    "content": "Really cool! Thank you <@910458243237675018> this maybe a next step into tapir",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1107099394756579411"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": ".fabioan",
@@ -1920,44 +1904,12 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1107578333572644924"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "carlosm8351",
-    "created_at": "2023-05-24T10:46:20.101000+00:00",
-    "content": "Anyone knows the workflow to achieve that?\nhttps://www.linkedin.com/posts/iyur_archicad-notion-archicad-activity-7013559152090189824-x7v6?utm_source=share&utm_medium=member_desktop",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1110881463597023302"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "1yur",
     "created_at": "2023-05-25T10:12:29.865000+00:00",
     "content": "Hi guys\nI'm Ihor, BIM specialist from Kyiv, Ukraine. I was aware about the development, but finally decided to join this channel",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1111235336035631164"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "carlosm8351",
-    "created_at": "2023-05-29T11:14:04.998000+00:00",
-    "content": "Okay, I'll send you a DM. We use Notion as a database for the items and then transfer the information using Tapir through CSV.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1112700386009174026"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "1yur",
-    "created_at": "2023-05-29T11:19:38.620000+00:00",
-    "content": "you can directly insert the data using the Notion API\nhowever, notion a bit slow, so try to use multiprocessing for insertion",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1112701785321254942"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "1yur",
-    "created_at": "2023-05-29T11:20:08.907000+00:00",
-    "content": "https://developers.notion.com/docs/working-with-databases",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1112701912354148422"
   },
   {
     "channel": "welcome-and-rules",
@@ -1982,14 +1934,6 @@
     "created_at": "2023-06-23T18:18:05.009000+00:00",
     "content": "If you want to export something from your web app and import it in Archicad your best bet is IFC, since it creates native Archicad elements during import most of the times.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1121866785789054997"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "carlosm8351",
-    "created_at": "2023-07-19T10:59:21.667000+00:00",
-    "content": "Hello!\nIt's possible to modify the AC attributes via API/Tapir? (buildingmaterials names, composites names...)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1131178462196023399"
   },
   {
     "channel": "ideas-and-feedback",
@@ -19174,5 +19118,37 @@
     "created_at": "2026-08-15T16:34:28.004000+00:00",
     "content": "The AI interface has  complelty changed user experience with AC, its a real gift and also fun to explore  the possibilities. Its amazing to think that I just need to have an interesting idea for an addon or object now, and claude makes it.",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538224367354249227"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-16T05:43:44.710000+00:00",
+    "content": "Note, I configured Claude github bot to automatically trying to fix issues, review pull requests.\nThis makes my work easier.\nBut please give me a feedback if you think the bot makes you fustrated, or I should fine-tuning it.\n\nAgain, I would like to encourage you to create GitHub issues!\nClaude will automatically answer your questions, fix the bugs and implement the feature requests \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1538422995775913985"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-16T20:19:19.127000+00:00",
+    "content": "for a dwg you can ask tapir to draw the dwg inside archicad if the process allow it, if not, not possible",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1538643341091012723"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-16T20:22:41.942000+00:00",
+    "content": "uh nice idea. this could work",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1538644191759040642"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-08-16T20:31:11.334000+00:00",
+    "content": "my extraction from a pointcloud with claude and my archicad connector. this is a png. lets see what tAPIr does with it",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1538646328303951912"
   }
 ]

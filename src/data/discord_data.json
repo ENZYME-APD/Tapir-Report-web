@@ -666,14 +666,6 @@
   {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-17T06:52:05.019000+00:00",
-    "content": "Learnings for the future:\n- I did the recording with OBS Studio (free and open source), and it did pretty great job. - https://obsproject.com/\n- I used OpenShot (free and open source) to do the final cut. Not very easy to use at first, but very powerful. - https://www.openshot.org/\n- Next time if we create a screen recording, we should decrease the screen resolution since a very high resolution can't be shared in great quality.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1042693593577553941"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
     "author": "mikieremiki",
     "created_at": "2022-11-18T21:11:09.437000+00:00",
     "content": "In one of the following sessions, please tell us about the features of creating an \"Action\" for auto-compilation for different versions and different platforms for Archicad.",
@@ -19150,5 +19142,165 @@
     "created_at": "2026-08-16T20:31:11.334000+00:00",
     "content": "my extraction from a pointcloud with claude and my archicad connector. this is a png. lets see what tAPIr does with it",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1538646328303951912"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-08-17T09:10:26.746000+00:00",
+    "content": "Can anybody explain what happens with this: \"claude mcp add ArchicadTapir -- uvx --from tapir-archicad-mcp archicad-server\" ?\n\nDidn't know there is a Claude MCP for Tapir. Or is Claude building an MCP by itself with \"mcp add\"?\n\nUntil now I Only know the MCP of <@558945647085223946>:\nhttps://github.com/SzamosiMate/tapir-archicad-MCP/",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538837401550594098"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-17T09:15:27.320000+00:00",
+    "content": "As far as I know when you execute that \"claude mcp add ... --from tapir-archicad-mcp ...\" command, it will download and install the MCP of <@558945647085223946>",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538838662249455636"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-17T09:18:55.641000+00:00",
+    "content": "Good question.\nThat MCP was not updated to the latest Tapir version, probably only to 1.5.6.\nBut that is also an open-source project, you can contribute and update it. <@558945647085223946> will do it anyway sonner or later.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538839536010928189"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-17T09:19:57.328000+00:00",
+    "content": "Maybe the best would be to merge the two GitHub projects. That would help to keep the MCP server up-to-date... I mean Claude will always make sure to update it",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538839794744819722"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T09:54:34.737000+00:00",
+    "content": "Does the tapir addon list all of the commandsits supports, is this something an MCP can query Tapir about?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538848508029964289"
+  },
+  {
+    "channel": "github-notifications",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-17T10:07:00.172000+00:00",
+    "content": "<@1254417128979959909> we will have to take volontary bad input into our tests scripts to see if tapir answers accordingly, I think (I'm quite sure\ud83d\ude05 ) I forgot those.",
+    "url": "https://discord.com/channels/994704152116596846/1034268130802929785/1538851634610839623"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-17T14:07:06.879000+00:00",
+    "content": "One question: is it currenly possible to override the 3D surface of an object using tapir? I would like to override zone 3D material with a surface that I created programatically with the MCP",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1538912060719763537"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-17T18:07:11.123000+00:00",
+    "content": "The documentation of Tapir lists all the commands, with the input parameters and response parameters.\nClaude can open this page.\nhttps://enzyme-apd.github.io/tapir-archicad-automation/archicad-addon/",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538972476497731715"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T20:17:54.246000+00:00",
+    "content": "Ok thank you. Im just having an issue with Claude at the moment trying to edit text in AC, through the MCP to Tapir. Claude says that it is getting an error message back from Tapir saying it cannot edit text. Is this true?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539005372940161124"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-17T20:20:42.385000+00:00",
+    "content": "I think this is a C++ limitation or bug",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539006078165983402"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T20:32:05.932000+00:00",
+    "content": "ok, thanks. An addon I created was able to edit text in AC no problem, running C++ through Tapir/the AC API, so it must be possible.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539008945169899601"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T20:37:36.208000+00:00",
+    "content": "I asked the Claude chat that created my addon how it created the text edit feature.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539010330447843489"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T20:37:59.073000+00:00",
+    "content": "\"Direct answer : it's not simulating keystrokes or clicking into the text box \u2014 it uses Archicad's own official developer API (ACAPI, the same interface Graphisoft provides to every add-on) to edit the element's data directly. The mechanism, step by step:\n\nIdentify the element \u2014 every object in an Archicad file has a unique internal ID (a GUID). Zendsign already knows which element it's correcting from the audit it just ran.\nRead the current data \u2014 ACAPI_Element_Get/ACAPI_Element_GetMemo pulls the element's full record into memory, including its text content and formatting (font, size, pen color, spacing).\nModify only the text field \u2014 the new text replaces the old one in that in-memory copy. Formatting fields are explicitly re-asserted unchanged, so a correction can't accidentally alter font/size/color.\nCommit the change \u2014 ACAPI_Element_Change, wrapped in ACAPI_CallUndoableCommand. This is the important part: it's a real, undoable Archicad transaction, exactly like an edit you'd make by hand \u2014 it shows up in Archicad's own Undo history, participates in Teamwork reservation rules, etc. It's not a side-channel hack.\nRead it back and verify \u2014 after writing, Zendsign re-reads the element and confirms the new value actually matches what was requested, rather than just trusting that the API call returned \"no error.\"\nAnd before any of this runs, the user sees a confirm dialog showing the current value \u2192 proposed value and has to explicitly approve it \u2014 nothing gets written silently.\n\nSo the short version: it's the same official mechanism any Archicad add-on (including Graphisoft's own tools) uses to edit the model \u2014 read the element, change the field in memory, commit it as a normal undoable operation, verify it stuck.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539010426350870599"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-17T20:39:20.040000+00:00",
+    "content": "ok. My computer with claude code is in Paris, I'll test this answer this weekend, thanks. Did you give Claude the question or just asked how claude did it?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539010765950816327"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T20:41:21.123000+00:00",
+    "content": "This is the exact bug class we spent nine debugging attempts on for its own Correct Text feature \u2014 I can give your colleague the actual working fix, not a guess.\n\nText content on an existing element (the \"NoError but doesn't persist\" case):\n\nThe fix that actually worked had two parts, and both were required together \u2014 neither alone was enough:\n\nBuild the memo from scratch, don't fetch-then-modify. Don't reuse the memo you read via ACAPI_Element_GetMemo \u2014 construct a brand-new blank API_ElementMemo and only set memo.textContent. Fetching the existing memo and modifying it in place was one of the failed attempts.\nExplicitly mask and reassert the sibling formatting fields, even though you're not changing them. Masking only textContent/APIMemoMask_TextContent silently failed. The working call also sets ACAPI_ELEMENT_MASK_SET for pen, faceBits, font, size, spacing, widthFactor, charSpaceFactor \u2014 and populates them in the element struct with their current values (read via ACAPI_Element_Get beforehand), not left default/zeroed. It's as if Archicad's internal validation for a text-content write wants the whole style block asserted as a unit, not a single isolated field.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539011273809723552"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T20:41:25.682000+00:00",
+    "content": "One more thing that mattered for us: whether the element is monostyle vs multistyle (i.e. has real memo.paragraphs/runs) matters a lot. For multistyle text, swapping textContent while leaving the old paragraphs[i].from/range describing the old string's length causes a real rejection \u2014 APIERR_PAROVERFLOW (-2130312713, \"paragraph end offset runs over the content length\") \u2014 if the new text is a different length. So if your colleague's text is multistyle, they need to also update the paragraph/run from/range to the new content's actual length before writing.\n\narrowData.arrowVisibility not persisting while framed does:\n\nI haven't hit this exact field myself, but it smells like the same class of bug as the text case above: masking only the one nested field you want to change isn't enough \u2014 some nested structs seem to require every field within that same nested struct to be masked and reasserted together, not just the one that's actually changing. Worth trying: mask every field in arrowData (not just arrowVisibility), populated with its current values except the one actually changing \u2014 same \"reassert the whole unit\" pattern that fixed the text case.\n\nAnd in both cases: confirm the write is wrapped in ACAPI_CallUndoableCommand. Zendsign's own working code always wraps the ACAPI_Element_Change call in one \u2014 if theirs isn't, that alone could explain \"returns NoError but doesn't stick,\" since changes made outside an explicit undoable transaction can behave inconsistently.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539011292931559444"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T20:41:57.114000+00:00",
+    "content": "Claude had to rebuild the addon several times to get this bug fixed for me, several hours!!!!!",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539011424767058020"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-08-17T20:46:19.252000+00:00",
+    "content": "And my Claude Code too XD",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539012524253380618"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-08-17T20:48:27.665000+00:00",
+    "content": "it is quite addictive, having a slave create code for me for free \ud83d\ude06",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539013062856544358"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-08-17T21:28:56.324000+00:00",
+    "content": "Just published two open-source Claude Agent Skills for driving Archicad through Tapir - MIT, free to use:\n\nhttps://github.com/weltmaister/archicad-agent-skills\n\n**abstracting-building-models** - turns drawings/scans/PDFs into a structured parametric building model: raster calibration, dimension-chain extraction, evidence + uncertainty tracking.\n\n**archicad-automation** - drives Archicad over Tapir's JSON API: hand-verified payload shapes for the most-used commands, known crash traps, per-release version gates (what exists since 1.5.4 / 1.5.6 / 1.5.8 and how to probe the connected instance), and a strict \"never trust the return value - verify by read-back\" discipline.\n\nThey're field guides distilled from a summer of live testing on AC26/AC28 - and a handful of upstream PRs that came out of it.\n\nA note on why the examples talk HTTP directly to the Tapir port rather than through the (excellent) MCP server: these skills grew alongside upstream development, during weeks when new commands were merging almost daily - the raw port was simply the shortest path to test a command the day it landed and to probe exactly what the connected build supports. That's a snapshot of a fast-moving phase, not an architecture statement: the knowledge in these skills is transport-agnostic and applies 1:1 when you drive Tapir through the MCP server - which is the more comfortable setup for typed tools and multi-instance discovery, and where a lot of this knowledge could eventually live built-in.\n\nFeedback and PRs welcome!",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539023249390698587"
   }
 ]

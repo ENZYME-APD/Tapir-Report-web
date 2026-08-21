@@ -1928,14 +1928,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1121866785789054997"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2023-07-20T19:05:16.548000+00:00",
-    "content": "With standard jsonapi its possible to get/set layout numbering",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1131663134495608842"
-  },
-  {
     "channel": "live_code_sessions",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
@@ -2982,14 +2974,6 @@
     "created_at": "2024-07-11T07:12:41.426000+00:00",
     "content": "I know! And finally I intend to integrate it in my workflow, but in general I prefer to integrate only core software and in-house scripts or objects.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260856274535579648"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-11T12:34:13.774000+00:00",
-    "content": "Where can I ask some python function? I would like to add to the list an unlock or lock elements/ layers function and a reserve/release for teamwork (I don't think those function exist yet)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1260937192507838464"
   },
   {
     "channel": "ideas-and-feedback",
@@ -19302,5 +19286,21 @@
     "created_at": "2026-08-17T21:28:56.324000+00:00",
     "content": "Just published two open-source Claude Agent Skills for driving Archicad through Tapir - MIT, free to use:\n\nhttps://github.com/weltmaister/archicad-agent-skills\n\n**abstracting-building-models** - turns drawings/scans/PDFs into a structured parametric building model: raster calibration, dimension-chain extraction, evidence + uncertainty tracking.\n\n**archicad-automation** - drives Archicad over Tapir's JSON API: hand-verified payload shapes for the most-used commands, known crash traps, per-release version gates (what exists since 1.5.4 / 1.5.6 / 1.5.8 and how to probe the connected instance), and a strict \"never trust the return value - verify by read-back\" discipline.\n\nThey're field guides distilled from a summer of live testing on AC26/AC28 - and a handful of upstream PRs that came out of it.\n\nA note on why the examples talk HTTP directly to the Tapir port rather than through the (excellent) MCP server: these skills grew alongside upstream development, during weeks when new commands were merging almost daily - the raw port was simply the shortest path to test a command the day it landed and to probe exactly what the connected build supports. That's a snapshot of a fast-moving phase, not an architecture statement: the knowledge in these skills is transport-agnostic and applies 1:1 when you drive Tapir through the MCP server - which is the more comfortable setup for typed tools and multi-instance discovery, and where a lot of this knowledge could eventually live built-in.\n\nFeedback and PRs welcome!",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1539023249390698587"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "grzegorzwilk",
+    "created_at": "2026-08-20T15:36:18.643000+00:00",
+    "content": "@everyone \n\nhttps://bimdots.com/product/dotbim-in-out/\nthis addon of bimdots was enhanced by <@844197976430608424>  on my wish with exposed json command to import export .bim (which is json in fact). it manage geometry and all properties acakiable currently in 3window. \nmight be helpfull for further querring by LLM or convert to other softwares",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1540021671241719808"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "grzegorzwilk",
+    "created_at": "2026-08-20T15:37:16.783000+00:00",
+    "content": "all accesible via API call",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1540021915098554429"
   }
 ]

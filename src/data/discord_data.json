@@ -2978,30 +2978,6 @@
   {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-07-11T12:48:51.726000+00:00",
-    "content": "Create a new issue here if you have any idea or found a bug:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/issues\n\nBut please at first search for it, to check someone has already created a similar issue or not.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1260940874905292871"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-11T12:58:43.361000+00:00",
-    "content": "I see an issue for a function to modify layers. The unlock/lock attributes can be linked to it. Should I comment the issue or make another issue/idea?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1260943356402335774"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-11T13:20:09.012000+00:00",
-    "content": "Maybe do another issue",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1260948748813602817"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2024-07-11T13:23:33.279000+00:00",
     "content": "And I have scripts that can't modify all selected element for locked elements/layers/non reserved in teamwork",
@@ -19302,5 +19278,85 @@
     "created_at": "2026-08-20T15:37:16.783000+00:00",
     "content": "all accesible via API call",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1540021915098554429"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-08-21T03:09:57.136000+00:00",
+    "content": "I've built a tool with Claude Code that automatically models construction sequences from a design BIM model!\n\n1. One click on the \"Auto Construction Steps\" script registered in the Tapir palette generates everything.\n2. Construction elements that don't exist in the original model \u2014 blinding concrete + crushed stone base, the excavation volume, and the site terrain for the construction phase \u2014 are generated automatically by reading the building model.\n3. The objects needed for those models \u2014 temporary site hoarding, simplified exterior scaffolding, and earth retaining walls \u2014 were built by Claude Code as custom GDL objects. These custom objects are placed automatically too.\n4. Dedicated layers and layer combinations are all created automatically, including intersection group numbers so that unwanted intersections are avoided.\n5. Both reinforced concrete and steel structures are supported.\n6. Besides native Archicad files, it also works with IFC data from GLOOBE (another BIM authoring tool) and from Helios (a cost estimation tool).\nThe middle part of the video is sped up 4x, but a model of this size takes about 3 minutes to generate!\nhttps://youtu.be/OtSKvGp2_EU",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1540196231853113374"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-08-21T03:16:09.347000+00:00",
+    "content": "I also had Claude Code automate the creation of a construction assembly video from the construction step model I posted earlier!\n\n1. Claude Code reads the construction steps out of Archicad through Tapir, links the model into Unreal Engine with the Datasmith Exporter, and generates the video automatically.\n2. I describe what I want in the video to Claude Code entirely in plain language. I watch the draft it renders and simply tell it what to change \u2014 things like \"change the camera angle\" or \"make the scaffolding rise from the bottom.\"\n3. It's finished in about two hours. No fiddly video settings to deal with at all!\nhttps://youtu.be/X0cLtfT3WPY",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1540197793019338903"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-21T08:59:08.206000+00:00",
+    "content": "Wow! Thank you for sharing these workflows!",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1540284107009818624"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "runxel",
+    "created_at": "2026-08-21T09:14:56.770000+00:00",
+    "content": "It tries to \"OCR\" features in a DWG, like doors etc., to \"semanticize\" dumbcad files.\nI think it's incredibly stupid, but they are based in America (and never heard of IFC), so there's that. \nObviously there is some merit in that if _those_ files are all you have, but that's not what they are aiming for, so.... -- The architect is actually the antagonist here, the product aims at developers and builders (one use case is cost estimation).\nTo me it's putting the cart before the horse, because we should aim at making our output better and smarter instead of flanging that on somehow afterwards.\nThis all works only, also, because they use an AI as an intermediary. It struggles a lot to do a job that I'd trust.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1540288085575864371"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "c3b3k",
+    "created_at": "2026-08-21T11:58:50.884000+00:00",
+    "content": "Hello!\nI have a question: Tapir would work with ArchiCAD in trial version? Or I could have access to the ArchiCAD API in trial?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1540329332839546910"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "hidekih8901",
+    "created_at": "2026-08-21T12:57:05.773000+00:00",
+    "content": "<@423113258229039105> \n\nHi Jorge \u2014 Hideki Hirayama from Hirayama Construction, Narita, Japan. I was at your BIM Manager Day session today and just joined the Tapir Discord. Great talk. Looking forward to following the project.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1540343991466463232"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "grzegorzwilk",
+    "created_at": "2026-08-21T13:12:20.148000+00:00",
+    "content": "afaik trial only disables save options. addons and api should work",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1540347826632921183"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "grzegorzwilk",
+    "created_at": "2026-08-21T13:14:59.062000+00:00",
+    "content": "perfect for rapid prototyping spaces and exlpore then in FPV with nice visual features",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1540348493166682112"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "grzegorzwilk",
+    "created_at": "2026-08-21T13:16:28.849000+00:00",
+    "content": "welcome <@609217872920576000>  and <@1532577011489312936>  in Tapir Community",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1540348869760647168"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-21T13:48:06.061000+00:00",
+    "content": "Hi! <@609217872920576000> thank you for joining the tapir community! It was very nice meeting you at the BIM user day today",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1540356827244400690"
   }
 ]

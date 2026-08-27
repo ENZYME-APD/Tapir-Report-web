@@ -3070,5 +3070,45 @@
     "created_at": "2026-08-24T18:07:30+00:00",
     "body": "I built a tool on top of Tapir that answers a question Archicad can't:\n**which views in this project carry custom settings instead of a named\ncombination?**\n\n`GetViewSettings` returns an empty string for `layerCombination`,\n`penSetName`, `modelViewOptions`, `dimensionStyle` or\n`graphicOverrideCombination` when a view has custom settings rather than a\nnamed one. That empty string is the mechanism behind office standards\nquietly failing to propagate. Those views don't follow when the standard\nchanges, and there's no way to list them from inside Archicad.\n\nSo it lists them. It also reports duplicate sheet numbers, sheets with no\nnumber, layouts sitting outside any subset, and layouts with no drawings on\nthem (that last one comes free from the Layout Book tree, since a\nLayoutItem's children *are* its drawings, so no element query is needed).\n\nOn the stock Hillside House sample: 172 views, 38 layouts, 4 views on custom\nlayer combinations, 97.7% consistency.\n\n**What I'm asking for.** It has only ever run against Hillside House and the\ngeneric template. That's a terrible sample. I'd like a handful of people to\nrun it on real projects and tell me where it's wrong: miscounts, crashes,\nthings it claims that aren't true, structures it doesn't understand.\n\nIt's a single .exe, needs no Python, and:\n\n- reads only, never writes to the project\n- makes no network calls at all (127.0.0.1 only)\n- writes two files: a full HTML report, and a counts-only summary with no\n  project, view or sheet names in it, so you can share results without\n  disclosing anything about the job\n\nIf you'd like to try it, reply here and I'll send it over. Happy to send the\nsource instead if you'd rather read it before running it.\n\nA few things I learned building on Tapir that might be useful to others here:\n\n- `GetDocumentRevisions` returned **zero** on a project with 38 layouts. A\n  layout only has a revision once it's been issued, so the Layout Book tree\n  has to be the source of truth for layouts, not revisions.\n- `prefix` is empty on layouts; **`uiId`** carries the layout number.\n- Neither layout names nor numbers are unique. Hillside House has 38 layouts,\n  26 distinct names, 34 distinct numbers.\n- `GetNavigatorItemTree` has no declared output schema. The real shape is\n  `{\"navigatorItemTree\": {...}}` with each child wrapped in\n  `{\"navigatorItem\": ...}`, and there's no `rootItem`.\n\nThanks for Tapir. None of this would exist without it.",
     "author": "67Fresh"
+  },
+  {
+    "type": "Issue",
+    "title": "Add possibleEnumValues to an existing property (and read them back)",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/589",
+    "created_at": "2026-08-26T19:07:27+00:00",
+    "body": "### Context\n\nWe create a singleEnum property via `CreatePropertyDefinitions`. Later we want\nto add a value to its option list in projects that already have the property.\n\n### Problem\n\n`UpdatePropertyDefinitions` accepts only `propertyId` and `expressions`, and\nreturns \"property is not expression-based\" for a singleEnum.\n\n`DeletePropertyDefinitions` + recreate works mechanically but destroys every\nelement's stored value, so it isn't usable.\n\nWe can't find any command that modifies `possibleEnumValues` on an existing\nproperty.\n\n### Requests\n\n1. A way to add values to `possibleEnumValues` on an existing property,\n   ideally additively so existing values and element assignments survive.\n2. A command that returns a property's current value descriptor including\n   `possibleEnumValues`. `GetAllPropertyNames` returns names only, so we\n   can't currently detect that a project's option list has drifted from our\n   definition.\n\n### Concrete case\n\nWe ship a classification/property definition that includes a `LYNQr SCHEDULE`\nsingleEnum. When we add a new value (e.g. `SKYLIGHT SCHEDULE`), projects\nprovisioned before that addition can never receive it, because our diff sees\nthe property already exists and there is no command to extend its option\nlist. Every such project needs a manual edit in Property Manager, per project,\nforever.\n\nTapir 1.5.8, Archicad 29.",
+    "author": "sprtic1"
+  },
+  {
+    "type": "Issue",
+    "title": "Does Tapir expose write access to IFC project-level data?",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/590",
+    "created_at": "2026-08-26T19:08:38+00:00",
+    "body": "Is there a command that can WRITE IFC project-level header data - project\nname, site, building, address? Or is that read-only?\n\nAsking because we'd like to surface those fields as a form in our dashboard\nso they get filled once rather than left empty before export.\n\nTapir 1.5.8, Archicad 29.",
+    "author": "sprtic1"
+  },
+  {
+    "type": "Issue",
+    "title": "Reading IFC classification reference per element",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/591",
+    "created_at": "2026-08-26T19:10:21+00:00",
+    "body": "Is the IFC classification reference readable per element via Tapir - the\nvalue that ends up as the item class on export?\n\nWe'd like to surface it on each element in our dashboard, since it's what\nSolibri translates into item class and most designers never see the\nconnection.\n\nTapir 1.5.8, Archicad 29.",
+    "author": "sprtic1"
+  },
+  {
+    "type": "Issue",
+    "title": "Reading which Pset a property maps to on IFC export",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/592",
+    "created_at": "2026-08-26T19:10:45+00:00",
+    "body": "Can Tapir tell us which IFC property set a given property lands in on export?\n\nWe'd like to show users which Pset each property will end up in, so they can\nsee what a GC will actually receive.\n\nTapir 1.5.8, Archicad 29.",
+    "author": "sprtic1"
+  },
+  {
+    "type": "Issue",
+    "title": "Confirming these element fields are readable in bulk",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/593",
+    "created_at": "2026-08-26T19:11:06+00:00",
+    "body": "We want a per-project readiness score over data we already sync. Can these\nall be read in bulk via existing batched property reads, with no new\ncommands?\n\n- Element ID present or missing\n- Element unclassified\n- Structural function not set\n- Renovation status unset\n- Element's layer\n\nWe believe all five are already available and are asking for confirmation\nrather than new functionality.\n\nTapir 1.5.8, Archicad 29.",
+    "author": "sprtic1"
   }
 ]

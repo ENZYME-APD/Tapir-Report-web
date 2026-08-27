@@ -19350,5 +19350,13 @@
     "created_at": "2026-08-24T16:47:45.280000+00:00",
     "content": "Hi <@1541468899361427540> and <@1079037912458481784> welcome to the tapir community, very pleased to have you here!",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1541489202162565150"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "jimbim_50509",
+    "created_at": "2026-08-27T04:42:46.734000+00:00",
+    "content": "hi there, i have been using chatgpt to code up some objects and labels. \n\nI am hitting a roadblock with one thing, and have been recommended (by AI) to ask to add something in Tapir...basically a function that allows Tapir to open subsequent views in the View Map as the script runs. I have a script which scans some custom made Labels in a View, filters out some particular parameters\u00a0within them, and provides a List of relevant parameters. But it can only scan Plan Views in one and it can't switch to Sections, Elevations, Worksheets as it runs (apparently an issue with being different Databses...?) Without this, I would need to do this for each view manually and let the list compile as I go. Is this something that is possible? Understand if not possible, but thought checking if this is a helpful suggestion regardless. I have copied below what ChatGPT has said... it may not make alot of sense out of context but hopefully you get the idea?...\n\nThanking you for your efforts, it's a crazy time we live in with AI but is unlockoign so much potential!\n\ni have attached response from AI for hopefully some more context.. i have zero coding experience so just following along as best i can.\n\nlet me know if you need further detail..\n\nthankyou!!\n\n---",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542393919634145321"
   }
 ]

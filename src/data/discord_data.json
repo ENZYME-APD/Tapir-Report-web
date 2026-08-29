@@ -18424,14 +18424,6 @@
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1533828417089175553"
   },
   {
-    "channel": "github-notifications",
-    "server": "archicad-api-grasshopper",
-    "author": "weltmaister.",
-    "created_at": "2026-08-03T15:18:58.433000+00:00",
-    "content": "Hi Mathias, verified \u2014 you're right about the overlap. Your #507 (full Wall/Slab/Column/Beam field support) is a superset of my #511 (beam slantAngle/profileAngle) and was opened first, so I've closed #511 in favour of #507.\n\nOne heads-up: issue #508 (filed a few hours after you opened #507) reports exactly the slantAngle/profileAngle gap \u2014 adding Fixes",
-    "url": "https://discord.com/channels/994704152116596846/1034268130802929785/1533856714569547926"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
@@ -19374,5 +19366,189 @@
     "created_at": "2026-08-27T12:19:11.668000+00:00",
     "content": "Spiral stairs couldn't make them work. And I don't mapp yet the way ArchiCAD builds the stairs, but this is a poc that it can be done",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1542508780372369430"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "runxel",
+    "created_at": "2026-08-28T13:14:24.267000+00:00",
+    "content": "Hey <@1254417128979959909>, maybe we can generate a quick start guide where some of the core concepts of the Archicad API are explained and how Tapir relates to it.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542885062285074542"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "runxel",
+    "created_at": "2026-08-28T13:16:13.769000+00:00",
+    "content": "Because there are some quirks that are probably kind of unique to Archicad, like the different databases which are coupled to a viewport or how like an element in a viewed generated from the 3d is handled",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542885521569882152"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-28T14:01:45.593000+00:00",
+    "content": "Archicad automatically saves all opened windows' content to files \ud83d\ude42 \nUsing Tapir you can get the folder where you can find all those saved pictures.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542896979670204496"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-28T14:08:46.756000+00:00",
+    "content": "Just a sidenote:\nArchicad saves those pictures to be able to show on startup where you see the recent projects and you can select one to open and start work \ud83d\ude42 so you will be able to use the same pictures",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542898746155597875"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "bajovicnikola",
+    "created_at": "2026-08-28T14:51:12.163000+00:00",
+    "content": "Hi everyone \ud83d\udc4b,\nSorry for interrupting the current discussion, but I have a question and would really appreciate any help. \nI\u2019m developing a tool that automatically groups zones, more specifically, identifies which rooms belong to the same apartment, without relying on a manually assigned property.\nI\u2019m using a connectivity graph to determine which zones are directly adjacent to each other through open boundaries and to identify the ID of the neighbouring zone.\nCurrently, I'm using **GetZoneBoundaries**, which seems to provide exactly this through connectedElementId and neighbouringZoneElementId. I query a zone, inspect its boundary segments, and use these fields to determine whether there is an open connection and which zone is on the other side.\nThe main issue is performance. With around 15 zones, the call takes less than a second, but on larger projects (200 zones) it can take 55\u201360 seconds for a single call, regardless of which zone is queried. It looks like the processing time may depend on the total number of zones in the project, even when I limit the check to only 50 out of 200 zones on a single floor.\nIs GetZoneBoundaries essentially the only API level way to get neighbouring zone information across open boundaries? Or is there another Archicad JSON API or Tapir approach that could provide this more efficiently, ideally for multiple zones at once?",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542909422366494810"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-28T15:00:12.681000+00:00",
+    "content": "<@721435354275643453> , you get the fastest response if you add this question as an issue into Github.\nThat way a Claude bot will immediately try to answer.\nMoreover it will try to implement a solution for you.\nA low hanging fruit is to change GetZoneBoundaries to be able to input multiple zones. I think Claude will simply implement that solution and it can save time",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542911689463173170"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-28T15:01:18.724000+00:00",
+    "content": "Yeah, this is the sad future, we will talk to bots only \ud83d\ude01",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542911966467850312"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-28T15:19:05.585000+00:00",
+    "content": "I should implement a Bot in discord that for each request, they both asks to create a GitHub issue, or maybe the bot can create the issue itself",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542916441206947840"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "peeeter___",
+    "created_at": "2026-08-28T15:21:38.551000+00:00",
+    "content": "Hey Guys! Currently Im trying out the Tapir palette on AC27. However when I import a .py teyt file to run, it says something about a missing 'uv', and it won't run it. It does offer the installation of this uv though. I looked it up and it says something about a server for AI agents. I dont really want to install this, is this something necessary? If I dont install it I wont be able to run any scripts?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1542917082793123901"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-28T15:27:31.424000+00:00",
+    "content": "Good idea!\nI will try to do that! \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542918562849493163"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-28T15:28:04.036000+00:00",
+    "content": "Maybe we need a request channel?",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542918699634270358"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-28T15:29:45.479000+00:00",
+    "content": "Claude checks all channels, if finds a comment which sounds like a request or a bug report, then add it as GitHub issue and comment the id of the created issue in discord \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542919125117177929"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "peeeter___",
+    "created_at": "2026-08-28T15:37:01.186000+00:00",
+    "content": "Okay, I clicked to install it for me, it says it did and I need to restart ArchiCAD.  I did it two times, but as soon as I open a new AC file, it says this uv thing is still missing. Anybody has any idea? I guess the way it works is I have a .py file that I add via the Tapir add-on and I run it from there. Is there any other method? Should i run it from the built-in AC python tool? Or just externally from command line?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1542920952604786718"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-28T15:44:43.287000+00:00",
+    "content": "You can run it from the built-in AC python tool or from external command line.\nBut if you don't have some of the necessary python library, then it will fail.\nThat's why Tapir Palette with uv is more user friendly, it automatically installs the required libraries.\n\nI don't know why uv is not working for you.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1542922890796736552"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-08-28T15:45:20.010000+00:00",
+    "content": "Uv is a package manager for python, like pip but with a few extra features.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1542923044824289341"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-08-28T15:47:03.594000+00:00",
+    "content": "Uv install registers an environment variable. On some systems you actually need to restart the computer for it to register, not just archicad",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1542923479286947941"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-08-28T15:49:27.587000+00:00",
+    "content": "I tested the palette on a computer that had a previous uv install, and on that computer restarting archicad was enough. But have not updated the message since discovering this \ud83d\ude05",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1542924083237224531"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "bajovicnikola",
+    "created_at": "2026-08-28T15:59:32.851000+00:00",
+    "content": "Thanks, guys! Glad I could contribute in some way even if I somehow gave you an idea for the bot. xD\nI\u2019ve just created the GitHub issue, and the bot already came back with a pretty precise diagnosis: GetZoneBoundaries recomputes boundaries for the whole model on every call before extracting the requested zone.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542926621898707084"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-08-28T16:13:59.123000+00:00",
+    "content": "Claude has already implemented the improvement \ud83d\ude09 \nIf you are using Windows platform, you can download the new version of the Tapir AddOn here and you can try, verify it. https://github.com/ENZYME-APD/tapir-archicad-automation/actions/runs/33188352726#artifacts",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542930255306817566"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-28T16:18:36.220000+00:00",
+    "content": "https://klipy.com/gifs/the-bugs-bunny-and-roadrunner-movie-the-bugs-bunny-and-road-runner-movie-6",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542931417535615056"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "peeeter___",
+    "created_at": "2026-08-28T16:53:33.791000+00:00",
+    "content": "Thank you, it seems to work, but i just tried to run an example script from the Tapir Github (GetAttributesByType) and it says No m,odule found named 'aclib'. Im a newbie, so it might be a stupid question, but what am I missing",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1542940215386185779"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "runxel",
+    "created_at": "2026-08-28T17:10:26.843000+00:00",
+    "content": "Well yeah, because then it would take ages and when it arrives it\u2019s already out of date \ud83e\udd2a. \nJokes aside, maybe let\u2019s Claude design some nice explanation. You could cross check it, because I think you do have a better understanding of all the underlying concepts than the rest of us",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542944464434233424"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-08-28T17:12:15.616000+00:00",
+    "content": "Hey <@844197976430608424>, would you be able to help us with this? As Tibor is quite busy with the C++ and overall development. We need someone with a solid API background (or access to it) Thank you in advance!!",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542944920661131285"
   }
 ]

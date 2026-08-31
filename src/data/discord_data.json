@@ -19550,5 +19550,21 @@
     "created_at": "2026-08-28T17:12:15.616000+00:00",
     "content": "Hey <@844197976430608424>, would you be able to help us with this? As Tibor is quite busy with the C++ and overall development. We need someone with a solid API background (or access to it) Thank you in advance!!",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1542944920661131285"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "sea44",
+    "created_at": "2026-08-30T13:47:16.414000+00:00",
+    "content": "Hello everyone, I'm trying to make a simple script to randomize the sunshade heights on ArchiCAD windows, but whatever I try, it results in the window shrinking down to a very small size.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1543618109800325231"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "bajovicnikola",
+    "created_at": "2026-08-30T17:01:29.259000+00:00",
+    "content": "The GetZoneBoundaries fix works like a charm, thanks a lot! \ud83d\ude4f\nJust one more thing: in the same tool, I also use GetElementsRelatedToZones to detect door/window connections between zones. It's a built-in Archicad API command, and it also accepts a zones array, but batching didn't help there \u2014 50 zones in one call took 37s, versus 50 individual calls at 33s, basically the same either way.\nI assume the GitHub bot can't help with this one since it's a built-in Archicad API command rather than a Tapir command. Since it's Graphisoft's own command, do you happen to know of any way to speed this up?",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1543666985374720140"
   }
 ]

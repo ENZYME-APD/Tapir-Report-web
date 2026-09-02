@@ -3190,5 +3190,29 @@
     "created_at": "2026-08-30T13:44:36+00:00",
     "body": "**Environment:** AC28 (Win, GER), Tapir 1.5.9-era builds, real ~300-element model and scratch projects.\n\n### The measurement\n\nOn one instance, a single `GetDetailsOfElements` with **10** elements hung for **more than 9 minutes** (300 s client timeout, call never returned), while **30 single-element calls** completed in **576 ms total**. `Get3DBoundingBoxes` with 40 and even with 5 elements timed out the same way. On other builds/instances (AC26/1.5.3, AC28/1.5.4-dev) batches of 25\u201345 were stable \u2014 so it is instance/model-dependent, and clients now have to probe batch-vs-single at session start.\n\nA related extreme: `GetElementsByType {elementType:\"Stair\"}` blocked reproducibly (>200 s) in a model with 4 stairs, while Wall (224), Slab, Door (61), Zone (47) answered in milliseconds \u2014 and `SetDetailsOfElements`/`GetPropertyValuesOfElements` on a **single** stair hung too. The HTTP server itself stayed responsive (an unknown command returned \"not found\" instantly), so Archicad-side work is the bottleneck.\n\n### The request\n\nA **`fields[]` (or exclude-) filter on `GetDetailsOfElements`**, so a client can deselect expensive payload parts \u2014 the prime suspect here is `floorPlanPolygons`, which is always computed and returned since #437 even when the caller only needs a thickness or a layer index. The attribute detail reads already have this kind of opt-in granularity; this would bring element reads in line.\n\nBenefits: verification loops (read-back after every mutation, which the silently-ignored failure class makes mandatory) stop paying for polygon extraction they never use, and batch reads would likely become viable again on the affected instances.\n\nHappy to benchmark any build on AC26/AC28 with the 1-vs-10-vs-30 matrix above.",
     "author": "weltmaister"
+  },
+  {
+    "type": "Issue",
+    "title": "Feature request for ViewSettings Grasshopper component",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/606",
+    "created_at": "2026-09-01T10:33:37+00:00",
+    "body": "The ViewSettings Grasshopper component does not have all the output parameters mentioned in the documentation of Tapir Additional JSON Commands of GetViewSettings command. It would be great to have all of them.",
+    "author": "ferencz-tamas"
+  },
+  {
+    "type": "Issue",
+    "title": "CreateAssociativeDimensionsOnSection: allow one continuous chain across multiple section elements",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/610",
+    "created_at": "2026-09-01T11:57:28+00:00",
+    "body": "### Use case\n\nI am dimensioning building sections for German working drawings (Ausf\u00fchrungsplanung, 1:50). The main vertical chain on a section runs as one continuous dimension chain across all slabs from the foundation to the roof: slab thickness, clear storey height, slab thickness, and so on, all in a single chain at the left or right edge of the section.\n\nWith the current `CreateAssociativeDimensionsOnSection` (1.5.8) this is not possible: each `dimensionsData` item accepts exactly one `sectionElementId` plus one `preset`, so every slab produces its own tiny two-point chain. A stack of isolated per-element chains is not usable on a real drawing, the essential dimensions (the clear heights between the slabs) are missing entirely.\n\n### Suggestion\n\nEither of these would solve it:\n\n1. Accept an array of `sectionElementIds` per chain and merge the generated preset points into one chain, or\n2. Expose explicit `witnessPoints` for section databases, analogous to what `CreateAssociativeDimensions` already offers on the floor plan.\n\n### Technical note\n\nFrom reading the sources: `BuildSectionAssociativeDimensionPoints` already produces a `GS::Array<AssociativeDimensionPoint>` that `PopulateAssociativeDimensionMemo` consumes independently of the source element. Merging points from several section elements into one chain therefore looks feasible without touching the dimension creation itself, the limitation appears to be only in the input schema and the per-item loop.\n\n### Related\n\nSupport for elevation dimensions in sections (`dimAppear = APIApp_Elev`, currently hardcoded to `APIApp_Normal`) would complete automated section annotation, spot levels are the second half of every section markup. Happy to open a separate issue for that if preferred.\n\nEnvironment: Archicad 29 (Mac), Tapir 1.5.8.\n",
+    "author": "Archilukas"
+  },
+  {
+    "type": "Issue",
+    "title": "Feature request for text or label content modification",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/611",
+    "created_at": "2026-09-01T11:57:56+00:00",
+    "body": "I tried to modify the content of several text elements in Tapir/Grasshopper, but I can't find the Text content property in AllProperties, which I can find in Archicad's Find & Select function. It would be very useful if this Text content property was available in AllProperties and could be modified using the SetPropertyValues \u200b\u200b\u200b\u200bcomponent. The coolest thing would be if it could also modify the content of labels. My original idea was that this way I could translate the texts of an existing design into any language. If it is not available from the AllProperties component, then maybe it is possible to create a separate dedicated component for this? For example, GetTextContents and SetTextContents. Or is it in WIP state and we will have a ModifyText component in the ElementModification group sometime?",
+    "author": "ferencz-tamas"
   }
 ]

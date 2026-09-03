@@ -3214,5 +3214,21 @@
     "created_at": "2026-09-01T11:57:56+00:00",
     "body": "I tried to modify the content of several text elements in Tapir/Grasshopper, but I can't find the Text content property in AllProperties, which I can find in Archicad's Find & Select function. It would be very useful if this Text content property was available in AllProperties and could be modified using the SetPropertyValues \u200b\u200b\u200b\u200bcomponent. The coolest thing would be if it could also modify the content of labels. My original idea was that this way I could translate the texts of an existing design into any language. If it is not available from the AllProperties component, then maybe it is possible to create a separate dedicated component for this? For example, GetTextContents and SetTextContents. Or is it in WIP state and we will have a ModifyText component in the ElementModification group sometime?",
     "author": "ferencz-tamas"
+  },
+  {
+    "type": "Issue",
+    "title": "GRASSHOPPER PLUGIN ELEMENT CREATION DEFAULT METADATA",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/612",
+    "created_at": "2026-09-02T10:46:27+00:00",
+    "body": "With any creation of new geometry from tapir GH plugin, we should have some basic metadata always embedded as custom property:\nThe node should create a property group called Tapir GH, with some custom properties inside:\n- Grasshopper Source Definition: File path\n- Time of creation / Last Updated: Date and time\n- Rhino GUID of the component instance that generated the geometry (This will enable to create a workflow to track the elements and update new design tests instead of getting a duplicated geometry)\n\nThe component creation nodes, should have a boolean toggle option to decide whether to duplicate or delete previous sent and substitute. \nThe behaviour of the second option, should look for elements in AC, with the same Grasshopper component GUID in the custom property, delete these elements and create new ones, always with the metadata\n\nThese images show how the Graphisoft live-connection handles this metadata\n\n<img width=\"1068\" height=\"340\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/f4d51c22-8a13-4e3c-ba8f-d4a0508e6235\" />\n<img width=\"1094\" height=\"264\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/7e23836f-cd6c-4f52-91d9-f5c1e958bfa2\" />\n\n\nHere some useful information about Grasshopper GUIDS:\n\n[grasshopper_guid_guide.md](https://github.com/user-attachments/files/31734268/grasshopper_guid_guide.md)",
+    "author": "JBENEITEZ"
+  },
+  {
+    "type": "Issue",
+    "title": "Feature request - CreateAttributes type Grasshoppers components",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/613",
+    "created_at": "2026-09-02T14:40:07+00:00",
+    "body": "986\nI would just like to know why the CreateBuildingMaterials, CreateComposites, CreateFills, CreateLines, CreateMEPSytems, CreatePenTables, CreateProfiles, CreateSurfaces and CreateZoneCategories functions only have 2 input parameters (AttributesData and OverwriteExisting)? Is this intentional? I think it is not very user-friendly to store the input parameters as JSON objects. If the Get pair of these components does not work like this, then could they not be modified as well? In addition, I see that the current structure is not consistent with regard to layers. There is a GetLayerDetails component and a Layers component, and those two do almost the same thing. I think GetLayersDetails is enough (possibly GetLayers to align with the other names). However, its counterpart is not a CreateLayers component, but SetLayers. I think the SetLayers component could be renamed to a CreateLayers component and could also receive the OverwriteExisting input, like the other Create components.",
+    "author": "ferencz-tamas"
   }
 ]

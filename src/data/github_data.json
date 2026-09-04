@@ -3230,5 +3230,13 @@
     "created_at": "2026-09-02T14:40:07+00:00",
     "body": "986\nI would just like to know why the CreateBuildingMaterials, CreateComposites, CreateFills, CreateLines, CreateMEPSytems, CreatePenTables, CreateProfiles, CreateSurfaces and CreateZoneCategories functions only have 2 input parameters (AttributesData and OverwriteExisting)? Is this intentional? I think it is not very user-friendly to store the input parameters as JSON objects. If the Get pair of these components does not work like this, then could they not be modified as well? In addition, I see that the current structure is not consistent with regard to layers. There is a GetLayerDetails component and a Layers component, and those two do almost the same thing. I think GetLayersDetails is enough (possibly GetLayers to align with the other names). However, its counterpart is not a CreateLayers component, but SetLayers. I think the SetLayers component could be renamed to a CreateLayers component and could also receive the OverwriteExisting input, like the other Create components.",
     "author": "ferencz-tamas"
+  },
+  {
+    "type": "Issue",
+    "title": "Archicad JSON commands page - missing commands",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/616",
+    "created_at": "2026-09-03T14:32:35+00:00",
+    "body": "Something happened to this page: the documentation of the recently created/updated commands disappeared.\n[https://enzyme-apd.github.io/tapir-archicad-automation/archicad-addon/](url)",
+    "author": "ferencz-tamas"
   }
 ]

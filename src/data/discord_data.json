@@ -2976,14 +2976,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260856274535579648"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-11T13:29:30.784000+00:00",
-    "content": "Get layer attributes can return the locked status of the layer, there is an issue/idea to modify layers parameters in GitHub",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1260951105056018442"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "1yur",
@@ -19566,5 +19558,69 @@
     "created_at": "2026-08-30T17:01:29.259000+00:00",
     "content": "The GetZoneBoundaries fix works like a charm, thanks a lot! \ud83d\ude4f\nJust one more thing: in the same tool, I also use GetElementsRelatedToZones to detect door/window connections between zones. It's a built-in Archicad API command, and it also accepts a zones array, but batching didn't help there \u2014 50 zones in one call took 37s, versus 50 individual calls at 33s, basically the same either way.\nI assume the GitHub bot can't help with this one since it's a built-in Archicad API command rather than a Tapir command. Since it's Graphisoft's own command, do you happen to know of any way to speed this up?",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1543666985374720140"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "trthvlu",
+    "created_at": "2026-09-03T05:45:07.242000+00:00",
+    "content": "is it possible to add hotspot at point in tapir? i've heard it's not possible to add hotspot",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1544946323521015828"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-03T07:32:15.858000+00:00",
+    "content": "It's possible.\nTapir has CreateHotspots command with the below input parameters:\nfloorInd\nlayerIndex\nposition { x, y }\nheight\npenIndex",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1544973287090688102"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-03T07:34:33.961000+00:00",
+    "content": "For example with this code you will create a hotspot to {80.0, 10.0} position to the current floor, using the default layer and pen.\n\n```\naclib.RunTapirCommand ('CreateHotspots', {\n    'hotspotsData': [\n        { 'position': { 'x': 80.0, 'y': 10.0 } }\n    ]\n})\n```",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1544973866336518166"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-03T07:37:26.868000+00:00",
+    "content": "I think it's worth to ask the bot to create the Tapir version of GetElementsRelatedToZones, try making it as fast as possible. Who knows, maybe it will be faster then the official Graphisoft's command \ud83d\ude01",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1544974591561170974"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "trthvlu",
+    "created_at": "2026-09-03T20:19:09.003000+00:00",
+    "content": "can you tell where to find your scripts?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1545166280208818187"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "trthvlu",
+    "created_at": "2026-09-03T20:23:12.630000+00:00",
+    "content": "it doesnt work for archicad 28 by any chance right?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1545167302054645801"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-09-03T20:38:51.681000+00:00",
+    "content": "I recieved a PR on the MCP repo that proposes a one-click install solutiuon for the server. It uses the Tapir logo. <@974938201108140083> , <@423113258229039105> would any of you mind if I merged it for the next relese?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1545171240719876187"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-03T20:53:27.089000+00:00",
+    "content": "No issue from my side!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1545174912447029279"
   }
 ]

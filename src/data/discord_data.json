@@ -19104,14 +19104,6 @@
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1538848508029964289"
   },
   {
-    "channel": "github-notifications",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2026-08-17T10:07:00.172000+00:00",
-    "content": "<@1254417128979959909> we will have to take volontary bad input into our tests scripts to see if tapir answers accordingly, I think (I'm quite sure\ud83d\ude05 ) I forgot those.",
-    "url": "https://discord.com/channels/994704152116596846/1034268130802929785/1538851634610839623"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",

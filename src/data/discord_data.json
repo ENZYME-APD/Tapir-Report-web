@@ -8504,22 +8504,6 @@
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1371928955086442577"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-14T07:35:56.684000+00:00",
-    "content": "It will also help with the currently unusable auto dimension script for rooms",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1372115201410859019"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-05-14T07:39:08.269000+00:00",
-    "content": "The script would have to depend on project specific keys to match view angels to buildings",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1372116004976721951"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "__iota__",
@@ -19622,5 +19606,13 @@
     "created_at": "2026-09-05T04:24:03.288000+00:00",
     "content": "Archicad 28 or 29? which one yall prefer?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1545650698350366731"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-06T10:08:22.396000+00:00",
+    "content": "If you need Claude for something related to Tapir, then you can ask it as a Tapir Github issue and the Claude bot will answer \ud83d\ude0a it uses Fabel 5 model... So basically you have Claude for free.\nYou can try asking \"Is it possible to write a python script to do this and that using Tapir? Can you write a script like that?\" \ud83d\ude01",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1546099736795418734"
   }
 ]

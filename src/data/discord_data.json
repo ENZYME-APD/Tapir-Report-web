@@ -666,62 +666,6 @@
   {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
-    "author": "mikieremiki",
-    "created_at": "2022-11-18T21:11:09.437000+00:00",
-    "content": "In one of the following sessions, please tell us about the features of creating an \"Action\" for auto-compilation for different versions and different platforms for Archicad.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043272174401765456"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "mikieremiki",
-    "created_at": "2022-11-18T21:12:54.021000+00:00",
-    "content": "if I understand correctly, then simply copying the file to my repository will not give the desired result",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043272613058838548"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "mikieremiki",
-    "created_at": "2022-11-18T21:16:01.309000+00:00",
-    "content": "https://docs.github.com/en/actions/quickstart\nI got acquainted with the basic manual, but it didn't bring me very close to the result.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043273398601658428"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2022-11-19T07:21:55.941000+00:00",
-    "content": "Putting together a working action is a bit tricky. An action is basically a set of commands that run in the cloud on the repository. The complexity here is that you need the development kits to make it compile, but the development kits can't be in the open source repo because of licensing issues. My approach to resolve this is to upload the devkits to a server (like dropbox) and add the url as a secret to the repository. This way the action can access it, but there is no publicly available links for the devkits. If your repository is public, I'm happy to help setting this up.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043425880980078682"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "mikieremiki",
-    "created_at": "2022-11-19T07:38:34.423000+00:00",
-    "content": "Thanks for the answer. \nI haven't published my development yet. \nBut the question was about the somestaff repository from kuvbur, it is very relevant to him now.\n\nWhere can he write to you?",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043430068917129216"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2022-11-20T05:11:07.902000+00:00",
-    "content": "Hi, I've requested some changes n your PR. Would love to discuss more.",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043755351784312942"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "aitorleceta",
-    "created_at": "2022-11-20T12:38:47.574000+00:00",
-    "content": "you mean discuss more using github comments?",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043868009414000641"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
     "author": "aitorleceta",
     "created_at": "2022-11-20T12:52:21.747000+00:00",
     "content": "I'm not sure how to upload new code. I'm working in my own fork. I already made some changes based on your comments. Should I create a new PR?",
@@ -19614,5 +19558,29 @@
     "created_at": "2026-09-06T10:08:22.396000+00:00",
     "content": "If you need Claude for something related to Tapir, then you can ask it as a Tapir Github issue and the Claude bot will answer \ud83d\ude0a it uses Fabel 5 model... So basically you have Claude for free.\nYou can try asking \"Is it possible to write a python script to do this and that using Tapir? Can you write a script like that?\" \ud83d\ude01",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1546099736795418734"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "c3b3k",
+    "created_at": "2026-09-07T06:57:42.422000+00:00",
+    "content": "I don't know. I only have access to the curent ArchiCAD version, but the bridge is relayed tru Tapir, so if Tapir works, the module shoul work also.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1546414141932175451"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-07T07:34:08.094000+00:00",
+    "content": "Tapir works for any Archicad version 25-30 \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1546423309305126922"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-09-07T08:05:31.651000+00:00",
+    "content": "I tried to ask claude on the github to finish corrections, is it possible? https://github.com/ENZYME-APD/tapir-archicad-automation/pull/630#issuecomment-5566989179",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1546431209515782184"
   }
 ]

@@ -19582,5 +19582,85 @@
     "created_at": "2026-09-07T08:05:31.651000+00:00",
     "content": "I tried to ask claude on the github to finish corrections, is it possible? https://github.com/ENZYME-APD/tapir-archicad-automation/pull/630#issuecomment-5566989179",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1546431209515782184"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "bajovicnikola",
+    "created_at": "2026-09-08T06:30:11.171000+00:00",
+    "content": "Tibor, it looks like the github bot wont respond to a comment inside a closed issue.. Is there a way to somhow prompt it to respond to that comment? \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1546769603949109248"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-09-08T07:16:43.533000+00:00",
+    "content": "Worked yesterday on a set of tools for sales layout/plan. I'm working at the moment on selecting layouts & schedules, and the script makes the matching and place the correct schedule on the good layout. At the moment, I have 4 tools planed, and 3 already at a beta stage: 1- Creating layouts an placing plan automaticaly + cuting the outline of the apartment. 2- Creating xml files of all apartment schedules based on an example xml. You have to import those xml files manually ; 3-Placing schedules on correct layout ; 4-Color localisation of the apartment on the floor plan (I'm working on it)",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1546781315964215408"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-09-08T07:17:31.624000+00:00",
+    "content": "The script shows if there is a missing schedule or layout",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1546781517672349706"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-09-08T10:56:10.576000+00:00",
+    "content": "is it possible to let tAPIr create Design Options?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1546836542545334355"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-09-08T10:57:13.621000+00:00",
+    "content": "It can but archicad 29+ only (archicad limitation)",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1546836806975098923"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-08T15:05:51.388000+00:00",
+    "content": "Has anyone tried the new Astra model with Tapir to what it is capable of? Im.seeing some pretty incredible examples.of i being able to create complete 3D models from pdf plans and photos",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1546899376625160273"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-09-08T15:52:43.515000+00:00",
+    "content": "You mean the with the mcp server? I am pretty courious as well, but would not have high hopes. The current iteration of the mcp server is just a direct wrapper over all API endpoints. I think for useful modelling capabilities, we would have to give the AI \"eyes\" somehow - tools that let it query the model in a way that helps it.  But dont really know what would work best. A tool that lets it query plans/section printsreens? or vector graphics? simple mesh? But models are becoming more and more capable, so who knows, it might surprize us.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1546911171540418781"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-08T18:01:41.883000+00:00",
+    "content": "I will. At the moment I have set Astra the task of learning  my office  standards, workflow and AC template setuo, and tasked it with being able create 3D model and plan views form future projects,  as demonstrated  in a fully developed and completed existing project.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1546943628608536637"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-08T18:05:40.033000+00:00",
+    "content": "I wamt to see if it is able to build from scratch an entire AC project from a set of 2D floor plans and photos of the building.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1546944627482042369"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-09-08T20:06:07.072000+00:00",
+    "content": "is it possible to create a favorite via tAPIr?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1546974939880497172"
   }
 ]

@@ -667,14 +667,6 @@
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "aitorleceta",
-    "created_at": "2022-11-20T12:52:21.747000+00:00",
-    "content": "I'm not sure how to upload new code. I'm working in my own fork. I already made some changes based on your comments. Should I create a new PR?",
-    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043871424303079536"
-  },
-  {
-    "channel": "dev-python-package",
-    "server": "archicad-api-grasshopper",
-    "author": "aitorleceta",
     "created_at": "2022-11-20T13:01:06.086000+00:00",
     "content": "yes, this is a good idea. Let me know. I'm leaving for lunch now, I'll come back in a couple of hours.",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1043873623540240436"
@@ -8648,22 +8640,6 @@
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1373247693035540570"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-17T12:07:21.670000+00:00",
-    "content": "<@1254417128979959909> I tested the new palette, but my autonumbering script doesn't work with it. It works with the official palette.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373270669189451909"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-17T12:09:25.982000+00:00",
-    "content": "I compared the console report, and the tapir palette seems to have stop working with the retrieving of gdl parameters elements",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373271190592032861"
-  },
-  {
     "channel": "archicad-addon",
     "server": "archicad-api-grasshopper",
     "author": "grzegorzwilk",
@@ -8766,30 +8742,6 @@
     "created_at": "2025-05-18T09:05:13.374000+00:00",
     "content": "Wicked!\nI still need to remove my own connection inferface and recompile. But yeah, the whole reason I packaged it was to avoid the user having to mess about with the command prompt and python versions/libraries.\n\nBut this would only be true for the built-in scripts, right? I wouldn\u2019t be able to run external pyexe files, right?",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1373587220459556945"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "moodstudio3736",
-    "created_at": "2025-05-18T11:30:24.357000+00:00",
-    "content": "Hi,\nA quick question : Any idea why \"Highlight Elements\" it doesn't work on my workstation ? AC 25, Rhino 8 , Windows 10.\nBy the way \" Elements Details\" returns ID in \"Story index\" output and Story index in \"Layer index\" output.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373623756970397736"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-18T11:44:54.447000+00:00",
-    "content": "I don't know about the story details, I haven't tried that one yet, but Highlight elements should work.\nAre you looking at 3D? Because highlighting is buggy in 3D, it works great in plan",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373627406392229908"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "andersonstone0026",
-    "created_at": "2025-05-18T11:54:17.934000+00:00",
-    "content": "I believe there are multiple versions in which numerous scripts currently under development require thorough review. It is necessary to allocate tasks for each version and conduct extensive bug testing across multiple iterations. A considerable amount of work remains in terms of development and feedback, but overall, progress is moving in a very positive direction.\ud83d\udd25 \ud83d\udd25 \ud83d\udd25",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373629769828274247"
   },
   {
     "channel": "user-support-channel",
@@ -19662,5 +19614,61 @@
     "created_at": "2026-09-08T20:06:07.072000+00:00",
     "content": "is it possible to create a favorite via tAPIr?",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1546974939880497172"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-09T15:42:22.270000+00:00",
+    "content": "Hi, using Tapir  with Astra AI to model in AC. the AI is saying tht tapir reports \"successful\" for certain operations  even though it failed. For example when incorrectly inputing wall thickness of a geometric wall. Is this a know issue with tapir? Not always correctly reporting the success of a command issued through it? Thanks",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547270953715638272"
+  },
+  {
+    "channel": "dev-python-package",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-09T19:16:37.861000+00:00",
+    "content": "Thanks for the note!\nI will look into it, probably the bot is configured to ignore closed issues. I will try to change it. For now the best if you create a new issue.",
+    "url": "https://discord.com/channels/994704152116596846/994711763549438002/1547324873972650064"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-09T19:20:10.835000+00:00",
+    "content": "Yes, Tapir has some issues like that.\nPlease add all of these to Github as issue! That way we can fix them (probably the bot will fix them automatically).",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547325767250223114"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "ferencz_tamas",
+    "created_at": "2026-09-09T19:26:29.650000+00:00",
+    "content": "Hi guys, <@1254417128979959909> , <@423113258229039105> <@539102006283862017> (I don't want to leave anyone out, I just thought I'd ask the most active members recently.)\n\nI didn't want to write to Claude, I'm interested in your opinions first.\n\nFeature modification, clarification, standardization\nConfusion regarding Element SET-GET vs. CREATE-MODIFY\n\nAs I spend more time examining and using the new element-type components, I get the feeling that things are currently overcomplicated\u2014or, to put it another way, the parameter sets for the GET, SET, MODIFY, and CREATE functions lack consistency. What do I mean? Let\u2019s take the Beam tool as an example:\n\nCreateBeams inputs:\n-Lines\n-Widths\n-Heights\n-Offsets\n-SlantAngles\n-ArcAngles\n-VerticalCurveHeights\n-AnchorPoints\n-FloorIndices\n-FavoriteNames\n-EmbedMetadata\n-ReplaceExisting\n\nModifyBeams inputs:\n-ElementGuids\n-BegPoints\n-EndPoints\n-Levels\n-Offsets\n-SlantAngles\n-ArcAngles\n-VerticalCurveHeights\n-AdditionalSettings\n\n(Get)BeamDetails outputs:\n-BeamGuids\n-StartCoordinates\n-EndCoordinates\n-SlantAngles\n-ArcAngles\n-VerticalCurveHeights\n-Lines\n\nPreviously, Tapir used the GET-SET pair to retrieve and modify the parameters of existing elements. Since \"Claude\" was deployed, Create-Modify style components have been created, yet there is significant overlap or inconsistency among them. It occurred to me: why don't we use the solution introduced in Rhino 8\u2014which, in my opinion, is perfectly suited to this exact problem\u2014namely, the Pass-through component? For those unfamiliar with it, you can check it out here:\n\nhttps://www.rhino3d.com/docs/guides/grasshopper/object-attributes/\n\nA single component per Archicad tool would suffice, and it would be easier to manage parameter naming (currently, for instance, we have both *BegPoints* and *StartCoordinates*, which are meant to represent the same thing). Even if it isn't worth unpacking every single parameter within the component\u2014to avoid making it overly long (like *GetProfiles*, for instance)\u2014we could use the current *AdditionalSettings* input and output as a JSON object for cases where someone needs access to every parameter. I believe this same logic could be applied to the *Attributes* components, and perhaps even extended to other areas as well.\nWhat do you think? Wouldn't that be clearer and simpler? I\u2019m not a programmer, so I don\u2019t know if this is feasible to implement, but as a long-time user of Archicad, Rhino, and Grasshopper, it strikes me as simpler and more logical. And perhaps, with our friend Claude here to help, it would be even easier and faster than before.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547327356115357697"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-09T19:39:31.932000+00:00",
+    "content": "I have never used Rhino or Grasshopper, only for testing Tapir Grasshopper plugin \ud83d\ude01 \nSo I have no idea what is Rhino-like or Grasshopper-like. I would be really happy if something like you with Rhino and GH experience would design the Tapir components.\n\nThe pass-through components pattern sounds great. I'm sure it would be easy to ask Claude to change all existing components.\n\nWe already have too many Tapir components. That would be a great step to make it more clear.\nMaybe creating more groups can help also.\n\nI believe here only <@423113258229039105> and maybe <@900814845191000115> are the active Grasshopper power users like you.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547330637244014652"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-09T20:43:53.046000+00:00",
+    "content": "Hi <@689040789866807369> I agree with you. I am very familiar with the Pass-Through components and I like the idea of simplifying and make things more consistent. I think is worth to debate which parameters unpack (or if as I suggested we create a dynamic inputs/outputs ZUI that allows to hide/show the inputs). \n\nI am also happy to leave the additional settings as JSON inputs, but currently I do not know how it works or how to format it. If so, we should have clear instructions or templates",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547346831930040460"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "branco8114",
+    "created_at": "2026-09-09T20:55:10.605000+00:00",
+    "content": "Hi, I'm new to Tapir, and I have some knowledge of Archicad. But I ended up going the Grasshopper route, and I really like this whole automation thing. I\u2019d like to know what kinds of repetitive tasks or situations where I could really make good use of this plugin\u2014or what you yourselves use on a daily basis\u2014and that are actually practical in real life, rather than just for preliminary designs (I don\u2019t want you to just give me your workflows as-is; instead, please tell me what they are, and I\u2019ll figure out how to implement them myself). Thank you very much.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547349673818198076"
   }
 ]

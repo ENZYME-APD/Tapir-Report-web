@@ -8746,46 +8746,6 @@
   {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-18T13:32:27.326000+00:00",
-    "content": "But it might be intentional. This is the error you get:\nError:\n{\n    \"code\": -2130313215,\n    \"message\": \"HighlightElements command is not supported for this AC version.\"\n}",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373654471728697414"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-18T13:32:49.398000+00:00",
-    "content": "So, I guess the highlighting feature of Archicad was introduced in AC26?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373654564305371257"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-18T13:38:02.343000+00:00",
-    "content": "If there is an error, the json you get back, will contain this error instead of the expected contents",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373655876891578449"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "moodstudio3736",
-    "created_at": "2025-05-18T14:18:20.038000+00:00",
-    "content": "How do i get the json file ? I've tried to find out, but fail to ...\nExcuse my lack of knowledge in Tapir , this is my first hours testing it ...",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373666017439383553"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-18T14:24:13.512000+00:00",
-    "content": "Actually, I think I might be the one who made a misstep here. I am talking about accessing tapir from Python, but I think you are using the Grasshopper interface. In that case I am not sure if you can get the errors/responses.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373667500016926870"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2025-05-18T17:35:38.691000+00:00",
     "content": "I tested scripts in the examples file, both official and tapir palette, and a lot of them didn't work in the tapir palette",
@@ -19670,5 +19630,53 @@
     "created_at": "2026-09-09T20:55:10.605000+00:00",
     "content": "Hi, I'm new to Tapir, and I have some knowledge of Archicad. But I ended up going the Grasshopper route, and I really like this whole automation thing. I\u2019d like to know what kinds of repetitive tasks or situations where I could really make good use of this plugin\u2014or what you yourselves use on a daily basis\u2014and that are actually practical in real life, rather than just for preliminary designs (I don\u2019t want you to just give me your workflows as-is; instead, please tell me what they are, and I\u2019ll figure out how to implement them myself). Thank you very much.",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547349673818198076"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-10T08:54:12.784000+00:00",
+    "content": "From data extraction and injection from external databases, Quality control, modelling automations, MEP design, File management, Attribute management...",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547530625232277595"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "ferencz_tamas",
+    "created_at": "2026-09-10T16:24:55.106000+00:00",
+    "content": "Hi <@423113258229039105> , I'm glad you liked the idea. I'd be happy to brainstorm sometime. Let's find a time that works for both of us!",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547644048951607336"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-10T17:08:21.256000+00:00",
+    "content": "Im comjng up against limitations on the Tapir addon.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1547654979936981084"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-09-10T21:21:46.137000+00:00",
+    "content": "Guys, FYI: I had an issue in Claude Desktop where I installed the Archicad Tapir MCP Server, but it gave an error. It turned out that that MCP Server install command provided in the GitHub repository can be modified so it will work even with this Python bug.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1547718753830043678"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-09-10T21:22:56.266000+00:00",
+    "content": "\"mcpServers\": {\n    \"ArchicadTapir\": {\n        \"command\": \"uvx\",\n        \"args\": [\"--with\",\"mcp<2\", \"--from\", \"tapir-archicad-mcp\",   archicad-server\"]\n    }\n  }",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1547719047972524123"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "branco8114",
+    "created_at": "2026-09-10T22:12:42.145000+00:00",
+    "content": "Hi, <@423113258229039105> thanks for responding. Yes, I had already seen the content on the other channels; I was just asking in case there are repetitive tasks in your day-to-day work that you\u2019ve solved using Tapir, which might not be covered in the channels. I\u2019ll start there by watching the videos you\u2019ve already uploaded. Thanks!",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547731571656761464"
   }
 ]

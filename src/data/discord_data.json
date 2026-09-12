@@ -19678,5 +19678,13 @@
     "created_at": "2026-09-10T22:12:42.145000+00:00",
     "content": "Hi, <@423113258229039105> thanks for responding. Yes, I had already seen the content on the other channels; I was just asking in case there are repetitive tasks in your day-to-day work that you\u2019ve solved using Tapir, which might not be covered in the channels. I\u2019ll start there by watching the videos you\u2019ve already uploaded. Thanks!",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1547731571656761464"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-11T17:46:01.358000+00:00",
+    "content": "What is the protocol for creating an offshoot of the Taoir addon for testing additional functionality? Is there interest in a collaboration  on updating  the Tapir addon in order to give AI the ability to to create, model and edit projects in Archicad, through and MCP?",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1548026847357313125"
   }
 ]

@@ -3494,5 +3494,13 @@
     "created_at": "2026-09-11T20:35:12+00:00",
     "body": "When using HighlightElements grasshopper component the text \"subelements\" of dimensions (linear dimensions, radial dimensions, level dimensions and angle dimensions) are not highlighted. It would be great during quality check of AC files that every sub element of all kind of dimensions have the same highlighted color.",
     "author": "ferencz-tamas"
+  },
+  {
+    "type": "Issue",
+    "title": "Feature request: Archicad 23 build",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/661",
+    "created_at": "2026-09-12T13:52:08+00:00",
+    "body": "Body:\n\nHi,\n\nThanks for maintaining Tapir \u2014 it's an extremely useful add-on for scripting Archicad through the JSON/Python API.\n\nI'm working with a project that's still on Archicad 23, and I noticed the prebuilt releases currently only cover AC 25\u201329. Before I try to build it myself against the AC23 API Development Kit, I wanted to check with you directly:\n\nIs there any chance of an official Archicad 23 build being added (or an older release I'm missing that already targets it)?\nIf not, is the current main source expected to be portable back to the AC23 API with reasonable effort, or has it drifted far enough (newer API calls, deprecated functions, etc.) that a backport would basically mean re-implementing large parts of it?\nIf a backport is feasible, is there a branch, tag, or set of notes you'd recommend starting from, to avoid duplicating work you may have already done when dropping support for older versions?\n\nI have a Graphisoft developer account and Visual Studio 2017 available (the toolset AC23 requires), so I'm willing to attempt the build/port myself and can report back or open a PR if it turns out to be reasonably self-contained. Just didn't want to start from a completely wrong assumption about how far the API has diverged.\n\nThanks again for the great tool!",
+    "author": "arch87fm-ui"
   }
 ]

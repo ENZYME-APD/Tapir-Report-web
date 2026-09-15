@@ -19790,5 +19790,53 @@
     "created_at": "2026-09-13T19:19:21.172000+00:00",
     "content": "Thanks, yes, you are right, that is a solution to my 2. question. Then I guess question is only about Tapir and custom Dimension Texts (question 1).",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1548775110410895403"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-09-14T11:41:15.534000+00:00",
+    "content": "<@558945647085223946> I think Claude Desktop found a bug:",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1549022215155093626"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-09-14T11:42:32.938000+00:00",
+    "content": "**Environment:** Archicad 29, Tapir MCP server v0.6.0, project with Hungarian Building Material library (~123 Building Materials, 38 UserDefined Property groups).\n---\n## Bug \u2014 `properties_get_all_property_ids` throws AttributeError\n**What I was trying to do:** Get a count/list of all Property definitions (filtered to `UserDefined`) in the current project, to determine how many custom Properties exist in the Property Manager.\n**Command called:**\n```\nproperties_get_all_property_ids\nparams: {\"propertyType\": \"UserDefined\"}\n```\n\n**Error returned:**\n```\nError executing tool archicad_call_tool: 'GetAllPropertyIdsResult' object has no attribute 'properties'\n```\n\n**Reproduction notes:** Fully reproducible, not intermittent. Fails identically regardless of the `propertyType` filter \u2014 I also tried calling it with no filter at all (`params: {}`), and got the exact same AttributeError both times.\n\n**Likely cause (my inference, unconfirmed):** the handler appears to read a `.properties` attribute off the result object, but the actual field is probably named differently. By analogy with `properties_get_all_property_group_ids`, which returns its data under `propertyGroupIds`, the correct field here is likely `propertyIds`, not `properties`.\n\n**Workaround found:** `properties_get_all_properties` (a different, unfiltered command) works correctly and returns the full list with a `propertyType` field per entry (values seen: `\"StaticBuiltIn\"`). But it takes no filter parameter, so isolating just the user-defined ones means paginating through the entire built-in list client-side and filtering manually \u2014 in this project that list ran past 200+ entries after only 2 of many built-in property groups (Window/Door, Object/Lamp, Lamp, Wall, Column), so the full list is likely 1000+ entries. A working `propertyType` filter \u2014 either fixing it on `properties_get_all_property_ids` or adding one to `properties_get_all_properties` \u2014 would fix this.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1549022539811131413"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-09-14T11:44:35.222000+00:00",
+    "content": "There was also something I found, which is that it is not possible to query to Classification(s) assigned to a Building Material (only Classification to Elements). Maybe this is just a function that has not been implemented yet in Tapir:",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1549023052707270677"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-09-14T11:44:52.171000+00:00",
+    "content": "## Gap \u2014 No Classification support for Attributes (e.g. Building Materials)\n\n**What I was trying to do:** Retrieve a Building Material's assigned Classification (from a real classification system, e.g. \"ARCHICAD Classification v2.0\"), the same way Classification can be read for model elements like Walls.\n\n**Command tried:**\n```\nclassifications_get_classifications_of_elements\nparams: {\n  \"elements\": [{\"elementId\": {\"guid\": \"<building-material-attributeId-guid>\"}}],\n  \"classificationSystemIds\": [{\"classificationSystemId\": {\"guid\": \"<system-guid>\"}}]\n}\n```\n\n**Result:** Cleanly rejected \u2014 not a crash, a proper typed error:\n```\n{\"classificationIds\": [{\"error\": {\"code\": -2130313115, \"message\": \"Failed to get classification item\"}}]}\n```\n\n**Why I tried this:** `ElementId` and `AttributeId` are structurally identical in the schema (both just `{guid: string}`), so I tested whether the element-scoped classification command would also accept an attribute's guid. It correctly validates and rejects it, so this isn't a malfunction \u2014 it's a confirmed absence of any `classifications_*_of_attributes` command. Building Materials do support Classification assignment in the Archicad UI itself (confirmed with the user), so this is a real capability gap, not user error.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1549023123796533321"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-09-14T14:52:33.444000+00:00",
+    "content": "Thank you! I found the cause, a typo I made more than a year ago. So a big thumps up for reporting it, probably you are not the first tumpling into it. \n\nFor future bug reports, it would be really helpful if you could open a GitHub issue instead. That way it\u2019s much easier to track and won\u2019t get lost in Discord",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1549070356998922332"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-09-14T15:26:28.281000+00:00",
+    "content": "OK, I will see how to do the GitHub issue way in the future.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1549078891724013679"
   }
 ]

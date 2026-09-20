@@ -8746,46 +8746,6 @@
   {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-18T17:35:38.691000+00:00",
-    "content": "I tested scripts in the examples file, both official and tapir palette, and a lot of them didn't work in the tapir palette",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373715672349282446"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-18T19:25:19.666000+00:00",
-    "content": "I'm working on replacing the polyline object by a real polyline. When I use import aclib\n\nelements = aclib.RunTapirCommand(\n    'GetElementsByType', {'elementType': 'Polyline'})['elements']\n\ndetailsOfElements = aclib.RunTapirCommand(\n    'GetDetailsOfElements', {'elements': elements})['detailsOfElements']\ni retrieve all elements, not all the polylines",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373743274958913688"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-18T19:29:08.069000+00:00",
-    "content": "I have also changed your script to use PolyLine coordinates, see here:\nhttps://raw.githubusercontent.com/tlorantfy/tapir-archicad-automation/refs/heads/TapirPalette/builtin-scripts/AutomaticNumberingBasedOnPolyline.py\n\nIt works great and the script is much more shorter, simple now.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373744232950534330"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-18T19:59:04.440000+00:00",
-    "content": "I made some modification, especially : deleted reference to the polyline object, checking the number of polylines before asking for a begining number, changing the messagebox from error to info at the end of the script",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373751767476469821"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-05-18T20:09:29.364000+00:00",
-    "content": "I just looked at Tibors PR and realized that the --port arg is the same that the official Archicad library alrady uses. Nice!",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373754388597706782"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
     "author": "eldelion",
     "created_at": "2025-05-18T20:11:59.337000+00:00",
     "content": "So that is why the two connection obejcts work in Mathias's script \ud83d\ude42",
@@ -19910,5 +19870,61 @@
     "created_at": "2026-09-19T01:27:35.095000+00:00",
     "content": "<@1254417128979959909> , <@423113258229039105> \nContinuing my previous suggestion...\nI made a proposal on how I imagine pass-through components. I used the wall component as an example. My concept was that the structure of the component should resemble the structure of the Wall tool in AC. Jorge, you mentioned two options: 1. JSON input-output, 2. ZUI component. I also like ZUI components but I have a feeling that it would be difficult to choose which of the many tool-specific parameters should be displayed as default and which should be hidden. I used to not like JSON-type outputs but since I have been using the JSwan plugin I have become very familiar with them. My biggest problem here was that during the Deserialize-Serialize process I had to manually name the inputs of the Serialize component. I managed to eliminate this problem by modifying both components with the help of Claude Code and creating a Syncronize input-output for it (see attached image).\nI previously forked the Tapir repo, and now I have a local copy on my machine so I can experiment. I asked Claude Code to make all the parameters in the API available to Tapir. Since I'm not a programmer, I'm not familiar with the names in the API. As an average user, it's hard to match the API names with the names on the GUI - and then you realize that sometimes the Hungarian translation is different from the English name :-). To get a comprehensive picture of this, I had Claude create a summary database in Notion about the current situation regarding the GetDetailsOfElements and SetDetailsOfElements commands. The table shows which parameters are currently available via Tapir (Get only, Get+Set, Not exposed) for which ACelements. I also asked the AI \u200b\u200bto try to match the API names with the English names on the GUI (it's easier for me this way). At the end of the process, I came to the conclusion that I mentioned last time, that we should move towards Pass-through components. See attached the Walls component I made (ok, not me, but Claude).\n1. I left the previous general parameters, such as:\n- ElementGuid\n- ElementID\n- LayerIndex\n- DrawOrder\n2. I created 4 \"groups\", all of which are JSON objects, because I didn't want the component to be too big due to too many parameters. These groups follow the structure of the Archicad GUI:\n- Geometry and Positioning\n- Floor Plan and Section\n- Model\n- Classification and Properties? (this is a question, it is also available in other ways)\nI think that if Tapir components were built according to this logic, then all parameters could be covered within Grasshopper with much fewer components.\nThen the JSwan plugin comes into the picture, I connect it to the group I want to extract and with the help of the Deserialize-Serialize components I can change any available parameter, which I then connect back to another Walls component.\nIt is worth noting that the Walls component has two buttons:\n- Execute (for SET) and\n- Refresh (for GET)\nAnother question to be decided is what parameter names should be included within the JSON object (and thus on the Grasshopper component), the names coming natively from the API, or these translated with the name on the GUI (I think the latter would be more fortunate).\nI think the Attributes components could also be created along similar logic.\nAdvantages:\n- the number of components would be greatly reduced\n- the structure of Grasshopper components would better follow the structure of Archicad tools\n- many new missing parameters would become available (even all available, and you wouldn't have to choose which ones are worth extracting and which ones aren't)\nDisadvantages:\n- Use of JSON objects (maybe not everyone is familiar with this, but this can be avoided by creating a proper tutorial)\n- Resolving the pairing of API names and GUI names is a task to be solved\nWhat is your opinion on this?",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550679718368379001"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-19T08:22:58.052000+00:00",
+    "content": "<@689040789866807369> thank you for such a deep explanation and for giving this a thought. \n\nI agree with your approach. I have been also experimenting with JSON workflows and as you said can drastically reduce the number of components required and the complexity. As it needs a more \u201cprogramming\u201d mindset, regular Architect users might be a little bit intimidated, but as you say having one or two tutorials and a simple workflow like you\u2019re showing should be enough.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550784252826624032"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-19T08:23:39.371000+00:00",
+    "content": "We could provide a few sample grasshopper scripts for people to see how these components are intended to use",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550784426131202090"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-19T08:25:46.936000+00:00",
+    "content": "I also work with the JSwan plugin, but I would say that we probably need to resolve the serialisation and deserialisation within tapir plugging, so people don\u2019t need to get third party plugins to use it. But I think we can create our own components under the utilities tab.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550784961177583709"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-09-19T10:05:51.684000+00:00",
+    "content": "I like the appraoch combined with the unwrapping components! \nThere is one important information that the dejson componenet does not cover - marking if an output is an object, or a field. I think that should be clearly marked if we do our own unwrapper/wrapper componenet.\nThe 4 categories are clear for an archicad user. Mapping the properteis inside the grasshopepr plugin code to the 4 categories can be cumbersome at first, but if we can establish a mapping we can use it for each element type for either deterministic code generation or as part of a skill for ai generation.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550810146916270163"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-19T10:46:21.150000+00:00",
+    "content": "What about our deserialising components expose the parameters when plugged? Then as a user you don\u2019t really care about whether is json or not. The component just dynamically creates the inputs and outputs when connected. We can separate those functional blocks like the UI in Archicad",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550820336835100683"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "ferencz_tamas",
+    "created_at": "2026-09-19T11:26:31.134000+00:00",
+    "content": "<@423113258229039105>, <@558945647085223946> \n1. I agree that it could be solved with Tapir's own component in the Utilities folder. In the meantime, it occurred to me that the Deserilalize-Serialize component could also work like the Walls component above (pass-through, with execute and refresh buttons), and thus save another step.\n2. The 4 categories will not be the same for all Archicad tools. (i.e. Dimensions, Section-Elevation tools, but for each one you can check which \"groups\" are needed)\n3. Jswan also works in such a way that it exposes the parameters when you connect them.\n4. My intention was to\n  a) not have the components too long\n  b) follow the Archicad structure\n  c) but mostly, that this would make it possible to access all available Archicad parameters from within Grasshopper",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550830445040631849"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-19T19:56:25.232000+00:00",
+    "content": "Lets try to have a short zoom call if you can this week? Do you mind to show your current workflow?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550958765988118680"
   }
 ]

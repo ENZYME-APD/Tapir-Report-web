@@ -8746,22 +8746,6 @@
   {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-05-18T20:11:59.337000+00:00",
-    "content": "So that is why the two connection obejcts work in Mathias's script \ud83d\ude42",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373755017630318652"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-19T01:35:56.815000+00:00",
-    "content": "When you say 2 connection objects, you mean the \"ACConnection.connect()\" in the script and the \"connection_object\" in aclib.RunCommand?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373836544322043944"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
     "created_at": "2025-05-19T01:48:06.719000+00:00",
     "content": "And yes, the Tapir Palette sends the --port parameter to the scripts (the official Python Palette does the same).\nSo you can run multiple Archicad instances, you can be sure that the script will use the correct Archicad.\nThis is one of the advantages to use Tapir palette instead of simply run the script from outside of Archicad.\n\nFunfact:\nThere is a --host parameter, so if you know your colleague's computer's host in your office, you can execute script on your machine what will send commands to your colleague's Archicad \ud83d\ude01 \nIf you hate him, you can ruin his work \ud83d\ude05",
@@ -19926,5 +19910,37 @@
     "created_at": "2026-09-19T19:56:25.232000+00:00",
     "content": "Lets try to have a short zoom call if you can this week? Do you mind to show your current workflow?",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1550958765988118680"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "peeeter___",
+    "created_at": "2026-09-20T07:32:47.559000+00:00",
+    "content": "Hey Guys!\n\nCurrently I'm trying out the CreateTexts command in Tapir and I'm wondering if it is possible to place the text on a layout instead of the 3D space? In the description of the command the placement seems to be working like this:\n\ncoordinate:    \nCoordinate3D {\n3D coordinate.\nx:    \n number *\nX value of the coordinate.\ny:    \n number *\nY value of the coordinate.\nz:    \n number *\nZ value of the coordinate.\n\nI can't seem to find any input parameters regarding a layout.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1551134013769384048"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-20T07:39:01.911000+00:00",
+    "content": "Yes, it's possible.\nIt creates the Text/Label to the currently active window.\nYou can change to the Layout using Tapir ChangeWindow command. Use the navigatorItemId input parameter.\nYou can get the navigatorItemId by using GetNavigatorItemTree.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1551135583915745363"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-20T13:00:21.586000+00:00",
+    "content": "Hi, the last few days I have been working on a substantial update to the Tapir addon, with the aim of increasing as much as possible the ability for AI to work in AC , through an MCP and the Tapir addon. This has required a substantial addition of functionality to the addon, beyond a incremental update. The updated Tapir addon has been developed to be able to access as much AC functionality as possible to allow the creation and editing of AC projects/models. There is also baked in error handling so that the AI does not have to try to figure out itself any error return messages, for example if the AI tries to create an element on a layer that is hidden or locked, or hidden renovation filter etc.  Also, baked into the Addon is functionality for quality control and error finding in the model itself, (windows sitting outside walls, object collision etc). Baked into the addon is natural language understanding of Archicad commands, again so that the AI being used doesnt need to trying and determine what it is being asked to do in AC.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1551216448733581434"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-20T13:05:55.017000+00:00",
+    "content": "I plan to put this up as a branch on Github if anyone wants to use it or help develope its functionality further.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1551217847244685396"
   }
 ]

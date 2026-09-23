@@ -2170,14 +2170,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-01-02T02:26:19.307000+00:00",
-    "content": "Dear @everyone ! Happy new year to all of you! Thank you for your support and patience over the last year! I hope this 2024 we will be able to finalise the new release of tAPIr together. Life and work have got in the way these past months and  we are a bit delayed, but keep your hopes up!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1191568125175550074"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "dorman7167",
     "created_at": "2024-01-02T06:24:53.417000+00:00",
     "content": "The GDL is too hard to the designers,Hope the tAPIr can end this situation",
@@ -19982,5 +19974,21 @@
     "created_at": "2026-09-21T14:20:32.649000+00:00",
     "content": "The other issue I have found working with AI through the addon/commands, is that the addon doesnt return feedback to the AI on certain issues that might be encountered. For example, if the AI tries to create  an element that affects another story, or create an element on a hidden layer",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1551599015660101853"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "peeeter___",
+    "created_at": "2026-09-22T21:26:44.523000+00:00",
+    "content": "Hey guys!\n\nI'm trying to run the \"get_point_from_user\" test script from Github. However, when I run it, I get an error, see below:\n\nError:\n{\n    \"code\": 4010,\n    \"message\": \"Archicad does not have the registered Add-On command with the name : TapirCommand.GetPointFromUser\"\n}\n\nI don't get the problem, as you can see I have the TApir commands and the Tapir Add-on both in the Add-on manager (AC version 27). I see that the add-on is marked with a yellow triangle but I don't know why. Did anybody else encounter the same problem?",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1552068659738836992"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "carolbundchen_44729",
+    "created_at": "2026-09-23T00:15:06.290000+00:00",
+    "content": "Hi all, has anyone tested DeleteNavigatorItems to delete viewpoints from the Project Map?\n\nThis is what I'm sending (AC28, add-on 1.5.7):\n\n\n`tapir_ext('DeleteNavigatorItems', {\n    'navigatorItemIds': [{'navigatorItemId': {'guid': g}} for g in guids],\n})`\nEvery item comes back Failed to delete navigator item. \u2014 297 out of 297, all sections, elevations and interior elevations. The GUIDs come straight from GetNavigatorItemTree on ProjectMap.\n\nIs this meant to work on Project Map viewpoints, or only View Map items?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1552111029620703275"
   }
 ]

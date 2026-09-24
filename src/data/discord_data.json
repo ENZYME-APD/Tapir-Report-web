@@ -2170,14 +2170,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "dorman7167",
-    "created_at": "2024-01-02T06:24:53.417000+00:00",
-    "content": "The GDL is too hard to the designers,Hope the tAPIr can end this situation",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1191628162904359062"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "grzegorzwilk",
     "created_at": "2024-01-02T09:04:21.940000+00:00",
     "content": "Yes. There is one feature missing writing nodes with own scripts but with output values",
@@ -19990,5 +19982,37 @@
     "created_at": "2026-09-23T00:15:06.290000+00:00",
     "content": "Hi all, has anyone tested DeleteNavigatorItems to delete viewpoints from the Project Map?\n\nThis is what I'm sending (AC28, add-on 1.5.7):\n\n\n`tapir_ext('DeleteNavigatorItems', {\n    'navigatorItemIds': [{'navigatorItemId': {'guid': g}} for g in guids],\n})`\nEvery item comes back Failed to delete navigator item. \u2014 297 out of 297, all sections, elevations and interior elevations. The GUIDs come straight from GetNavigatorItemTree on ProjectMap.\n\nIs this meant to work on Project Map viewpoints, or only View Map items?",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1552111029620703275"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-23T05:25:50.807000+00:00",
+    "content": "Hi <@1388196710911836170> !\nArchicad is not able to load two versions of the same AddOn at the same time.\nOn your attached picture I can see that it successfully loaded \"Tapir Additional JSON Commands\" AddOn and then it failed to load TapirAddOn_AC27_Win. Those are the same AddOns but probably the later one is the latest version.\nPlease remove the old version of the AddOn or overwrite the file with the new one and restart Archicad.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1552189230392942623"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-23T11:31:48.434000+00:00",
+    "content": "Hi, from my experience playing with the addon, I have the memeory of having come up against the hard wall of the API not allowing  the project map to be edited. So this could be a real limit. But to be confirmed by others....",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1552281327355822181"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "lonien",
+    "created_at": "2026-09-23T14:28:15.194000+00:00",
+    "content": "Hi <@423113258229039105> , thank you very much!\nI'm doing the Archicad BIM Manager program in Brazil, excited to learn more!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552325731445641378"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "pablo_ferrer",
+    "created_at": "2026-09-23T21:57:49.436000+00:00",
+    "content": "Is that possible with Tapir or is not covered yet?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552438869616631972"
   }
 ]

@@ -2168,22 +2168,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1186473589243912252"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-01-02T09:04:21.940000+00:00",
-    "content": "Yes. There is one feature missing writing nodes with own scripts but with output values",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1191668296198651945"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "donald_64383",
-    "created_at": "2024-01-07T12:31:07.702000+00:00",
-    "content": "Hello everyone, I have a problem with developing Archicad add-on plugin. If anyone can help me, please dm me or reply for my message.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1193532269063852105"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "donald_64383",
@@ -2230,30 +2214,6 @@
     "created_at": "2024-01-26T18:14:07.921000+00:00",
     "content": "https://youtu.be/rLH3PVld5iw?feature=shared",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1200503958205124750"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-02-05T11:43:29.379000+00:00",
-    "content": "Hi <@1004701060868350014>  and Welcome to tapir community",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204029528490508308"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-02-05T11:53:55.587000+00:00",
-    "content": "Have You already tried tapir? Or mayybe  You are coming with reallife automation problem/challange to solve..",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204032154997362710"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "sc0tt5673",
-    "created_at": "2024-02-05T12:05:49.536000+00:00",
-    "content": "Yep i tried it this weekend - i was looking for a way to create archicad proprieties directly by linking an Excel file.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204035149516251196"
   },
   {
     "channel": "general",
@@ -20014,5 +19974,45 @@
     "created_at": "2026-09-23T21:57:49.436000+00:00",
     "content": "Is that possible with Tapir or is not covered yet?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552438869616631972"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "kwi0708",
+    "created_at": "2026-09-24T12:46:59.934000+00:00",
+    "content": "Hi! I just joined this group after doing some tests with Archicad-Tapir-Claude. Impressing and promising! What channel is the right one to ask questions that came up during my testing?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552662637823656017"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-09-24T12:49:29.640000+00:00",
+    "content": "User support channel or GitHub directly",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552663265736396901"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-09-24T12:49:45.605000+00:00",
+    "content": "There is a Claude bot linked to the GitHub",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552663332698325013"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-09-24T12:50:19.368000+00:00",
+    "content": "He can answer to specific bug, preparing new commands for next version if needed .",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552663474310746266"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-24T12:58:52.566000+00:00",
+    "content": "Yes, feel free to ask any question here in the user support channel: https://discord.com/channels/994704152116596846/1035110189935894530\nBut the best if you add your questions/issues into GitHub Issues and the bot will automatically answer it, try to fix it.\nExample:\n\"Is it possible to do this or that using Tapir?\" => If the answer is yet, the bot will tell you how. If the answer is no, the bot will implement it and soon it will be available \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552665626819170436"
   }
 ]

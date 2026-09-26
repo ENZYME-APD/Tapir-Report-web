@@ -8690,22 +8690,6 @@
   {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-19T01:48:06.719000+00:00",
-    "content": "And yes, the Tapir Palette sends the --port parameter to the scripts (the official Python Palette does the same).\nSo you can run multiple Archicad instances, you can be sure that the script will use the correct Archicad.\nThis is one of the advantages to use Tapir palette instead of simply run the script from outside of Archicad.\n\nFunfact:\nThere is a --host parameter, so if you know your colleague's computer's host in your office, you can execute script on your machine what will send commands to your colleague's Archicad \ud83d\ude01 \nIf you hate him, you can ruin his work \ud83d\ude05",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373839605761310861"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-19T11:36:12.406000+00:00",
-    "content": "I'm trying to make a script that generate slab based on polylines (to retrieve fill/create massing of buildings around my projects). I don't see example, and when I try to use it, I have this error:             \"error\": {\n                \"code\": -2130313102,\n                \"message\": \"Failed to create new Slab\"",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1373987604659306588"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2025-05-19T18:35:49.577000+00:00",
     "content": "I launched the script with the official palette in a second instance of archicad, but it seems that the script used the first instance of archicad. if I understand correctly, tapir commands don't benefit from current instance information, hence the importance of a Tapir palette and 100% tapir commands?",
@@ -20014,5 +19998,29 @@
     "created_at": "2026-09-24T12:58:52.566000+00:00",
     "content": "Yes, feel free to ask any question here in the user support channel: https://discord.com/channels/994704152116596846/1035110189935894530\nBut the best if you add your questions/issues into GitHub Issues and the bot will automatically answer it, try to fix it.\nExample:\n\"Is it possible to do this or that using Tapir?\" => If the answer is yet, the bot will tell you how. If the answer is no, the bot will implement it and soon it will be available \ud83d\ude42",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1552665626819170436"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "carolbundchen_44729",
+    "created_at": "2026-09-25T04:10:40.225000+00:00",
+    "content": "Hi all, has anyone tested DeleteNavigatorItems to delete viewpoints from the Project Map?\n\nThis is what I'm sending (AC28, add-on 1.5.7):\n\n\ntapir_ext('DeleteNavigatorItems', {\n    'navigatorItemIds': [{'navigatorItemId': {'guid': g}} for g in guids],\n})\nEvery item comes back Failed to delete navigator item. \u2014 297 out of 297, all sections, elevations and interior elevations. The GUIDs come straight from GetNavigatorItemTree on ProjectMap.\n\nIs this meant to work on Project Map viewpoints, or only View Map items?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1552895087371886725"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-25T09:03:05.094000+00:00",
+    "content": "Yay, finally I managed to make our Discord bot working!\nSo it creates GitHub issues from your Discord questions \ud83d\udcaa",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1552968675886243840"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-09-25T13:53:00.119000+00:00",
+    "content": "Just finished a headless runner that can run all my GUI scripts in headless mode, with detailed logs about the outcomes. You configure everiting in GUI, save it, and use that for the headless runs. It still needs some refinements, but I am pretty happy how it turned out. \n\nI found that for true automation / scheduled runs detailed logging is crutial. If you only know that the script ran, but don't know exactly what happened you have to check and verify. And you loose all time you saved by running the script scheduled at the weekend.\n\nThe logging you see in the video is in 2 parts - there is a result aggregating / filtering / registering base that is going to be open source as part of multiconn_archicad (currently on an unreleased branch) and an exacution context, and two types of rendererers that remains domain code as it depends on the application / usecase.\n\nhttps://youtu.be/MXDX0GeMV-Q",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1553041635909046444"
   }
 ]

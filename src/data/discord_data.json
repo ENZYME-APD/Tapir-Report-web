@@ -8690,14 +8690,6 @@
   {
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-19T18:35:49.577000+00:00",
-    "content": "I launched the script with the official palette in a second instance of archicad, but it seems that the script used the first instance of archicad. if I understand correctly, tapir commands don't benefit from current instance information, hence the importance of a Tapir palette and 100% tapir commands?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374093205368213525"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
     "created_at": "2025-05-19T18:38:58.285000+00:00",
     "content": "I have just updated aclib in my branch, if you use that version of aclib, then tapir commands will also go to the correct Archicad instance.",
@@ -20022,5 +20014,21 @@
     "created_at": "2026-09-25T13:53:00.119000+00:00",
     "content": "Just finished a headless runner that can run all my GUI scripts in headless mode, with detailed logs about the outcomes. You configure everiting in GUI, save it, and use that for the headless runs. It still needs some refinements, but I am pretty happy how it turned out. \n\nI found that for true automation / scheduled runs detailed logging is crutial. If you only know that the script ran, but don't know exactly what happened you have to check and verify. And you loose all time you saved by running the script scheduled at the weekend.\n\nThe logging you see in the video is in 2 parts - there is a result aggregating / filtering / registering base that is going to be open source as part of multiconn_archicad (currently on an unreleased branch) and an exacution context, and two types of rendererers that remains domain code as it depends on the application / usecase.\n\nhttps://youtu.be/MXDX0GeMV-Q",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1553041635909046444"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "trthvlu",
+    "created_at": "2026-09-26T18:53:53.580000+00:00",
+    "content": "any way to get dark mode for archicad in windows",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1553479745478467716"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "runxel",
+    "created_at": "2026-09-26T20:01:30.946000+00:00",
+    "content": "Not sure what this has to do with Tapir.... but like wait for v30?! \ud83e\udd37\u200d\u2642\ufe0f",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1553496763305042022"
   }
 ]

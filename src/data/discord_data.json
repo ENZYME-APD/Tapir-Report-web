@@ -2219,14 +2219,6 @@
     "channel": "general",
     "server": "archicad-api-grasshopper",
     "author": "poco2013",
-    "created_at": "2024-02-05T19:19:57.910000+00:00",
-    "content": "Easy Enough using the OOB  Python interface",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204144404315643905"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "poco2013",
     "created_at": "2024-02-05T21:14:03.642000+00:00",
     "content": "Python Scripts have direct read/write access to Excel files and read/write access to all custom user created properties/classifications in Archicad. Also can read/write Json & CSV files to store the keynote database, also has access to read any Archicad builtin property through the custom interface to the C++ API and a AddOn. Has everything except writing directly to labels, which was recently removed. But still can write to custom properties if that is your keynote method of choice. But I would still wait and see what develops with 28? -- Don't expect much ?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204173117396877383"
@@ -8686,22 +8678,6 @@
     "created_at": "2025-05-18T09:05:13.374000+00:00",
     "content": "Wicked!\nI still need to remove my own connection inferface and recompile. But yeah, the whole reason I packaged it was to avoid the user having to mess about with the command prompt and python versions/libraries.\n\nBut this would only be true for the built-in scripts, right? I wouldn\u2019t be able to run external pyexe files, right?",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1373587220459556945"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-19T18:39:45.897000+00:00",
-    "content": "Thanks! I was showcasing the script to a senior architect colleague, and wasn't able to make it work XD",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374094196566134967"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-19T18:40:58.511000+00:00",
-    "content": "Use this aclib:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/blob/main/builtin-scripts/aclib/__init__.py\n\nBut hopefully tomorrow I will have time to finalize the Tapir palette \ud83d\ude42 your script will be our first built-in script, so it will be automatically available for everyone",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374094501131587627"
   },
   {
     "channel": "user-support-channel",
@@ -20030,5 +20006,21 @@
     "created_at": "2026-09-27T15:25:53.584000+00:00",
     "content": "With Archicad 30, Windows users will get dark mode too (as some birds whispered to my ears \ud83d\ude05 )",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1553789788446920717"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-28T13:59:57.361000+00:00",
+    "content": "I hope you already checked the magic what Tapir Grasshopper Plugin can do.\nFerencz Tam\u00e1s is a poweruser of Tapir+Grasshopper from B\u00e1n\u00e1ti+Hartvig Architect, he had wonderful ideas",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1554130549545894049"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "ferencz_tamas",
+    "created_at": "2026-09-28T21:55:11.716000+00:00",
+    "content": "Hi <@1254417128979959909> , what do you think? Continuing the previous discussion.\nCurrently, many Archicad device parameters are not yet available in the Tapir-Grasshopper plugin. For now, I would like to put aside the issue of Grasshopper components (pass-through) until I can talk to <@423113258229039105>  about how to proceed. \nHow do you see it, would it be worth at least going with Archicad JSON commands and creating the missing tool parameters? What do I mean by that? Can I write issues to the Claude bot? For example:\n\"FUNCTION REQUEST: Make all Wall parameters - available in the API - to be exposed to GetDetailsOfElements and SetDetailsOfElements at JSON command level, but don't create/modify the Grasshopper components yet!\"\nAnd then make a similar request to the Claude bot for each Archicad tool, step by step, so that there is not too much to process at once.\nWon't the GET-SETDetailsOfElements command pair be too robust in the end?\nOr maybe it's not worth rushing so much, it's better to see which parameters make sense to expose for different Archicad tools, and then ask the Claude bot to expand the JSON commands.\nYou know the code structure and the Archicad API best. I - as an enthusiastic user - would just like to move forward and get our \"poor\" friend Claude working. So I need some advice. \ud83d\ude04",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554250147419132066"
   }
 ]

@@ -2218,22 +2218,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "poco2013",
-    "created_at": "2024-02-05T21:14:03.642000+00:00",
-    "content": "Python Scripts have direct read/write access to Excel files and read/write access to all custom user created properties/classifications in Archicad. Also can read/write Json & CSV files to store the keynote database, also has access to read any Archicad builtin property through the custom interface to the C++ API and a AddOn. Has everything except writing directly to labels, which was recently removed. But still can write to custom properties if that is your keynote method of choice. But I would still wait and see what develops with 28? -- Don't expect much ?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204173117396877383"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "poco2013",
-    "created_at": "2024-02-05T21:30:49.194000+00:00",
-    "content": "Start by learning Python. It is the easiest language to learn -- Some don't consider it a true programming language. There are a huge number on videos on every aspect on YouTube. Most questions will be answered here and on the forum.  But be aware that there is huge resistance within Graphisoft against further development.  Join the Lobbing crowd.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204177334987399168"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "observisualize",
     "created_at": "2024-02-05T21:51:20.754000+00:00",
     "content": "you mention GS resistance to more python dev, do you have more details? trying to decide how much further to invest in it",
@@ -8680,52 +8664,12 @@
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1373587220459556945"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-19T18:42:47.645000+00:00",
-    "content": "I will check this slab creation issues.\nMake sure that slab needs a closed polygon, so the first coordinate and the last coordinate in the given array must be equal.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374094958872760342"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-19T18:43:37.662000+00:00",
-    "content": "It is possible that the polyline wasn't closed. I'll modify the script to copy the first point if it is not the case",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374095168659128320"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-19T18:45:20.015000+00:00",
-    "content": "You can check the error codes here:\nhttps://graphisoft.github.io/archicad-api-devkit/md__common_doxygen_files_2_articles_2_error___codes.html\n\nFor your error code it says:\nThe passed polygon or polyline is irregular",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374095597958725806"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2025-05-19T18:50:19.104000+00:00",
     "content": "<@1254417128979959909>  I was reviewing the graph that I made for a meeting with Akos Somorjai 2/3 years ago (in order to request further development of the python connection). Thanks to you, a lot of those ideas are possible! https://www.sharecanvas.io/p/archicad-python",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1374096852428783776"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-19T19:34:04.155000+00:00",
-    "content": "I've just checked the AddOn's code and it copies the first coordinate and add it to the end.\nSo I was wrong, based on the code, the first point and the last point in the input polygon must be different. Sorry \ud83d\ude01",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374107862690693313"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-19T19:35:21.136000+00:00",
-    "content": "But we should improve the code to work in both cases: when the input is a closed polyline then do not copy the first coordinate, and when it's not closed then copy",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374108185572675665"
   },
   {
     "channel": "ac-python-workflows",
@@ -20022,5 +19966,53 @@
     "created_at": "2026-09-28T21:55:11.716000+00:00",
     "content": "Hi <@1254417128979959909> , what do you think? Continuing the previous discussion.\nCurrently, many Archicad device parameters are not yet available in the Tapir-Grasshopper plugin. For now, I would like to put aside the issue of Grasshopper components (pass-through) until I can talk to <@423113258229039105>  about how to proceed. \nHow do you see it, would it be worth at least going with Archicad JSON commands and creating the missing tool parameters? What do I mean by that? Can I write issues to the Claude bot? For example:\n\"FUNCTION REQUEST: Make all Wall parameters - available in the API - to be exposed to GetDetailsOfElements and SetDetailsOfElements at JSON command level, but don't create/modify the Grasshopper components yet!\"\nAnd then make a similar request to the Claude bot for each Archicad tool, step by step, so that there is not too much to process at once.\nWon't the GET-SETDetailsOfElements command pair be too robust in the end?\nOr maybe it's not worth rushing so much, it's better to see which parameters make sense to expose for different Archicad tools, and then ask the Claude bot to expand the JSON commands.\nYou know the code structure and the Archicad API best. I - as an enthusiastic user - would just like to move forward and get our \"poor\" friend Claude working. So I need some advice. \ud83d\ude04",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554250147419132066"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-29T06:38:23.311000+00:00",
+    "content": "Perhaps we can ask Claude to create a visual map of the global C++ scope, like a graph or a map, and overlay a layer of what it has been created already in tapir",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554381813311610901"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-29T06:50:20.093000+00:00",
+    "content": "Good news, I can share my Claude subscription for free for 1 week with anybody (who haven't got Claude subscription yet).\nIf anybody wanna try it, ask me \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554384819712954429"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "peeeter___",
+    "created_at": "2026-09-29T06:55:29.379000+00:00",
+    "content": "I'm using the CreateTexts command in a script, but instead of creating the full text I need, it just gives the first character. Does anybody have the same issue? I asked AI what the problem could be, it said something about UTF coding, bounding box size, and some other things.\n\nPython\n# Sz\u00f6veg form\u00e1z\u00e1sa az Archicad \u00e1ltal elfogadott soremel\u00e9ssel (\\r\\n)\nformatted_text = material_text.replace('\\r\\n', '\\n').replace('\\r', '\\n').replace('\\n', '\\r\\n')\n\n# Sz\u00f6veg l\u00e9trehoz\u00e1sa (CreateTexts)\ntext_response = aclib.RunTapirCommand('CreateTexts', {\n    'textsData': [\n        {\n            'coordinate': {\n                'x': 0.341,\n                'y': 0.241,\n                'z': 0\n            },\n            'text': formatted_text,\n            'height': 1.5,\n            'pen': 1,\n            'justification': 'Left'\n        }\n    ]\n})\n\nThis is the piece of code that handles the createtexts command (I have a .doc file that the script extracts the different paragraphs from, but every time it creates the text in the correct position, it contains the very first letter and that's it).",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1554386116952461384"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "ferencz_tamas",
+    "created_at": "2026-09-29T07:02:23.025000+00:00",
+    "content": "I have a Notion database from the state of the latest version. What API parameters are available for each Archicad tool and which of them are currently available in Tapir and how (Get only, Get+Set, Not exposed) I can share it if it's needed.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554387851909664810"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-29T12:54:11.854000+00:00",
+    "content": "To be complete, the adddon needs more than just just to exceute commamds exposed exposed  the API. The addon nees to know if the command really succeeds or not!",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554476388755574825"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-29T20:03:17.053000+00:00",
+    "content": "<@1388196710911836170> , the bot created a fix.\nYou can download the fixed AddOn from the bottom of this page: https://github.com/ENZYME-APD/tapir-archicad-automation/actions/runs/36622540100\nIf you have some time, please try it and tell us that the fix works or not.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1554584371946586112"
   }
 ]

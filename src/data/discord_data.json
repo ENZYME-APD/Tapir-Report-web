@@ -2218,38 +2218,6 @@
   {
     "channel": "general",
     "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2024-02-05T21:51:20.754000+00:00",
-    "content": "you mention GS resistance to more python dev, do you have more details? trying to decide how much further to invest in it",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204182500524425278"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "poco2013",
-    "created_at": "2024-02-06T00:28:13.555000+00:00",
-    "content": "Nothing specific. Only second and third hand. Been following Python since the beta in 23. and watched it go down hill from there. When it was first released under Tibor, it was much more useful than today. But had some serious problems. Been really dumbed down since then -- maybe to address those problems. I have been hearing very consistent rumors from credible insiders that Graphisoft is still searching for alternatives. Getting info from Graphisoft is like \"pulling teeth\". They are almost embarrassed to talk about it. Whether you use Python or not depends on what you need it for and the criticality of the use. Untill Graphisoft makes some official announcement about the future direction of the Python API, I would not bet my company on it. There are just too many unsupported Goodies in Archicad to make such assumptions. I use it because it is easy to learn and provides easy access to data not available otherwise, but never for anything that can't be discontinued tomorrow. I do know that Graphisoft is exploring (just exploring the concept) of a on line store to share AddOns both free and paid. Python scripts will be a part of that if it happens. Personally, I don't think there are enough applications in Python to justify it right now. But for some specific immediate need, there might be nothing else. Don't mean to downgrade its use as it can be very valuable -- just saying -- don't expect much support from Graphisoft based on past history . THAT IS WHAT WE ARE TRYING TO CHANGE.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204221980673577081"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-02-06T10:09:14.195000+00:00",
-    "content": "Well for a future of tapir project regarding GS plans good enough would be if rhey leave jsonapi. Our addon can be gradually developed by adding most requested commands.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204368196795240498"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-02-06T12:00:51.693000+00:00",
-    "content": "I have an idea how to make it. Let me check internally if it works and@I will share the concept",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204396288138018826"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
     "author": "poco2013",
     "created_at": "2024-02-07T13:08:52.190000+00:00",
     "content": "Rhino uses Iron Python, which uses Python 2.7 and is not compatible with many Python libraries. Among which is Openpyxl, which is the most popular. I believe, that the older version of xlsx might be useful , but don't know. In any event, I would point out that direct use of Python/Excel with Openpyxl is extremely easy and well documented and the its use as Sc0tt described is extremely easy. I have done this many times and made some videos on it years ago. Why do you want to reinvent the \"Wheel\"",
@@ -20004,8 +19972,16 @@
     "server": "archicad-api-grasshopper",
     "author": "heartbreaker2323",
     "created_at": "2026-09-29T12:54:11.854000+00:00",
-    "content": "To be complete, the adddon needs more than just just to exceute commamds exposed exposed  the API. The addon nees to know if the command really succeeds or not!",
+    "content": "To be complete, the adddon needs more than just able to exceute commands exposed by the API. The addon needs to know if the command really succeeds or not!",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554476388755574825"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-29T12:55:48.212000+00:00",
+    "content": "The addon needs to understand the context of the commands, in order to confirm correct implementation of the commands issued  to AC",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554476792910188726"
   },
   {
     "channel": "ac-python-workflows",
@@ -20014,5 +19990,61 @@
     "created_at": "2026-09-29T20:03:17.053000+00:00",
     "content": "<@1388196710911836170> , the bot created a fix.\nYou can download the fixed AddOn from the bottom of this page: https://github.com/ENZYME-APD/tapir-archicad-automation/actions/runs/36622540100\nIf you have some time, please try it and tell us that the fix works or not.",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1554584371946586112"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-09-30T14:58:09.565000+00:00",
+    "content": "Welcome <@710022388942897162> to the tapir family!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1554869972642177196"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "ferencz_tamas",
+    "created_at": "2026-09-30T18:03:16.202000+00:00",
+    "content": "Hi <@1254417128979959909> , There are still a few details to clarify regarding the Notion database I mentioned, and then I\u2019ll share it with Claude. As far as I know, the best way to connect Claude and Notion would be via the REST API; for this, I would need to send you the Notion API token.\nSince you manage the Claude instance linked to GitHub, how do you suggest I send the token? I\u2019d rather not just paste it here in Notion. Or would you recommend another method?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1554916557254168667"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-30T18:26:30.393000+00:00",
+    "content": "Claude unified the user interface of the built-in scripts \ud83d\ude42\nIt's worth to try them!",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1554922404915052747"
+  },
+  {
+    "channel": "announcements",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-30T18:48:17.387000+00:00",
+    "content": "Tapir 1.6.0 is out! \ud83e\udd73 \nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/latest\nBunch of new commands and Grasshopper components are available! \ud83d\udcaa \nThe built-in scripts were updated! \ud83e\uddd9\u200d\u2642\ufe0f \nWe have installer for Windows and Mac! It automatically finds your Archicad versions and downloads the latest Tapir version for all \ud83e\uddd0",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1554927886845087854"
+  },
+  {
+    "channel": "announcements",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-09-30T18:51:20.699000+00:00",
+    "content": "I need volunteers for testing the installer. \ud83d\ude4c \nYou can download the installers below.\nCan somebody help me testing? Especially on Mac...\nIt should automatically find all your installed Archicad versions and download the latest Tapir version for all \ud83e\uddd0 \nFor Windows: https://github.com/ENZYME-APD/tapir-archicad-automation/releases/download/1.6.0/TapirInstaller_Win.exe\nFor Mac: https://github.com/ENZYME-APD/tapir-archicad-automation/releases/download/1.6.0/TapirInstaller_Mac.zip",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1554928655711342592"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-09-30T19:18:49.150000+00:00",
+    "content": "An addon to properly control the display order levels of elements on the plan, instead of randomly bringing them forward or backward.",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1554935569816232109"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "peeeter___",
+    "created_at": "2026-09-30T19:49:19.859000+00:00",
+    "content": "I downloaded the fixed add-on, reloaded it in AC27 and ran the CreateTexts.py script from the examples folder of Tapir github page. Unfortunately, the problem is still there, I only got the first characters again.\n\nSomething I don't understand is this sentence in the github issue page:\n\nPlain '\\n' separators have always worked, **which is why the command behaves for other users**.\n\nSo this problem is unique to me? If so, why the bot created a fix for the add-on? I got the impression this was a general problem. Sorry if I'm slow, I just started getting the hang of things...\ud83d\ude00",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1554943248366051389"
   }
 ]

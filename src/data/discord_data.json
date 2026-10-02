@@ -2216,30 +2216,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1200503958205124750"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "poco2013",
-    "created_at": "2024-02-07T13:08:52.190000+00:00",
-    "content": "Rhino uses Iron Python, which uses Python 2.7 and is not compatible with many Python libraries. Among which is Openpyxl, which is the most popular. I believe, that the older version of xlsx might be useful , but don't know. In any event, I would point out that direct use of Python/Excel with Openpyxl is extremely easy and well documented and the its use as Sc0tt described is extremely easy. I have done this many times and made some videos on it years ago. Why do you want to reinvent the \"Wheel\"",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204775790848254062"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2024-02-07T13:27:50.232000+00:00",
-    "content": "If you need an IronPython solution, you can download any dotNET based Excel Library, and use it inside Rhino / IronPython.\n\nhttps://www.nuget.org/packages/ExcelLibrary\n\nI have used this in the past, it was quite intuitive for me.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204780564142489611"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2024-02-07T13:29:48.472000+00:00",
-    "content": "Here is how you can reference it using the in-built `clr` module.\n\nhttps://stackoverflow.com/questions/1200182/how-to-use-a-c-sharp-dll-in-ironpython",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1204781060076994620"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "1yur",
@@ -8646,30 +8622,6 @@
     "created_at": "2025-05-19T19:56:04.359000+00:00",
     "content": "Here is a script that create slabs from polylines (We will use the script in particular to model context )",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1374113400027742258"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-20T07:53:23.673000+00:00",
-    "content": "Hi <@1254417128979959909>,\nI finally got to cleaning up my script, here it is.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374293919994613760"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-20T12:01:38.542000+00:00",
-    "content": "Thanks! This will be the second built-in script in Tapir Palette \ud83d\ude09",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374356393603104798"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-20T12:02:24.213000+00:00",
-    "content": "And there is room for further improvement.\nAdd a button \"create issues\" to automatically create issues for each non-ortho wall.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374356585161429013"
   },
   {
     "channel": "user-support-channel",
@@ -20046,5 +19998,117 @@
     "created_at": "2026-09-30T19:49:19.859000+00:00",
     "content": "I downloaded the fixed add-on, reloaded it in AC27 and ran the CreateTexts.py script from the examples folder of Tapir github page. Unfortunately, the problem is still there, I only got the first characters again.\n\nSomething I don't understand is this sentence in the github issue page:\n\nPlain '\\n' separators have always worked, **which is why the command behaves for other users**.\n\nSo this problem is unique to me? If so, why the bot created a fix for the add-on? I got the impression this was a general problem. Sorry if I'm slow, I just started getting the hang of things...\ud83d\ude00",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1554943248366051389"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-01T18:02:16.739000+00:00",
+    "content": "is tapir for AC30 rdy?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555278695713996917"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-01T18:06:35.770000+00:00",
+    "content": "Yes, it's ready \ud83d\ude42 \nI was able to download the AC30 Beta API DeveloperKit and build Tapir with it without issues.\nBut the official AC30 API DevKit was not published yet by Graphisoft, so we are not able to release Tapir for AC30 yet... As soon as they publish it, we will have Tapir for AC30 \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555279782168502336"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-01T18:08:55.817000+00:00",
+    "content": "im in the beta program and i wanna work with the tAPIr mcp for ac but there is no tAPIr \ud83d\ude2d",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555280369568194584"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-01T18:13:13.740000+00:00",
+    "content": "Are you using Windows?\nIf so, I can give you a private non-official Tapir build for AC30 \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555281451375796246"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-01T18:17:56.292000+00:00",
+    "content": "i thought to take some SI ( \ud83d\ude04 ) for help and use some automation workflows to get time consuming things done fast. but its a lot of information to work on and structure.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1555282636484649003"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-01T18:30:29.507000+00:00",
+    "content": "I'm happy if you test Tapir with AC30 \ud83d\ude09\nUncompress it to your AddOns folder",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555285795697336332"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-01T18:39:34.986000+00:00",
+    "content": "im on RC1. did you develop for this version?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555288083602214935"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-01T19:11:35.246000+00:00",
+    "content": "Fatal Error (process terminated)\nUTF-8 assertion failed at P:\\Dev\\30RCF\\Sources\\GSRoot\\GSRootDLL\\String\\Unicode.cpp line 343.\nData: \"\\x89\"   Length: 1",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555296137756545065"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-01T19:12:30.580000+00:00",
+    "content": "that what i could diagnose by tracking the archicad start",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555296369844158555"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-01T19:13:34.033000+00:00",
+    "content": "So some code path that runs on new-project/project-open passes a single non-UTF-8 byte (0x89) into\nGS::UniString. 0x89 is \"\u2030\" in CP1252 or a UTF-8 continuation byte (e.g. \"\u00c9\" = C3 89), so it might be\na localized (GER) string or char-wise conversion. You probably won't see it on an INT build.\nFull .RPT attached.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555296635985334394"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "___m",
+    "created_at": "2026-10-01T20:23:38.185000+00:00",
+    "content": "Hi, I just spammed my first issue into the GitHub of your wonderful project. Thanks, it helps a lot on planning to renovate a house from 1960s without too much archicad knowledge. I mean I got the house built by hand in Archicad, but when it gets to modifying more than one object at a time, I'm very glad Tapir exists and Claude can talk through it to Archicad. \nBy the way: I know there is an MCP server available, but my Claude somehow decided that it rather uses the Tapir API directly via Python scripts (it has built a library of 61 scripts until now \ud83e\udee0). Is that common or should I nudge it to use the MCP server?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1555314269476622409"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-01T20:27:02.650000+00:00",
+    "content": "I believe you can do the same thing with or without the MCP server, but using the MCP server you will burn less tokens (and probably it will be faster and more reliable).\nBut <@558945647085223946> is the expert of the Tapir MCP.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1555315127065120940"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "mitch_02848",
+    "created_at": "2026-10-01T23:28:39.644000+00:00",
+    "content": "Hi Tibor - I'm a newbie here. I'm working with IFC and ArchiCAD and we want to populate the ArchiCAD Location Settings pane. Tapir Get/SetGeolocation misses two fields in the Georeferencing  Parameters XaxisAbcissa and X Axis Ordinate.  The image uses the IFC language for these items. Can this be updated (and advise what I might have to do) Tks",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1555360832370774076"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "mitch_02848",
+    "created_at": "2026-10-02T00:43:52.075000+00:00",
+    "content": "Hi <@1254417128979959909>  I'm a newbie here s0 I trust you can assist. We are working with IFC and ArchiCAD and want to pass IFC Georeferencing data to the ArchiCAD Location Settings pane. Current Get/SetGeoLocation does not support X AxisAbcissa and X AxisOrdinate. True North in the image corresponds to ArchiCAD's Project North. Please advise what steps to take if needed. TIA",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1555379758877909032"
   }
 ]

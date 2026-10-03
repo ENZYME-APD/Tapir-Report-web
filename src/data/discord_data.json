@@ -8627,22 +8627,6 @@
     "channel": "user-support-channel",
     "server": "archicad-api-grasshopper",
     "author": "dkovacs9689",
-    "created_at": "2025-05-20T12:04:45.003000+00:00",
-    "content": "Yeah, I am already working on adding more features to it. this is really just a v0.1 kinda thing. But I think it is already super useful, I use it every day, so I think it is worth sharing even at this state",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374357175677358160"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-20T12:19:46.549000+00:00",
-    "content": "you can also modify it to use with objects, columns and beam. And add a new (multiple?) angle parameter as we discussed (manually atm and perhaps an option with the current orientation of the view in a distant future?)?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374360957035352114"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
     "created_at": "2025-05-20T12:21:58.717000+00:00",
     "content": "It can be 1-by-1 along with the issues to make sure it is correct",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374361511388250262"
@@ -20110,5 +20094,77 @@
     "created_at": "2026-10-02T00:43:52.075000+00:00",
     "content": "Hi <@1254417128979959909>  I'm a newbie here s0 I trust you can assist. We are working with IFC and ArchiCAD and want to pass IFC Georeferencing data to the ArchiCAD Location Settings pane. Current Get/SetGeoLocation does not support X AxisAbcissa and X AxisOrdinate. True North in the image corresponds to ArchiCAD's Project North. Please advise what steps to take if needed. TIA",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1555379758877909032"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-02T03:55:40.637000+00:00",
+    "content": "<@1244448940305416234> , thanks for the report!\nIt's done in https://github.com/ENZYME-APD/tapir-archicad-automation/pull/732 so it will be fixed in Tapir 1.6.1 \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1555428029285670912"
+  },
+  {
+    "channel": "ac-python-workflows",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-02T07:15:04.471000+00:00",
+    "content": "<@1388196710911836170> , Claude made another fix for your CreateText issue, I hope this will work.\nCould you please download the fixed AddOn from here and try it?\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/actions/runs/36965243699/artifacts/11210061022",
+    "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1555478209242472471"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-02T07:25:42.531000+00:00",
+    "content": "<@238714334417518593> , Claude tried to fix the AC30 issue.\nCould you please test it? \ud83d\ude4f",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555480885460082798"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-02T08:55:48.013000+00:00",
+    "content": "we should think about an config.json for tAPIr which has its own version. it loads the config.json with the other version and this breaks the new tAPIr version. i backuped my config.json and put in a default one and now AC30 starts. but if i use \"my\" config.json with AC29 settings it breaks and dont start \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555503557694988311"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-02T08:59:38.341000+00:00",
+    "content": "<@238714334417518593> , good news!\nThanks for testing and the idea!\nYou're right, the config.json should have a version.\nBut of course new versions of Tapir should be able to load the old configs.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555504523760508971"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-02T09:00:13.138000+00:00",
+    "content": "Root cause\nTapirPalette::AddScriptsFromRepositories downloads every file of the repo. DownloadFileContent\nreads the HTTP body with GS::IBinaryChannelUtilities::ReadUniStringAsUTF8, so any binary file\n(png, jpg, pdf, zip ...) is handed to GS::UniString as \"UTF-8\". AC29 silently accepted that\n(the file was saved corrupted via ToCStr() in SaveBuiltInScript). AC30's GSRoot asserts and\nkills the process. PR #736 doesn't cover this code path.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555504669709836350"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-02T09:02:09.972000+00:00",
+    "content": "maybe something special to my cause because im havin an addon which is downloading content from github but it would be nice if this still works \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555505159746883625"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-02T09:11:18.726000+00:00",
+    "content": "ok it works now with the default config.json. passed my smoke tests",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1555507461388243004"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-02T19:02:23.867000+00:00",
+    "content": "The MCP server provides a token efficient way to search the documentation for the AI, but the actual call tool currently exposes the full json payload. That is efficient for 10s of elements, and fine for 100s but is  wasteful for 1000s. For even bigger numbers (and the numbers rarely stay low) that approach outright fails, so you need python scripts. So if you are dealing with a lot of elements, or doing repeated tasks, Claude writing script instead of interacting with the mcp is the right way.\n\nTo make the mcp server scale my plan is to only return handles of data instead of the raw json that the ai can inspect or use as parameter for new commands. But I haven't gotten around to actually implementing it yet. The results objects / results engine I just made for the multiconn repo are I think a good base for such a feature, so I think that soon I will try to find some time to experiment with it.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1555656212970999931"
   }
 ]

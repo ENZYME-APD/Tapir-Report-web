@@ -19964,7 +19964,7 @@
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
     "created_at": "2026-09-30T18:51:20.699000+00:00",
-    "content": "I need volunteers for testing the installer. \ud83d\ude4c \nYou can download the installers below.\nCan somebody help me testing? Especially on Mac...\nIt should automatically find all your installed Archicad versions and download the latest Tapir version for all \ud83e\uddd0 \nFor Windows: https://github.com/ENZYME-APD/tapir-archicad-automation/releases/download/1.6.0/TapirInstaller_Win.exe\nFor Mac: https://github.com/ENZYME-APD/tapir-archicad-automation/releases/download/1.6.0/TapirInstaller_Mac.zip",
+    "content": "I need volunteers for testing the installer. \ud83d\ude4c \nYou can download the installers below.\nCan somebody help me testing? Especially on Mac...\nIt should automatically find all your installed Archicad versions and download the latest Tapir version for all \ud83e\uddd0 \nFor Windows:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/latest/download/TapirInstaller_Win.exe\nFor Mac:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/latest/download/TapirInstaller_Mac.zip",
     "url": "https://discord.com/channels/994704152116596846/994704152703815762/1554928655711342592"
   },
   {
@@ -20166,5 +20166,21 @@
     "created_at": "2026-10-02T19:02:23.867000+00:00",
     "content": "The MCP server provides a token efficient way to search the documentation for the AI, but the actual call tool currently exposes the full json payload. That is efficient for 10s of elements, and fine for 100s but is  wasteful for 1000s. For even bigger numbers (and the numbers rarely stay low) that approach outright fails, so you need python scripts. So if you are dealing with a lot of elements, or doing repeated tasks, Claude writing script instead of interacting with the mcp is the right way.\n\nTo make the mcp server scale my plan is to only return handles of data instead of the raw json that the ai can inspect or use as parameter for new commands. But I haven't gotten around to actually implementing it yet. The results objects / results engine I just made for the multiconn repo are I think a good base for such a feature, so I think that soon I will try to find some time to experiment with it.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1555656212970999931"
+  },
+  {
+    "channel": "announcements",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-04T11:28:43.329000+00:00",
+    "content": "I fixed the installer and now it looks more modern \ud83d\ude0e \nI still need volunteers for testing \ud83d\ude4c \nYou can download the installers below.\nFor Windows:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/latest/download/TapirInstaller_Win.exe\nFor Mac:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/latest/download/TapirInstaller_Mac.zip",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1556266817490788355"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "fernando_lazaro",
+    "created_at": "2026-10-04T12:01:59.855000+00:00",
+    "content": "Hermes Agent \u2194 Archicad 29 via TAPIR MCP\nI\u2019ve tested it: Hermes Agent (by Nous Research) connects to Archicad 29 via the tapir-archicad-MCP server, exposing over 191 TAPIR commands as native tools. It isn't just a bridge\u2014Hermes operates Archicad as just another tool.\n\nWhat it offers:\n\nConversational modeling \u2014 you describe what you need, and Hermes handles it: discovering the command, checking the schema, executing, and verifying by reading the data back from Archicad.\nTechnical drawing reading \u2014 processes PDFs, DWGs, and DXFs; extracts dimensions; identifies structural profiles (HEB, IPE, UPN...), materials, and positions; and translates them into Archicad elements without manual steps.\nData cross-referencing \u2014 connects Apple Notes, Excel, or any source with the .pln file's Project Info (clients, addresses, cadastral references, dates), keeping them directly synchronized.\nProgressive discovery \u2014 4 meta-tools (discovery, list, schema, call) handle commands on demand without cluttering the context.\nAgnostic \u2014 works with any LLM: OpenRouter, Anthropic, OpenAI, or local models.\nReal verification \u2014 every change is confirmed by reading the element back.\nUse cases: automating repetitive tasks, modeling from manufacturer specifications, metadata synchronization, model auditing, and multi-tool workflows\u2014all within the same conversation.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1556275191527768088"
   }
 ]

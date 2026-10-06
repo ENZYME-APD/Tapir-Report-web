@@ -20182,5 +20182,29 @@
     "created_at": "2026-10-04T12:01:59.855000+00:00",
     "content": "Hermes Agent \u2194 Archicad 29 via TAPIR MCP\nI\u2019ve tested it: Hermes Agent (by Nous Research) connects to Archicad 29 via the tapir-archicad-MCP server, exposing over 191 TAPIR commands as native tools. It isn't just a bridge\u2014Hermes operates Archicad as just another tool.\n\nWhat it offers:\n\nConversational modeling \u2014 you describe what you need, and Hermes handles it: discovering the command, checking the schema, executing, and verifying by reading the data back from Archicad.\nTechnical drawing reading \u2014 processes PDFs, DWGs, and DXFs; extracts dimensions; identifies structural profiles (HEB, IPE, UPN...), materials, and positions; and translates them into Archicad elements without manual steps.\nData cross-referencing \u2014 connects Apple Notes, Excel, or any source with the .pln file's Project Info (clients, addresses, cadastral references, dates), keeping them directly synchronized.\nProgressive discovery \u2014 4 meta-tools (discovery, list, schema, call) handle commands on demand without cluttering the context.\nAgnostic \u2014 works with any LLM: OpenRouter, Anthropic, OpenAI, or local models.\nReal verification \u2014 every change is confirmed by reading the element back.\nUse cases: automating repetitive tasks, modeling from manufacturer specifications, metadata synchronization, model auditing, and multi-tool workflows\u2014all within the same conversation.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1556275191527768088"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-05T11:45:44.841000+00:00",
+    "content": "I think the real bottle  neck and issue with using AI with Archicad is that at the moment, AI has no way of understanding the model space, from.what I have found so far. Or of properly understanding the Archicad modelling ecosystem. This seems to be a bit of a hardwall for the moment.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1556633489888116819"
+  },
+  {
+    "channel": "tapir-infrastructure",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-05T15:17:13.093000+00:00",
+    "content": "you have to pay Microsoft to develop for windwos",
+    "url": "https://discord.com/channels/994704152116596846/1533901707468083302/1556686708274372730"
+  },
+  {
+    "channel": "tapir-infrastructure",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-05T15:32:36.994000+00:00",
+    "content": "i think for people like us who know what tapir is and where it comes from its not an issue. for \"normal\" people its an emotional security issue \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/1533901707468083302/1556690583395770499"
   }
 ]

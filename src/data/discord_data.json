@@ -2296,14 +2296,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1209170861022777424"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-03-12T10:56:12.481000+00:00",
-    "content": "Hello <@693049336862605332>  <@1006834835605688330>  and <@359310164781826048> \nWelcome to Tapir comunity",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1217063592839483432"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "golden_lilyz",
@@ -20206,5 +20198,13 @@
     "created_at": "2026-10-05T15:32:36.994000+00:00",
     "content": "i think for people like us who know what tapir is and where it comes from its not an issue. for \"normal\" people its an emotional security issue \ud83d\ude42",
     "url": "https://discord.com/channels/994704152116596846/1533901707468083302/1556690583395770499"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "designwizard.eth",
+    "created_at": "2026-10-06T17:05:55.561000+00:00",
+    "content": "Just came here to say Tapir is amazing and I hope its development continues !",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557076453353328671"
   }
 ]

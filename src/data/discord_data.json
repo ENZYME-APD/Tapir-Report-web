@@ -2488,14 +2488,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1234469336496734271"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-05-22T14:37:43.555000+00:00",
-    "content": "Hi <@773768934960660490>  and  <@479438600161853440> welcome to tapir community",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1242848878101790820"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "daywalker._.",
@@ -2576,28 +2568,12 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1260071066970095626"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-09T03:32:49.272000+00:00",
-    "content": "@everyone I have created a poll here: https://discord.com/channels/994704152116596846/994704152703815761/1260075135365283924\nto see if there is any interest on getting some paid help to wrap up the Tapir Python API and grasshopper plugin. Appreciate if you can vote, whatever the vote is. \ud83d\ude42",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260076166899961989"
-  },
-  {
     "channel": "training-material",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2024-07-09T03:38:34.159000+00:00",
     "content": "Hi @everyone following the example of the other open source communities. Would it be any interest to create some afordable-but-paid tutorials, so we can put some proper time to creating them? Maybe we can come up with a list of interesting workflows to solve or optimise using Tapir via Grasshopper or via Tapir Python API and anyone in the community can create them and make a little bit of money?",
     "url": "https://discord.com/channels/994704152116596846/994711855895412827/1260077613461016597"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "thefuzzybuddha",
-    "created_at": "2024-07-09T05:07:24.401000+00:00",
-    "content": "i would be more than happy to contribute money to develop tapir (altough i believe Graphisoft is making a big mistake not to implement all these features into the main grasshopper - archicad connection), if it manages to be a valid working solution for large scale data modification tool.\nhowever as of now i don't see tapir, or archicad live connection being usable in terms of speed and reliability for tasks like that.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260099970116223017"
   },
   {
     "channel": "general",
@@ -8606,14 +8582,6 @@
     "created_at": "2025-05-19T19:56:04.359000+00:00",
     "content": "Here is a script that create slabs from polylines (We will use the script in particular to model context )",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1374113400027742258"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-20T12:21:58.717000+00:00",
-    "content": "It can be 1-by-1 along with the issues to make sure it is correct",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374361511388250262"
   },
   {
     "channel": "user-support-channel",
@@ -20238,5 +20206,133 @@
     "created_at": "2026-10-07T19:43:32.627000+00:00",
     "content": "Also it\u2019s limited to subscription users\u2026",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557478507028938814"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-08T07:35:52.099000+00:00",
+    "content": "Is there a workshop that uses Tapir?\nCool! \ud83d\ude0d",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1557657769367310348"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "nickemch",
+    "created_at": "2026-10-08T09:26:25+00:00",
+    "content": "Thank you! And also thank you for creating Tapir its absolutely amazing!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557685589770240032"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "juicy6532",
+    "created_at": "2026-10-08T10:09:40.708000+00:00",
+    "content": "hi i have one question, is deleting layout subset is impossible right now? i meant by tapir or archicad api",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1557696476958822562"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "bschwb",
+    "created_at": "2026-10-08T10:49:11.843000+00:00",
+    "content": "Not 100% sure, but I think you are right. Maybe you could create a \"Trash\" folder though and move it there with: [ACAPI_Navigator_SetNavigatorItemPosition()](https://graphisoft.github.io/archicad-api-devkit/group___navigator.html#gafe0880ac9bd427b5ac34eaad1321cfa1)",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1557706422219968672"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "juicy6532",
+    "created_at": "2026-10-08T10:53:41.049000+00:00",
+    "content": "that's a good idea thanks",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1557707551351640125"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-08T11:45:08.512000+00:00",
+    "content": "am i right that its not possible to create composite slabs via tapir?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1557720501109923961"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "designwizard.eth",
+    "created_at": "2026-10-08T14:41:31.549000+00:00",
+    "content": "Graphisoft cannot replace Tapir especially since their MCP is only for the subscription versions, there are many users who are planning to stay on their perpetual licenses for couple more years \ud83d\ude4c",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557764889584603259"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-08T20:42:24.127000+00:00",
+    "content": "Wow. If the MCP server can do all that, does that mean Graphisot has added new API endpoints after so many years? That is huge! Do we know that these are public endpoints or not? I fear that it is the secound. I have just scraped all json schema from archicadapi.graphisoft.com and compared to v29, and git did not find a single character difference. \nWell if it is a standalon MCP server it has to communicate with archicad, so the endpoints can probably be reverse engineered pretty easily, but if it in undocumented, it means they intend to change it.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557855707079118973"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-08T20:45:43.422000+00:00",
+    "content": "Menu commands: find and run any Archicad menu or toolbar command. - this seam to be the missing functionality from Tapir.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557856542982807666"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-08T20:47:13.530000+00:00",
+    "content": "If they have limited the official MCP to subscription, are they going to lock down the public API?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557856920923275305"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-08T20:47:48.664000+00:00",
+    "content": "I guess the API is needed for custom made addons by users",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557857068285820931"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-08T20:48:59.446000+00:00",
+    "content": "Ah yeah... that is a reason to treat those endpoints differently...",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557857365167177749"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-08T20:50:35.091000+00:00",
+    "content": "Well, the future is wide open. The way things  are going there might be a open source AC clone",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557857766331387937"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-08T20:51:30.551000+00:00",
+    "content": "AI is turning the tables on software companies going to subscription",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557857998947352618"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-08T20:53:14.014000+00:00",
+    "content": "Is this where Tapir is headed??\ud83d\ude03",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557858432902496330"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-08T21:01:24.939000+00:00",
+    "content": "And if they want to guard the mcp for subscription it is entierly possible that it is not communicationg via json, but by some binary protocol. We will have to see.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557860491991322756"
   }
 ]

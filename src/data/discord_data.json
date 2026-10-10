@@ -2579,22 +2579,6 @@
     "channel": "general",
     "server": "archicad-api-grasshopper",
     "author": "thefuzzybuddha",
-    "created_at": "2024-07-09T05:11:32.895000+00:00",
-    "content": "for example to be able to modify element properties, based on grasshopper information for thousands of elements would be extremely useful in a full BIM project, but the reality for the time being is that with live connection it's simply impossible, with tapir it's just impossibly slow/unreliable.\nmaybe I'm not using it correctly, but after 100+ elemnts it's just not working",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260101012375470170"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "thefuzzybuddha",
-    "created_at": "2024-07-09T05:13:14.462000+00:00",
-    "content": "my workaround is to export to excel files, and import back to grasshopper instead of tapir, then do the relation based sorting in grasshopper, export to excel again the results, the  import back with property manager into archicad",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260101438378475602"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "thefuzzybuddha",
     "created_at": "2024-07-09T05:15:12.722000+00:00",
     "content": "this is one specific example i guess, but it would be awesome to simply fire up tapir and use that for jobs like this seamlessly and fast.\ngiven that the actual information exchange (export and import properties) is already there, and fast in property manager, i believe it could be possible to do this parametrically as well.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260101934396997722"
@@ -20334,5 +20318,37 @@
     "created_at": "2026-10-08T21:01:24.939000+00:00",
     "content": "And if they want to guard the mcp for subscription it is entierly possible that it is not communicationg via json, but by some binary protocol. We will have to see.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1557860491991322756"
+  },
+  {
+    "channel": "tapir-infrastructure",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-09T04:39:34.256000+00:00",
+    "content": "Good news!\nSignPath accepted my application, so the Tapir Installer for Windows will get their certification for free \ud83e\udd73",
+    "url": "https://discord.com/channels/994704152116596846/1533901707468083302/1557975790543437864"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-09T20:20:27.097000+00:00",
+    "content": "any idea when #785 will be merged in main? <@1254417128979959909>",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1558212570920263812"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-09T20:48:43.072000+00:00",
+    "content": "Hey bottybotbot, is it right that tapir can't read the GUID of a floor? Only index and floorid?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1558219684354982050"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-09T20:49:54.385000+00:00",
+    "content": "Ifc floor has guid, name and height. But we only get index and floorid via tapir?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1558219983463387157"
   }
 ]

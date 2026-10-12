@@ -8568,14 +8568,6 @@
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1374113400027742258"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-20T12:25:21.555000+00:00",
-    "content": "still working on it, I am open for ideas \ud83d\ude04",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374362362152357930"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "__iota__",
@@ -20350,5 +20342,13 @@
     "created_at": "2026-10-09T20:49:54.385000+00:00",
     "content": "Ifc floor has guid, name and height. But we only get index and floorid via tapir?",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1558219983463387157"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-11T19:57:05.045000+00:00",
+    "content": "That PR is already merged.\nWe have weekly automatized release \ud83d\ude09 so in the upcoming days there should be a new Tapir version including that fix",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1558931466019414079"
   }
 ]

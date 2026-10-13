@@ -4230,5 +4230,109 @@
     "created_at": "2026-10-11T19:03:56+00:00",
     "body": "Split from #811 (part 1). #811 now tracks only the curtain wall frame/panel class part.\n\n## Request\nCommands to read and write the marker settings of existing Window/Door elements:\n\n- `GetMarkerParametersOfElements`: for given door/window GUIDs, return the marker library part and its parameters.\n- `SetMarkerParametersOfElements`: set marker parameters on existing doors/windows. The opening's own settings stay as they are.\n\nImplementation, as outlined in #811: `ACAPI_Element_GetExt` / `ACAPI_Element_ChangeExt` with an `APISubElement_MainMarker` sub-element.\n\nParameter types: number / string / boolean / integer, matching `SetGDLParametersOfElements`. No arrays needed.\n\n## Why\nMarker parameters are not part of the opening's own GDL parameters, and `ModifyWindows`/`ModifyDoors` only cover geometry. Example: Austrian library marker \"F Marker AUT\" (dimension prefix, sill height reference, floor build-up thickness, display options). Today these can only be changed by hand in the settings dialog.\n\nRelated: #811, #812 / #813 (favorites don't capture or apply the marker), #551.\n\n## Environment\nArchicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
     "author": "IvoS555"
+  },
+  {
+    "type": "Pull Request",
+    "title": "Describe MEP enums and fix the design-option schema reference",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/pull/816",
+    "created_at": "2026-10-11T19:30:12+00:00",
+    "body": "Unlike the previous PRs these are schema modifications/fixes that do somewhat alter behaviour. \nThere is a typo fix, and 3 cases that used string as return type, but listed enum options in the description. Extractin these does tighten the contract, whitch might result in a modified error response, but no change on the happy paths. Response domains are kept separate, as they use the sentinel \"Unknown\" to signal error while retrieving domain.\n\n- Use `MEPDomainOrUnknown` for routing-element, port and distribution-system response domains: `Ventilation`, `Piping`, `CableCarrier`, `Unknown`.\n- Use the three-value `MEPDomain` for the optional `CreateMEPSystems` domain input and reuse it for existing domain filters and system-attribute domain items.\n- Use `MEPElementType` for the eleven element types returned by `GetMEPElements` and reuse it for the existing element-type filter.\n- Correct `#ref` to `$ref` in `GetElementsOfDesignOptions` response items so they resolve to `ElementsOfDesignOptionOrError`.\n\nMEPDomain is reimplemented here, so merging might have a conflict, but wanted to separate clean and behavior altering changes.",
+    "author": "SzamosiMate"
+  },
+  {
+    "type": "Issue",
+    "title": "Drawing details: read/write the \"include scale in Autotext and index\" flag",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/817",
+    "created_at": "2026-10-12T17:59:47+00:00",
+    "body": "Drawing Settings \u203a Size and Appearance has a checkbox to include the drawing scale in Autotext and indexes. We uncheck it on a 1:1 schedule drawing placed next to a 1:200 plan, so the title block shows only 1:200. `GetDetailsOfElements` / `SetDetailsOfElements` (Drawing) cover name, numbering, scale and clipping, but not this flag, so today it needs the dialog.\n\nProposed: add this flag (read + write) to the Drawing details of `GetDetailsOfElements` / `SetDetailsOfElements`.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "SetLayoutSettings: change the master layout of an existing layout",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/818",
+    "created_at": "2026-10-12T18:00:05+00:00",
+    "body": "`SetLayoutSettings` can set size, margins and numbering, but not the master layout. `CreateLayout` takes a master only at creation. Today a layout's master can only be changed in the Navigator.\n\nProposed: an optional `masterNavigatorItemId` (or master database id) in `SetLayoutSettings`, and the current master in `GetLayoutSettings`.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "Copy 2D elements from one database to another (e.g. worksheet to worksheet)",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/819",
+    "created_at": "2026-10-12T18:00:20+00:00",
+    "body": "Example: copy the content of a title block worksheet into a new worksheet created with `CreateWorksheets`, keeping the coordinates. Today: open the source, select all, copy, open the target, paste. `MoveElements` / `RotateElements` work only inside the same database.\n\nProposed: `CopyElementsToDatabase` with source element GUIDs, a target database id and an optional offset; returns the new GUIDs. Scope: 2D elements (lines, polylines, arcs, texts, hatches, labels; drawings on layouts if possible).\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "Interactive schedules: list schedules, export/import a schedule scheme (XML)",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/820",
+    "created_at": "2026-10-12T18:02:40+00:00",
+    "body": "Interactive schedules have no API today. The scheme can be exported/imported as XML only through Document \u203a Schedules \u203a Scheme Settings \u203a Export/Import, so every schedule change needs manual UI steps, even when the XML itself is edited by script.\n\nProposed:\n- `GetSchedules`: list the interactive schedules of the project (name, id, navigator item id).\n- `ExportScheduleScheme`: write a schedule's scheme to an XML file (same format as the UI export).\n- `ImportScheduleScheme`: import a scheme XML file, as a new schedule or replacing an existing one.\n\nUse case: per project we build the same area and green-area schedules (criteria + fields + totals). With export/import the scheme could be versioned and applied by script.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "Interactive schedules: read the computed table values",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/821",
+    "created_at": "2026-10-12T18:02:59+00:00",
+    "body": "After a schedule is set up, its result (rows, columns, totals) can only be read on screen or exported by hand. Reading element properties instead is not an option for us: `GetPropertyValuesOfElements` crashes Archicad on our real project.\n\nProposed: `GetScheduleValues` for a given schedule: column headers, then the rows as displayed (including merged \"same items\" rows and totals), as strings and, where available, as numbers.\n\nRelated: the schedule export/import request (separate issue).\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "CreateZones over an existing zone opens a modal warning that blocks the API",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/822",
+    "created_at": "2026-10-12T18:03:11+00:00",
+    "body": "Creating a zone with `CreateZones` where an existing zone overlaps opens the modal warning about overlapping zone areas (\"Warnung! \u2026 \u00fcberlagernde Raumfl\u00e4chen\" in the German UI). The command doesn't return until someone clicks the dialog, so a script hangs and every other API call is blocked.\n\nExpected: no modal dialog during an API call. Either fail the item with an error (\"overlaps existing zone\"), or add an option like `allowOverlap: true/false`.\n\nSeen first on Tapir 1.5.9, AC29 AUT. Workaround today: delete the old zone first.\n\nEnvironment: Archicad 29 AUT (build 3200), Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "GetDetailsOfElements: support Stair elements (read stair settings)",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/823",
+    "created_at": "2026-10-12T18:03:21+00:00",
+    "body": "`GetDetailsOfElements`, `Get3DBoundingBoxes` and `GetGDLParametersOfElements` return errors for Stair and its subelements (Tread, Riser, StairStructure). Only `GetSubelementsOfHierarchicalElements` and the 2D bounding box work.\n\nProposed: Stair details in `GetDetailsOfElements`: baseline/walkline, number of risers, riser height, tread depth, flight width, total height, top/bottom links, structure type (e.g. monolithic/stringer), structure thickness and underside shape, tread/riser finish settings.\n\nUse case: check a precast stair against the slab opening and the building code by script.\n\nRelated: #425, #578 (CreateStairs).\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "ModifyStairs: change settings of existing stairs",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/824",
+    "created_at": "2026-10-12T18:03:37+00:00",
+    "body": "There is no command to change an existing stair. `ApplyFavoritesToElements` used to move stairs (#576, fixed), but it doesn't change single settings.\n\nProposed: `ModifyStairs` for simple settings without new geometry: riser/tread values within the existing baseline, structure type (e.g. monolithic), structure thickness, underside shape, tread/riser finish on/off and thickness.\n\nDepends on reading them first (separate issue: Stair support in `GetDetailsOfElements`).\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "Export the current view (or a given view) as an image for visual checks",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/829",
+    "created_at": "2026-10-12T18:29:50+00:00",
+    "body": "API readback confirms values and geometry, but not the final drawing: text collisions, hatch appearance, symbol orientation, graphic overrides. Today the only way to check these from a script is a screenshot of the Archicad window.\n\nExisting commands cover other scopes: `GetElementPreviewImage` (one element), `GetRoomImage` (one zone), `GetFavoritePreviewImage`. `PublishPublisherSet` can publish saved views to PNG/PDF, but only through a pre-configured publisher set and not for the current zoom.\n\nProposed: `ExportViewImage`\n- source: the current window, or a navigator item id\n- extent: the current zoom, or an explicit model-coordinate box\n- output: PNG path (or base64), resolution/DPI\n- keeps the view's pens, layers, scale, graphic overrides\n- returns the path plus the extent and scale actually used\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "SaveCurrentWindowAsImage: save the current window as PNG/JPEG",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/830",
+    "created_at": "2026-10-12T18:48:26+00:00",
+    "body": "Split from #829 (step 1 of the scoped design proposed there).\n\nProposed: `SaveCurrentWindowAsImage` with `path` and `format` (`png` / `jpeg`; optional colour depth), using `ACAPI_ProjectOperation_Save` with `API_SavePars_Picture`, following the `SaveProjectAsArchive` pattern. It renders what the current window shows (pens, layers, scale, graphic overrides). Return the path and, if available, the zoom/extent of the captured view (same data as `GetView2DTransformations`).\n\nOut of scope for this first version: DPI, base64 output, rendering a navigator item without opening it.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "ZoomToBox: zoom the current 2D window to a model-coordinate box",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/831",
+    "created_at": "2026-10-12T18:48:39+00:00",
+    "body": "Split from #829 (step 2 of the scoped design proposed there).\n\n`FitInWindow` zooms to elements or to everything, but there is no command to zoom to a given area. Proposed: `ZoomToBox` with `xMin`, `yMin`, `xMax`, `yMax` in model coordinates for the current 2D window (floor plan, section/elevation, worksheet, layout). Together with `SaveCurrentWindowAsImage` (separate issue) this lets a script capture a chosen area for visual checks.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
+  },
+  {
+    "type": "Issue",
+    "title": "SetGDLParametersOfElements: reject mirrored size parameters on curtain wall frames instead of reporting success",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/832",
+    "created_at": "2026-10-12T18:48:47+00:00",
+    "body": "Split from #811 (request 2, option (a) in the bot's analysis there).\n\nOn curtain wall frames, `A`, `B`, `ac_frameWidth` and `ac_frameDepth` mirror the frame's native contour. `SetGDLParametersOfElements` returns `success: true` for them, but Archicad re-derives them from the native contour, so nothing changes (tested on Tapir 1.7.0, details in #811).\n\nProposed: for curtain wall frame owners, reject these parameters up front with an error that points to the native frame contour. Other frame parameters (e.g. pens) keep working as today. For invisible Boundary frames, the -2130313112 error could say that the frame has no library part.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
+    "author": "IvoS555"
   }
 ]

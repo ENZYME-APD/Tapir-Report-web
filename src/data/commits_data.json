@@ -1,7 +1,35 @@
 [
+{"created_at": "2026-10-12T13:59:05Z", "author": "github-actions[bot]"}
+,
+{"created_at": "2026-10-12T09:21:25+02:00", "author": "Tibor Lorántfy"}
+,
+{"created_at": "2026-10-11T15:02:52+02:00", "author": "SzamosiMate"}
+,
+{"created_at": "2026-10-11T13:25:52+02:00", "author": "SzamosiMate"}
+,
+{"created_at": "2026-10-12T08:57:19+02:00", "author": "Tibor Lorántfy"}
+,
+{"created_at": "2026-10-12T08:55:31+02:00", "author": "Tibor Lorántfy"}
+,
+{"created_at": "2026-10-12T07:41:20+02:00", "author": "Tibor Lorántfy"}
+,
+{"created_at": "2026-10-12T07:39:41+02:00", "author": "Tibor Lorántfy"}
+,
+{"created_at": "2026-10-12T07:38:57+02:00", "author": "Tibor Lorántfy"}
+,
+{"created_at": "2026-10-11T20:02:45Z", "author": "Claude"}
+,
 {"created_at": "2026-10-11T22:02:22+02:00", "author": "Tibor Lorántfy"}
 ,
+{"created_at": "2026-10-11T20:01:04Z", "author": "Claude"}
+,
+{"created_at": "2026-10-11T19:59:01Z", "author": "Claude"}
+,
 {"created_at": "2026-10-11T19:58:30Z", "author": "Claude"}
+,
+{"created_at": "2026-10-11T19:57:48Z", "author": "Claude"}
+,
+{"created_at": "2026-10-11T19:56:51Z", "author": "Claude"}
 ,
 {"created_at": "2026-10-11T21:46:50+02:00", "author": "Tibor Lorántfy"}
 ,
@@ -18,6 +46,8 @@
 {"created_at": "2026-10-11T21:40:51+02:00", "author": "Tibor Lorántfy"}
 ,
 {"created_at": "2026-10-11T21:39:53+02:00", "author": "Tibor Lorántfy"}
+,
+{"created_at": "2026-10-11T19:15:10Z", "author": "claude[bot]"}
 ,
 {"created_at": "2026-10-10T17:20:39+02:00", "author": "SzamosiMate"}
 ,
@@ -43,6 +73,8 @@
 ,
 {"created_at": "2026-10-10T17:19:14+02:00", "author": "SzamosiMate"}
 ,
+{"created_at": "2026-10-09T23:27:09Z", "author": "claude[bot]"}
+,
 {"created_at": "2026-10-09T20:31:30+02:00", "author": "Tibor Lorántfy"}
 ,
 {"created_at": "2026-10-09T20:24:58+02:00", "author": "Tibor Lorántfy"}
@@ -55,6 +87,8 @@
 ,
 {"created_at": "2026-10-09T17:18:03+02:00", "author": "tlorantfy"}
 ,
+{"created_at": "2026-10-09T16:58:52+02:00", "author": "tlorantfy"}
+,
 {"created_at": "2026-10-09T16:53:52+02:00", "author": "Tibor Lorántfy"}
 ,
 {"created_at": "2026-10-09T16:51:41+02:00", "author": "tlorantfy"}
@@ -64,6 +98,8 @@
 {"created_at": "2026-10-09T16:25:55+02:00", "author": "tlorantfy"}
 ,
 {"created_at": "2026-10-09T10:54:13Z", "author": "claude[bot]"}
+,
+{"created_at": "2026-10-09T09:24:24Z", "author": "claude[bot]"}
 ,
 {"created_at": "2026-10-09T06:37:12+02:00", "author": "Tibor Lorántfy"}
 ,
@@ -85,9 +121,13 @@
 ,
 {"created_at": "2026-10-07T12:49:01+02:00", "author": "MathiasJon"}
 ,
+{"created_at": "2026-10-07T04:20:34Z", "author": "claude[bot]"}
+,
 {"created_at": "2026-10-07T04:19:28Z", "author": "claude[bot]"}
 ,
 {"created_at": "2026-10-07T04:18:35Z", "author": "claude[bot]"}
+,
+{"created_at": "2026-10-06T21:07:23Z", "author": "claude[bot]"}
 ,
 {"created_at": "2026-10-04T11:25:40Z", "author": "github-actions[bot]"}
 ,

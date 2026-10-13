@@ -2576,14 +2576,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711855895412827/1260077613461016597"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "thefuzzybuddha",
-    "created_at": "2024-07-09T05:15:12.722000+00:00",
-    "content": "this is one specific example i guess, but it would be awesome to simply fire up tapir and use that for jobs like this seamlessly and fast.\ngiven that the actual information exchange (export and import properties) is already there, and fast in property manager, i believe it could be possible to do this parametrically as well.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260101934396997722"
-  },
-  {
     "channel": "training-material",
     "server": "archicad-api-grasshopper",
     "author": "grzegorzwilk",
@@ -2606,22 +2598,6 @@
     "created_at": "2024-07-09T06:40:56.881000+00:00",
     "content": "6. Bimcloud python package",
     "url": "https://discord.com/channels/994704152116596846/994711855895412827/1260123510563409990"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-09T07:29:30.655000+00:00",
-    "content": "<@138013920471416833> are you using Tapir through grasshopper? Which version are you using?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260135731817484289"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "thefuzzybuddha",
-    "created_at": "2024-07-09T07:58:41.375000+00:00",
-    "content": "i would gladly help however i can to improve, this add on for grasshopper-archicad would be extremely helpful",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260143074869510155"
   },
   {
     "channel": "dev-python-package",
@@ -20350,5 +20326,21 @@
     "created_at": "2026-10-11T19:57:05.045000+00:00",
     "content": "That PR is already merged.\nWe have weekly automatized release \ud83d\ude09 so in the upcoming days there should be a new Tapir version including that fix",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1558931466019414079"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": ".bediver",
+    "created_at": "2026-10-12T19:37:33.668000+00:00",
+    "content": "Hi, thanks!\nIm from Kyrgyzstan.\nIm not an Archicad specialist, this is primary tool of my wife (She is an interior designer).\nAnd I (as IT specialist - devops engineer) try learn different tools to make her work simpler \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1559288940773773324"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "spritc",
+    "created_at": "2026-10-12T20:44:06.587000+00:00",
+    "content": "<@113308167345012736> my wife is also an interior designer here in Sun Valley, Idaho. I am her free IT guy and have been building apps for her to make her life a little easier. One of her favorites is automating Plaud meeting notes and automatically sending different versions to all stakeholders, automating tasks in ClickUp and then archiving in Dropbox. We have also been working on creating web portals for each client so they see the journey of their project. None of ~that~ requires Tapir, but Tapir is definitely an amazing tool!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1559305688289775787"
   }
 ]

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import githubData from './data/github_data.json';
 import discordData from './data/discord_data.json';
@@ -36,13 +36,51 @@ function App() {
     { title: "Direct CI/CD Integration", desc: "Seamless workflows for running automated Tapir scripts in GitHub Actions pipelines." },
   ];
 
-  const leaderboard = [
-    { name: "Tibor Lorántfy (tlorantfy)", commits: 590 },
-    { name: "Viktor Kovacs", commits: 97 },
-    { name: "fuzesArch", commits: 55 },
-    { name: "MathiasJon", commits: 52 },
-    { name: "grzegorzwilk", commits: 41 }
-  ];
+  const { stats, leaderboard } = useMemo(() => {
+    // Commit author counts
+    const authorCounts = {};
+    commitsData.forEach(c => {
+      const raw = (c?.author || '').trim();
+      if (!raw) return;
+      const lower = raw.toLowerCase();
+      let name = raw;
+      if (lower === 'tlorantfy' || lower === 'tibor lorántfy') {
+        name = 'Tibor Lorántfy';
+      } else if (lower.includes('claude')) {
+        name = 'Claude';
+      } else if (lower.includes('szamosi')) {
+        name = 'Máté Szamosi';
+      } else if (lower.includes('kovacs') || lower.includes('kovács')) {
+        name = 'Viktor Kovács';
+      }
+      authorCounts[name] = (authorCounts[name] || 0) + 1;
+    });
+
+    const sortedLeaderboard = Object.entries(authorCounts)
+      .map(([name, commits]) => ({ name, commits }))
+      .sort((a, b) => b.commits - a.commits)
+      .slice(0, 5);
+
+    // Unique participants across Discord and GitHub
+    const participants = new Set();
+    discordData.forEach(d => d?.author && participants.add(d.author));
+    githubData.forEach(g => g?.author && participants.add(g.author));
+
+    const uniqueCommitters = new Set(
+      commitsData.map(c => (c?.author || '').trim()).filter(Boolean)
+    );
+
+    return {
+      stats: {
+        totalCommits: commitsData.length,
+        discordMessages: discordData.length,
+        totalParticipants: participants.size,
+        totalGithubItems: githubData.length,
+        uniqueCommitters: uniqueCommitters.size,
+      },
+      leaderboard: sortedLeaderboard,
+    };
+  }, []);
 
   const [chartData, setChartData] = useState([]);
 
@@ -328,15 +366,15 @@ function App() {
         
         <div className="grid-3" style={{ marginBottom: "2rem" }}>
           <div className="stat-card">
-            <div className="stat-value">1,096</div>
+            <div className="stat-value">{stats.totalCommits.toLocaleString()}</div>
             <div className="stat-label">GitHub Commits</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">2,553</div>
+            <div className="stat-value">{stats.discordMessages.toLocaleString()}</div>
             <div className="stat-label">Discord Messages</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">109</div>
+            <div className="stat-value">{stats.totalParticipants.toLocaleString()}</div>
             <div className="stat-label">Active Participants</div>
           </div>
         </div>
@@ -385,8 +423,8 @@ function App() {
               <h3>Project Momentum</h3>
               <p style={{ marginBottom: "1rem" }}>
                 Development speed has accelerated massively over the past year. 
-                With <strong>314 active Issues, Pull Requests, and Discussions</strong> currently tracked, 
-                and <strong>29 unique code contributors</strong> submitting patches, the ecosystem is growing faster than ever. 
+                With <strong>{stats.totalGithubItems.toLocaleString()} active Issues, Pull Requests, and Discussions</strong> currently tracked, 
+                and <strong>{stats.uniqueCommitters} unique code contributors</strong> submitting patches, the ecosystem is growing faster than ever. 
                 The community discord has become a vibrant hub for testing new workflows, reporting bugs, and suggesting incredible ideas for Archicad automation.
               </p>
               <p>

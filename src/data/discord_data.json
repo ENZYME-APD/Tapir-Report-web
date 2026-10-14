@@ -2656,46 +2656,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711855895412827/1260263757783765052"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-10T19:11:16.163000+00:00",
-    "content": "I didn't knew that it was official that the JSON/python interface was not developed anymore : https://community.graphisoft.com/t5/Archicad-C-API/I-need-to-export-schematics-of-my-project-in-Archicad-27/m-p/614916/highlight/true#M9658",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260674722983837826"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-10T19:11:58.020000+00:00",
-    "content": "do you know if an alternative is in development?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260674898544562236"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-07-10T19:17:15.203000+00:00",
-    "content": "\"not actively developed\" and \"not developed anymore\" are not equal.\nHowever it's a fact that we cannot find any API related item on Archicad public roadmap:\nhttps://graphisoft.com/product-roadmap",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260676228906614895"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-11T00:05:24.478000+00:00",
-    "content": "Yes, is called Tapir \ud83d\ude02",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260748745381904435"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-11T07:12:41.426000+00:00",
-    "content": "I know! And finally I intend to integrate it in my workflow, but in general I prefer to integrate only core software and in-house scripts or objects.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1260856274535579648"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "1yur",
@@ -20342,5 +20302,37 @@
     "created_at": "2026-10-12T20:44:06.587000+00:00",
     "content": "<@113308167345012736> my wife is also an interior designer here in Sun Valley, Idaho. I am her free IT guy and have been building apps for her to make her life a little easier. One of her favorites is automating Plaud meeting notes and automatically sending different versions to all stakeholders, automating tasks in ClickUp and then archiving in Dropbox. We have also been working on creating web portals for each client so they see the journey of their project. None of ~that~ requires Tapir, but Tapir is definitely an amazing tool!",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1559305688289775787"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "spritc",
+    "created_at": "2026-10-13T13:12:14.215000+00:00",
+    "content": "Graphisoft showing the MCP to find and select high-polygon elements was one of the best features they had! \ud83d\ude05",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559554358625050688"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-13T21:54:30.410000+00:00",
+    "content": "Tapir has pivoted to cloning an open source version of AC",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559685792153075813"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "vjdonoso",
+    "created_at": "2026-10-14T01:02:34.120000+00:00",
+    "content": "25 ish minutes, from scratch. did not even look at archicad. Done with tapir mcp + opus 5.5 extra",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559733119463063632"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-14T01:26:10.209000+00:00",
+    "content": "Hi! A small fix for CreateOpenings on Archicad 30 (Tapir 1.7.0).\n\nOn AC30 (30.0.0.3001 JPN) every opening comes out lifted by its own height. In the PlacePolygonal branch, `placementPoint.z += height;` compensates the AC29 behaviour (sill at z - height), but on AC30 PlacePolygonal already puts the sill on the given Z, so the correction overshoots.\n\nMeasured with collision probes against the host wall (wall z 0.5-3.5):\n- basePoint.z 2.0, height 1.0 -> opening at 3.0-4.0 (expected 2.0-3.0)\n- basePoint.z 1.0, height 0.6 -> opening at 1.6-2.2 (expected 1.0-1.6)\n\nLimiting the correction to AC29 fixes it; the same requests now open at 2.0-3.0 and 1.0-1.6:\n```\nAPI_Coord3D placementPoint = basePoint;\n#ifndef ServerMainVers_3000\nplacementPoint.z += height;\n#endif\n```\n(ExtendedElementCommands.cpp, CreateOpeningsCommand). Commit in my fork:\nhttps://github.com/ooki-atsufumi/tapir-archicad-automation/commit/d466738\n\nCould this be included in a future release? Thanks!",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1559739058970693673"
   }
 ]

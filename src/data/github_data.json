@@ -4213,7 +4213,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/811",
     "created_at": "2026-10-11T15:41:52+00:00",
     "body": "## Summary\nTwo areas are reachable through the C++ API but not through any JSON command, official or Tapir. Today we have to edit them by hand in the settings dialogs, element by element. I'm asking for commands for both.\n\n## 1. Door/window marker settings (read + write)\nMarker parameters are not part of the opening's own GDL parameters (`GetGDLParametersOfElements` doesn't return them), and `ModifyWindows`/`ModifyDoors` only cover geometry. Examples from the Austrian library marker \"F Marker AUT\": dimension prefix, sill height reference, floor build-up thickness, display options.\n\nProposed:\n- `GetMarkerParametersOfElements`: for given door/window GUIDs, return the marker library part and its parameters.\n- `SetMarkerParametersOfElements`: set marker parameters (simple types: number, string, boolean, integer; no arrays needed) on existing doors/windows. The opening's own settings stay as they are.\n\nC++ side, as far as I can tell: the main marker subelement (`API_SubElement`, `APISubElement_MainMarker`) together with `ACAPI_Element_ChangeExt` / `ACAPI_Element_GetMemo`.\n\nFavorites are no workaround today: favorites created through the API don't contain the marker, and applying a favorite to a window fails. Bug report follows separately.\n\nRelated: #551 (marker settings replaced on CreateWindows/CreateDoors).\n\n## 2. Curtain Wall frame and panel class assignment\n`GetSubelementsOfHierarchicalElements` and `GetDetailsOfElements` can read CW frames and panels (#266). I found no command to change them.\n\nProposed:\n- `ModifyCurtainWallSubelements` (or an extension of `SetDetailsOfElements`): assign a frame to an existing frame class (or a panel to a panel class) of its curtain wall, and if possible set frame class properties (type, profile attribute, width/depth).\n\nUse case: frames with their own profile that must stay part of the CW. Today this takes a multi-step UI workflow per frame.\n\n## Environment\nArchicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.\n\nThanks for the great work on Tapir!",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4221,7 +4221,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/812",
     "created_at": "2026-10-11T15:43:56+00:00",
     "body": "Environment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Called through `API.ExecuteAddOnCommand`. All tests were run in a project copy.\n\n## 1. Writing a 2D-array GDL parameter as a flat list breaks the object, but the command reports success\nObject: \"Konzeptk\u00fcche\" (DACH library), parameter `refLinePoints_1` (4\u00d72 array).\n\n- `GetGDLParametersOfElements` returns the 2D array **flat**, without dimensions: `[0.6,0,3.6,0,3,2.4,0,2.4]`.\n- Writing that same flat list back with `SetGDLParametersOfElements` returns `{\"success\":true}`. Afterwards:\n  - `GetGDLParametersOfElements` fails with -2130313215 (\"Failed to get parameters of element\")\n  - the 2D bounding box collapses to a single point\n  - every further `SetGDLParametersOfElements` call fails with the same code\n- Works fine: a list of lists `[[0.6,0],[3.6,0],[3,2.4],[0,2.4]]`, or a single item via `index1`/`index2`.\n- Recovery: `ApplyFavoritesToElements` with the part's favorite restores the object.\n\nExpected: either reject a flat list for a 2D array, or report the dimensions in the Get output, so that a Get \u2192 Set round trip is safe.\n\n## 2. ApplyFavoritesToElements fails on windows\n- Target: a window (\"1-Fl\u00fcgelfenster\", DACH) placed in a wall.\n- Every attempt returns -2130312311 \"Failed to apply favorite to element\". This includes a favorite just created from the **same window** with `CreateFavoritesFromElements`, with or without classifications/categories/properties. The window stays unchanged.\n- On objects the same command works (see 1).\n\n## 3. CreateFavoritesFromElements doesn't store the opening's marker\n- Source window has a configured marker (\"F Marker AUT\").\n- Favorite created with `CreateFavoritesFromElements`, then exported with `ExportFavorites`: the marker section is empty. `<LibPartId>` has zero GUIDs, `<UserGDLParamList/>` is empty, and AddPars holds only the window's own parameters.\n- Favorite created in the Archicad UI from a window with the same marker, exported the same way: `<LibPartId>` names `W Marker AUT.gsm` / \"F Marker AUT\", and a second AddPars file holds all 267 marker parameters.\n- So the API path drops the marker subelement, which the UI keeps.\n\nRelated: #811 (feature request for marker parameters), #551.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4229,7 +4229,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/814",
     "created_at": "2026-10-11T19:03:56+00:00",
     "body": "Split from #811 (part 1). #811 now tracks only the curtain wall frame/panel class part.\n\n## Request\nCommands to read and write the marker settings of existing Window/Door elements:\n\n- `GetMarkerParametersOfElements`: for given door/window GUIDs, return the marker library part and its parameters.\n- `SetMarkerParametersOfElements`: set marker parameters on existing doors/windows. The opening's own settings stay as they are.\n\nImplementation, as outlined in #811: `ACAPI_Element_GetExt` / `ACAPI_Element_ChangeExt` with an `APISubElement_MainMarker` sub-element.\n\nParameter types: number / string / boolean / integer, matching `SetGDLParametersOfElements`. No arrays needed.\n\n## Why\nMarker parameters are not part of the opening's own GDL parameters, and `ModifyWindows`/`ModifyDoors` only cover geometry. Example: Austrian library marker \"F Marker AUT\" (dimension prefix, sill height reference, floor build-up thickness, display options). Today these can only be changed by hand in the settings dialog.\n\nRelated: #811, #812 / #813 (favorites don't capture or apply the marker), #551.\n\n## Environment\nArchicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Pull Request",
@@ -4245,7 +4245,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/817",
     "created_at": "2026-10-12T17:59:47+00:00",
     "body": "Drawing Settings \u203a Size and Appearance has a checkbox to include the drawing scale in Autotext and indexes. We uncheck it on a 1:1 schedule drawing placed next to a 1:200 plan, so the title block shows only 1:200. `GetDetailsOfElements` / `SetDetailsOfElements` (Drawing) cover name, numbering, scale and clipping, but not this flag, so today it needs the dialog.\n\nProposed: add this flag (read + write) to the Drawing details of `GetDetailsOfElements` / `SetDetailsOfElements`.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4253,7 +4253,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/818",
     "created_at": "2026-10-12T18:00:05+00:00",
     "body": "`SetLayoutSettings` can set size, margins and numbering, but not the master layout. `CreateLayout` takes a master only at creation. Today a layout's master can only be changed in the Navigator.\n\nProposed: an optional `masterNavigatorItemId` (or master database id) in `SetLayoutSettings`, and the current master in `GetLayoutSettings`.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4261,7 +4261,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/819",
     "created_at": "2026-10-12T18:00:20+00:00",
     "body": "Example: copy the content of a title block worksheet into a new worksheet created with `CreateWorksheets`, keeping the coordinates. Today: open the source, select all, copy, open the target, paste. `MoveElements` / `RotateElements` work only inside the same database.\n\nProposed: `CopyElementsToDatabase` with source element GUIDs, a target database id and an optional offset; returns the new GUIDs. Scope: 2D elements (lines, polylines, arcs, texts, hatches, labels; drawings on layouts if possible).\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4269,7 +4269,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/820",
     "created_at": "2026-10-12T18:02:40+00:00",
     "body": "Interactive schedules have no API today. The scheme can be exported/imported as XML only through Document \u203a Schedules \u203a Scheme Settings \u203a Export/Import, so every schedule change needs manual UI steps, even when the XML itself is edited by script.\n\nProposed:\n- `GetSchedules`: list the interactive schedules of the project (name, id, navigator item id).\n- `ExportScheduleScheme`: write a schedule's scheme to an XML file (same format as the UI export).\n- `ImportScheduleScheme`: import a scheme XML file, as a new schedule or replacing an existing one.\n\nUse case: per project we build the same area and green-area schedules (criteria + fields + totals). With export/import the scheme could be versioned and applied by script.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4277,7 +4277,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/821",
     "created_at": "2026-10-12T18:02:59+00:00",
     "body": "After a schedule is set up, its result (rows, columns, totals) can only be read on screen or exported by hand. Reading element properties instead is not an option for us: `GetPropertyValuesOfElements` crashes Archicad on our real project.\n\nProposed: `GetScheduleValues` for a given schedule: column headers, then the rows as displayed (including merged \"same items\" rows and totals), as strings and, where available, as numbers.\n\nRelated: the schedule export/import request (separate issue).\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4285,7 +4285,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/822",
     "created_at": "2026-10-12T18:03:11+00:00",
     "body": "Creating a zone with `CreateZones` where an existing zone overlaps opens the modal warning about overlapping zone areas (\"Warnung! \u2026 \u00fcberlagernde Raumfl\u00e4chen\" in the German UI). The command doesn't return until someone clicks the dialog, so a script hangs and every other API call is blocked.\n\nExpected: no modal dialog during an API call. Either fail the item with an error (\"overlaps existing zone\"), or add an option like `allowOverlap: true/false`.\n\nSeen first on Tapir 1.5.9, AC29 AUT. Workaround today: delete the old zone first.\n\nEnvironment: Archicad 29 AUT (build 3200), Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4293,7 +4293,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/823",
     "created_at": "2026-10-12T18:03:21+00:00",
     "body": "`GetDetailsOfElements`, `Get3DBoundingBoxes` and `GetGDLParametersOfElements` return errors for Stair and its subelements (Tread, Riser, StairStructure). Only `GetSubelementsOfHierarchicalElements` and the 2D bounding box work.\n\nProposed: Stair details in `GetDetailsOfElements`: baseline/walkline, number of risers, riser height, tread depth, flight width, total height, top/bottom links, structure type (e.g. monolithic/stringer), structure thickness and underside shape, tread/riser finish settings.\n\nUse case: check a precast stair against the slab opening and the building code by script.\n\nRelated: #425, #578 (CreateStairs).\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4301,7 +4301,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/824",
     "created_at": "2026-10-12T18:03:37+00:00",
     "body": "There is no command to change an existing stair. `ApplyFavoritesToElements` used to move stairs (#576, fixed), but it doesn't change single settings.\n\nProposed: `ModifyStairs` for simple settings without new geometry: riser/tread values within the existing baseline, structure type (e.g. monolithic), structure thickness, underside shape, tread/riser finish on/off and thickness.\n\nDepends on reading them first (separate issue: Stair support in `GetDetailsOfElements`).\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4309,7 +4309,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/829",
     "created_at": "2026-10-12T18:29:50+00:00",
     "body": "API readback confirms values and geometry, but not the final drawing: text collisions, hatch appearance, symbol orientation, graphic overrides. Today the only way to check these from a script is a screenshot of the Archicad window.\n\nExisting commands cover other scopes: `GetElementPreviewImage` (one element), `GetRoomImage` (one zone), `GetFavoritePreviewImage`. `PublishPublisherSet` can publish saved views to PNG/PDF, but only through a pre-configured publisher set and not for the current zoom.\n\nProposed: `ExportViewImage`\n- source: the current window, or a navigator item id\n- extent: the current zoom, or an explicit model-coordinate box\n- output: PNG path (or base64), resolution/DPI\n- keeps the view's pens, layers, scale, graphic overrides\n- returns the path plus the extent and scale actually used\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4317,7 +4317,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/830",
     "created_at": "2026-10-12T18:48:26+00:00",
     "body": "Split from #829 (step 1 of the scoped design proposed there).\n\nProposed: `SaveCurrentWindowAsImage` with `path` and `format` (`png` / `jpeg`; optional colour depth), using `ACAPI_ProjectOperation_Save` with `API_SavePars_Picture`, following the `SaveProjectAsArchive` pattern. It renders what the current window shows (pens, layers, scale, graphic overrides). Return the path and, if available, the zoom/extent of the captured view (same data as `GetView2DTransformations`).\n\nOut of scope for this first version: DPI, base64 output, rendering a navigator item without opening it.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4325,7 +4325,7 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/831",
     "created_at": "2026-10-12T18:48:39+00:00",
     "body": "Split from #829 (step 2 of the scoped design proposed there).\n\n`FitInWindow` zooms to elements or to everything, but there is no command to zoom to a given area. Proposed: `ZoomToBox` with `xMin`, `yMin`, `xMax`, `yMax` in model coordinates for the current 2D window (floor plan, section/elevation, worksheet, layout). Together with `SaveCurrentWindowAsImage` (separate issue) this lets a script capture a chosen area for visual checks.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
   },
   {
     "type": "Issue",
@@ -4333,6 +4333,54 @@
     "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/832",
     "created_at": "2026-10-12T18:48:47+00:00",
     "body": "Split from #811 (request 2, option (a) in the bot's analysis there).\n\nOn curtain wall frames, `A`, `B`, `ac_frameWidth` and `ac_frameDepth` mirror the frame's native contour. `SetGDLParametersOfElements` returns `success: true` for them, but Archicad re-derives them from the native contour, so nothing changes (tested on Tapir 1.7.0, details in #811).\n\nProposed: for curtain wall frame owners, reject these parameters up front with an error that points to the native frame contour. Other frame parameters (e.g. pens) keep working as today. For invisible Boundary frames, the -2130313112 error could say that the frame has no library part.\n\nEnvironment: Archicad 29 AUT (build 3200), Tapir 1.7.0, Windows 11. Used from scripts through `API.ExecuteAddOnCommand`.",
-    "author": "IvoS555"
+    "author": "thespatialist"
+  },
+  {
+    "type": "Issue",
+    "title": "Feature request: Drawing Manager data for Drawing elements",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/836",
+    "created_at": "2026-10-13T05:56:36+00:00",
+    "body": "# Feature request: Drawing Manager data for Drawing elements\n\n**Title:** Drawing Manager data for Drawing elements (status, update type, stored in project, source link, renovation filter name)\n\n## Summary\n\nArchicad's **Drawing Manager** lists data for every drawing that Tapir does not expose yet:\n\n- the drawing **status** (OK / Modified),\n- the **update type** (manual / automatic),\n- whether the drawing is **stored in the project**,\n- the **source link** (internal view, external view, DWG/DXF, PDF, image \u2026) and the **path** of an external source,\n- the **renovation filter** of the source view, by name.\n\nWe are building a Python \"Drawing Manager+\" on top of Tapir: it lists all drawings with search, grouping and highlighting. The drawing list is complete except for these columns. Tapir already returns other drawing data through `GetDetailsOfElements` and `GetViewSettings` (scale, clipping, name/numbering type, model view options, layer combination, pen set \u2026). The C++ API provides the remaining data too.\n\n## Proposed additions\n\n| Command | New field | Type | Archicad API |\n|---|---|---|---|\n| `GetDetailsOfElements` (Drawing details) | `status` | `\"UpToDate\"` \\| `\"Modified\"` \\| `\"Unknown\"` | `ACAPI_Drawing_CheckDrawingStatus` |\n| | `manualUpdate` | boolean | `API_DrawingType::manualUpdate` |\n| | `storedInProject` | boolean | `API_DrawingType::storedInProject` |\n| | `linkType` | `\"InternalView\"` \\| `\"ExternalView\"` \\| `\"Drawing\"` \\| `\"DXF_DWG\"` \\| `\"PDF\"` \\| `\"Image\"` \\| `\"PlotMaker\"` \\| `\"AddOn\"` \\| `\"Broken\"` \\| `\"Other\"` | `ACAPI_Drawing_GetDrawingLink` (`linkTypeID`) |\n| | `linkPath` (only when there is a source file) | string | `ACAPI_Drawing_GetDrawingLink` (`linkPath->ToDisplayText ()`) |\n| `GetViewSettings` | `renovationFilterName` (next to the existing `renovationFilterGuid`) | string | `ACAPI_Renovation_GetRenovationFilterName` |\n\nAll fields are optional and additive, so existing clients are not affected.\n\n## Proposed patch\n\nThe attached `drawing-manager-details.patch` is based on commit `06a5e6e`. It changes:\n\n- `ElementCommands.cpp`: the new Drawing fields. It also adds a `DrawingLinkTypeToString` helper. The `linkPath` / `viewPath` memory is released the same way as in Graphisoft's `Database_Control` example.\n- `NavigatorCommands.cpp`: `renovationFilterName` in `GetViewSettings`.\n- `MigrationHelper.hpp`: macros for the Archicad 25\u201326 API names:\n  - `APIDb_CheckDrawingStatusID`\n  - `APIDb_GetDrawingLinkID`\n  - `APIAny_GetRenovationFilterNameID`\n- `CommonSchemaDefinitions.json`: the new fields are added to the Drawing details and view settings schemas.\n\n**Note:** the patch has not been compiled or tested, because we have no Windows build environment with the API DevKit. Please review it and adapt it as needed.\n\n## Related observation\n\n`customName` and `customNumber` in the Drawing details, and the attribute `name` fields in `GetAttributesByType`, `GetLayers` etc., are built with `GS::UniString (char*)`. This garbles accented characters, for example Hungarian \u0151/\u0171, and the built-in \"Archicad Layer\". Reading them through the Unicode name pointer would fix this. We reported this separately as well.\n\nThank you for Tapir, it is a great tool!\n\n[drawing-manager-details.patch](https://github.com/user-attachments/files/33367844/drawing-manager-details.patch)",
+    "author": "ferencz-tamas"
+  },
+  {
+    "type": "Issue",
+    "title": "CreateZoneCategories: \"Failed to create.\" for every input, including name-only",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/838",
+    "created_at": "2026-10-13T10:31:31+00:00",
+    "body": "## Summary\n\n`CreateZoneCategories` always answers `-2130313112 \"Failed to create.\"` and creates nothing, even for the most minimal valid input.\n\n## Steps to reproduce\n\n```json\n{ \"zoneCategoryDataArray\": [ { \"name\": \"ZZ test\" } ] }\n```\n\n\u2192 `{\"code\": -2130313112, \"message\": \"Failed to create.\"}`\n\nI then added the optional fields one at a time; every variant fails identically:\n\n| input | result |\n|---|---|\n| `{\"name\": \"ZZ test 1\"}` | Failed to create. |\n| `+ \"categoryCode\": \"10\"` | Failed to create. |\n| `+ \"color\": {\"red\":0.9,\"green\":0.9,\"blue\":0.9}` | Failed to create. |\n| `+ \"stampName\"/\"stampMainGuid\"/\"stampRevGuid\"` copied verbatim from an existing Zone Category via `GetZoneCategories` | Failed to create. |\n\nAlso tried with the Floor Plan as the active window and with a Layout active \u2014 no difference.\n\n## Why this is not a malformed request\n\n`CreateLayers` succeeded in the same session, seconds apart, with the same minimal shape:\n\n```json\n{ \"layerDataArray\": [ { \"name\": \"ZZ test kiht\" } ] }\n\u2192 {\"attributeIds\": [{\"attributeId\": {\"guid\": \"...\"}}]}\n```\n\nso attribute creation in general works; the schema validator also passes (a genuinely malformed body returns `4002` with a schema path, which this does not).\n\n`GetZoneCategories` reads the existing 9 categories correctly, including `stampName`, `stampMainGuid`, `stampRevGuid` and `color`.\n\n## Environment\n\n- Tapir **1.7.0** (also reproduced on 1.5.9)\n- Archicad 29 INT, build 5101, macOS\n- Reproduced in both a solo `.pln` and a BIMcloud SaaS Teamwork project\n\n## Context\n\nWe are building an office template and need two measurement zone categories (gross floor area and built-up area) added programmatically; this is currently the only part of our zone setup that cannot be scripted.\n",
+    "author": "LuisaRaadius"
+  },
+  {
+    "type": "Issue",
+    "title": "SetGDLParametersOfElements: \"Failed to change parameters\" for every parameter on Label and Object",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/839",
+    "created_at": "2026-10-13T10:31:32+00:00",
+    "body": "## Summary\n\n`SetGDLParametersOfElements` answers `-2130312912 \"Failed to change parameters of element with guid ...\"` for **every** parameter I try, on **two different element types**, while reading the same parameters works.\n\n## Steps to reproduce\n\nCreate a wall, attach an associative label, then try to set any parameter:\n\n```json\n{ \"elementsWithGDLParameters\": [\n    { \"elementId\": {\"guid\": \"<label guid>\"},\n      \"gdlParameters\": [ { \"name\": \"AC_TextFont_1\", \"value\": \"Inter\" } ] } ] }\n```\n\n\u2192 `{\"code\": -2130312912, \"message\": \"Failed to change parameters of element with guid ...\"}`\n\nTried three different parameters on the same Label (libPart `Property Label`):\n\n| parameter | type | value sent | result |\n|---|---|---|---|\n| `AC_TextSize_1` | RealNumber | `2.5` | Failed to change parameters |\n| `AC_TextFont_1` | String | `\"Inter\"` | Failed to change parameters |\n| `AC_bLabelFrame` | Boolean | `false` | Failed to change parameters |\n\nAnd on a plain Object (our own library part), parameter `A` (Length) \u2192 same error.\n\n## Why this is not a malformed request or a bad value\n\n- `GetGDLParametersOfElements` on the same elements returns all 65 parameters with `isLocked: false`.\n- The values I sent are inside the reported `possibleValues`: `AC_TextFont_1` lists `\"Inter\"` explicitly (the machine has Inter installed), and `AC_TextSize_1` is a plain RealNumber.\n- Input validation passes: a genuinely wrong body returns a specific message such as `Invalid input: %s is not a GDL parameter of element %T`, which this does not.\n\n## Environment\n\n- Tapir **1.7.0** (also reproduced on 1.5.9)\n- Archicad 29 INT, build 5101, macOS\n- Reproduced in a solo `.pln` **and** in a BIMcloud SaaS Teamwork project (element freshly created in the same session, so it is ours)\n\n## Context\n\nWe have five office Label favorites that still carry `Arial` and need to be switched to our brand font. Setting the parameter and calling `UpdateFavoritesFromElements` would do it in one script; right now the only route is doing it by hand in the UI.\n",
+    "author": "LuisaRaadius"
+  },
+  {
+    "type": "Issue",
+    "title": "DeleteNavigatorItems reports success:true but does not delete a View Map view (Teamwork)",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/840",
+    "created_at": "2026-10-13T10:31:33+00:00",
+    "body": "## Summary\n\n`DeleteNavigatorItems` returns `{\"executionResults\": [{\"success\": true}]}` for a **View Map** view that is still there afterwards. The command reports success while deleting nothing.\n\nThis is not the same as #690 / #700, which are about **Project Map** viewpoints. This is a View Map view, in a Teamwork project, and the difference is that it claims to have worked.\n\n## Steps to reproduce\n\nIn a BIMcloud SaaS Teamwork project:\n\n1. `CreateViewsInViewMap` \u2192 a new view in the View Map (this works)\n2. `DeleteNavigatorItems` with that view's `navigatorItemId`\n\n```json\n{ \"navigatorItemIds\": [ { \"navigatorItemId\": { \"guid\": \"D0560697-...\" } } ] }\n\u2192 { \"executionResults\": [ { \"success\": true } ] }\n```\n\n3. Re-read the View Map with `GetNavigatorItemTree` \u2192 the view is still present.\n\nRepeated six times, same guid each time, `success: true` every time, view never removed.\n\n## What the UI says\n\nDeleting the same view by hand in Archicad shows:\n\n> **Cannot delete item. You must reserve the item before deleting it.**\n\nThe user reserved the item (Teamwork Status showed `Editable`) and the UI still refused, so the underlying cause may be a Teamwork access right rather than reservation. Either way, the API returned success for an operation that did not happen.\n\n## Why this matters more than the delete itself\n\nA silent `success: true` is worse than an error: a cleanup script believes it has tidied up and moves on. In our case several scripts reported a successful cleanup across a working session while the items were still in the project, and we only noticed much later.\n\nSuggestion: surface the Archicad-side refusal (reservation / access right) as an error in `executionResults`, the way the UI does.\n\n## Environment\n\n- Tapir **1.7.0**\n- Archicad 29 INT, build 5101, macOS\n- BIMcloud SaaS Teamwork project\n- `RenameNavigatorItem` on the same items works, so the items are addressable and the guid is right\n- `DeleteNavigatorItems` **does** really delete Layouts in the same project, so the command is not broken everywhere\n",
+    "author": "LuisaRaadius"
+  },
+  {
+    "type": "Issue",
+    "title": "CreateTexts / ModifyTexts silently ignore style.font (name); only style.fontIndex works",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/844",
+    "created_at": "2026-10-13T12:22:34+00:00",
+    "body": "## Summary\n\n`CreateTexts` and `ModifyTexts` accept `style.font` as a **font name**, report success, and silently ignore it. The element keeps the current default font. `style.fontIndex` does work, so the field that is documented in the schema is the one that does nothing.\n\n## Steps to reproduce\n\nCreate three texts, each asking for a different font:\n\n```json\n{ \"textsData\": [ { \"coordinate\": {\"x\":200,\"y\":200,\"z\":0},\n                   \"text\": \"x\", \"height\": 2.5,\n                   \"style\": { \"font\": \"Arial\" } } ] }\n```\n\nThen read each back with `GetDetailsOfElements`:\n\n| `style.font` sent | `style.fontIndex` returned |\n|---|---|\n| `\"Arial\"` | 18 |\n| `\"Inter\"` | 18 |\n| `\"Helvetica Neue\"` | 18 |\n\nAll three are the current default (18 = Arial on this machine), so none of the three requests had any effect. No error, no warning.\n\n`ModifyTexts` behaves the same:\n\n```json\n{ \"textsWithDetails\": [ { \"elementId\": {...}, \"style\": { \"font\": \"Inter\" } } ] }\n\u2192 executionResults success, fontIndex unchanged at 18\n```\n\nwhile\n\n```json\n{ \"textsWithDetails\": [ { \"elementId\": {...}, \"style\": { \"fontIndex\": 174 } } ] }\n\u2192 fontIndex 174   \u2705\n```\n\n## The names are valid\n\nThey come from the font list Tapir itself reports. `GetGDLParametersOfElements` on a Label returns `AC_TextFont_1` with 684 `possibleValues`, and that list is 1-based alphabetical:\n\n```\n17  Apple Symbols\n18  Arial          \u2190 the default these texts fall back to\n19  Arial Italic\n...\n173 Impact\n174 Inter\n175 Inter Italic\n```\n\nSo `\"Arial\"`, `\"Inter\"` and `\"Helvetica Neue\"` are all names Archicad knows, and the index they map to is exactly what `fontIndex` wants.\n\n## Why this is worth fixing\n\nA silent ignore is worse than an error. We generated seven office text favorites with `\"font\": \"Inter\"`, the command reported success for every one, and we only discovered weeks later \u2014 by reading `fontIndex` back \u2014 that all seven had been created in the default font instead. Nothing in the response suggested anything had gone wrong.\n\nEither resolving the name to an index, or rejecting `style.font` with a message pointing at `style.fontIndex`, would have caught it immediately.\n\n## Side note on `fontIndex`\n\n`ModifyTexts` with `fontIndex` is documented to rebuild the content as one paragraph, and it does: `paragraphCount` went 3 \u2192 1 on a three-line text. It also failed outright on one multi-line text with `-2130312696 \"Failed to modify the Text.\"` while succeeding on a two-line one in the same session, which may be worth a look on its own.\n\n## Environment\n\n- Tapir **1.7.0**\n- Archicad 29 INT, build 5101, macOS\n- BIMcloud SaaS Teamwork project\n",
+    "author": "LuisaRaadius"
+  },
+  {
+    "type": "Issue",
+    "title": "Wish: delete/rename design options, sets and combinations; get/set a view's combination",
+    "url": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/846",
+    "created_at": "2026-10-13T14:02:52+00:00",
+    "body": "## What's missing\n\nTapir's design option commands (1.7.0) can create, get, move elements and set a combination's active options, but nothing can **delete or rename** an option, set or combination, or **read or set which combination a view uses**. So any script that manages alternatives has to finish in the Design Option Manager and the Quick Options bar by hand:\n\n- deleting the options and combinations of rejected alternatives;\n- renaming a combination or option when its alternative changes;\n- setting a saved view's combination (Quick Options, then Redefine with Current Window Settings). `SetViewSettings` and `GetViewSettings` have no field for it, so a script can't even check what a view shows.\n\nSeen on Archicad 29 (macOS), Tapir 1.7.0, tapir-archicad-mcp 0.6.4.\n\n## The API is already there\n\nThe Archicad 29 C++ API (devkit 29.3100, unchanged in 30.3000) has all of it in `ACAPI::DesignOptions`:\n\n- `DesignOptionManager`: `DeleteDesignOption`, `DeleteDesignOptionSet`, `DeleteDesignOptionCombination`, `DuplicateDesignOptionCombination`, `SetDesignOptionAsDefault`, `GetDesignOptionCombinationSettingsOf` (a view's settings)\n- `DesignOption`, `DesignOptionSet`, `DesignOptionCombination`: `SetName` (and `SetId` on an option)\n- `DesignOptionCombinationViewSettings`: `GetStatus` (MainModelOnly / Standard / Custom / Missing), `SetStandardCombination`, `SetMainModelOnly`\n\n## Suggested commands\n\nMirroring the existing names:\n\n- `DeleteDesignOptions`, `DeleteDesignOptionSets`, `DeleteDesignOptionCombinations` (by GUID)\n- `RenameDesignOptions`, `RenameDesignOptionSets`, `RenameDesignOptionCombinations` (GUID plus new name, and id for options)\n- `DuplicateDesignOptionCombinations`\n- `GetDesignOptionCombinationOfViews` / `SetDesignOptionCombinationOfViews`: by navigator item id, returning or taking the status and the combination's GUID (or Main Model Only)\n\n## Why this matters\n\nWith these, a set of alternatives (bath candidates, layout options, service routes) can be made, shown in saved views, cut down and accepted entirely by script. Today the last steps are always manual or screen-driven, and a view silently switching combination (for example after OK in the Design Option Manager) can only be caught by a screenshot.\n",
+    "author": "BenTristem"
   }
 ]

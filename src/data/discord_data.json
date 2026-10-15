@@ -2888,30 +2888,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1263738221951455282"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-07-19T06:19:06.224000+00:00",
-    "content": "Hey All, There are several questions around the components and architecture Tapir can provide, so I've created this simple graphic to explain things.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1263741891925774367"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-07-19T06:28:36.336000+00:00",
-    "content": "i'll add it to the github front-page as well",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1263744283148550276"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-07-19T06:29:27.674000+00:00",
-    "content": "and tomorrow i'll publish a new version so the Archicad 28 version of the Add-On will be available for everyone",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1263744498475995196"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "legendaszomorito",
@@ -20334,5 +20310,77 @@
     "created_at": "2026-10-14T01:26:10.209000+00:00",
     "content": "Hi! A small fix for CreateOpenings on Archicad 30 (Tapir 1.7.0).\n\nOn AC30 (30.0.0.3001 JPN) every opening comes out lifted by its own height. In the PlacePolygonal branch, `placementPoint.z += height;` compensates the AC29 behaviour (sill at z - height), but on AC30 PlacePolygonal already puts the sill on the given Z, so the correction overshoots.\n\nMeasured with collision probes against the host wall (wall z 0.5-3.5):\n- basePoint.z 2.0, height 1.0 -> opening at 3.0-4.0 (expected 2.0-3.0)\n- basePoint.z 1.0, height 0.6 -> opening at 1.6-2.2 (expected 1.0-1.6)\n\nLimiting the correction to AC29 fixes it; the same requests now open at 2.0-3.0 and 1.0-1.6:\n```\nAPI_Coord3D placementPoint = basePoint;\n#ifndef ServerMainVers_3000\nplacementPoint.z += height;\n#endif\n```\n(ExtendedElementCommands.cpp, CreateOpeningsCommand). Commit in my fork:\nhttps://github.com/ooki-atsufumi/tapir-archicad-automation/commit/d466738\n\nCould this be included in a future release? Thanks!",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1559739058970693673"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-14T09:13:54.908000+00:00",
+    "content": "Tetris created in Archicad30 \ud83d\ude06 \nhttps://youtu.be/-CmNXBDlJMg",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559856770850099210"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-14T09:16:22.383000+00:00",
+    "content": "Wow, incredible!\nWithout Tapir this would not be possible at all \u2764\ufe0f\ud83d\ude02",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559857389404946443"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "bangwizard",
+    "created_at": "2026-10-14T12:23:19.926000+00:00",
+    "content": "Hey man I'm from Australia, really enjoying tapir and it's capabilities",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1559904439190425621"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "martaradeva",
+    "created_at": "2026-10-14T13:33:34.137000+00:00",
+    "content": "I'm new to Tapir and Claude but these are amazing. Ran seamlessly and produced quality result from our own PDF (Vector from the drawing software) and even from a scanned raster copy.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559922114872483912"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-14T13:48:44.216000+00:00",
+    "content": "Hey @everyone, is anyone working with transforming iphone scans to archicad plans? \nLike this app, but with archicad?\nhttps://camplan.ai/solutions/interior-designer",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559925932020469900"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-14T13:48:54.302000+00:00",
+    "content": "For interior renovation workflows?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559925974324477955"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-14T13:51:06.557000+00:00",
+    "content": "irhino app does create rhino model, maybe that can be converted to archicad elements quickly...",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559926529042026517"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-14T13:56:31.883000+00:00",
+    "content": "No i did not try to convert 3dm to archicad pln, probably claude or other models can find a way to do it",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559927893558300873"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "vjdonoso",
+    "created_at": "2026-10-14T16:48:35.205000+00:00",
+    "content": "Conected claude code and made it bring the 3D to Archicad and Make the final m\u00f3del",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559971192708923415"
   }
 ]

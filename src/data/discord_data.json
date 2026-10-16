@@ -2955,38 +2955,6 @@
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "arthurvilarinho",
-    "created_at": "2024-07-23T01:11:44.680000+00:00",
-    "content": "another unrelated point: archicad provides importing and exporting some XML files. Today, we can exchange XML information for:\n- GDL\n- Work environment\n- Favorites\n- Classification and Properties\n- Model View Options\n- (All) Attributes\n- Project Info\n- Scheme Settings\n- Project Index\n- DWG Translator",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265114093946142730"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "arthurvilarinho",
-    "created_at": "2024-07-23T01:12:19.716000+00:00",
-    "content": "I was trying to automate XML coding using python these days",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265114240897908807"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-23T01:13:24.984000+00:00",
-    "content": "No at the moment nobody is paid for this. These are all generous contributions from people like you or me. \ud83d\ude0a hence the uneven pace of development.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265114514651611137"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-23T01:14:17.630000+00:00",
-    "content": "But I was asking the community who would be interested in supporting a faster development via crowdfunding",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265114735465205781"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "arthurvilarinho",
     "created_at": "2024-07-23T01:20:44.341000+00:00",
     "content": "I\u2019m doing my final graduation project this week, but i would love to do some help with Python",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265116357448695908"
@@ -20382,5 +20350,61 @@
     "created_at": "2026-10-14T16:48:35.205000+00:00",
     "content": "Conected claude code and made it bring the 3D to Archicad and Make the final m\u00f3del",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1559971192708923415"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "branco8114",
+    "created_at": "2026-10-15T11:10:10.351000+00:00",
+    "content": "I\u2019d like to share an experience from a project where a client asked me to use Grasshopper to automate material changes and add cladding to architectural elements (walls, slabs, columns, beams). Back then, I wasn\u2019t aware of Tapir, so I built the workflow using native Graphisoft components and C#. Recently, I rebuilt it with Tapir and found it more robust for selecting elements, but more cumbersome for data manipulation. For example, its deconstruct components lack features that would help reconstruct elements, build them from scratch, or create more complex workflows.\n\nAs shown in the video, the Tapir workflow is considerably longer than the one using native Graphisoft components. As <@689040789866807369> mentioned in the user-support-channel, a pass-through component referencing the inputs and outputs of Graphisoft\u2019s default Deconstruct/Construct components would be useful. I created a cluster with filtering for IDs and input parameters, plus a HomeStory filter, which significantly simplifies the workflow.\n\nTapir also seems to lack a component like \u201cProfile Settings,\u201d which exposes Archicad\u2019s complex profile parameters as editable inputs. In the video, I had to combine both plugins: Graphisoft\u2019s native plugin for profile manipulation and Tapir for the initial selection.\n\nAnother limitation is accessing Archicad geometry in Rhino as a mesh or BREP. My workflow involves reviewing geometry in Rhino before exporting it to Archicad. I know \u201cHighlight Elements\u201d supports visualization between Grasshopper and Archicad, but accessing the actual geometry would also allow extracting data needed by certain Construct components.\n\nFinally, I explored using selected wall GUIDs to retrieve the GUIDs of their associated doors, windows, and other openings, allowing changes to be applied directly. \n\nhttps://youtu.be/eYsCejnShjg \n\nI think the most important thing is to have simplified pass-through components, with inputs that are the same as or similar to the default ones in Graphisoft",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1560248415844175912"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-15T11:14:58.874000+00:00",
+    "content": "Cool workflow, thanks for sharing!\nGood to have one more Grasshopper poweruser here \ud83d\ude09\n<@423113258229039105> , <@689040789866807369> , you should include <@544899613652549643> when you discuss the upcoming Tapir Grasshopper enhancements!",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1560249625997344770"
+  },
+  {
+    "channel": "dev-grasshopper-plugin",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-15T11:34:56.862000+00:00",
+    "content": "Yes! We had a meeting yesterday to agree on a short-term plan. We\u2019re going to push the pass through concept",
+    "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1560254650723205171"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "bawb0910",
+    "created_at": "2026-10-15T14:35:21.712000+00:00",
+    "content": "Hello from Philly, US. I'm an architect using ArchiCAD; been a fan of ENZYME for a long time. Happy to be here exploring Tapir and AI integrations in the workflow.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1560300053434728450"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "ferencz_tamas",
+    "created_at": "2026-10-15T14:56:50.506000+00:00",
+    "content": "Hi <@1254417128979959909>, please hold off on having the bot implement the pass-through components for now. I had an online meeting with <@423113258229039105>  yesterday where we discussed everything in detail, but I haven\u2019t had time to summarize it yet. In short, a single pass-through component could handle the get/set/create trio for each Archicad tool, and we\u2019ve agreed on how the JSON object inputs and outputs should function. I\u2019ll send a more detailed message about this later tonight. Thanks!",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1560305459028562092"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": ".bediver",
+    "created_at": "2026-10-15T15:58:54.672000+00:00",
+    "content": "Sounds like you're developing a data-driven model for an Archicad project \u041e_\u043e!",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1560321079312912455"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-10-15T18:57:41.972000+00:00",
+    "content": "https://hermes-agent.nousresearch.com/docs/plugins/rea \nReverse engineering for everyone. What's next \u2014 Archicad for free, or construction drawings generated from plain text, no authoring software required?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560366072870211654"
   }
 ]

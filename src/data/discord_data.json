@@ -2912,14 +2912,6 @@
     "url": "https://discord.com/channels/994704152116596846/1135400011212009643/1263833335793188936"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-07-19T20:55:11.298000+00:00",
-    "content": "The new release of the Archicad Add-On is out with Archicad 28 compatibility and a bunch of new commands: https://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.0.2",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1263962365825777744"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "dkovacs9689",
@@ -2950,14 +2942,6 @@
     "created_at": "2024-07-23T00:50:08.599000+00:00",
     "content": "No, it is already available.\n\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/latest\n\nScrol down to `tapir_gh.ghpy'",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1265108657788555345"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "arthurvilarinho",
-    "created_at": "2024-07-23T01:20:44.341000+00:00",
-    "content": "I\u2019m doing my final graduation project this week, but i would love to do some help with Python",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265116357448695908"
   },
   {
     "channel": "live_code_sessions",
@@ -3062,166 +3046,6 @@
     "created_at": "2024-07-23T18:01:04.126000+00:00",
     "content": "I remembered that I recorded a few videos for last year's ABTB to demo the python scripts we created. I didn't attend but Jan included them in his presentation on python. Here's a link if anyone is interested in watching (~15 min total). I showed Attribute auditing and foldering; Zone dimensions; and Door/Window numbering. \nhttps://kaadesign-my.sharepoint.com/:f:/g/personal/mbeckmann_kaadesigngroup_com/EqZnNKlGn21NmlCdaPZKvXcBGMNnjsHkn-anLuarZyPruw?e=4rbexk",
     "url": "https://discord.com/channels/994704152116596846/1135400011212009643/1265368098672869438"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-23T22:12:33.530000+00:00",
-    "content": "One command that could help, is retrieving actual view rotation. I was looking at the video of <@874061123878518845>  and remembering her diagram to \"correct\" Fill Zone Overall with Dimensions\nofficial script",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265431388220424203"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-23T22:14:07.940000+00:00",
-    "content": "I would also like to be able (I'm not sure how) to easily numbering things with the help of a polyline, the grasshopper way, but directly in archicad with python:",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265431784204669010"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2024-07-23T22:28:29.767000+00:00",
-    "content": "So in order to correctly calculate dimensions, the script has to retrieve the rotation of each Zone and calc it's dims based on that, then move on to the next Zone. That's because there could be more than one rotation angle involved (like the example in the video).",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265435398968971340"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-23T22:30:17.277000+00:00",
-    "content": "I was more in a semi-manual process: selected all zone according to the actual view rotation, activate the script, rotate the view and select the other zone....",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265435849898725426"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2024-07-23T23:08:37.685000+00:00",
-    "content": "Yeah I developed the script more after that diagram. Right now, the script calcs selected Zones if any are selected, or all Zones if none are selected.  It reads the custom property \"Zone Angle\" (manually typed number), calcs the length and width, then writes the dims to a custom property \"Zone Dimensions\" which appears in the zone label.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265445498509332512"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2024-07-23T23:20:19.008000+00:00",
-    "content": "I agree it would be great to develop multiple methods of defining a numbering order / path.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265448440071196692"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "pablo_ferrer",
-    "created_at": "2024-07-24T09:20:26.217000+00:00",
-    "content": "With the current state of development is it possible to get GlazingArea from doors/windows and write them in a custom property of the related zones to automatic compliance of natural lighting regulations?. And i mean using grasshoper nodes.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265599465251672184"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-24T09:29:41.772000+00:00",
-    "content": "I think that it is possible with python directly",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265601795418226792"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-07-24T09:36:20.367000+00:00",
-    "content": "Yes, that's possible using python.\nYou can use the GetElementsRelatedToZones command to get the related doors/windows for each zones.\nProbably doors/windows already have the glazing area property, you can retrieve that using GetPropertyValuesOfElements, sum the values and set them to the custom property of zones using SetPropertyValuesOfElements.\n\nI think its feasible with basic python skills \ud83d\ude09 \nYou just have to find the property identifier for glazing area.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265603467246964767"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-24T09:46:31.420000+00:00",
-    "content": "I learned from scratch a year ago: you only need the most basic knowledge of python and a look at a few basic python scripts. \nI made this introduction at the time: https://community.graphisoft.com/t5/Archicad-Python-API/PYTHON-Introduction-to-the-Archicad-Python-connection/m-p/371839#M323",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265606030189137935"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "pablo_ferrer",
-    "created_at": "2024-07-24T09:50:02.149000+00:00",
-    "content": "I started an online course on basic python a few time ago but i had to leave it due to lack of time....",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265606914050621450"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-07-24T09:51:41.900000+00:00",
-    "content": "That is a good tutorial.\nOne important note, it mentions Python Palette which might be not available for you because its for SSA license only.\nBut do not worry, python automation for Archicad works also without the Python Palette \ud83d\ude09\nLets leave the Python Palette for the dummys \ud83d\ude01",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265607332436643862"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "pablo_ferrer",
-    "created_at": "2024-07-24T09:54:34.823000+00:00",
-    "content": "\ud83d\udc4d, ok. Anyway we pay SSA so we have it. Dummy and me are synonymous. At this moment Python Palette is made for me.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265608057728274444"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-07-24T09:55:13.297000+00:00",
-    "content": "It also helps the end user : one palette, a script to launch and done!",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265608219099664468"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-24T09:55:52.198000+00:00",
-    "content": "Another question related to windows: For an energy model calculator, someone needs to automatically retrieve the orientation of windows and write that orientation as a property value, For an schedule based workflow",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265608382262415360"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-07-24T09:56:58.733000+00:00",
-    "content": "I thought maybe with Tapir we can get the window plane and calculate the normal vector, then compare these with the project north and then finally write that value on a property",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265608661330296855"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-07-24T10:17:20.337000+00:00",
-    "content": "I think this can be done even without Tapir, using the builtin Get3DBoundingBoxes python command.\nFrom the 3D bounding box you can get the plane...",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265613785108975626"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-07-24T10:19:47.801000+00:00",
-    "content": "But if you wanna do that for windows in CurtainWall, then you will need Tapir \ud83d\ude09 probably soon I will have time to implement the GetSubelementsOfHierarchicalElements command what you requested",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265614403617951777"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-07-24T10:20:55.705000+00:00",
-    "content": "And this is the same for <@910458243237675018>'s idea too.\nCurrently you cannot do that for CurtainWall window panels.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265614688427704330"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "thekaushikls",
-    "created_at": "2024-07-24T10:32:51.881000+00:00",
-    "content": "I think the 3d bounding box is usually aligned to the project North. So getting an element's plane might not be straightforward if not facing one of the cardinal directions.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1265617692287569982"
   },
   {
     "channel": "live_code_sessions",
@@ -3534,46 +3358,6 @@
     "created_at": "2024-08-08T14:54:52.245000+00:00",
     "content": "I'm start my contact with tapir just now, but can imagine how could tapir can help-me deeply in archicad for this challenges with less components and efforts off course.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1271119446257303613"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-08-09T15:17:21.528000+00:00",
-    "content": "Hi @everyone  I was playing with automatic generation of textures for surfaces via python api/tapir. It uses openai api. Prompts are generated from element property or surface name",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1271487493426122914"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-08-09T15:17:24.382000+00:00",
-    "content": "https://www.linkedin.com/posts/bimlab-grzegorz-wilk_tapir-archicad-dalle-activity-7227623501568831489-6oCU?utm_source=share&utm_medium=member_ios",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1271487505396531311"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-08-09T15:19:50.002000+00:00",
-    "content": "This is the kind of ai we want in archicad... The simple and usable",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1271488116170948720"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-08-09T15:23:58.485000+00:00",
-    "content": "Cause there is no tapir command for modifing surfaces yet",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1271489158384324779"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-08-09T15:24:54.190000+00:00",
-    "content": "I will drop it to github next week",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1271489392028160032"
   },
   {
     "channel": "ac-python-workflows",
@@ -20406,5 +20190,285 @@
     "created_at": "2026-10-15T18:57:41.972000+00:00",
     "content": "https://hermes-agent.nousresearch.com/docs/plugins/rea \nReverse engineering for everyone. What's next \u2014 Archicad for free, or construction drawings generated from plain text, no authoring software required?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560366072870211654"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-16T04:11:14.007000+00:00",
+    "content": "https://github.com/orgs/ENZYME-APD/projects/4/views/1\n\nCan we update this?\n\nhttps://www.archicad-api.com/#roadmap\n\nOr this is the one to follow?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560505374241460325"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "designwizard.eth",
+    "created_at": "2026-10-16T05:50:48.774000+00:00",
+    "content": "is there anything that archicad official MCP does that Tapir cannot ? and if so is it possible to run that reverse engineer anything github repo to add those capabilities?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1560530434230591539"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-16T06:49:39.063000+00:00",
+    "content": "@designwizard I happened to be organizing the official MCP, Tapir and my own builds myself. Here is a side-by-side list of what the official Archicad 30 MCP and Tapir 1.7.0 can do, tested on Archicad 30 (JPN 30.0.0.3001, MCP Commands 30.0.6).\n\nItems tagged MCP ONLY have no matching Tapir command today: running built-in menu commands, switching the current layer combination / graphic override combination / model view options / renovation filter, the floor plan cut plane, and creating graphic override combinations. Everything that creates or edits elements, documents, design options, MEP, issues/BCF and attributes is Tapir only.\n\nNo reverse engineering is needed: the MCP tools can be called from your own scripts through the same JSON API (API.ExecuteAddOnCommand with namespace \"MCP\", Collaborate/Max), and most MCP-only features are in the public C++ API, so they could be added to Tapir. Only running arbitrary menu commands has no public API that I could find.\n\nApart from these two, I use 23 custom additions in my own Tapir build, 17 tools I made myself, and 4 add-ons of my own.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1560545241336127488"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-16T09:39:57.352000+00:00",
+    "content": "Thanks! Yes, happy to. I'll send them as a few PRs by topic, starting with a crash fix in the palette: <https://github.com/ENZYME-APD/tapir-archicad-automation/pull/877>. The opening fix is already in through #849, and I'll leave out the JWW export since it only serves a Japanese CAD format. The attached list shows all 23 and where each one stands.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1560588099946291220"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-16T09:40:57.204000+00:00",
+    "content": "I love the Tapir community",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1560588350983774233"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T12:40:35.045000+00:00",
+    "content": "I believe there should be a Tapir committee, having members with active Tapir powerusers and developers.\nThat committee should have regular meetings to define the roadmap, form the future of Tapir.\nNote, Tapir is an open source project without any funding (except <@423113258229039105> pays our bills for GitHub and Apple developer license, thanks for that \ud83d\ude4f) so the committee members should take this as pro bono.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560633556525645859"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T12:42:45.859000+00:00",
+    "content": "Without funding, I'm really sorry, but I cannot take more time to spend with Tapir, simply because I have no more free time... I have no benefit from Tapir, I'm not an Archicad user at all.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560634105199206461"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-16T13:00:12.211000+00:00",
+    "content": "Ok, so basically i can just make prompts and put them in issues. That would speed up the boring stuff.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560638493917450331"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:00:29.764000+00:00",
+    "content": "I'm trying to automate the maintenance using Claude.\nSoon I will switch on total automatic merging of PRs. Meaning if all tests/builds passed and the bot (or any human) reviews did not find any issues, then the bot will merge the PR.\nSo without any human interaction the PRs made by bot based on the GitHub issues (may auto generated by Discord comments) will reach Tapir release.\nAnd yes, we already have weekly automated release",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560638567540326493"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:01:06.430000+00:00",
+    "content": "Yes, you don't have to pay for your own AI... Simply create a GitHub issue and the bot will do the work",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560638721328553985"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-16T13:02:12.532000+00:00",
+    "content": "What about the testing on real archicad?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560638998580564029"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:02:59.093000+00:00",
+    "content": "Claude is not able to do that.\nI thing that must be the responsibility of the human who created the GitHub issue",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560639193871552536"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-16T13:03:17.555000+00:00",
+    "content": "Well i have a long list of todo with a guide to do it. What if i just open an issue with it?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560639271306797180"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:04:17.480000+00:00",
+    "content": "The bot will ask you to split it to multiple issues \ud83d\ude42\nBut if you ask it to please-please implement them one by one in separate PRs, then it will do it \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560639522650329119"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-16T13:06:37.481000+00:00",
+    "content": "<@1254417128979959909> , when the subscription will end, we will probably have to pay for a small Claude account and let Claude only do reviews, no?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560640109857087530"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:06:49.479000+00:00",
+    "content": "Note, the bot should wait few days before merging the PR to give time to a human to download the build (bot should give the download links for the built AddOn) and test it using Archicad",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560640160180346971"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:12:11.210000+00:00",
+    "content": "Yes, sometimes I do that using our free Claude license.\nThe prompt is short:\nReview and test/verify all the open PRs carefully and comment your findings, I have Archicad 29 installed. Try fixing them or comment if ok to merge.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560641509617959006"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:12:59.474000+00:00",
+    "content": "If somebody pays for a computer and the electricity bills and the Archicad license...",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560641712051986625"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:13:42.847000+00:00",
+    "content": "And it should be tested for all Archicad version...",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560641893971394641"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-16T13:14:43.286000+00:00",
+    "content": "Tbh, I will perhaps have a payment directly linked to Tapir <@423113258229039105> , we will have to se how to collect payment for the project?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560642147471073421"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-16T13:20:21.750000+00:00",
+    "content": "All this only happens if it is valuable enough in january. Also not to ignore the official archicad mcp. They too are in the game now.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560643567091720315"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-16T13:20:49.133000+00:00",
+    "content": "I think I could convince my company to put something up to 40/50\u20ac a month, if I tell I need it to continue my work on the project. We don't have any Archicad subscription anymore...",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560643681944477777"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-16T13:22:05.688000+00:00",
+    "content": "Mcp is only a part of tapir, and when you see the quantity of command that tapir provide, I don't know how they can do to achieve the same number in the next few years",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560644003039547423"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:22:34.976000+00:00",
+    "content": "Tapir must kept open source project, free to use.\nHaving sponsors is the good way. For a big company 1000 USD is nothing per year...\nAnd <@697788551672365077> is right, sooner or later the official MCP will know everything and Tapir become mostly useless",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560644125882196160"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-16T13:24:25.691000+00:00",
+    "content": "Are you sure? Archicad development on those type of project has been really slow. And is it possible to create scripts with mcp?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560644590254559403"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-16T13:25:26.469000+00:00",
+    "content": "I totally agree. That was the spirit of the project. Donations and sponsoring for the developers are welcome though!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560644845175971841"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:30:14.728000+00:00",
+    "content": "Graphisoft gave me NFR Archicad license (thanks to <@423113258229039105> pushing hard Grahisoft for it) but nothing else... I agree that they should be more grateful, we are building a community here, I think it worth for them to make \"we love Grahisoft\" feeling here \ud83d\ude01 instead of \"we do this because the Graphisoft is not able to make it work\"",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560646054221840445"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-10-16T13:37:20.227000+00:00",
+    "content": "back to the merge-automation, my Claude thinks:\n\"We\u2019ve been testing the bot PRs on real Archicad (#750\u2013#753: local build, installed on AC26 and AC28, scripted before/after checks, result tables on each PR; #752/#753 were merged the next day). What hurt: bot PRs get no CI build, so every tester needs the DevKit. Nobody gets told when a test is needed or a PR is merged. Swapping the .apx by hand is fragile (#759 was a false alarm from exactly that). And our test scripts were one-offs.\n\nProposal for a loop without a maintainer:\n1. After opening a fix PR, the bot starts the build itself via workflow_dispatch, which is exempt from the workflow-token rule. That gives a download per AC version.\n2. The existing Discord bot pings a tester role per version (@tester-ac28, \u2026).\n3. Testers run a small runner. It polls GitHub, installs the build only when Archicad is closed, runs the PR\u2019s checks on an empty project, restores the release, and posts the result as a PR comment (tapir-test: AC28 PASS 12/12). A workflow turns that into labels and a Discord message.\n4. Auto-merge for instance  when once all builds are green, the review bot has nothing open, at least one version passed, none failed, and about 3 days have passed. No tester means no merge (label untested). A FAIL makes the bot fix and re-test; a FAIL after the merge makes it open a revert PR.\n\nCost: testers need no Claude subscription. The checks are plain Python against the Tapir API; only writing them needs the bot, which it does anyway.\nSafety: only bot PRs are auto-tested, checks are JSON data run by a fixed runner (no code from the PR), and the runner uses a separate Windows account.\n\nHappy to draft the runner from our scripts.\" \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560647838893875251"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:40:23.544000+00:00",
+    "content": "Sounds great!\nDoes that mean you will provide a computer 24/7 for testing Archicad? Or maybe 1 hour per day is enough",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560648607781097623"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-10-16T13:43:41.199000+00:00",
+    "content": "\"No, it doesn\u2019t need to run 24/7. The runner just checks what\u2019s pending whenever it\u2019s started, e.g. at logon, by a shortcut, or once a day. It only tests while Archicad is closed and switches back to the release afterwards, so it doesn\u2019t get in the way. One PR takes a few minutes, mostly Archicad starting up. With a 3-day window, testing every other day should be enough.\" i think that should work too",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560649436806250537"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-10-16T13:46:01.248000+00:00",
+    "content": "should i open an issue at github with the runner?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560650024214593719"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T13:53:44.910000+00:00",
+    "content": "Great!\nI wonder why not the bot has already generated the issue already... \ud83e\uddd0\nAnyway it would be good to fine-tuning our automated bot actions",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560651968953716757"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-16T14:01:43.980000+00:00",
+    "content": "But it failed to detect it should create an issue for that \ud83d\ude41 \nDummy Botty",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560653978319069217"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-16T14:09:43.118000+00:00",
+    "content": "<@1254417128979959909> can you check #874 if the claude working to solve issues can take advantage of this?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560655987969499227"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-16T19:15:32.598000+00:00",
+    "content": "thats a very good idea. workin with this design options is sometimes annoying. i like the idea of displayin the content of the design options.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1560732951266730025"
   }
 ]

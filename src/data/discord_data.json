@@ -3400,14 +3400,6 @@
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1271501915611594874"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "observisualize",
-    "created_at": "2024-08-09T16:15:32.008000+00:00",
-    "content": "I saw the post also - really cool idea! I'd like to see more how it works when you are ready to share.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1271502133560213628"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
@@ -20470,5 +20462,117 @@
     "created_at": "2026-10-16T19:15:32.598000+00:00",
     "content": "thats a very good idea. workin with this design options is sometimes annoying. i like the idea of displayin the content of the design options.",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1560732951266730025"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-17T05:05:31.679000+00:00",
+    "content": "And now we have a pretty please issue",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560881425774022667"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-17T08:16:54.340000+00:00",
+    "content": "<@1542945300707020910>  no issues are being resolved in the repo",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1560929587544719443"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-17T13:52:44.504000+00:00",
+    "content": "Here's a look at the benefits of splitting the work between the official Archicad 30 MCP and the Tapir MCP. It's based on my own personal testing, so there may be some margin of error, but I hope it's a useful reference!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1561014103458193448"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-17T14:41:12.329000+00:00",
+    "content": "Right now, if an agent queries 300 walls on a real-world model, Tapir dumps 1,000+ GUIDs and full property trees into the context window (~200k tokens and 30s latency) just to make the LLM act as an expensive database filter.  \n\u200bHas anyone considered an in-memory set handle (set_id) pattern?\n\u200bQuery filters in C++ memory and returns { \"set_id\": \"fl2_ext_walls\", \"count\": 140 }  \n\u200bMutate command just targets { \"target_set\": \"fl2_ext_walls\", \"action\": ... }  \n\u200bIt cuts token usage from 200k down to under 1k, stops GUID hallucinations, and can be prototyped entirely in the Python MCP layer without touching C++. Worth testing?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1561026299760214161"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-17T15:08:53.977000+00:00",
+    "content": "Yes, that's essentially how the official Archicad 30 MCP already works: criteria_evaluator filters inside Archicad and returns only a set id and a count (visible and hidden elements get separate ids), and set_element_property_values, set_favorite_to_elements and select_elements just take that id, so no GUIDs pass through the LLM. Most of the 227k \u2192 7k saving in my chart comes from that. So for AC30 users on Collaborate or Max, I'd simply use the official MCP for finding and filtering. Where a set-handle layer in the Tapir MCP would really help is for AC25\u201329 and plans without the official MCP, and for passing a filtered set straight into Tapir-only actions like move, delete or modify, which today I bridge through the selection (official select_elements \u2192 Tapir GetSelectedElements). If someone prototypes it in the Python layer, handling sets that go stale after the model changes would be the main thing to get right. Speed is the other trade-off: a Python-layer version has to pull all the values out of Archicad before it can filter them, so it saves LLM tokens but gets slow on large models, whereas the official MCP filters inside Archicad in C++.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1561033269217329163"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-17T16:22:48.552000+00:00",
+    "content": "Yeah, a statefull handle based architecture is possible, I've been planning to implement it for some time / did a few steps that might become a good base for it. I wrote this a few weeks ago: \"To make the mcp server scale my plan is to only return handles of data instead of the raw json that the ai can inspect or use as parameter for new commands. But I haven't gotten around to actually implementing it yet. The results objects / results engine I just made for the multiconn repo are I think a good base for such a feature, so I think that soon I will try to find some time to experiment with it.\"\nFor large models the bottleneck is the database-retrieval inside archicad / the C++ API, not the seraialization/deserializetion, so if Graphisoft is useing the same API endpoints I don't think the performance tradeoff would be meaningfull. If filetering in python evr becomes a bottleneck, python has pretty fast C/Rust libraries for that. \nStale data - right now we could only invalidate on element change. But I'm not sure handling stale data is that important. It is not handled right now either",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1561051869172858925"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-17T16:45:27.990000+00:00",
+    "content": "I think it will take some time for the IT at our company to make AC30 avlaible, I'll look at the official MCP after that. But it is pretty cool they already done it this way.\nWe'll see if it is worth it to implement it with Graphisoft handling the big model case. \nThe Tapir MCP uses generated code, instead of per-command handwritten/ai-generated code. With that approach the ceiling is probably lower, but substantial gains are definitely possible. \n\nFor filtering solving serializable/data based filtering would be important not only for the MCP,  but for GUI apps as well. A good filtering soultion would allow GUI apps to bind the GUI elemeents to filtr state, and state can be serialized - so you can savee it to disk, or an LLM can send it. So that is possible as well.\n\nWe would need both to drastically cut token cost. But both would take a considerable ammount of time for me to implement. LLM can generate code, but no amount of tokens can  understand it  instead of me \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1561057571068968981"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-17T18:13:25.061000+00:00",
+    "content": "<@697788551672365077> , nice job!\nToday there were 100 new GitHub issues \ud83d\ude02 our Claude license works like hell \ud83d\udcaa",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561079704709107732"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-17T18:15:09.699000+00:00",
+    "content": "I am opening a pull request right now too to track the progress on all the things.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561080143592562771"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-17T18:16:59.569000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/991\n\nCan you evaluate this?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561080604420870197"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-17T20:45:04.431000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/1017\n\nCan you merge this and tell your infinite claude to complete this list part by part? So that it doesn't have to wait for the cherry picked requests.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561117870233223210"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-17T20:51:43.038000+00:00",
+    "content": "I got lost...\nIt's impossible to read/review all the issues/PRs the bot and you made.\nEven this issue what you say is so long :/",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561119542112165989"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-17T21:08:19.028000+00:00",
+    "content": "This one's supposed to simply check what is in the pr and open issues being worked and what has already been ported. And give 3 symbols to them so that anybody can see what is there and what is not.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561123719596736653"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-17T21:14:47.222000+00:00",
+    "content": "I think it is a good idea to set something up that vets the issues before they go to claude. Before some smarty pant engineers malicious prompts to the repo.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561125347800514572"
   }
 ]

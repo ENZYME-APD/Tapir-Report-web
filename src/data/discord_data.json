@@ -4034,14 +4034,6 @@
   {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-09-14T08:36:38.152000+00:00",
-    "content": "I\u2019m happy to help with the github magic.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1284432611359592458"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2024-09-14T08:37:20.717000+00:00",
     "content": "And If people can help cleaning the code of some of mine, it will be really cool^^",
@@ -20542,5 +20534,21 @@
     "created_at": "2026-10-18T17:59:50.276000+00:00",
     "content": "https://github.com/parikshit99/tapir-archicad-automation/blob/2bc96584f6a302de4313d5e54a33c5fdb7e0044f/tools%2Fcommunity-test-runner%2FGUIDE.md",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1561438675118596116"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-19T07:31:21.212000+00:00",
+    "content": "<@1206005930014150677> <@587265080140365825> <@935611403933462618> <@1561568269431873677> welcome to the Tapir community! Glad to seeing you here. Where are you guys coming from?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1561642899706478593"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T08:14:15.416000+00:00",
+    "content": "It is interesting that we have 491 api calls in the latest release and we have another 469 in the pipeline since 1.7.1\n\nA total of 2415 api calls doesn't seem that far.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561653696700354603"
   }
 ]

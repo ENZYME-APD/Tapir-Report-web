@@ -3672,14 +3672,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1275474443870797908"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-08-20T20:12:46.375000+00:00",
-    "content": "Gyus! @everyone  I wooonder if You are aware but current tapir functionality allows us to make New Accessory Tool avalllilable for Walls, Slabs aaand Columns. Why not attach some gsm objects on those 3 Types? Who wants to join this Challange",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1275548103344263218"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "kovacsv",
@@ -3694,22 +3686,6 @@
     "created_at": "2024-08-20T20:30:25.518000+00:00",
     "content": "On the C++/JSON/Python API there is a home story property you can use.",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1275552545712111616"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-08-20T20:36:49.751000+00:00",
-    "content": "tAPIr_LlittleTool_Accessory",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1275554157301989447"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-08-21T11:38:10.476000+00:00",
-    "content": "Well I meant things that are posssible right now. Mesh in deed should be on a wishlist for development",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1275780988303179858"
   },
   {
     "channel": "ac-python-workflows",
@@ -3904,22 +3880,6 @@
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1280519906798075986"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-09-03T13:33:29.043000+00:00",
-    "content": "Here is a question: I have been meaning to make a GDL object that would be able to turn towards the \"camera\" in 2D projection views (e.g. elevation, section, 3D doc). Would be extremely useful for face-me people and trees that I have in GDL. But, while there is a global for retrieving the position of the camera in 3D for this very purpose, it doesn't work in these 2D projections.\n\nAs part of this project, would it be possible to make something that would give me such parameters? Like, can we have a python command that can create GDL globals, or respond to application queries from GDL? OR can this maybe done on the C++ side of tAPIr, so that maybe we could make this whole \"face-me -object\" thing part of tAPIr?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1280521049129357374"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-09-03T13:37:58.885000+00:00",
-    "content": "All I would need on the gdl side is the angle of the viewpoint in plan",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1280522180928475220"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
@@ -3990,30 +3950,6 @@
     "created_at": "2024-09-08T05:41:13.010000+00:00",
     "content": "<@844197976430608424> , you were right.\nSo currently it's **impossible** to change the display order of an existing element or the defaults via API.\n\nWhat had confused me was setting the display order for a new element is really possible when creating the element using API.\nThis makes me believe it would require only a small development from Graphisoft side to make it possible. I will write you in private, I think this would be a great GRID project \ud83d\ude09",
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1282214138520539147"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-09-09T06:55:12.289000+00:00",
-    "content": "<@1254417128979959909>  and <@844197976430608424>, what do you think about this? Is this not in the scope of tAPIr? (could still be a good GRID project \ud83d\ude09 )",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1282595146071937076"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-09-09T07:12:36.937000+00:00",
-    "content": "My first idea was to create a property and set the angle of viewpont as property value.\nAs far as I know the property values can be used from GDL script.\nBUT that property value should be changed when the view is changed, right?\nPython API is so called Automation API because we are capable to send commands to Archicad, so the python script triggers the execution... It does not work the other way: Archicad is not able to trigger python script execution.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1282599527643086921"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-09-09T07:13:45.071000+00:00",
-    "content": "We can do this using C++ API, but not with Python/Tapir",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1282599813417799713"
   },
   {
     "channel": "ac-python-workflows",
@@ -4094,38 +4030,6 @@
     "created_at": "2024-09-14T02:10:10.318000+00:00",
     "content": "<@840956366989951037> would you be able to help <@558945647085223946> to get started with the Python package? Maybe a one-to-one meeting?",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1284335354534690901"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-09-14T07:52:23.476000+00:00",
-    "content": "Thats the spirit <@539102006283862017>  \ud83d\ude09\nHavent thought about that. Technikacly can be both. Thanks for idea",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1284421476841160735"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-09-14T07:57:04.700000+00:00",
-    "content": "Btw. This interface was created by chatgpt-python channel based on prompt explaining each button and names of functions.  Ready to implement tapir \u201eengine\u201d",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1284422656380239954"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-09-14T08:00:31.042000+00:00",
-    "content": "Lets produce LittleTools with tAPIr",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1284423521841188884"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-09-14T08:35:51.180000+00:00",
-    "content": "Guys, what do you think about collecting these little tools in the github repository? This way it could be available for everyone, and would provide a way to develop further by the community.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1284432414344740895"
   },
   {
     "channel": "ideas-and-feedback",
@@ -8304,14 +8208,6 @@
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1374521293000413244"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-21T13:30:09.845000+00:00",
-    "content": "when I have to work with custom properties (original python API), I have to code complex pieces of code as the data value is not positioned in the same place depending on the type of custom property . is it me who's taking the subject the wrong way, or is it complicated to look for the \u201csame data\u201d in several different places?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374741058688126997"
-  },
-  {
     "channel": "archicad-addon",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
@@ -8352,22 +8248,6 @@
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1374841282366668951"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "moony_shadow",
-    "created_at": "2025-05-22T01:00:07.254000+00:00",
-    "content": "Question: Do we have any plans to eventually export the full revision history via the Tapir add-on?\nI\u2019ve created an object that reads the .txt file generated from the Transmittal Schedule in Archicad, but thinking out loud\u2014it would be ideal to have a system that eliminates the need for manual exporting and importing altogether.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374914692006543440"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "andersonstone0026",
-    "created_at": "2025-05-22T01:03:52.364000+00:00",
-    "content": "That's a good idea. Do you have any recommend?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374915636186189905"
-  },
-  {
     "channel": "archicad-addon",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
@@ -8390,14 +8270,6 @@
     "created_at": "2025-05-22T02:59:37.779000+00:00",
     "content": "I am in Archicad 28, on a MacBookPro M3",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1374944767368106136"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "moony_shadow",
-    "created_at": "2025-05-22T03:17:36.962000+00:00",
-    "content": "Archicad project index can spit out all the information at the moment. \nTransmittal Set ID\nTransmittal Set Name\nTransmittal Date\nLAyout ID\nLayout Name\nRevision ID",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374949293789544530"
   },
   {
     "channel": "user-support-channel",
@@ -20574,5 +20446,101 @@
     "created_at": "2026-10-17T21:14:47.222000+00:00",
     "content": "I think it is a good idea to set something up that vets the issues before they go to claude. Before some smarty pant engineers malicious prompts to the repo.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561125347800514572"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-18T07:56:17.943000+00:00",
+    "content": "https://raw.githack.com/parikshit99/tapir-archicad-automation/api-coverage-preview/docs/api-coverage/index.html",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561286789585436703"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-18T08:30:40.296000+00:00",
+    "content": "Cool!\nAnd we can monitor anytime the API coverage \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561295439720878131"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-18T08:48:17.636000+00:00",
+    "content": "I have added that coverage as a badge on the top \ud83d\ude09\nIt sounds promising, we are only on 30% and still Tapir is so powerful \ud83d\udcaa what will be on 100% ?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561299874526527536"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-18T08:51:09.055000+00:00",
+    "content": "Ah man, that is a lot of commands. And I have just finished dealing with the leftover patces from new commands of the last 4-5 months.\nBut I have turned most mantenece steps to skills, so I hope it wil be much faster in the future \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561300593509802077"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-18T09:20:52.859000+00:00",
+    "content": "We even have api for fonts\ud83d\ude02",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561308075326177405"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-18T10:03:42.256000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/pull/1058\n\n\n<@1254417128979959909>  this pull adds a body to the claim title in the new tracker. Makes it easy for anyone to just pick an api call they like and open an issue which gets picked up by the infinite claude. Should make it easier to queue tasks for the bot.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561318852158038110"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-18T11:03:18.741000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/976\n\n\ud83e\udd7a  Pretty please botty is not working. And the other issues are failing.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561333853023379507"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-18T11:26:19.482000+00:00",
+    "content": "There are quite a few api calls that are used only in archicad 25 and 26.  later they change to new calls which remain consistent from 27 to 30.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1561339644270878721"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-18T13:24:43.797000+00:00",
+    "content": "Note, GitHub gives us download statistics. So we can see the download counter of the version 25 and 26.\nBased on that we still have users with Archicad 25/26.\nI don't think we should end supporting any used versions!",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1561369441927700523"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-18T15:25:28.550000+00:00",
+    "content": "20x is not infinite i guess.\n\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/issues/991\n\nKindly look into this as we have been hitting the usage limits now.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561399828624314378"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-18T17:02:24.742000+00:00",
+    "content": "<@1254417128979959909>  \n\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/pull/1088\n\nCheck this out. Now we can keep up with the tests too",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561424223501549578"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-18T17:59:50.276000+00:00",
+    "content": "https://github.com/parikshit99/tapir-archicad-automation/blob/2bc96584f6a302de4313d5e54a33c5fdb7e0044f/tools%2Fcommunity-test-runner%2FGUIDE.md",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1561438675118596116"
   }
 ]

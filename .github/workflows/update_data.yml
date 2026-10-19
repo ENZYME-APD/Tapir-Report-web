@@ -28,6 +28,12 @@ jobs:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
         run: python scripts/extract_discord_data.py
 
+      - name: Snapshot Discord Member Count
+        continue-on-error: true # a failed snapshot must not block the rest of the data refresh
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        run: python scripts/extract_discord_members.py
+
       - name: Run GitHub Scraper
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

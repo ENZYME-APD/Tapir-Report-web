@@ -617,6 +617,17 @@ a:hover {
   letter-spacing: 0.06em;
 }
 
+.stat-meta {
+  margin-top: 0.6rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.stat-stale {
+  color: #fbbf24;
+}
+
 /* Architecture Diagram */
 .architecture-diagram {
   display: flex;

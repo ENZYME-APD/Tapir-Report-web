@@ -3,6 +3,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import githubData from './data/github_data.json';
 import discordData from './data/discord_data.json';
 import commitsData from './data/commits_data.json';
+import discordMembers from './data/discord_members.json';
 import './index.css';
 
 function App() {
@@ -119,8 +120,26 @@ function App() {
       commitsData.map(c => (c?.author || '').trim()).filter(Boolean)
     );
 
+    // Discord member count: daily snapshots written by scripts/extract_discord_members.py
+    const history = discordMembers?.history || [];
+    const latest = history[history.length - 1];
+    const DAY = 86400000;
+    let memberChange = null;
+    if (latest) {
+      const latestTime = Date.parse(latest.date);
+      // Compare with the snapshot closest to 30 days ago (or the oldest one we have)
+      const base = [...history].reverse().find(h => latestTime - Date.parse(h.date) >= 30 * DAY) || history[0];
+      if (base !== latest) {
+        memberChange = { diff: latest.members - base.members, days: Math.round((latestTime - Date.parse(base.date)) / DAY) };
+      }
+    }
+
     return {
       stats: {
+        discordMembers: latest?.members ?? null,
+        discordMembersDate: latest?.date ?? null,
+        discordMembersSince: history[0]?.date ?? null,
+        discordMembersChange: memberChange,
         totalCommits: commitsData.length,
         discordMessages: discordData.length,
         totalParticipants: participants.size,
@@ -520,7 +539,7 @@ function App() {
           <p>Real-time data scraped daily from GitHub commits and Discord discussions.</p>
         </div>
         
-        <div className="grid-3" style={{ marginBottom: "2rem" }}>
+        <div className="grid-4" style={{ marginBottom: "2rem" }}>
           <div className="stat-card">
             <div className="stat-value">{stats.totalCommits.toLocaleString()}</div>
             <div className="stat-label">GitHub Commits</div>
@@ -528,6 +547,20 @@ function App() {
           <div className="stat-card">
             <div className="stat-value">{stats.discordMessages.toLocaleString()}</div>
             <div className="stat-label">Discord Messages</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-value">{stats.discordMembers != null ? stats.discordMembers.toLocaleString() : '—'}</div>
+            <div className="stat-label">Discord Members</div>
+            {stats.discordMembersDate && (
+              <div className="stat-meta">
+                {stats.discordMembersChange
+                  ? `${stats.discordMembersChange.diff >= 0 ? '+' : ''}${stats.discordMembersChange.diff} in ${stats.discordMembersChange.days} days`
+                  : `Tracking since ${stats.discordMembersSince}`}
+                {Date.now() - Date.parse(stats.discordMembersDate) > 2 * 86400000 && (
+                  <span className="stat-stale"> · last updated {stats.discordMembersDate}</span>
+                )}
+              </div>
+            )}
           </div>
           <div className="stat-card">
             <div className="stat-value">{stats.totalParticipants.toLocaleString()}</div>

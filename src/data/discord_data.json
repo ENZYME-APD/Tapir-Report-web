@@ -4032,30 +4032,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1284335354534690901"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2024-09-14T08:37:20.717000+00:00",
-    "content": "And If people can help cleaning the code of some of mine, it will be really cool^^",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1284432789889875969"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-09-14T08:40:47.555000+00:00",
-    "content": "how familiar are you guys with github? would it help if i create a quick tutorial on how to contribute?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1284433657431330876"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-09-14T09:33:42.476000+00:00",
-    "content": "I've quickly put together a tutorial for contribution.\n- Here is the main page of the developer documentation: https://github.com/ENZYME-APD/tapir-archicad-automation/wiki\n- Here is the GitHub contribution tutorial: https://github.com/ENZYME-APD/tapir-archicad-automation/wiki/GitHub-contribution-for-beginners",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1284446974015311903"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "runxel",
@@ -4310,30 +4286,6 @@
     "created_at": "2024-09-26T11:34:48.028000+00:00",
     "content": "https://github.com/aectronix/bimcloud-api-python/blob/master/lib/managerapi.py\n\nhere I've added these methods",
     "url": "https://discord.com/channels/994704152116596846/994711855895412827/1288826102336192514"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-09-27T12:22:33.738000+00:00",
-    "content": "<@844197976430608424>  <@1254417128979959909>  Is it possible to connect to tAPIr addon from  gdl object via INITADDONSCOPE etc?\nhttps://gdl.graphisoft.com/reference-guide/using-deterministic-add-ons#INITADDONSCOPE_gdlcommand\nOr its different structure addon",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1289200509860970506"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-09-27T12:26:05.055000+00:00",
-    "content": "No, it's not possibly.\nThere are multiple kind of AddOns.\nTapir AddOn is currently a so called \"general addon\".\nThe gdl method you mentioned is able to commmunicate with so called \"gdl addons\".",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1289201396188577813"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-09-27T12:28:32.491000+00:00",
-    "content": "\"General addons\" are built by using General API Development Kit.\n\"GDL addons\" are built by using GDL API Development Kit.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1289202014580113430"
   },
   {
     "channel": "dev-grasshopper-plugin",
@@ -4734,94 +4686,6 @@
     "created_at": "2024-10-01T17:45:02.644000+00:00",
     "content": "Can't be! I do not have Tapir installed ever before \ud83e\udd14 .....",
     "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1290731216517201920"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-01T17:56:19.347000+00:00",
-    "content": "There are 2 automation scripts I wanted to make for work recently. They would be relatively simple, but we don't have the json commands for them:\n1. We use grid elements for the site boundary, but they are a b*tch and a half to set up. We usually already have the boundary as a polyline (or set of lines/splines/curves), and we need to painstakingly remake it using grids.\n2. There are a lot of situations when we need to make a simple modification in a past transmittal set (e.g. we forgot to fill a field, or someone deleted a layout, so we need to re-add them to the past sets, etc., etc.). But we don't have any transmittal set commands.\n\nSo, the question:\nIs it on the horizon to make commands for 2D primitives (get/create) and grids?\nIs it on the horizon to make transmittal set commands?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290734054815301693"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-10-01T19:16:21.174000+00:00",
-    "content": "I'm happy to implement any commands you need.\nBut I'm a software developer and not an Archicad user, so sometimes I understand nothing just the words when I read the workflows you describe here \ud83d\ude01",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290754195137237147"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-01T19:17:47.929000+00:00",
-    "content": "Ideally all details. \ud83d\ude04 But I can write up an MVP",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290754559014338561"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-01T19:18:18.374000+00:00",
-    "content": "And for 2D primitives I dont know how archicad does it, but the gdl definitions could work?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290754686709927996"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2024-10-01T19:24:28.740000+00:00",
-    "content": "I have an idea to make \"Create\" commands more practical. Most tools have a lot of options. I do not think it is feasible to put all options to the JSON interface. Can't we use the favorites? (Favorites are a place to save tool settings. These settings can be applied to the current tool.) We can set up a bucnh of favorites in Archicad, save them, then write our script:\napply favorite 1\ndraw 20 beams\napply favorite 2 \ndraw 30 beams",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290756240137523251"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-10-01T19:31:47.231000+00:00",
-    "content": "I worked 10 years for Graphisoft on Archicad but I know nothing about Transmittal sets \ud83d\ude01 such a shame.\nIs it a new feature or a renamed feature? Probably it was named Publisher set before?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290758079301812276"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-01T19:35:05.137000+00:00",
-    "content": "Yeah, OK, that doesnt sound bad. (I would still say in the far future it would be great to control everything, but this would definitely simplify things)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290758909380005971"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2024-10-01T19:37:03.306000+00:00",
-    "content": "For a few tools there should probably be exceptions - for example looking at the Grid  - the nameing is something that you probably want to set from code if you are placeing grids from code:",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290759405016715295"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-01T19:40:09.958000+00:00",
-    "content": "Because if you apply a favorite it either resets the counter when the favorite is applied, or it doesn\u2019t apply the ID. So to keep it unique, we would need to set it from code",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290760187891945635"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-10-01T19:41:57.868000+00:00",
-    "content": "You are already able to set ElementID using Tapir",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290760640499028160"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2024-10-01T19:44:06.927000+00:00",
-    "content": "In our officees workflow we would apply element ID after creation. But I can imagine workflows, / office standards, where it can be helpful",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290761181811703930"
   },
   {
     "channel": "ideas-and-feedback",
@@ -8264,22 +8128,6 @@
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1374944767368106136"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "moony_shadow",
-    "created_at": "2025-05-22T03:18:50.122000+00:00",
-    "content": "we just need something like this where the information can be pivot around and provide the list of issued drawings and a column to pick up the last revision of the drawing.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374949600644956322"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "moony_shadow",
-    "created_at": "2025-05-22T03:20:16.101000+00:00",
-    "content": "I was bit excited when I saw Issue functions in Tapir and realised that it was issue from issue manage \ud83d\ude04 (it used to call \"issue\" prior to \"transmittal\")",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374949961267150918"
-  },
-  {
     "channel": "archicad-addon",
     "server": "archicad-api-grasshopper",
     "author": "moony_shadow",
@@ -8302,30 +8150,6 @@
     "created_at": "2025-05-22T05:02:55.723000+00:00",
     "content": "I mean \"/Users/<username>/Documents/Tapir/builtin-scripts\" folder",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1374975796594348074"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-22T05:09:55.333000+00:00",
-    "content": "Thanks for the details!\nTo be honest, I have never seen this feature in Archicad yet \ud83d\ude01\nI have to check whether it's available via Archicad API (or using properties) or not...\nIf it's available then I'm sure it will be easy to implement a new Tapir command and you will be able to automate this \ud83d\ude09",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374977556566245458"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-22T05:25:38.077000+00:00",
-    "content": "Checked it and it's available!\nUsing ACAPI_Revision_GetRVMIssues function (funny Transmittals are still named Issues in the API \ud83d\ude01)\nRVM means revision management here.\nSo this could be the next Tapir feature...",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374981510720917555"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-05-22T05:27:41.159000+00:00",
-    "content": "I tried to update the slab making script with arcs, and wasn't able. To we need an updated version to be able to use arcs from polylines?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374982026964242474"
   },
   {
     "channel": "user-support-channel",
@@ -20550,5 +20374,189 @@
     "created_at": "2026-10-19T08:14:15.416000+00:00",
     "content": "It is interesting that we have 491 api calls in the latest release and we have another 469 in the pipeline since 1.7.1\n\nA total of 2415 api calls doesn't seem that far.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561653696700354603"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-19T09:14:26.765000+00:00",
+    "content": "Note, there might be many API functions that are irrelevant for Tapir.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561668843796041759"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T09:15:03.239000+00:00",
+    "content": "Depends on how you use tapir?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561668996779216957"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-19T09:15:58.590000+00:00",
+    "content": "For example ACAPI_MenuItem_RegisterMenu",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561669228938141707"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-19T09:19:19.540000+00:00",
+    "content": "Now I believe that is impossible to use, as that must be called when Archicad loads the AddOn into the memory",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561670071783395442"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-19T09:25:03.552000+00:00",
+    "content": "Tapir is a mcp, grasshopper nodes, commands to use but also a palette. We can imagine a larger integration of the palette and reloading of Archicad for that?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561671514674303049"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-19T09:34:10.147000+00:00",
+    "content": "Anyway, there must be other much more important API functionalities that Tapir users would like to use \ud83d\ude42 \nSo it would be good to prioritize, and leave these until there are more important ones...",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561673807259762819"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T09:37:11.987000+00:00",
+    "content": "The analytical category seems the least covered. I guess nobody wants to do anything with structural design in archicad.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561674569952264233"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T09:50:30.425000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/pull/1089\n\nThis should get some work off your shoulders then.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561677918843703337"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-19T10:13:10.937000+00:00",
+    "content": "I have created a vehicle driving simulator!\nhttps://community.graphisoft.com/t5/AI-solutions/Vehicle-Driving-Simulator-Claude-Code/m-p/718125#M107",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1561683625244885063"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-19T10:15:30.918000+00:00",
+    "content": "Members of my company were working on Mario and Zelda!\ud83e\udd23 \nhttps://community.graphisoft.com/t5/AI-solutions/Archicad-Became-a-Game-Console/m-p/718141#M108",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1561684212367491132"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-19T10:20:17.165000+00:00",
+    "content": "we got simulations in archicad before GTA6",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1561685412974690356"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T11:40:54.260000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/1154\n\nHere is one of those. Just get  claude to mark it as skipped by the maintainer so that it isn't raised again.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561705701221474444"
+  },
+  {
+    "channel": "announcements",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-19T11:58:24.623000+00:00",
+    "content": "Windows installer:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/latest/download/TapirInstaller_Win.exe\n\nMac installer:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/releases/latest/download/TapirInstaller_Mac.zip",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1561710106763075625"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T13:41:28.141000+00:00",
+    "content": "I think we are pretty much done on the number of api calls that needed to be exposed.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561736042317357167"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T13:41:48.230000+00:00",
+    "content": "None of the raised issues are building up.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561736126576730133"
+  },
+  {
+    "channel": "announcements",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-19T15:18:02.597000+00:00",
+    "content": "Well done team! Happy to see the community thriving and Tapir growing \u2764\ufe0f",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815762/1561760346027462690"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-19T15:32:38.710000+00:00",
+    "content": "Feature request: could FilterElements also filter by property values? With #917 it gets layer/story/type, but \"all doors where fire rating is empty\" still means pulling GetPropertyValuesOfElements for every element over the socket and comparing client-side. On big models that's the slow part.\n\nSomething like a `propertyCriteria` input (property GUID + operator like Equal/Greater/Contains, plus HasValue/IsUserUndefined/IsNotAvailable so \"empty\" and \"not available\" stay separate) would let it run in-process. Happy to add a detailed spec on the issue.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561764020711858178"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-10-19T17:22:31.178000+00:00",
+    "content": "https://github.com/morluto/rea/tree/main or https://www.mindstudio.ai/blog/how-to-install-lean-rea-skill since rea seems to be a token monster",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561791671526629506"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-19T17:43:06.539000+00:00",
+    "content": "Sounds great...\nThen Claude can fix all the bugs till January + refactor the Grasshopper components",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561796853006205099"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T19:12:21.470000+00:00",
+    "content": "Hey, what is your github id?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561819313214849115"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T19:13:52.283000+00:00",
+    "content": "I am making a pull request, and you came up with this idea first so i would like to add you as a co author. Or you could suggest something else.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561819694112186431"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-19T19:27:41.611000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/pull/1292\n\nCheck it out. I am not sure that you got tagged with that",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1561823172565799063"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-19T20:40:10.899000+00:00",
+    "content": "remember this? i think i have build something with claude and tapir. when im finished i will share it. it reads the ifc with help of ifcopenshell and some other tricks and makes an archicad model with archicad elements without the help of AI.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1561841414801850459"
   }
 ]

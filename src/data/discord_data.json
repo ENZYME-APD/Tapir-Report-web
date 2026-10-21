@@ -3328,38 +3328,6 @@
     "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1270777687992045568"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-08-08T04:59:50.632000+00:00",
-    "content": "Great to see you here! Do you have experience with Python? Grasshopper?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1270969702839226390"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "felipemartins1480",
-    "created_at": "2024-08-08T05:01:39.665000+00:00",
-    "content": "Sure, work with mainly Grasshopper and Archicad at my office.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1270970160156639383"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-08-08T05:32:34.046000+00:00",
-    "content": "Nice! Have you found any workflow where the live-connection wasn't enough? Anything Tapir could help with?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1270977937994416179"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "felipemartins1480",
-    "created_at": "2024-08-08T14:54:52.245000+00:00",
-    "content": "I'm start my contact with tapir just now, but can imagine how could tapir can help-me deeply in archicad for this challenges with less components and efforts off course.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1271119446257303613"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
@@ -4686,62 +4654,6 @@
     "created_at": "2024-10-01T17:45:02.644000+00:00",
     "content": "Can't be! I do not have Tapir installed ever before \ud83e\udd14 .....",
     "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1290731216517201920"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2024-10-01T19:57:08.166000+00:00",
-    "content": "Yes, there are things, you cannot do with this approach, or would not be feasible. (For example for a script that takes a .png and creates a colored 1mx1m slab for every pixel, you would need a different favorite for every color...) But I think we can achive a lot with only favorites + simple create commands.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290764458565570590"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-01T21:06:28.073000+00:00",
-    "content": "So <@1254417128979959909> , my MVP for Grids:\n- home story\n- straight an curved geometry methods\n- when placing straight: 2 points for start and end points for the straight segment\n- when placing curved: there are so many ways to define an arc, so it is difficult to pick the best way. You definitely need a start point, and you need to be able to pick which arc to draw between the starting and end-points (clockwise or counter-clockwise), but the rest of the inputs can be varied: centerpoint+angle+radius, or centerpoint+arc-length, or endpoint+radius, or endpoint+3rd-point-on-arc, etc. -> I am not sure how it is defined in code, but we could follow that structure, or maybe we could follow the GDL definitions for 2D primitives.\n- grid naming either set to automatic, or to custom (with a custom string input)\n\nNice-to-have:\n- for straight: staggering length and staggering distance\n- for curved: extension length and staggering distance\n- element ID (not GUID)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290781906480136317"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-01T21:10:30.842000+00:00",
-    "content": "with the additional status codes for defining curves and such:\nhttps://gdl.graphisoft.com/reference-guide/additional-status-codes#AdditionalStatusCodes_section",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290782924727255163"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-01T21:12:25.100000+00:00",
-    "content": "(I am not saying this is the way to go, just an idea, to keep things consistent)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290783403960045690"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-10-02T00:44:33.368000+00:00",
-    "content": "<@404731364236197899> good points! But if you want to test a GDL object we\u2019ve developed specifically for avoiding those grids on the site boundary give me or <@900814845191000115> a shout",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290836790185562164"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-02T09:48:10.990000+00:00",
-    "content": "BTW, based on the details on the website, it is not clear how you define the boundary for this object?\nDo you add nodes on plan with hotspot controls? can you make them curved? Can I drive it from grasshopper?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1290973598407983138"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-10-02T11:56:26.754000+00:00",
-    "content": "Yes they\u2019re defined in plan, and can be driven by grasshopper",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1291005876781449226"
   },
   {
     "channel": "ideas-and-feedback",
@@ -8152,60 +8064,12 @@
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1374975796594348074"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-22T05:33:00.482000+00:00",
-    "content": "Oh, thanks for the report!\nThat seems to be a bug, needs to be fix.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1374983366301974590"
-  },
-  {
     "channel": "archicad-addon",
     "server": "archicad-api-grasshopper",
     "author": "moony_shadow",
     "created_at": "2025-05-22T05:33:16.927000+00:00",
     "content": "perhaps apple permission issue?",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1374983435277303819"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-22T08:33:40.670000+00:00",
-    "content": "First: Yes, we have working CreatePolylines command from version 1.1.5 \ud83d\ude42\n\nAbout arcs: this is the way how Archicad defines arcs \ud83d\ude04",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1375028833345863723"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-22T08:34:57.527000+00:00",
-    "content": "Wow. That is so weird that Archicad defines them like this, because on the UI there is no way to input arc that way XD",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1375029155707486270"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-22T08:39:20.624000+00:00",
-    "content": "I would encourage you to register on GitHub.\nThat way you would be able to simply modify/fix our documentation and modify/add built-in scripts.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1375030259216420884"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-05-22T08:40:02.742000+00:00",
-    "content": "I am registerd, I just never used it, so I have no idea how all this forking and pulling and staring works...",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1375030435872247899"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-05-22T08:41:49.308000+00:00",
-    "content": "You cannot break anything, an administration has to review your modification before it goes to the main branch \ud83d\ude09 and we have automatized tests.\nBut I understand that git knowledge is not so easy for a not professional developer.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1375030882842316811"
   },
   {
     "channel": "archicad-addon",
@@ -20558,5 +20422,149 @@
     "created_at": "2026-10-19T20:40:10.899000+00:00",
     "content": "remember this? i think i have build something with claude and tapir. when im finished i will share it. it reads the ifc with help of ifcopenshell and some other tricks and makes an archicad model with archicad elements without the help of AI.",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1561841414801850459"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-20T07:23:33.537000+00:00",
+    "content": "Can someone test something for me. archicad is crashing when im trying to get \"GetComponentsOfElements\" of Dimensions.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562003326000963625"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-20T07:36:02.900000+00:00",
+    "content": "We might reach tapir singularity in 3 days.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1562006469056929854"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-20T07:37:27.317000+00:00",
+    "content": "Good morning tapir community! @everyone lets welcome <@1561943932722483345> <@1561942974328217681> <@1561835331022749780>  to the party!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1562006823127490612"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-20T08:02:44.794000+00:00",
+    "content": "Anyway, Archicad should not crash because of bad Tapir input. So it might be something that should be fixed.\n(GetComponentsOfElements for Dimensions)",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562013187887341640"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-20T08:10:28.088000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/pull/1019#issuecomment-6286484364",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562015131083472967"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-20T10:01:22.242000+00:00",
+    "content": "I had ClaudeCode process hand-drawn sketches to automatically generate a 3D model, a project schedule, a detailed cost estimate, and an assembly video.\nhttps://community.graphisoft.com/t5/AI-solutions/From-one-hand-drawn-sketch-to-an-Archicad-construction-model/m-p/718315#M119",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1562043040628219904"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-20T11:32:33.091000+00:00",
+    "content": "what did you change in \"your\" Tapir MCP?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1562065987031924788"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-20T12:23:59.136000+00:00",
+    "content": "It's not a difference in Tapir, but in what's around it: my own tools (scripts), the knowledge of pitfalls I ran into on past projects, and the workflow (the way it was run this time). Growing these to this point is what made it possible.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1562078930842951820"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "fbumaye",
+    "created_at": "2026-10-20T13:27:03.425000+00:00",
+    "content": "can i create an issue for it and hand it over to the bot ? \ud83d\ude04",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562094803301306430"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-20T13:28:09.026000+00:00",
+    "content": "there is no way to keep it away. A botty a day keeps the bugs away.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562095078451843174"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-20T13:32:48.755000+00:00",
+    "content": "Yes, the most simple way is to wait a little and the bot will generate an issue from your Discord comments and it will start work on it \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562096251720306690"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-20T15:22:48.069000+00:00",
+    "content": "Twinmotion is used for graphics.\nClaudecode automates Unreal Engine via Datasmith Direct Link.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1562123931249418251"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-20T18:14:51.033000+00:00",
+    "content": "Running out of ideas to exploit it now tbh",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1562167228898480230"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-20T18:16:17.612000+00:00",
+    "content": "The coverage says almost everything is requested as an issue already... But almost all issues have PRs, so I don't understand why it shows that only a small part is in pull requests...",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1562167592037384375"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-20T18:20:58.338000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/1287\n\nCheck the comments. \nPart 1/6",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1562168769487577118"
+  },
+  {
+    "channel": "welcome-and-rules",
+    "server": "archicad-api-grasshopper",
+    "author": "bmickey_30686",
+    "created_at": "2026-10-20T20:48:20.273000+00:00",
+    "content": "Hello from Helsinki, Finland! Joining to learn more of the possibilities of Tapir, MCP etc. Things seem to be moving fast in the world of AEC now, with AI and open source software making previously unimagined things possible in real time. Exciting times!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1562205855250915429"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "bmickey_30686",
+    "created_at": "2026-10-20T20:53:31.254000+00:00",
+    "content": "Is it possible to reindex model attributes such as layers via Tapir? I tried this with MCP, but to no avail. Would be fantastic, since manual reindexing is tedious.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562207159599497269"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-20T21:35:28.642000+00:00",
+    "content": "can we get a channel only for the tapir mcp?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1562217718290325507"
   }
 ]

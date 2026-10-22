@@ -3480,14 +3480,6 @@
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1272901264698773605"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "agi.gaschitz",
-    "created_at": "2024-08-13T18:17:14.051000+00:00",
-    "content": "Hey <@693250122431201320>, yes, I'm the founder/leader of bimdots \ud83d\udc99 \nIf you have any questions/suggestions feel free to contact me using this address: info@bimdots.com\nSince I love the tapir community so much I'd like to offer you guys a coupon code that you can use on our store while check-out for a 25% discount: **TAPIR25** \ud83e\udd73",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1272982312010911805"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
@@ -4654,14 +4646,6 @@
     "created_at": "2024-10-01T17:45:02.644000+00:00",
     "content": "Can't be! I do not have Tapir installed ever before \ud83e\udd14 .....",
     "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1290731216517201920"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-10-02T12:50:13.385000+00:00",
-    "content": "<@900814845191000115> did a great job with this one and all my crazy ideas.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1291019410252763247"
   },
   {
     "channel": "ideas-and-feedback",
@@ -9062,14 +9046,6 @@
     "created_at": "2025-06-13T12:16:28.846000+00:00",
     "content": "And the \"debug\" version if somebody is interested :",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1383057436583399554"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "drakhan3558",
-    "created_at": "2025-06-15T22:33:13.623000+00:00",
-    "content": "Hi, everyone.. Just joined this channel. Is there where a new user (like myself) can ask for some help with code ?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1383937421598785617"
   },
   {
     "channel": "user-support-channel",
@@ -20566,5 +20542,109 @@
     "created_at": "2026-10-20T21:35:28.642000+00:00",
     "content": "can we get a channel only for the tapir mcp?",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1562217718290325507"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-21T04:32:19.952000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/1392\n\nClaude-fix this?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1562322623327641711"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-21T12:47:43.021000+00:00",
+    "content": "my mouse  wheel is broken cannot reach endless scrolling on github-notifications channel \ud83d\ude02",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562447290914967615"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-21T14:26:57.193000+00:00",
+    "content": "I've spent the last few days working with Claude on a fork of the Tapir MCP. The goal: make it hold up on **big Archicad projects**, not just small test files. With thousands of doors and walls, the agents just choke right now.\n\nFull disclosure: I'm not a coder, I'm vibing. But I tried to be really careful about the good-code parts. Spec and plan first, tests before code, several independent reviews, a security pass, a benchmark instead of gut feeling, and live tests in Archicad. No silent shortcuts.\n\nSo I'd love to have a discussion: is it understandable what happened there, and does it make sense to you? The technical summary is in the next post.\n\nFork: https://github.com/DaviiiiiDave/tapir-archicad-MCP",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562472264522272859"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-21T14:27:17.299000+00:00",
+    "content": "**What's in round one** (tested live on Archicad 29):\n- Every command is tagged read / write / irreversible. Reads go through a read-only tool, so your client can auto-allow them and permission prompts mean something again\n- Irreversible stuff (save, delete, Teamwork send/reserve, exports, library + issue changes) needs an explicit `\"confirm\": true`\n- Validation errors stop echoing thousands of GUIDs back\n- Command search (`query` / `group`), so the agent doesn't have to load all 308 commands\n- Lists tell you `total / returned / truncated`, and writes report succeeded / failed by cause\n- Preview images come back as real images the model can see\n- A change log, so you can check afterwards what the AI actually changed in your model\n\nPR: https://github.com/DaviiiiiDave/tapir-archicad-MCP/pull/2\n\n**Benchmark, honest version:** 60 agent runs, Haiku + Sonnet, original vs. fork. Small tasks: similar success, mostly fewer tokens. Big tasks (1,000 doors, thousands of walls): **nobody solved them, in either version**. The models give up while paging GUIDs through their context.\nhttps://github.com/DaviiiiiDave/tapir-archicad-MCP/blob/master/benchmark/results/baseline-2026-10-20.md\n\n**Next up: element sets.** Element lists stay in the server, and the model only handles a set reference plus counts and a few samples. Property values come typed, with \"undefined\" and \"not available\" kept apart, plus filters along the lines of https://github.com/ENZYME-APD/tapir-archicad-automation/issues/1253\n\nHappy about any feedback, especially on the set idea before I build it",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562472348853207180"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-21T19:21:26.962000+00:00",
+    "content": "Welcome <@689052736301563914> to the tapir community!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1562546376905068576"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-21T20:23:05.468000+00:00",
+    "content": "Great initiative. I think it would be useful to know what the MCP/tapir addon cannot do, and will never be able to do. Just to get an idea of scope and what are the boundries to work towards.",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562561889563578379"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-21T20:24:06.827000+00:00",
+    "content": "No direct import of dawg/pdf, etc in Archicad, no modification/cr\u00e9ation of schedules",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562562146921873409"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-21T20:24:34.910000+00:00",
+    "content": "That's the major limitations of c++ api I think",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562562264710512652"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-21T20:36:24.010000+00:00",
+    "content": "**Update: element sets, part 1 is in** (live-tested on Archicad 29)\n\nReads that return element lists (all elements, by type, by classification, selection, filter, issue elements) now keep the list in the server as a set. Up to 20 elements, the model still gets the list. Above that, it gets a short summary instead, e.g.:\n```\n{\"set\": \"set:ab12cd34\", \"count\": 4312, \"byType\": {\"Wall\": 4100, \"Column\": 212}, \"next\": [...]}\n```\nplus `total / returned / truncated`, so it knows the list was replaced, not empty.\n\nEvery command that takes an element list (41 of them) now accepts `{\"set\": \"set:ab12cd34\"}` instead of thousands of GUIDs: select, zoom, filter, delete\u2026\n\nSafety bits:\n- Sets are bound to the port and the project. Open another file or \"Save as\", and old sets get refused\n- Deleting through a set still needs `\"confirm\": true`, and the change log stores the full GUID list, not just the set id\n- Empty sets, and sets from unsaved projects, can't be used for writes\n\nTwo things I learned on the way, maybe useful for others:\n- `API.GetTypesOfElements` only knows the 18 construction types. Lines, texts, labels and hatches come back \"Element not supported\", so the fork asks Tapir `GetDetailsOfElements` with `fields: [\"type\"]` for those\n- Tapir `FilterElements` refuses a call without `filters` (\"Invalid or missing filters!\"), although the schema marks it optional\n\nPR: https://github.com/DaviiiiiDave/tapir-archicad-MCP/pull/3\n\n**Next:** typed property values and criteria, then rows, aggregates and CSV export on a set. That's where the big benchmark tasks should finally become solvable. No numbers yet, I'll rerun the benchmark once that's in.",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562565238891483287"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-21T20:42:23.831000+00:00",
+    "content": "Feature request: read GDL script errors/warnings of a library part\n\nUse case: I generate GDL objects automatically (gdl-forge) and verify them in\nArchicad via Tapir: load library, place object, set parameters, read 3D\ngeometry/bounding boxes. What's missing is a way to read GDL script\nerrors/warnings for a library part (what the Library Report / \"Check Script\"\nshows in the GDL editor).\n\nWhy it matters: a runtime error (e.g. an uninitialized variable in an IF\nseveral hundred lines down) makes Archicad discard the whole script output.\nFrom outside, the object then just looks \"empty\", and the actual cause is\nvery hard to locate.\n\nWish:\n- a command that returns, for a library part (by name/guid or file path) or a\n  placed element, the list of GDL errors/warnings: script (2D/3D/master/\n  parameter/UI), line number, message text\n- ideally without a modal dialog, so it doesn't block the JSON call\n\nPossible starting points (not verified, please check against the DevKit):\n- ACAPI_LibraryManagement_InterpretGDLScript3D (listed in the coverage list\n  in #1311): does it return errors/line numbers?\n- the CheckLibraries command from #1341 returns only success/error so far,\n  not the individual messages\n\nEnvironment: Archicad 29 Win, Tapir 1.7.2",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1562566748090273793"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-21T21:42:08.202000+00:00",
+    "content": "I think this will change fundamentally when programmable AI CPUs become available that will allow a dedicated Archicad LLM to be created. For example",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562581782032023574"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-21T22:38:41.279000+00:00",
+    "content": "<@238714334417518593> Thanks for sharing this! The underlying problems make sense. I\u2019d be interested in these as small, focused contributions:\n\u2022    Compact validation errors: I think it would be even more usefull if it displayed the first x error types instead of error instances, but it is useable as is.\n\u2022    Image responses: can you move the mappings to the generator config? I think I would be more likely not to forget updating it.\n\u2022    Pagination counts: useful until result handles replace most pagination.\n\u2022    Classification and a read dispatcher: useful for client approval policies. I would leave out the additional confirm gate and the \u201cirreversible\u201d category; approval should follow the client\u2019s settings.\n\u2022    Benchmark harness: This sounds cool, but did not have to really look into it.\n\nA few features would benefit from a different direction:\n\u2022    Command discovery: The rapidly increasing command number warrants a solution. I\u2019m leaning towards two-level progressive discovery\u2014groups, then commands\u2014rather than encouraging repeated keyword searches.\n\u2022    Outcome summaries: build on multiconn\u2019s batch-result objects so successes, failures and skipped items remain transparent across multiple steps. Planning to use these for the handle.\n\u2022    Execution history: enrich the existing lifecycle logging, using a dedicated logger and optional JSONL handler.\nThere\u2019s useful work here, but please split it up to make it easier to review and integrate.",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562596013628198985"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-21T22:40:42.963000+00:00",
+    "content": "<@238714334417518593> / <@697788551672365077> \nI\u2019ve been planning a stateful result-handle architecture for some time and have already implemented a few building blocks:\n\u2022    Batch-result objects in multiconn, so multistep processes using handles can remain transparent about successes, failures and skipped items.\n\u2022    A mixin-based model-injection framework, which I plan to use to resolve handle references through custom validators.\n\nMy current architectural direction is:\n\u2022    The call tool will have an additional result mode: handle, values, or auto, with a default byte limit determining when auto returns a handle.\n\u2022    Element queries belong in multiconn. I\u2019d like a serializable query state that can be saved as JSON and that a UI could bind to.\n\u2022    A tool will let the agent inspect result objects: query specific properties, get samples, inspect the schema, and save/load or export/import data.\n\u2022    I don\u2019t want to execute arbitrary code on the server, since it may run remotely. For transformations, I\u2019m leaning towards export/import, although I haven\u2019t settled on that yet.\n\nWith that in mind, I\u2019d like to ask you to hold off on implementing the element-set/query functionality for now.\nI\u2019m already working through this area, and it\u2019s fairly complex for me. I\u2019m not a senior programmer who has built this kind of architecture a thousand times, so I expect several rounds of experimentation and refinement before I arrive at an interface I\u2019m happy with. I\u2019d rather work through those iterations myself than pull you into repeated changes of direction.\n\nYour use cases and benchmark findings are useful input, I will refer to them!",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562596524008153171"
   }
 ]

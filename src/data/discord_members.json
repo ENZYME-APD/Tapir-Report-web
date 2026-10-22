@@ -25,7 +25,15 @@
       "members": 582,
       "bots": 3,
       "source": "bot"
+    },
+    {
+      "date": "2026-10-22",
+      "total_members": 590,
+      "online": 45,
+      "members": 587,
+      "bots": 3,
+      "source": "bot"
     }
   ],
-  "updated_at": "2026-10-21T02:32:04+00:00"
+  "updated_at": "2026-10-22T02:28:37+00:00"
 }

@@ -3784,14 +3784,6 @@
     "url": "https://discord.com/channels/994704152116596846/1271489495505567864/1276137100890083328"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "thesleepofreason.",
-    "created_at": "2024-08-26T12:48:58.386000+00:00",
-    "content": "Indeed! The layer palette impact on workflow is just ridiculous (even the dumb AC folders are now making some sense). There is still room for a few obvious improvements but there really isn't any going back once you start using it.  A nice glimpse into what working in AC could be like if GS had any interest in our daily workflow....",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1277610744657084467"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "observisualize",
@@ -9048,36 +9040,12 @@
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1383057436583399554"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-06-15T22:43:00.542000+00:00",
-    "content": "You need the aclib folder in the same place as the script file",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1383939883315499091"
-  },
-  {
     "channel": "welcome-and-rules",
     "server": "archicad-api-grasshopper",
     "author": "drakhan3558",
     "created_at": "2025-06-15T22:43:22.933000+00:00",
     "content": "Hello all., I am AJ from New Zealand. A grad &  computational designer usign Mac - I want to say I code (because I can use a bit of GDL, python & grasshopper)  I am still learning... Hopefully no one is annoyed by my questions. Some day I want to build something cool i.A... lol.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815761/1383939977230028831"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "drakhan3558",
-    "created_at": "2025-06-15T22:51:00.885000+00:00",
-    "content": "Brilliant that works ! via editor - but throws an error with the TapiR palette. stating missing archicad module. I have installed it globally. Is there any way to check this ?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1383941898019799191"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-06-16T02:50:42.979000+00:00",
-    "content": "Hi <@1132288322216149102> !\nProbably you have multiple Python versions installed.\nWhen you execute the script via editor it uses \"PythonA\" which has installed archicad module, and when you execute it via Tapir Palette it uses \"PythonB\" which does not have that module installed.\nIn the Tapir Palette there is a popup to choose from the installed Python versions, try to choose another.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1384002220894191696"
   },
   {
     "channel": "dev-python-package",
@@ -9112,14 +9080,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1386712680957481032"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-06-23T14:26:47.142000+00:00",
-    "content": "I wanted to reserve navigator items with the \"ReserveElements\" command. Sadly, it did not work. But what is strange, it returned \"success\" with no conflicts. This is pretty misleading, I actualy thout it worked nad went back to a single file to test my application. If I understand it correctly we get \"succes\" with no conflicts if we supply a bunch of random, but valid guids. Do you get the same results?\n\nLooking at the API there does not seam to be a different command to reserve NavigatorItems, whitch is sad, but if so we can't do anything about it.\n\nBut we can maybe check the input guids wether they are valid guids for ACAPI_Teamwork_ReserveElements()?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1386714107549450431"
-  },
-  {
     "channel": "general",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
@@ -9134,46 +9094,6 @@
     "created_at": "2025-06-23T14:53:28.659000+00:00",
     "content": "\" special thanks to @Tibor Lorantfy\u2014 these scripts wouldn\u2019t exist without his work\"",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1386720824798740640"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-06-23T19:25:17.946000+00:00",
-    "content": "You're right.\nReserveElements Tapir command uses ACAPI_Teamwork_ReserveElements function and it works for elements only, not for navigatoritems or any other entities identified by guids.\nSadly the API command returns NoError for random guids... But your idea sounds great, to test the given guids whether those are guids of real elements...\nBut what should we do if only 1 of the given guids is invalid, but others are valid? \nReturn success and reserve the 9 elements, or return error and do nothing...",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1386789230906314762"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-06-23T19:41:04.256000+00:00",
-    "content": "ACAPI_Teamwork_GetTWOwner API function returns the owner of a database. We can use this to check that a database (~ navigatoritem) is already reserved or not.\nBut I don't find any API function to reserve navigatoritems \ud83d\ude26",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1386793200018259998"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-06-23T20:08:26.012000+00:00",
-    "content": "Yeah, comming up with the response schema for that is the tough part. I don't think it is possible to create something logical without a breaking change. \n\nthe only thing I can come up with is returning a list of execution results. but at that point the conflicts list should be merged, as conflicts should be logically FailedResults.\nthe other method would be modifying the conflicts to incude errors, but I don't find it too logical.\n\nMaybe just update the documentation with a warning? I only thouth it works for NavigatorItems is because I looked at the API docs and seen that nearly everithing else can be reserved, so why excude NavigatorItems.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1386800086041891067"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-06-23T20:23:24.784000+00:00",
-    "content": "Isn't some of teamwork command behind paywall/subscriptionwall?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1386803855764750637"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-06-24T08:53:45.409000+00:00",
-    "content": "By the way <@1254417128979959909> , I noticed that storeing the paths to loaded user defined scripts is already implemented in code! But it does not seam to be working for me - only the scripts from github are there after I restart ArchiCAD.  Can you look at it if you have some time? (windows, Archicad 28)",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1386992685952405624"
   },
   {
     "channel": "user-support-channel",
@@ -20646,5 +20566,117 @@
     "created_at": "2026-10-21T22:40:42.963000+00:00",
     "content": "<@238714334417518593> / <@697788551672365077> \nI\u2019ve been planning a stateful result-handle architecture for some time and have already implemented a few building blocks:\n\u2022    Batch-result objects in multiconn, so multistep processes using handles can remain transparent about successes, failures and skipped items.\n\u2022    A mixin-based model-injection framework, which I plan to use to resolve handle references through custom validators.\n\nMy current architectural direction is:\n\u2022    The call tool will have an additional result mode: handle, values, or auto, with a default byte limit determining when auto returns a handle.\n\u2022    Element queries belong in multiconn. I\u2019d like a serializable query state that can be saved as JSON and that a UI could bind to.\n\u2022    A tool will let the agent inspect result objects: query specific properties, get samples, inspect the schema, and save/load or export/import data.\n\u2022    I don\u2019t want to execute arbitrary code on the server, since it may run remotely. For transformations, I\u2019m leaning towards export/import, although I haven\u2019t settled on that yet.\n\nWith that in mind, I\u2019d like to ask you to hold off on implementing the element-set/query functionality for now.\nI\u2019m already working through this area, and it\u2019s fairly complex for me. I\u2019m not a senior programmer who has built this kind of architecture a thousand times, so I expect several rounds of experimentation and refinement before I arrive at an interface I\u2019m happy with. I\u2019d rather work through those iterations myself than pull you into repeated changes of direction.\n\nYour use cases and benchmark findings are useful input, I will refer to them!",
     "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562596524008153171"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-22T15:19:45.950000+00:00",
+    "content": "I think I found a gap in the C++ API for laout's subsets: https://community.graphisoft.com/t5/Archicad-C-API/API-function-to-delete-or-modify-an-existing-Layout-Book-Subset/m-p/718579#M11088",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562847943118028910"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-22T16:25:17.994000+00:00",
+    "content": "Thank you!\n\nThinking about it, outcomes implementation could be related to the handle implementation so I should probably ask you to hold off on that one.\n\nBut I'd be happy to recieve PRs for discovery and lifecicle logging! \nFor discovery the 2 tiered approach is just a hunch. \nIn earlier implementations of the mcp I used a combined vector search + keyword search. It was usually really effective on short, 1-2 command tasks, but sometimes entered into long back and forths if the agent was looking for an unavalible command or - what is worse - if the retrival failed for a query. With a searc method there is actaully no way to know if thee search terms are bad, or if a command genuinely does not exist. \nI found the catalog/progressive discovery approach much more stable. Sure, a bit more tokens but I no longer had to argue with claude that the command actaully exist, just look harder. And there is another big benfit to it. for longer tasks the model just asks for the commands once, and it knows all 35 tool names it needs to use.\nA 2 tiered approach, (where the tool can take a list of groups) will take 2 calls instead of one, but reduces totel tokens by a significant ammount. \nIf we really plan to have like 1000 comands it is definitely worth it.",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562864435306037400"
+  },
+  {
+    "channel": "welcome-and-rules",
+    "server": "archicad-api-grasshopper",
+    "author": "designwizard.eth",
+    "created_at": "2026-10-22T16:55:17.613000+00:00",
+    "content": "Hi and welcome to the community! i believe things are moving fast in AEC community now because there were always so many things we all wanted to do but very few developers actually want to create something for AEC industry as the cost market is pretty small - we (the aec community) are also already paying so much for a bunch of softwares already and are always looking for things we dont have to additionally pay for and now we can develop them with AI even if it is only useful to the 1 person creating it.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1562871983455338521"
+  },
+  {
+    "channel": "welcome-and-rules",
+    "server": "archicad-api-grasshopper",
+    "author": "designwizard.eth",
+    "created_at": "2026-10-22T16:55:44.534000+00:00",
+    "content": "truly a beautiful time for us all trying to flex our creative muscles on code",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1562872096370200708"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-22T18:10:21.567000+00:00",
+    "content": "Creating scripts I need for work and noting all limitations",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562890874407489597"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-22T18:10:38.068000+00:00",
+    "content": "Tbh, I have ideas in all domains of archicad xD",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562890943617826867"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-22T18:12:15.602000+00:00",
+    "content": "Do you plan on sharing your scripts too?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1562891352705077329"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "bawb0910",
+    "created_at": "2026-10-22T20:10:20.440000+00:00",
+    "content": "I'm trying to figure out Tapir-Claude-Archicad connection. I have Python 3.9.6 installed, Tapir 1.7.1, Claude Desktop, but lacking UV, so I was trying to install UV from Tapir and this message shows up. What should I do? (for context, I'm completely clueless about coding and learning the coding terms is quite a challenge (but I'm trying).",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562921068669313156"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-22T20:17:48.924000+00:00",
+    "content": "Thank you for the report!\nI've just merged a fix for the scripts. Claude found an issue on MacOS with that new python version.\nPlease restart Archicad and the issue should be fixed automatically (as Tapir redownloads rhe scripts from GitHub)",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562922949747679347"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "bawb0910",
+    "created_at": "2026-10-22T20:35:04.219000+00:00",
+    "content": "and when I copy paste the tapir-archicad-mcp to claude_desktop_config.json, this shows up when I restart Claude, is that an issue?",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562927292089376829"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-22T20:43:29.930000+00:00",
+    "content": "...\n        \"version\": 0\n      }\n    }\n  },\n  \"mcpServers\": {\n    \"ArchicadTapir\": {\n    ...",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562929413195046943"
+  },
+  {
+    "channel": "tapir-mcp",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-22T20:43:57.667000+00:00",
+    "content": "Above \"mcpServers\" the json should look like this",
+    "url": "https://discord.com/channels/994704152116596846/1562227521905360896/1562929529532448839"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-22T20:50:37.739000+00:00",
+    "content": "Guys, it sounds unethical, but I asked Claude to search for AddOns available on the web and try to copy few of them as built-in scripts in Tapir \ud83d\ude0a\nIt copied bunch of useful AddOns from BimDots for example... Now you will be able to get those for free using Tapir \ud83d\ude01",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1562931207556304897"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "ooki_85834_38875",
+    "created_at": "2026-10-22T22:43:00.708000+00:00",
+    "content": "This diagram was not created using Twinmotion or Unreal Engine.\nIt was produced based on the knowledge acquired by Claudecode.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1562959489618018396"
   }
 ]

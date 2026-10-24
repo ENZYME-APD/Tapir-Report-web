@@ -3960,14 +3960,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1283929350860836977"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2024-09-13T16:09:00.092000+00:00",
-    "content": "Hello! \nI just wanted to take a moment to say thank you for all the hard work you've put into the latest Archicad addon updates. The new commands and improvements are absolutely phenomenal! I really like that you\u2019ve reworked  some of the official commands. That is something I didn't know I needed, but now I am really excited about the possibilites.\n\nI haven\u2019t been around for a while, and coming back to see how much has happened is truly impressive.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1284184065041498153"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "eldelion",
@@ -4024,36 +4016,12 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1284598625443385505"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-09-15T06:44:32.783000+00:00",
-    "content": "@everyone Version 1.0.7 is out with several new commands: https://github.com/ENZYME-APD/tapir-archicad-automation/releases/tag/1.0.7\nThanks a lot for <@1254417128979959909> for making these cool additions.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1284766790982828034"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "kovacsv",
-    "created_at": "2024-09-15T06:45:41.935000+00:00",
-    "content": "We also have an about dialog now in Archicad to easily check which version is installed. \ud83d\ude42",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1284767081027469385"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "__iota__",
     "created_at": "2024-09-15T09:11:40.955000+00:00",
     "content": "If I understand well, the new command like the one <@1254417128979959909> coded are JSON commands, and if we want to use them in the same manner as the official one, we need a python wrapper?",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1284803819020222527"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "grzegorzwilk",
-    "created_at": "2024-09-15T09:11:47.309000+00:00",
-    "content": "Its a serious moment. Tapir has AC interface",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1284803845670834188"
   },
   {
     "channel": "dev-python-package",
@@ -9096,44 +9064,12 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1386720824798740640"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-06-24T09:16:27.843000+00:00",
-    "content": "(script in the custom scripts folder are there as well)",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1386998400414908446"
-  },
-  {
     "channel": "archicad-addon",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
     "created_at": "2025-06-24T15:13:40.178000+00:00",
     "content": "<@900814845191000115> our Dynamic panel object already has that feature, doesn\u2019t it?",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1387088294143070218"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-06-24T17:40:19.752000+00:00",
-    "content": "Probably tomorrow I will be able to check.\nBut yes I have implemented it:\nThe popup should show the builtin scripts (downloaded from GitHub), the scripts from the custom folder and the user defined scripts (so once you added a script it should be there next time when you restart Archicad)",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387125202231754854"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "kar.ma.ge",
-    "created_at": "2025-06-25T03:27:47.755000+00:00",
-    "content": "Hi, I have tested the KAD non-ortho wall application and it works fine, however when running Orthowallfinder.py from ArchiCAD it generates an error because of the macOS version. Is it possible to use Tapir on MacOS 14.7.5?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387273043071733902"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-06-25T05:35:32.562000+00:00",
-    "content": "Hi,\nI am running both the app and the script on macOS 12.7.6 and macOS 15.5 and they seem to work fine on both.\nWhat error are you getting exactly? Can you send us a screenshot please? (Ideally with the palette in the picture as well)\nAre you using the latest version of the Tapir Add-on?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387305191602393259"
   },
   {
     "channel": "ideas-and-feedback",
@@ -9248,14 +9184,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1387394808875585576"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-06-25T12:52:47.549000+00:00",
-    "content": "Confirmed. It's not working for me either (Windows, Archicad 28) \ud83d\ude26\nI will fix it as soon as I will have time for it.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387415229113307247"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "forest.violence",
@@ -9270,22 +9198,6 @@
     "created_at": "2025-06-25T15:16:33.542000+00:00",
     "content": "This simple testing script generates 5x6=30 meshes with 10x10 size and random Z coordinates between 0.0 and 3.0.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1387451409150251141"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2025-06-25T15:57:43.164000+00:00",
-    "content": "Have you tried running another script from tapir? Did those work?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387461767495417987"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "kar.ma.ge",
-    "created_at": "2025-06-25T16:01:29.334000+00:00",
-    "content": "Yes, I ran three scripts and they all give me an error.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387462716121419777"
   },
   {
     "channel": "user-support-channel",
@@ -20678,5 +20590,197 @@
     "created_at": "2026-10-22T22:43:00.708000+00:00",
     "content": "This diagram was not created using Twinmotion or Unreal Engine.\nIt was produced based on the knowledge acquired by Claudecode.",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1562959489618018396"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-23T08:30:22.865000+00:00",
+    "content": "I hope you dont redo the ones i am working on \ud83d\ude02, its wild now there are so many addons out there and a lot have similar features wraped to a workflow/ui of user who made them",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563107305938223125"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-23T08:32:10.701000+00:00",
+    "content": "what if say Tapir has some automated flow that if someone has an idea or addon they offer for free and dont mind sharing to tapir comunity to link the github or some way and it converts to tapir script so its built in, but that also can make tapir bloated if too many features are in it",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563107758235189279"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-23T08:35:25.326000+00:00",
+    "content": "you should add something like a marketplace. i think <@1338845363024560198> build something like that so you dont have to ship it with \"all\" scripts",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563108574551351357"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-23T08:37:31.825000+00:00",
+    "content": "Short legal take (not a lawyer):\nReimplementing functionality is legal. Copyright protects the actual code, UI texts, icons and manuals \u2013 not ideas or features. The EU Court of Justice confirmed this explicitly (SAS Institute vs. World Programming, 2012). If Claude read public product pages/manuals and wrote its own code, that\u2019s a clean-room reimplementation \u2013 competitors do this all the time.\n\nThe BimDots EULA is a generic template with no reverse-engineering clause at all, and it only binds people who install the add-on \u2013 reading the website doesn\u2019t trigger it.\n\nWhere it would become a problem: decompiling binaries or lifting code, reusing their product names/icons/dialog texts, or writing \u201ccopied from BimDots\u201d in commits/docs.\n\nSuggestions: say \u201cinspired by / reimplemented\u201d, don\u2019t reference BimDots anywhere in code or docs, double-check only public descriptions were used as input, and just ship them as Tapir features rather than advertising \u201cget those for free\u201d.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563109105126604933"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-23T08:39:21.519000+00:00",
+    "content": "i think we should focus on a platform not the scripts them self.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563109565216849946"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-23T08:39:23.028000+00:00",
+    "content": "I made a property highlighter before Bim dot's, and it was inspired by some ifc viewer (bimcollabzoom). I'm not sure if we can say that somebody had an idea alone.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563109571546062881"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-23T08:43:57.214000+00:00",
+    "content": "that can be done ... but there is a limit that api doesnt allow to save views with 'property highlighter' and they cannot be placed on drawings with that 'look', that is better solution than bloating the file with tons of graphic overrides generated from combinations of property or other types of highlightings!",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563110721565360152"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-23T08:47:18.656000+00:00",
+    "content": "GO is the only way to print/save the result. And I sometimes want to create rules for \"self file audit\" for my colleagues, without having to rely on scripts",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563111566474485831"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-23T08:50:39.604000+00:00",
+    "content": "yes i understand and i suppose not all archicad users are advanced or want to tweak everything like we try to \ud83d\ude02, so most are satisfied if they have that GO in template check /done.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563112409311223821"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-23T08:52:56.186000+00:00",
+    "content": "I have a colleague that always says to me: if the new workflow is not at least one less click, I don't want it",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563112982177779793"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-23T09:03:17.724000+00:00",
+    "content": "And even for us, sometimes it's easier to switch between GO and not having to launch a specific script",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563115589097103433"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-23T09:18:47.454000+00:00",
+    "content": "https://tapir-marketplace.vercel.app/\n\nWho is running this? <@1254417128979959909>",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563119488667226212"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-23T09:55:50.727000+00:00",
+    "content": "i have created that we had some initiative earlier here in discord, here is the repo if you want to chane it  or link to other domain etc  https://github.com/giza611/Tapir_Marketplace",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563128813750198453"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-23T09:56:50.405000+00:00",
+    "content": "Make a share script button in the addon itself?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563129064057995275"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-23T11:44:03.207000+00:00",
+    "content": "I was looking into opening bimcloud projet with Tapir, it seems impossible?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563156045184897075"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-23T11:50:56.007000+00:00",
+    "content": "Not with Tapir, but possible from python.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563157776593584129"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-23T11:57:51.147000+00:00",
+    "content": "And is it possible to integrate it in tapir?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563159517816946693"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-23T12:05:23.287000+00:00",
+    "content": "What I see with claude code is you can do it using your credentials in clear with the python command, which is not optimal",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563161414229565500"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-23T12:22:08.125000+00:00",
+    "content": "You can do it passing your credentials, or a captured jwt token as command line arguments.\nAs far as I know you cannot open a teamwork project from the c++ API, only via command line arguments in a new process.\nTheoretically a C++ code can start a new process, but that is not the right layer for it. It belongs in a long lived orchestration layer independent from a specific archicad instance.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563165628825608233"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-23T12:28:07.618000+00:00",
+    "content": "What Tapir can help in the process is suppressing dialogs reliably. I have been using GUI automation for that, but that is localization dependent.\nI have recently found a possible way in Graphisoft f\u00f3ruma to load an addon before a project loads, then it can supress dialogs with an undocumented command found in one of the headers. Probably Graphisoft uses it for automated testing? I don't remember what was the name of the command, will have to look up.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563167136648527923"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-23T13:13:54.262000+00:00",
+    "content": "By the way, why do you say using your credentials as command line arguments bad?\nIt only goes to your local archicad instance, not the server. The communication is 100 handled by archicad.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563178656908451961"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-23T13:32:50.829000+00:00",
+    "content": "does readable in \"clear\" mean code?\n\nYou definitely have to overload __str__ and __repr__ for objects that store it so it won't accidentally sneak into logs. (Or use Pydantic's secretstring, that is what I use in multiconn) \nFor gui scipts the user supplys it. If you want to save it between runs, you can us the system keyring. For plain scripts it goes to your .env file alongside all other secrets, and you read it from there. You keep .env from github.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563183424016097354"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-23T17:12:33.515000+00:00",
+    "content": "https://lnkd.in/p/dzzKw-FJ not all Tapir related but interesting approach to overhaul 3D display",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1563238716208713878"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-23T20:41:36.741000+00:00",
+    "content": "I found the post I was refering to. The commands are DGEnableAutoClose/DGDisableAutoClose found in DG.h.\nI'll open up an issue about it.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563291326311694348"
   }
 ]

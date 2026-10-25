@@ -4610,22 +4610,6 @@
   {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2024-10-02T19:13:39.026000+00:00",
-    "content": "The topic of creating Properties came up, and I thought about it a bit. Or maybe a a bit more, than a bit. This has became a long post. Anyways I wanted to start a discussion on what are the biggest hurdels regarding property creation that tapir commands may solve, and what commands we need.\nWe mainly use enumerated properties (and expression based ofc), so it is easy to change the values, and the same thing is called the same in the project. The actual property modification is usually done by the BIM guys from a big excel where architects write their \u201cwishes\u201d.\nWhile that is already pretty time consumeing, the real pain starts when we have a big project modelled across 8-12 files. While there is a property export/import functionality, it does not modify the existing properties, but overwrites it. This is mostly fine for expression based properties (well if we don\u2019t use them for graphic overrides etc) but for properties with instance data this can mean the loss of data, so we never use it.\nWe open the files one by one, and create/modify the new options. We are trying to keep the options the same across all files, but it is just a daunting task, and errors always happen. And is an error happens we can not generate lists or legends from the whole complex as those lists will not work.\nWe would love to have tools to help this. To automate the management of properties in addition to the create property, we need ways to modify the existing definitions.\nThe following things have to be uniform uniform across projects in order for lists from the whole complex to work:\n\u2022    The name on the property, and the property group\n\u2022    The order of the properties (I am not sure this causes errors, but we try to keep it the same)\n\u2022    The enumeration options\n\u2022    The order of enumeration options\n\u2022    Avalibility for classifications",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1291115902905090078"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2024-10-02T19:13:44.799000+00:00",
-    "content": "What kind of commands do we need to assist this workflow?\nThe official JSON interface separates the options op properties to two categories:\n\u2022    the property name / description / value definition part {propertyDefinition}\n\u2022    the avalibilty for classifications part {PropertyDefinitionAvailability}\nThat leaves:\n\u2022    the display order of enumeration options (I think it is separate from the enum value?)\n\u2022    the order of the list of properties Maybe call it PropertyDefinitionTree? \n\nAnd for all of those we need a Get, Set, and a create and delete for property definitions and groups.\nImplemented Official:\n\u2022    GetPropertyIds/GetAllPropertyIds/GetAllPropertyNames\n\u2022    GetPropertyGroups\n\u2022    GetDetailsOfProperties\n\u2022    GetPropertyDefinitionAvailability\nImplemented Tapir:\n\u2022    CreatePropertyGroups\nNeeded:\n\u2022    CreateProperties(parameter: propertyDefinition) \u2013 the new property is avalible for no calssifications\n\u2022    SetDetailsOfProperties(parameter: propertyID, propertyDefinition) \n\u2022    SetDefinitionAvailability\n\u2022    DeleteProperty\n\u2022    DeletePropertyGroup\n\u2022    GetDisplayOrderOfEnumOptions (is this really a thing? Or how does it look like under the hood?)\n\u2022    SetDisplayOrderOfEnumOptions\n\u2022    GetPropertyDefinitionTree\n\u2022    SetPropertyDefinitionTree (can rearrange, but not delete/create)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1291115927118807132"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
     "created_at": "2024-10-02T19:54:17.990000+00:00",
     "content": "I started to create a delete_and_create_properties.py test script.\n1. Gets all custom properties using GetDetailsOfProperties and the availability using GetPropertyDefinitionAvailability\n2. Deletes all custom property definitions using the new command\n3. Recreates all custom property definitions\n4. Gets all details and availability again, compare it to the previous state \ud83d\ude09\n\n<@558945647085223946> , note, Tapir commands are using the Cpp API of Archicad, so if something is not available on Cpp API then Tapir is not able to do that.\nUnfortunately the order of property definitions is not manageable AFAIK.",
@@ -20782,5 +20766,21 @@
     "created_at": "2026-10-23T20:41:36.741000+00:00",
     "content": "I found the post I was refering to. The commands are DGEnableAutoClose/DGDisableAutoClose found in DG.h.\nI'll open up an issue about it.",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1563291326311694348"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-24T17:28:02.955000+00:00",
+    "content": "1300+ pretty please requests and all we get are 51 ports. \ud83e\udd26",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1563605002428223540"
+  },
+  {
+    "channel": "live_code_sessions",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-10-25T01:38:03.171000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/pull/1089",
+    "url": "https://discord.com/channels/994704152116596846/1135400011212009643/1563728315871666276"
   }
 ]

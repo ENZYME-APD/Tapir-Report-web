@@ -4608,14 +4608,6 @@
     "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1290731216517201920"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-10-02T19:54:17.990000+00:00",
-    "content": "I started to create a delete_and_create_properties.py test script.\n1. Gets all custom properties using GetDetailsOfProperties and the availability using GetPropertyDefinitionAvailability\n2. Deletes all custom property definitions using the new command\n3. Recreates all custom property definitions\n4. Gets all details and availability again, compare it to the previous state \ud83d\ude09\n\n<@558945647085223946> , note, Tapir commands are using the Cpp API of Archicad, so if something is not available on Cpp API then Tapir is not able to do that.\nUnfortunately the order of property definitions is not manageable AFAIK.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1291126132661420092"
-  },
-  {
     "channel": "dev-python-package",
     "server": "archicad-api-grasshopper",
     "author": "dkovacs9689",
@@ -4630,22 +4622,6 @@
     "created_at": "2024-10-05T19:34:36.733000+00:00",
     "content": "I am just trying to understand what is actually happening in the background so I could better apply it in my scripts. Especially for how the user would interact with the highlights.",
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1292208341707133019"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-05T20:06:55.409000+00:00",
-    "content": "Is this where I should post bug reports? or how is that handled?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1292216473103892481"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "dkovacs9689",
-    "created_at": "2024-10-05T20:07:24.475000+00:00",
-    "content": "(this bug is specifically in the Archicad C++ add-on package)",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1292216595015532656"
   },
   {
     "channel": "dev-python-package",
@@ -9182,30 +9158,6 @@
     "created_at": "2025-06-25T15:16:33.542000+00:00",
     "content": "This simple testing script generates 5x6=30 meshes with 10x10 size and random Z coordinates between 0.0 and 3.0.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1387451409150251141"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-06-25T16:03:18.992000+00:00",
-    "content": "My colleague had the same message. I think 1.1.8 is bugged because my 1.1.7 version works well on mac",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387463176060276827"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "kar.ma.ge",
-    "created_at": "2025-06-25T16:10:07.028000+00:00",
-    "content": "Maybe it is a python problem. Is there any guide for a clean installation on MacOS?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387464887487168583"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "__iota__",
-    "created_at": "2025-06-25T16:10:49.171000+00:00",
-    "content": "I don't think so, my colleague has the same message and the same python install made by our informatician",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387465064247857224"
   },
   {
     "channel": "user-support-channel",
@@ -20822,5 +20774,157 @@
     "created_at": "2026-10-25T20:35:10.997000+00:00",
     "content": "https://github.com/IPedrax/BIMCraft - anyone tried that one?",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1564014484115161249"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-26T12:44:24.496000+00:00",
+    "content": "this should be a standard archicad feature \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1564258397568634911"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "fbumaye",
+    "created_at": "2026-10-26T13:20:19.937000+00:00",
+    "content": "hello community!\ni would like to contribute new commands. I opened a pr:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/pull/1545\nthe bot helped me to correct dumb mistakes, and now the checks are all successful \ud83d\ude04 . Would be glad if a maintainer <@1254417128979959909> can check it / approve it. \nGreetings",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564267438143569970"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-10-26T20:20:29.563000+00:00",
+    "content": "Hi guys, I have a question. Is Tapir completely dependent on Archicad Python API or can Tapir work independently of that? Let's say it's the end of 2027. There is no longer a perpetual version of Archicad 31 released and there is no SSA or Forward available.\nRight now, we have several capabilities in Archicad 30 that are tied to an active SSA or Forward subscription, like Library Part Maker, Additional Software Catalog, RedShift Rendering Engine, and the big thing for us on this server, Archicad Python API.\nIf somebody has an Archicad 30 perpetual license but no longer has an active SSA or Forward because it's no longer available, does this mean that Archicad 30 perpetual license users lose all these capabilities? I think this question will come up for a lot of users in the next 12 months or so.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564373174978744536"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-26T20:23:09.483000+00:00",
+    "content": "Archicad Python Api is not under SSA, only the Official palette is",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564373845731713035"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-10-26T20:25:10.179000+00:00",
+    "content": "Ah, OK, so you are saying that only the functionality of enabling the Python Palette in the Work Environment is dependent upon having an active SSA/Forward subscription? So, that means that if someone has no SSA, he can still use Tapir and Tapir MCP Server with Archicad?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564374351967555635"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-26T20:25:45.232000+00:00",
+    "content": "Tapir doesn't use the official Python APi",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564374498990620837"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-26T20:25:59.586000+00:00",
+    "content": "Yes, correct.\nYou don't need SSA for Tapir, nor for Tapir MCP.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564374559195406489"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-26T20:27:05.472000+00:00",
+    "content": "As far as I know the official Archicad MCP requires SSA... But who cares if we have Tapir MCP, that's gonna be much more powerful!",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564374835541442601"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-26T20:29:13.237000+00:00",
+    "content": "And who needs the offical Archicad Python Palette? \ud83d\ude05 Nobody! The Tapir Palette is much better!",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564375371426701365"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-10-26T20:33:57.273000+00:00",
+    "content": "Wow guys. This is the best news I've heard this month!!! And you guys are right. I just tried it. I have a hardware key that doesn't have SSA and even though I cannot enable the Python palette in the Work Environment dialog, the Tapir palette is displayed and I can interact with Archicad from Claude Desktop using the Tapir MCP server, so it works.  Hurrayyy!!!",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564376562760024126"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "eldelion",
+    "created_at": "2026-10-26T20:38:04.652000+00:00",
+    "content": "it is a duplicate issue, see https://github.com/ENZYME-APD/tapir-archicad-automation/issues/1387 (can the bot pick up things like this, or will it just open an issue: \"Duplicate Issue about duplicates\"?)",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1564377600342757517"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-26T20:45:02.176000+00:00",
+    "content": "Hi <@1042118345673146378> welcome to the tapir community!",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1564379351565476033"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-26T20:45:45.843000+00:00",
+    "content": "I will try to ask Claude to make the bot more intelligent and check the open issues before creating a new one to avoid duplicates.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1564379534718009387"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-26T20:48:20.522000+00:00",
+    "content": "If you have any suggestion or request, you can ask here!\nOur goal is to reach the 100% coverage of the API by the end of November, so hopefully almost everything will be possible \ud83d\ude42",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564380183488888884"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-26T21:12:55.121000+00:00",
+    "content": "its a non modal palette. its always open. like in rhino or autocad. it doesnt block your archicad while changing things",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1564386368405114972"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "cryptotrader_vpsr",
+    "created_at": "2026-10-26T21:17:36.112000+00:00",
+    "content": "Thanks, will do. By the end of November? That's crazy awesome. I can only begin to imagine what will be possible when the whole API is available through Tapir.",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1564387546966794382"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-26T21:39:53.146000+00:00",
+    "content": "I'm mapping which Archicad element types relate to which others and which API route reads each relation: Tapir JSON commands, the official C++ API, or neither. The result is a browsable atlas. Tested against Archicad 29 and Tapir 1.7.2.\n\nWhat's in it (72 element types plus 21 attribute/organisation types, 1396 entries):\n\n54 verified: a test setup proves the relation.\n398 observed: Archicad returned another object's ID in a demo project.\n119 verified negative: Archicad answers that it does not support this.\n119 \"known, no API way found\": a source describes the relation, but no way to query it is known yet.\n706 not verified: the command exists but no test setup proves it yet.\nEvery \"no way found\" entry carries the source quote, the page and line, and my best guess for the route (100 look like C++, 19 need a test setup).\n\nI need your help with three things:\n\nThe 119 white spots. Do you know an API way for any of them? Even a hint like \"this works via property X\" helps.\nQuoting the DevKit. 53 entries quote a line or declaration from the Graphisoft API DevKit headers as evidence, always with the source. Is that acceptable in a public project, or should it be reduced to symbol name and header file?\nLicence and form. I'm considering publishing data and viewer. What licence would you pick, and would a link to the viewer or a GitHub repository be more useful?\nAlso very welcome: relations I missed, or entries you know are wrong.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1564393154893975593"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-26T21:41:17.808000+00:00",
+    "content": "maybe somebody will find this help full for developing things. check it out and tell me if its useful or just a token graveyard",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1564393509992137025"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "turit_",
+    "created_at": "2026-10-26T21:46:18.011000+00:00",
+    "content": "Yes, it works.\nSurprisingly, a vast number of things can be controlled from the Navigator. Setting up every single existing function in this way takes quite a bit of time.\n\nNew features I have already completed:\n- There are now \"Favorites\" and hideable items; \n- An icon in the views list indicates whether an item is already placed on a layout. \n- You can copy worksheets (along with their content). \n- Batch renaming\n- Layout templates and stories can also be organized into virtual folders  (these were omitted from the new features in version 30).\n\nThings the API does not allow:\n- Creating a new Publisher Set.\n- Configuring Design Options for views.\n- Creating new folders in the Project Map, introduced in Archicad 30.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1564394769134919681"
   }
 ]

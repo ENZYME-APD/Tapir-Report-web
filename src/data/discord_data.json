@@ -20928,14 +20928,6 @@
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1564569811286106245"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "gr_cad_85891",
-    "created_at": "2026-10-27T09:32:50.735000+00:00",
-    "content": "in something i am working on with claude we had similar issues and this is the comment from our buddy Claude if it helps: We hit the same APIERR_BADPARS while building a Graphic Override export for our add-on (reply drafted with Claude, based on what we found in testing), and in our case the pen value wasn\u2019t the cause. API_OverrideRule (and API_OverrideRuleGroup) have no constructor that initialises the style. API_OverrideRuleStyle is mostly plain bools and optionals, so with\n\nAPI_OverrideRule rule;\n\nthose fields hold whatever is on the stack. CreateOverrideRule then sees random, inconsistent style flags and answers APIERR_BADPARS, sometimes and not others. For me the same code worked in one session and failed after restarting Archicad, even for a rule with empty criteria and no overrides set.\n\nValue-initialising fixed it completely:\n\nAPI_OverrideRuleGroup ruleGroup {};\nruleGroup.name = \"Test Group\";\nACAPI_GraphicalOverride_CreateOverrideRuleGroup (ruleGroup);\n\nAPI_OverrideRule rule {};\nrule.name = \"Test Rule\";\nrule.criterionXML = \"\";\nrule.style.fillBackgroundPenOverride = static_cast<short> (0);    // then try -1\nGSErrCode err = ACAPI_GraphicalOverride_CreateOverrideRule (rule, ruleGroup.guid);\n\nSo pen 1 \u201cworking\u201d while 0 and -1 \u201cfail\u201d may only reflect what was in memory on each test. Could you rerun with {} on both structs? If 0 and -1 still return APIERR_BADPARS with a cleanly initialised rule, that\u2019s a real API inconsistency worth reporting to Graphisoft. Then the workaround is to pass an API_RGBColor instead, which CreateOverrideRule accepts. Also check that CreateOverrideRuleGroup succeeded before using ruleGroup.guid.\n\nOn the title\u2019s mention of transparency: as far as I can see, API_OverrideRuleStyle has no transparency or transmittance field in the AC29 or AC30 DevKit, so the Surface \u201cTransmittance\u201d slider in the dialog can\u2019t be set or read through this API. Rules created by an add-on always come out at 0.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1564572577106759693"
-  },
-  {
     "channel": "cool-examples",
     "server": "archicad-api-grasshopper",
     "author": "eldelion",
@@ -21038,5 +21030,93 @@
     "created_at": "2026-10-27T22:46:04.293000+00:00",
     "content": "i really love the tapir addon with the mcp \ud83d\ude04 today i added all possible steel profil into the complex profil manager in no time.",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1564772198957449398"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-29T10:40:45.364000+00:00",
+    "content": "Hi Boty-Bott! \nTapir doesn\u2019t have (GetAllClassificationSystems). That command lives in Archicad\u2019s built-in API. Should we have one ourselves?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1565314443070406657"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-29T11:24:49.918000+00:00",
+    "content": "I am sharing the script in the Tapir Marketplace that <@1338845363024560198> setup",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565325535133827115"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "runxel",
+    "created_at": "2026-10-29T11:25:19.286000+00:00",
+    "content": "I think: yes!\nIt's good if we rethink our stance on not doubling what the other JSON API has. \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1565325658312409149"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-29T12:08:53.391000+00:00",
+    "content": "https://tapir-marketplace.vercel.app/scripts/element-heatmap",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565336622663209010"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-29T12:09:06.983000+00:00",
+    "content": "Done! Published my first script in the platform",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565336679672188939"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-10-29T12:58:12.479000+00:00",
+    "content": "https://community.graphisoft.com/t5/Archicad-C-API/API-DrawingType-anchorPoint-is-ignored-by-ACAPI-Element-Create/m-p/719263#M11103 >> I think I found an other API bug \ud83d\ude2d",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1565349033978109962"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "pumaka_94291",
+    "created_at": "2026-10-29T13:41:40.618000+00:00",
+    "content": "I love Tapir. With ten minutes I have an solution for manipuling polyline with a lot of point. It's incredible ...",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1565359973305688155"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "weltmaister.",
+    "created_at": "2026-10-29T14:07:06.361000+00:00",
+    "content": "cool, very helpful! would you share it?\nhttps://tapir-marketplace.vercel.app/",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1565366372735787158"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-10-29T20:44:04.923000+00:00",
+    "content": "Running the script  creates the interface?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565466275025526927"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-29T22:55:58.915000+00:00",
+    "content": "https://tapir-marketplace.vercel.app/mcp done! You can even instruct claude or other assistants to use the mcp and do it for you \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565499468714082437"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "gr_cad_85891",
+    "created_at": "2026-10-29T23:09:44.235000+00:00",
+    "content": "On windows in Archicad 30 tapir Icon is not visible in dark mode is it same in Mac?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1565502930356936924"
   }
 ]

@@ -4632,14 +4632,6 @@
     "url": "https://discord.com/channels/994704152116596846/994711763549438002/1292228045003952262"
   },
   {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2024-10-06T12:49:22.174000+00:00",
-    "content": "I think the best if you create a new issue in the github repo.\nHere: https://github.com/ENZYME-APD/tapir-archicad-automation/issues\nIt's easier to manage the bugs there.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1292468746920792114"
-  },
-  {
     "channel": "ac-python-workflows",
     "server": "archicad-api-grasshopper",
     "author": "dkovacs9689",
@@ -4790,14 +4782,6 @@
     "created_at": "2024-10-25T08:30:54.814000+00:00",
     "content": "This is a great idea!",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1299289073784983603"
-  },
-  {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-10-25T08:32:21.708000+00:00",
-    "content": "So I want to ask for help and brainstorm, what to show and discuss that is really relevant for the users that don't know anything about the project\nI'd like to display some grasshopper interaction and some direct python scripts as well\nI know some of you are building really cool examples, Could you help me out?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1299289438244831242"
   },
   {
     "channel": "cool-examples",
@@ -5118,22 +5102,6 @@
     "created_at": "2024-10-29T15:26:15.842000+00:00",
     "content": "<@558945647085223946> what do you think about this approach? https://github.com/ENZYME-APD/tapir-archicad-automation/pull/191",
     "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1300843151614939258"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "aaronbourgoin",
-    "created_at": "2024-10-29T18:53:52.446000+00:00",
-    "content": "I\u2019m doing a sketch design for an office Building Detail System and have a few questions for this assembled mind hive.\n\nWe\u2019ve established an Indexing and Classification system to assign new and existing details that would be implemented in a database of details which would be searchable. Standard Details would be online and delivered as PMKs for placement on a layout. Unique details would be available for import or placement inside a detail bubble and adapted to project specific circumstances.\n\nI\u2019m trying to get away from using lines and fills by using a library GDL objects for the graphic elements of the detail - e.g. a parametric  \u201cboard\u201d object that  can be set to Gypsum Board, Plywood, Cement Panel, etc. Editing more complex profiles when they made with fills is too time-consuming and prone to errors. \n\nIn the Python / JSON / Geo-JSON universe, would it be possible to create nodes that are effectively instructions to \u201cdraw\u201d / \u201cbuild\u201d / \u201cassemble\u201d a detail from a set of predefined elements? \n\nCould these nodes also contain the metadata that makes them searchable?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1300895398398922752"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-10-30T01:10:16.293000+00:00",
-    "content": "Hi <@997149465070800947> thanks for sharing this idea with us. Using pre-defined GDL 2 elements is a great idea, as you mentioned already are searchable and can be filled with meta-data. I think definitely possible as a workflow combining grasshopper, tapir, and the standard live-connection to assemble these details. The advantage of tapir in this case would be mainly either in the use of python or in the ability to update the metadata contained in the objects.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1300990121918595082"
   },
   {
     "channel": "dev-grasshopper-plugin",
@@ -5606,30 +5574,6 @@
     "created_at": "2024-11-05T15:35:54.702000+00:00",
     "content": "https://pyrevitlabs.notion.site/Runtime-REST-API-c3b96be059ba4af0ad5304d3e0304f3d",
     "url": "https://discord.com/channels/994704152116596846/994704152703815765/1303382294588952639"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "1yur",
-    "created_at": "2024-11-05T19:46:01.884000+00:00",
-    "content": "I've made a postman collection for default json commands\ncould be helpful for a qucik test\nhttps://github.com/aectronix/archicad-api-postman",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1303445239272312947"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "1yur",
-    "created_at": "2024-11-05T19:46:12.838000+00:00",
-    "content": "I guess I'll add tapir ones here too",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1303445285216981102"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "aaronbourgoin",
-    "created_at": "2024-11-05T21:40:47.155000+00:00",
-    "content": "new day, new idea: export IFC and aligned (navigable) DWGs to Autodesk COnstruction Cloud?",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1303474118192271371"
   },
   {
     "channel": "ideas-and-feedback",
@@ -21118,5 +21062,61 @@
     "created_at": "2026-10-29T23:09:44.235000+00:00",
     "content": "On windows in Archicad 30 tapir Icon is not visible in dark mode is it same in Mac?",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1565502930356936924"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "juicy6532",
+    "created_at": "2026-10-30T08:32:11.196000+00:00",
+    "content": "i have a question.  I want to use AI to replicate the default tools panel exactly as an add-on. Is there a way to find the source code for the default tools panel?",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1565644475370569788"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-30T16:22:23.006000+00:00",
+    "content": "Tapir MCP is so awesome. \"Change all layouts in this folder to masterlayout XYZ\" \"There are 158 Layouts.\" \"Go\" 50sec later all changed \ud83d\ude04",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565762804278104105"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-10-30T16:25:56.552000+00:00",
+    "content": "Nice usecase!\nYou are not able to do that with the official Archicad MCP, right?",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565763699954679839"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "pumaka_94291",
+    "created_at": "2026-10-30T21:10:49.925000+00:00",
+    "content": "This is pretty amazing \ud83e\udd2f\n\nBuilt with Tapir + Claude after only 2 iterations from the initial idea.\n\nMy problem: too many polyline points can make Archicad unnecessarily heavy.\n\nThe result \ud83d\udc47\n 2,550 \u2192 765 points (-70%)\n Maximum deviation: 4 mm\n\nSimple problem \u2192 clarification \u2192 solution \u2192 usable Archicad tool.\n\nHuge thanks to Tapir. This genuinely makes my daily work easier! \ud83d\ude4f",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565835394757558413"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-30T21:28:38.401000+00:00",
+    "content": "Same! Love that idea. Rhino style",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565839876270596098"
+  },
+  {
+    "channel": "general",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-10-30T21:29:25.406000+00:00",
+    "content": "Welcome <@1565806267145134293> <@963871600736870433> <@1565698328769990827> to the tapir team",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1565840073423855657"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-10-30T21:33:13.409000+00:00",
+    "content": "yes! i always missed that in archicad.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1565841029737750559"
   }
 ]

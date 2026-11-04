@@ -9072,28 +9072,12 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1387451409150251141"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-06-25T19:33:13.361000+00:00",
-    "content": "Can someone test this addon version on MAC? https://github.com/ENZYME-APD/tapir-archicad-automation/actions/runs/15806306065/artifacts/3377750263\nBut please note, that it will only work with the updated scripts found on the same branch:  https://github.com/SzamosiMate/tapir-archicad-automation/tree/python-script-refactor-and-dependecy-handeling/builtin-scripts \nWe tried a different appraoch to lanch python scripts with this version, that avoids potential python verion/enviroment conflicts so <@699634412652068944>  hopefully it will work for you.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387516000672420021"
-  },
-  {
     "channel": "archicad-addon",
     "server": "archicad-api-grasshopper",
     "author": "eldelion",
     "created_at": "2025-06-25T20:45:48.081000+00:00",
     "content": "That would be great!\n\nI think the most important would be these:\nAPI_CurtainWallType\n\u2022    Polygon information for each API_CWSegmentType (cws can be rotated, so I guess we need xyz for each coord)\n\u2022    Offset/level\n\u2022    For the get methods I would get the subelements, and extract the geometry from those.\n\u2022    For creating curtain walls we would need a scheme. API_CWSegmentPatternData seams complicated. Maybe use a scheme favorite  for the first iteration?\nAPI_CWFrameType\n\u2022    begC/endC\n\u2022    className\nAPI_CWPanelType\n\u2022    polygon \u2013 the most important would be to get the cords of the frame axes around the panel, but would be nice to be able to somehow get the actual coords of the panel / clamp free area.\n\u2022    className",
     "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1387534265692192909"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-06-26T03:57:46.728000+00:00",
-    "content": "Note, as it's a \"preview\" version, it's not codesigned yet, so its a little bit more complicated to allow using it.\nHopefully <@423113258229039105> or <@404731364236197899> will be able to help with testing.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1387642976376848447"
   },
   {
     "channel": "ideas-and-feedback",
@@ -21110,5 +21094,21 @@
     "created_at": "2026-10-31T12:59:40.467000+00:00",
     "content": "Can do! What do you need? Developer license?",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1566074178757595137"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-03T06:46:19.216000+00:00",
+    "content": "SetActiveGraphicalOverrideCombination only works on Archicad 30 because Graphisoft added the API call for it in the Archicad 30 DevKit.\n ACAPI_GraphicalOverride_SetActualOverrideCombination, which read and set the current window\u2019s combination, appear here for the first time.\n\nArchicad 27\u201329: the graphic override API is there (list, create, change and delete combinations and rules), but none of it reads or sets the current window\u2019s combination.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567067384697593927"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-03T06:47:19.803000+00:00",
+    "content": "On Archicad 25\u201329 the closest option is a saved view rather than the window. SetViewSettings sets graphicOverrideCombination on a view, which every supported version can store. Opening that view then applies the combination to the window. It changes the saved view, though, which the AC30 command deliberately leaves alone.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567067638818152494"
   }
 ]

@@ -137,7 +137,15 @@
       "members": 629,
       "bots": 3,
       "source": "bot"
+    },
+    {
+      "date": "2026-11-05",
+      "total_members": 638,
+      "online": 46,
+      "members": 635,
+      "bots": 3,
+      "source": "bot"
     }
   ],
-  "updated_at": "2026-11-04T03:55:34+00:00"
+  "updated_at": "2026-11-05T04:15:34+00:00"
 }

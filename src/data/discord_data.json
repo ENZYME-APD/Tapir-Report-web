@@ -5504,14 +5504,6 @@
     "url": "https://discord.com/channels/994704152116596846/1267686889549205576/1303290391445110835"
   },
   {
-    "channel": "general",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2024-11-05T09:58:20.894000+00:00",
-    "content": "I just wanna find a streamline workflow to finding the appropriate property",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815764/1303297343961169944"
-  },
-  {
     "channel": "dev-grasshopper-plugin",
     "server": "archicad-api-grasshopper",
     "author": "jbeneitez",
@@ -5566,14 +5558,6 @@
     "created_at": "2024-11-05T15:35:54.702000+00:00",
     "content": "https://pyrevitlabs.notion.site/Runtime-REST-API-c3b96be059ba4af0ad5304d3e0304f3d",
     "url": "https://discord.com/channels/994704152116596846/994704152703815765/1303382294588952639"
-  },
-  {
-    "channel": "ideas-and-feedback",
-    "server": "archicad-api-grasshopper",
-    "author": "aaronbourgoin",
-    "created_at": "2024-11-06T15:02:51.170000+00:00",
-    "content": "my question derives from a requirement we're trying to satisfy for one of our clients who navigate \"live\" models from Revit via drawing sheets. We can upload an IFC placed inside a Revit shell file, but have not been able to upload \"geolocated\" (aligned) sheets for use as navigation aids. We could do this on the Revizto platform by publishing a native Archicad file and all related layouts, but not in ACC.",
-    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1303736362918219808"
   },
   {
     "channel": "cool-examples",
@@ -9112,38 +9096,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1389170465259651155"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "kar.ma.ge",
-    "created_at": "2025-07-02T22:23:24.614000+00:00",
-    "content": "Hi, I'm sorry, I didn't see this message. I went to the link \u201c https://github.com/ENZYME-APD/tapir-archicad-automation/actions/runs/15806306065/artifacts/3377750263\u201d but it throws a 404 error.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1390095544830918789"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-07-03T19:36:57.998000+00:00",
-    "content": "Hmmm can you open your report in archicad?\nCan you see some error message there?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1390416045793345567"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "kar.ma.ge",
-    "created_at": "2025-07-03T19:43:44.502000+00:00",
-    "content": "I restart Archicad and I get the same message about \u201cinstall UV\u201d.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1390417750794571920"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-07-03T20:20:56.587000+00:00",
-    "content": "OK. Based on a quick  AI-assisted net search the problem appears to be that on MAC the PATH variables are different when you start up your terminal, and when you issue terminal commands from a GUI app like Archicad. So uv --version issued from archicad does not work, as the terminal launched by Archicad does not know what 'uv' is. I guess on MAC we will have to search the possible install directories. I'll look into it on the weekend.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1390427112837742592"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "davdelven",
@@ -9158,30 +9110,6 @@
     "created_at": "2025-07-09T12:18:01.753000+00:00",
     "content": "MCP + Tapir. who wants to try it? give thumb up",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1392479910768939119"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "fbumaye",
-    "created_at": "2025-07-09T14:41:00.664000+00:00",
-    "content": "Hello Community! \nJust a question about the built-in scripts. is it possible to define another github-repo for additional office-specific-scripts to be downloaded ? I would like to contribute to communtiy scripts, but in some cases, there are very specific. I could use the tapir palette to distribute across multiple users some scripts. \nThanks!",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392515893329793085"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "runxel",
-    "created_at": "2025-07-09T14:45:41.727000+00:00",
-    "content": "That's a sick idea, Firat! \ud83e\udd29 \nMakes sense for big offices like yours.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392517072193323048"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-07-09T14:54:15.952000+00:00",
-    "content": "Good idea.\nSo currently the palette downloads the scripts from the official Tapir GitHub repo.\nYou need that to be configurable. So download the scripts from different GitHub repo instead.\nVery easy change.\nWe need this anyway when we want to test script changes from a feature branch or whatever.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392519229009301544"
   },
   {
     "channel": "user-support-channel",
@@ -21110,5 +21038,117 @@
     "created_at": "2026-11-03T06:47:19.803000+00:00",
     "content": "On Archicad 25\u201329 the closest option is a saved view rather than the window. SetViewSettings sets graphicOverrideCombination on a view, which every supported version can store. Opening that view then applies the combination to the window. It changes the saved view, though, which the AC30 command deliberately leaves alone.",
     "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567067638818152494"
+  },
+  {
+    "channel": "welcome-and-rules",
+    "server": "archicad-api-grasshopper",
+    "author": "brickjuggler_61434",
+    "created_at": "2026-11-04T06:48:32.474000+00:00",
+    "content": "Hello from F\u00fcrth, Germany. I love Tapir, and every single day I\u2019m completely amazed by everything that can now be done with it.",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815761/1567430331487879221"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-11-04T08:29:21.025000+00:00",
+    "content": "Next step <@689040789866807369> <@544899613652549643> we have to meet and help finalise the grasshopper plugin. Wellcome anyone@everyone interested in the grasshopper development",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567455700949663815"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-11-04T08:32:04.402000+00:00",
+    "content": "we can increase the python scripts library, fix grasshopper and who knows what",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567456386202472551"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "__iota__",
+    "created_at": "2026-11-04T08:33:13.430000+00:00",
+    "content": "We have a lot of test to make, I would like to have a clear lists of deadend/bugs and workaround linked to those limits",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567456675726626817"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-04T09:55:06.184000+00:00",
+    "content": "Some users complain that new Tapir AddOn fails to load on AC29 and AC30.\nCould anybody check please whether AnalyticalModelAPI.dll exists in C:\\Program Files\\Graphisoft\\Archicad 30 (the folder with Archicad.exe)?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567477281310384181"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-04T10:03:53.217000+00:00",
+    "content": "I have also added one more built-in script named Complex Element Finder \ud83d\ude42 \nIt can find/highlight elements with high number of polygons or polylines with high number of points and it can also try fixing them by reducing the complexity.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567479491847000165"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-04T10:05:20.956000+00:00",
+    "content": "+ structured the example scripts in the Examples folder.\nNow we have clean, simple dedicated example scripts for each command and those are linked to the documentation of the commands so you can see the examples in the docs \ud83d\ude09 \nAnd beside that we have the complex workflow scripts for testing purposes.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567479859851296883"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-04T10:07:00.420000+00:00",
+    "content": "And there are bunch of changes in the Grasshopper Plugin also.\nBut I agree, improving the usability of the Grasshopper components should be the next (after the 100% coverage + fixing the bugs)",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567480277033549906"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-04T10:07:35.726000+00:00",
+    "content": "Next Tapir version will be huge \ud83e\udd2f",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567480425117655083"
+  },
+  {
+    "channel": "ideas-and-feedback",
+    "server": "archicad-api-grasshopper",
+    "author": "heartbreaker2323",
+    "created_at": "2026-11-04T10:44:53.745000+00:00",
+    "content": "Would there be interest for a script manager feature for thr Tapir addon that woukd allow  available scripts to be browsed by category, downloaded and enabled /disabled , as well as uploaded?",
+    "url": "https://discord.com/channels/994704152116596846/994704152703815766/1567489812049694811"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-04T10:45:24.710000+00:00",
+    "content": "Thanks for checking!\nMaybe there are some special Archicad versions with limitations (without MEP or AnalyticalModel)... Anyway, Claude will make Tapir work without AnalyticalModelAPI.dll and MEPAPI.dll also.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567489941926182913"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "pejotu",
+    "created_at": "2026-11-04T12:36:37.561000+00:00",
+    "content": "There have been some reports of Archicad's .dll's not being signed in a way Windows' Smart App Control would like - that may cause Windows to block the use of some of them...",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567517929891696721"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "fbumaye",
+    "created_at": "2026-11-04T12:44:59.026000+00:00",
+    "content": "hello community,\ni have a question about uv and executing scripts. \ntapir uses ```--script``` flag to run scripts. in most cases this is ok, but you have to manage the deps as inline scripts:\n```\n# /// script\n# requires-python = \">=3.11\"\n# dependencies = [\n#     \"archicad>=28.3000\",\n#     \"lxml>=6.1.3\",\n#     \"openpyxl>=3.1.5\"\n# ]\n# ///\n```\nin my case i have a bigger python project, and i use ```pyproject.toml``` to manage deps. I would like to keep it like that, so my question would be if we can specify the flags in config.json ? uv ignores the config, if ```--script```is used\na field per repo-config would be useful, because the entry point can differ from repo to repo, maybe a relative filepath to the toml file, or set script/noscript, something like that?\n\nthe flag is defined here:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/blob/638e720d8df359c2858100e0982d50381cf3f80a/archicad-addon/Sources/TapirPalette.cpp#L1405-L1406\nwhat is your opinion ? greetings",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567520033188347924"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-11-04T20:47:16.798000+00:00",
+    "content": "<@697788551672365077> shared his command line addon with me. He called it \"Baaz\" its Hindi for Falcon/Hawk. We are really developing a command line for archicad \ud83d\ude42 on winOS AC29 right know its possible to command nearly everything. you can switch to layouts, views, you can call the menus etc.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1567641407001206807"
   }
 ]

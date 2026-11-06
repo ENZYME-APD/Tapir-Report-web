@@ -9112,22 +9112,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1392479910768939119"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-07-09T14:55:51.758000+00:00",
-    "content": "<@720568379823620106> , but I assume your GitHub repo is not public, so Tapir palette would need usename/password to be able to download scripts from there. Right?",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392519630849052823"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-07-09T14:58:19.472000+00:00",
-    "content": "I could make a dialog with 3 input fields:\nGitHub repo url\nUsername \nPassword\n\nAnd Tapir Palette could save the input, so the users would have to input it only once.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392520250406473788"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "tlorantfy",
@@ -9176,28 +9160,12 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1392768840961884183"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "fbumaye",
-    "created_at": "2025-07-10T09:35:34.873000+00:00",
-    "content": "Thank you for the quick responses! \nLove to hear, that its easy to implement it.\nYes the repos would be primarly private.\nHow would you save the login data ? Would it be possible to have config file, which can be easily edited and distributed (like a config.json) ?  How will you save the user password ? Github offers the possibility to generate a deploy key for a repo (read and/or write access), maybe this would be a better way? Of course I could create an extra github acc with read access to my repos just for tapir. \nAnd another question would be the venv of the scripts. If I understand it correctly, the palette looks for the interpreter which is defined in PATH env variable. But in most cases, I need some extra packages, which I do not want to install globally. Does tapir create a venv , and can I edit the requirements for extra packages? \nThank you very much for your support!",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392801417256763435"
-  },
-  {
     "channel": "general",
     "server": "archicad-api-grasshopper",
     "author": "fbumaye",
     "created_at": "2025-07-10T09:39:41.293000+00:00",
     "content": "hello <@565170852870750241>  \ud83d\udc4b  you can do it with a schedule item for layouts. In Archicad you can mass edit many things via a schedule item. I am not sure how it is called in englisch (using german version), but the icon looks like this:\nhope it helps",
     "url": "https://discord.com/channels/994704152116596846/994704152703815764/1392802450817286236"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-07-10T09:44:57.303000+00:00",
-    "content": "The latest version of Tapir (1.2.0) uses uv to execute scripts.\nThat is able to automatically install all requirements of the script. Simply define the requirements at the begining of the script and that's all \ud83d\ude09",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392803776259162152"
   },
   {
     "channel": "ideas-and-feedback",
@@ -9240,14 +9208,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1392849250723037264"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-07-10T12:46:43.151000+00:00",
-    "content": "At the begining of this script you can see how to define the dependencies for uv:\nhttps://github.com/ENZYME-APD/tapir-archicad-automation/blob/main/builtin-scripts/UnusedViewCleaner.py\nThanks to <@558945647085223946>",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392849518701056070"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "grzegorzwilk",
@@ -9288,14 +9248,6 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1392859412393365565"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-07-10T17:48:45.654000+00:00",
-    "content": "Hello Fbumaye!\n\nJust to add to what Tibor said.\nYou can define depenedencies 2 ways with  uv:\n1. - inline script dependencies. These are at the top of the script, witch is good for standalone scripts as they don1t get misplaced. You don't need to manually edit these, uv can do that for you: https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies\n2. - uv looks for a pyproject.toml file in the same folder as the script. This is actually the standard way to manage dependencies in python. With Tapir palettes current structure (many scripts in a folder) it should only contain common dependencies. (managing projects: https://docs.astral.sh/uv/guides/projects/)",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392925529988006009"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "eldelion",
@@ -9304,84 +9256,12 @@
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1392936379557740597"
   },
   {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-07-10T20:12:57.418000+00:00",
-    "content": "config.json is a good idea.\nCurrently Tapir uses GitHub REST API contents endpoint to download the scripts.\nYes, that needs access token to read private repositories. You can generate token, see https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token\nI will try to implement this into Tapir on this week when I'll have some time.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1392961818116231381"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "eldelion",
-    "created_at": "2025-07-11T07:22:03.664000+00:00",
-    "content": "Yeah, I think access tokens are the way to go. I would not leave actual credentials in a .env file on a company computer. Windows / MAC has a credentials manager to store such info, but if C++ does not have an easy to use library to manage that, it is probably not worth the time",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1393130203676672062"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "fbumaye",
-    "created_at": "2025-07-11T10:12:54.988000+00:00",
-    "content": "thats sounds great! I am used to use pip vor venvs and packages. uv its a great replacement for python projects ! thanks for the input!",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1393173200845930517"
-  },
-  {
     "channel": "ideas-and-feedback",
     "server": "archicad-api-grasshopper",
     "author": "fbumaye",
     "created_at": "2025-07-11T10:21:13.623000+00:00",
     "content": "Great Idea! descriptive models are the best way to create mcp tools I assume. I would agree, that it is not a 1to1 conversion, but worth giving a try \ud83d\ude42 . \nIf you need any support, hit me up! Maybe I can help you a bit.",
     "url": "https://discord.com/channels/994704152116596846/994704152703815766/1393175292272578600"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "runxel",
-    "created_at": "2025-07-11T11:55:26.045000+00:00",
-    "content": "UV is really great!\nThat made python enjoyable again for me",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1393199000248647792"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-07-12T17:27:21.157000+00:00",
-    "content": "Done it, see https://github.com/ENZYME-APD/tapir-archicad-automation/pull/269\n\nYou can simply generate a token with read-only content access rights and add your private github repo to the config.json.\n\nI hope this helps spreading Tapir to more companies \ud83d\ude09",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1393644918148169850"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-07-12T20:59:49.668000+00:00",
-    "content": "Hi <@558945647085223946> <@1254417128979959909> sorry to the late response, I have been off-grid for a few days travelling. I have updated the latest Tapir addon in my Mac",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1393698389278855189"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "jbeneitez",
-    "created_at": "2025-07-12T21:01:52.132000+00:00",
-    "content": "I am able to use the script palette",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1393698902930231428"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "tlorantfy",
-    "created_at": "2025-07-13T08:49:54.055000+00:00",
-    "content": "I would be happy if the Tapir automated update would be tested also on Mac.\nCould you please download the previous version of Tapir 1.1.8 and when you check for updates or trying to run a script it should alert that \"a new version is available. Would you like to install and restart Archicad?\" If you click yes, it should download automatically the latest version and restart AC.",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1393877085029924956"
-  },
-  {
-    "channel": "user-support-channel",
-    "server": "archicad-api-grasshopper",
-    "author": "runxel",
-    "created_at": "2025-07-13T11:37:46.329000+00:00",
-    "content": "Simple reasoning: If we want to penetrate into the corporate world everything needs to be deterministic. If some people update their Tapir only then havoc will be the outcome \u2013 just like with AC versions!",
-    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1393919331209056317"
   },
   {
     "channel": "user-support-channel",
@@ -21150,5 +21030,101 @@
     "created_at": "2026-11-04T20:47:16.798000+00:00",
     "content": "<@697788551672365077> shared his command line addon with me. He called it \"Baaz\" its Hindi for Falcon/Hawk. We are really developing a command line for archicad \ud83d\ude42 on winOS AC29 right know its possible to command nearly everything. you can switch to layouts, views, you can call the menus etc.",
     "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1567641407001206807"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "turit_",
+    "created_at": "2026-11-05T09:30:48.741000+00:00",
+    "content": "Unfortunately, it is not possible to implement every existing feature found in the Navigator.  Some API access is still missing.",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1567833556217110640"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "_ernest__",
+    "created_at": "2026-11-05T11:33:14.012000+00:00",
+    "content": "Hello everyone. \nThe archicad palette pops up after tab switching no matter how I close it. Is this an archicad thing? I want it to remember on-off status until I change it, like other palletes \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1567864364516769793"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-05T12:09:12.197000+00:00",
+    "content": "You mean the Tapir palette, right?\nIt sounds like a bug, thanks for reporting. Let our bot handle and fix it \ud83d\ude09",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1567873416600494205"
+  },
+  {
+    "channel": "archicad-addon",
+    "server": "archicad-api-grasshopper",
+    "author": "tlorantfy",
+    "created_at": "2026-11-05T12:10:04.612000+00:00",
+    "content": "Bot, our Ernest buddy says the Tapir palette pops up again after each tab switch in Archicad, no matter he closed it. It sounds like a bug, please fix it!",
+    "url": "https://discord.com/channels/994704152116596846/1370223161525927946/1567873636445061173"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-11-05T19:08:29.602000+00:00",
+    "content": "https://www.archicad-api.com/\n\nHow do we update this? This is not in the repo.",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567978934404911227"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-11-05T19:33:49.876000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/2070\n\nBrrr",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567985310896496752"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-11-05T20:26:57.355000+00:00",
+    "content": "this new dialog when something is created in archicad is so annoying. does anyone know if its possbile to turn it off",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567998680152154246"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-11-05T20:28:27.774000+00:00",
+    "content": "its blocking tapir mcp from working automatically",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1567999059396927569"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "jbeneitez",
+    "created_at": "2026-11-05T21:47:35.216000+00:00",
+    "content": "<@697788551672365077> the web is here: \n\nhttps://github.com/ENZYME-APD/Tapir-Report-web\n\nhappy to tidy up, and merge this into the main repo, not sure that\u2019s possible?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1568018971612160040"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "hjesus.11",
+    "created_at": "2026-11-05T22:05:26.695000+00:00",
+    "content": "<@423113258229039105> just to understand, I'm a complete newbie in this things, how do you manage to have Tapir almost cover the Archicad API? Do you have a bot that is programing and trying to cover everything from API?",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1568023465720680519"
+  },
+  {
+    "channel": "cool-examples",
+    "server": "archicad-api-grasshopper",
+    "author": "daviiiiidave",
+    "created_at": "2026-11-05T22:23:58.405000+00:00",
+    "content": "trying to solve this renovation limbus cause archicad is still not able to control the layer of a composites",
+    "url": "https://discord.com/channels/994704152116596846/1299282719678795837/1568028128570384538"
+  },
+  {
+    "channel": "user-support-channel",
+    "server": "archicad-api-grasshopper",
+    "author": "parikshitwadhwa",
+    "created_at": "2026-11-06T00:33:44.468000+00:00",
+    "content": "https://github.com/ENZYME-APD/tapir-archicad-automation/issues/2093",
+    "url": "https://discord.com/channels/994704152116596846/1035110189935894530/1568060785685430392"
   }
 ]
